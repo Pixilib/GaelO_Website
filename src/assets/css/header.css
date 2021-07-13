@@ -1,0 +1,14 @@
+.styleTexte {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    color: #FEBA4D;
+    transform: translateX(-50%);
+    background: rgb(49, 64, 83, 0.75);
+    padding: 2rem 3rem;
+    transition: 1s;
+}
+
+.styleTexte:hover {
+    padding: 3rem 4rem;
+}
