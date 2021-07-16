@@ -1,5 +1,6 @@
 import {Row, Col, Carousel} from "../../node_modules/react-bootstrap";
 import { useTranslation } from "react-i18next";
+import '../assets/css/features.css';
 
 import slide1 from '../assets/images/dicomimport.png';
 import slide2 from '../assets/images/patientpanel.png';
@@ -19,11 +20,8 @@ function getStyleFeatures(){
 function Features(props) {
 
     const { t } = useTranslation();
-    var styleCarousel = {
-        width: "50%",
-        
-        position: "relative"
-    }
+
+
     return (
         <Row id="features" className="bg-light p-5 text-center align-items-center border-top" style={getStyleFeatures()}>
             <Col md={6}>
@@ -40,7 +38,7 @@ function Features(props) {
                     {t('features.body.8')}
                 </p>
             </Col>
-            <Col md={6} style={styleCarousel} className="text-center align-items-center">
+            <Col md={6} className="styleCarouselImage text-center align-items-center">
                 <Carousel className="p-5" variant="dark" interval={null}>
                     <Carousel.Item>
                         <img className="d-block w-100" src={slide1} alt="1 slide" style={{width:"80%",height:"80%"}} />

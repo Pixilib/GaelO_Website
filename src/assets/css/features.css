@@ -1,0 +1,10 @@
+.styleCarouselImage {
+    width: 50%;
+    position: relative;
+}
+@media only screen and (max-width: 768px) {
+    .styleCarouselImage {
+        width: 100%;
+        position: relative;
+    }
+}

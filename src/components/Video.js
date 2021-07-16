@@ -1,5 +1,7 @@
 import {Row, Col, Carousel} from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import '../assets/css/video.css';
+
 
 function getStyleVideo() {
     return {
@@ -10,17 +12,11 @@ function Video() {
 
     const { t } = useTranslation();
     
-    var styleCarousel = {
-        width: "50%",
-        position: "relative",
-        left: "50%",
-        transform: "translateX(-50%)"
-        
-    }
+   
     return (
         <Row id="videos" className="bg-light pt-5 text-center border-top" style={getStyleVideo()}>
             <h3>{t('videos.title')}</h3>
-            <Col md={6} style={styleCarousel} className="text-center align-items-center">
+            <Col md={6} className="styleCarouselVideo text-center align-items-center">
                 <Carousel className="p-5" variant="dark">
                     <Carousel.Item>
                         <h4>{t('videos.carousel-legend.0')}</h4>

@@ -1,7 +1,5 @@
 import '../assets/css/navbar.css';
 import { useTranslation } from "react-i18next";
-import { Figure } from "../../node_modules/react-bootstrap";
-import logoPrincipal from '../assets/images/gaelo-logo.svg';
 
 
 function NavigationBar(props) {
@@ -9,17 +7,14 @@ function NavigationBar(props) {
 
     window.addEventListener('scroll', (event) => {
         var elementHeader = document.getElementById("header").offsetHeight * 50/100;
-        var image = document.getElementById("imageLogo");
         var navbar = document.getElementById("navbar");
       
         if(window.pageYOffset > elementHeader){
-            image.style.height = "50%";
             navbar.style.backgroundColor = "#314053";
             navbar.style.height = "4rem";
             navbar.style.fontSize = "1.2rem";
         }
         if(window.pageYOffset < elementHeader){
-            image.style.height = "75%";
             navbar.style.backgroundColor = "";
             navbar.style.height = "auto";
             navbar.style.fontSize = "1.5rem";
@@ -94,22 +89,11 @@ function NavigationBar(props) {
         e.target.classList.add("navbar-active");
     }
     
-    var styleImage = {
-        height: "75%",
-        position: "absolute",
-        display: "flex",
-        transform: "translateX(-2%)",
-        transition: "1s"
-    
-    }
-
+   
     const { t } = useTranslation();
 
     return (
-        <nav id="navbar" className="navbarPerso fixed-top align-items-center justify-content-center">
-            
-            <Figure.Image id="imageLogo" src={logoPrincipal} style={styleImage} alt="Image logo Principal of Gaelo" fluid/>
-            
+        <nav id="navbar" className="navbarPerso fixed-top justify-content-end">
             <ul className="navbar-menu">
                 <li className="navbar-item">
                     <a id="navGaelo" href="#gaelo" className="navbar-link" onClick={closeMenu}>{t('navbar.1')}</a>

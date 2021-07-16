@@ -1,38 +1,47 @@
 .styleTexte {
     position: absolute;
-    top: 25%;
+    top: 45%;
     left: 50%;
     color: #0595A0;
     transform: translateX(-50%);
     transition: 1s;
-    font-size: 2.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition-duration: 1s;
     border-radius: 25% 10%;
 }
 
 .styleTexte:hover {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 
-
-.bouton {
+.styleImage {
     position: absolute;
-    top: 60%;
-    left: 50%;
-    z-index: 1;
+    top: 15%;
+    z-index: 2;
+    height: 50%;
+    width: 30%;
     transform: translateX(-50%);
-    background-color: #FEBA4D;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem;
-    border-radius: 10%;
+    transition: 1s;
 
 }
-.bouton:hover{
-    background-color: #FFD698;
+
+@media only screen and (max-width: 768px) {
+    .styleTexte {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        color: #0595A0;
+        transform: translateX(-50%);
+        transition: 1s;
+        font-size: 0.8rem;
+        font-weight: bold;
+        transition-duration: 1s;
+        border-radius: 25% 10%;
+    }
+    
+    .styleTexte:hover {
+        font-size: 1rem;
+    }
+
 }
