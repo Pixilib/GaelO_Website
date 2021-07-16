@@ -1,1 +1,1 @@
-# Static Website to present GaelO
+# Static Website For GaelO
