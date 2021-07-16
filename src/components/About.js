@@ -15,7 +15,7 @@ function About(props) {
     
 
     return (
-        <Row id="about" className="bg-light p-5 text- align-items-center border-top" style={getStyleAbout()}>
+        <Row id="about" className="bg-light p-5 text-center align-items-center border-top" style={getStyleAbout()}>
             <h3>{t('about.title')}</h3>
             <Col className="p-5">
                 <Row className="text-start">
