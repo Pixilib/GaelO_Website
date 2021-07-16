@@ -2,13 +2,37 @@
     position: absolute;
     top: 25%;
     left: 50%;
-    color: #FEBA4D;
+    color: #0595A0;
     transform: translateX(-50%);
-    background: rgb(49, 64, 83, 0.75);
-    padding: 2rem 3rem;
     transition: 1s;
+    font-size: 2.8rem;
+    font-weight: bold;
+    transition-duration: 1s;
+    border-radius: 25% 10%;
 }
 
 .styleTexte:hover {
-    padding: 3rem 4rem;
+    font-size: 2.5rem;
+}
+
+
+.bouton {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    background-color: #FEBA4D;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 10%;
+
+}
+.bouton:hover{
+    background-color: #FFD698;
 }

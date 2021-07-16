@@ -1,0 +1,132 @@
+{
+	"header":{
+		"title": "Imaging platform for clinical trials",
+		"button": "Video presentation",
+		"linkVideo": "https://www.youtube.com/embed/g4Rr3YKCb-4"
+	},
+	"navbar":{
+		"1": "GaelO",
+		"2": "How it works ?",
+		"3": "Features",
+		"4": "In videos",
+		"5": "About",
+		"6": "Contact",
+		"7": "License"
+	},
+	"gaelo":{
+		"introduction": {
+			"title":"GaelO",
+			"body": "GaelO is a free and open source web app for imaging management in clinical trials."
+		},
+		"body": [
+			"Imaging became a major endpoint in clinical trials.",
+			"To produce high quality trials we need high quality software capable of image anonymization, storage, centralized review and follow-up management tools.",
+			"A lot of imaging CROs are providing such services. Most of them are doing good job but their prices exclude the small / academic research projects that are unable to afford their services.",
+			"The idea of the GaelO project is to make a collaborative web application, free and open source that provide high level services to manage imaging in clinical trials.",
+			"As a free project, we are open to everyone who want to contribute to the ecosystem, we are concerned about continuously enhance the GaelO platform to bring it to new capabilities , so feel free to share your ideas."
+		],
+		"image":{
+			"legend": "DICOM study import interface"
+		}
+	},
+	"features":{
+		"title": "Features",
+		"body":[
+			"Personnal access to a web plateform for imaging trial management",
+			"Multiple study management",
+			"Anonymization and upload of DICOMs without third party app",
+			"5 Roles that could be given to users for each study : Investigator, Monitor, Controller, Supervisor, Reviewer",
+			"Administrator role for management of the plateform",
+			"Central review management with automatic adjudication",
+			"Emails alerts when intervention is required",
+			"Audit Trail of each action in the plateform",
+			"RestAPIs to connect with third party DICOM viewer"
+		],
+		"image":{
+			"legend": "DICOM study import interface"
+		}
+	},
+	"work":{
+		"title": "How it works?",
+		"subtitle":[
+			"GaelO structure",
+			"User’s Role in GaelO defined for each study"
+		]
+	},
+	"videos":{
+		"title": "In videos",
+		"carousel-legend": [
+			"Investigators: Upload from DICOM",
+			"Controller : Quality Control",
+			"Supervisor : Overview",
+			"Supervisor : Statistics module",
+			"Reviewer : Send results and Adjudication",
+			"Example : Study, visit and user creation",
+			"Example : Fiji Integration"
+
+		]
+	},
+
+	"about":{
+		"title": "About",
+		"question": [
+			"How can I get it ?",
+			"I want it but I don’t have any computing skills to install a server",
+			"What images modalities are supported ?",
+			"What is the GNU Affero-GPL Licence ?",
+			"Why GaelO ?",
+			"How did you built it ?"
+		],
+		"answer":[
+			
+			"To use GaelO you need to install it on a webserver with Php, Apache and MySQL. Download the source code, install it on your server following the instruction an fly !",
+			"We are looking for commercial partners to provide GaelO as a hosted, ready to use service.",
+			"GaelO has been primarly designed for PET/CT but almost all modalities should be supported, MRI, PET-CT, CT, Scintigraphy can be uploaded in GaelO. As long as the image is DICOM it should be able to store and share with GaelO. Contact us if you are trying to work with a specific modalities we will adapt the code to extends GaelO to new horizons.",
+			[
+				"The GaelO ‘s licence is ussing the GNU Affero-GPL licence. In few word, GaelO is a Free and Open Source software. You are free to use it for any purpose without any limitation of time or feature.",
+				"You are also free to modify GaelO source code, but you must redistribuate your changes with the same licence, this also apply even if you modify your own private copy of GaelO. Learn more about the AGPL licence on the FSF website"
+			],
+			"GaelO, is named after Salim’s son, Gaël, and O is to wink Orthanc project (as GaelO use it internaly to store dicom) and the Oncopole (french academic cancer center of Toulouse where Salim works).",
+			[
+				"GaelO is built with a combination of free / open sources librairies and software that we want to say a warm thank :",
+				"Orthanc : Free and Open source PACS software",
+				"Cornerstone project for their Javascript DICOM parser",
+				"OHIF for their javascript viewer",
+				"A lot of Javascript libraries : ChartJS, DataTable, JSTree, JsZIP, jQuery, moment, Bootstrap, Chosen, TinyMCE, Alertify, Crypto, AlaSQL, simple statistics",
+				"Several PHP libraires : PHPMailer, monolog, proxy, mysqldump, html2text",
+				"Php and mysql itself"
+			]
+		]
+	},
+	"contact": {
+		"title": "Contact",
+		"body": "GaelO has been developped by Salim Kanoun, nuclear medicine physician in Toulouse (France).",
+		"source": "The source code is available on Github : ",
+		"subtitle": "Contributors",
+		"contributors": [
+			"Salim Kanoun : Project leader and developper.",
+			"Bastien Proudhom and Ludwig Chieng : student internships developpers."
+		],
+		"mail": [
+			"salim.kanoun@gmail.com"
+		]
+	},
+
+	"license":{
+		"title": "License and contributions",
+		"body": [
+			"GaelO platform is AGPL v.3 licenced.",
+			"Contributors, academic or commercial are welcome in the project."
+		]
+	},
+
+	"footer":{
+		"CGU": "2021 | GaelO - Legal notices and general conditions of use",
+		"create": "Site created by BEDIA Julien"
+
+	}
+		
+	
+
+
+}

@@ -1,0 +1,127 @@
+{
+	"header":{
+		"title": "Plateforme d'imagerie pour essais cliniques",
+		"button": "Présentation en vidéo",
+		"linkVideo": "https://www.youtube.com/embed/rEp9pMxCiYg"
+	},
+	"navbar":{
+		"1": "GaelO",
+		"2": "Comment ça marche ?",
+		"3": "Caractéristiques",
+		"4": "En vidéos",
+		"5": "À propos",
+		"6": "Contact",
+		"7": "Licence"
+	},
+	"gaelo":{
+		"introduction": {
+			"title":"GaelO",
+			"body": "GaelO est une application web gratuite et open source pour la gestion de l'imagerie dans les essais cliniques."
+		},
+		"body": [
+			"L'imagerie est devenue un critère d'évaluation majeur dans les essais cliniques.",
+			"Pour produire des essais de haute qualité, nous avons besoin d'un logiciel de haute qualité capable d'anonymisation, de stockage, d'examen centralisé et d'outils de gestion du suivi.",
+			"Beaucoup de CRO d'imagerie fournissent de tels services. La plupart d'entre eux font du bon travail mais leurs prix excluent les petits projets de recherche académiques qui ne peuvent pas se permettre leurs services.",
+			"L'idée du projet GaelO est de faire une application web collaborative, gratuite et open source qui offre des services de haut niveau pour gérer l'imagerie dans les essais cliniques.",
+			"En tant que projet gratuit, nous sommes ouverts à tous ceux qui souhaitent contribuer à l'écosystème, nous sommes soucieux d'améliorer continuellement la plate-forme GaelO pour l'amener à de nouvelles capacités, alors n'hésitez pas à partager vos idées."
+		],
+		"image":{
+			"legend": "Interface d'import d'étude DICOM"
+		}
+	},
+	"features":{
+		"title": "Caractéristiques",
+		"body":[
+			"Accès personnel à une plateforme web pour la gestion des essais d'imageries",
+			"Gestion d'études multiples",
+			"Anonymisation et téléchargement des DICOM sans application tierce",
+			"5 Rôles qui pourraient être attribués aux utilisateurs pour chaque étude : Investigateur, Moniteur, Contrôleur, Superviseur, Réviseur",
+			"Rôle d'administrateur pour la gestion de la plateforme",
+			"Gestion centralisée des avis avec arbitrage automatique",
+			"Alertes par courriel lorsqu'une intervention est requise",
+			"Audit Trail de chaque action dans la plateforme",
+			"RestAPIs pour se connecter avec une visionneuse DICOM tierce"
+		],
+		"image":{
+			"legend": "Interface d'import d'étude DICOM"
+		}
+	},
+	"work":{
+		"title": "Comment ça marche ?",
+		"subtitle":[
+			"Structure de GaelO",
+			"Rôle de l'utilisateur dans GaelO défini pour chaque étude"
+		]
+	},
+	"videos":{
+		"title": "En vidéos",
+		"carousel-legend": [
+			"Upload des études DICOM",
+			"Contrôleur : Contrôle Qualité",
+			"Superviseur : Présentation",
+			"Superviseur : module Statistiques",
+			"Réviseur : Envoyer les résultats et l'arbitrage",
+			"Exemple : Etude, visite et création d'utilisateurs",
+			"Exemple : Intégration des Fidji"
+		]
+	},
+	"about":{
+		"title": "À propos",
+		"question": [
+			"Comment puis-je l'avoir ?",
+			"Je le veux mais je n'ai aucune compétence informatique pour installer un serveur",
+			"Quelles sont les modalités d'images supportées ?",
+			"Qu'est-ce que la licence GNU Affero-GPL ?",
+			"Pourquoi GaelO ?",
+			"Comment l'avez-vous construit ?"
+		],
+		"answer":[
+			
+			"Pour utiliser GaelO vous devez l'installer sur un serveur web avec Php, Apache et MySQL. Téléchargez le code source, installez-le sur votre serveur en suivant les instructions un fly !",
+			"Nous recherchons des partenaires commerciaux pour fournir GaelO en tant que service hébergé et prêt à l'emploi.",
+			"GaelO a été principalement conçu pour le PET/CT mais presque toutes les modalités doivent être prises en charge, l'IRM, le PET-CT, le CT, la scintigraphie peuvent être téléchargés dans GaelO. Tant que l'image est DICOM, elle devrait pouvoir être stockée et partagée avec GaelO Contactez-nous si vous essayez de travailler avec des modalités spécifiques, nous adapterons le code pour étendre GaelO à de nouveaux horizons.",
+			[
+				"La licence de GaelO utilise la licence GNU Affero-GPL. En quelques mots, GaelO est un logiciel libre et open source. Vous êtes libre de l'utiliser à n'importe quelle fin sans aucune limitation de temps ou de fonctionnalité.",
+				"Vous êtes également libre de modifier le code source de GaelO, mais vous devez redistribuer vos modifications avec la même licence, cela s'applique également même si vous modifiez votre propre copie privée de GaelO. En savoir plus sur la licence AGPL sur le site de la FSF"
+			],
+			"GaelO, porte le nom du fils de Salim, Gaël, et O est pour faire un clin d'œil au projet Orthanc (car GaelO l'utilise en interne pour stocker dicom) et l'Oncopole (centre universitaire français de cancérologie de Toulouse où travaille Salim).",
+			[
+				"GaelO est construit avec une combinaison de librairies et de logiciels libres / open sources que nous tenons à remercier chaleureusement :",
+				"Orthanc : Logiciel PACS Gratuit et Open source",
+				"Projet de pierre angulaire pour leur parseur Javascript DICOM",
+				"OHIF pour leur visionneuse javascript",
+				"Beaucoup de librairies Javascript : ChartJS, DataTable, JSTree, JsZIP, jQuery, moment, Bootstrap, Chosen, TinyMCE, Alertify, Crypto, AlaSQL, statistiques simples",
+				"Plusieurs bibliothèques PHP : PHPMailer, monolog, proxy, mysqldump, html2text",
+				"Php et mysql lui-même"
+			]
+		]
+	},
+
+	"contact": {
+		"title": "Contact",
+		"body": "GaelO a été développé par Salim Kanoun, médecin spécialiste en médecine nucléaire à Toulouse (France).",
+		"source": "Le code source est disponible sur github : ",
+		"subtitle": "Contributeurs",
+		"contributors": [
+			"Salim Kanoun : Project leader et developpeur.",
+			"Bastien Proudhom et Ludwig Chieng : stage étudiants en tant que développeurs."
+		],
+		"mail": "Salim Kanoun - salim.kanoun@gmail.com"
+	},
+
+	"license":{
+		"title": "Licence et contributions",
+		"body": [
+			"La plate-forme GaelO est sous licence AGPL v.3.",
+			"Les contributeurs, académiques ou commerciaux sont les bienvenus dans le projet."
+		]
+	},
+
+	"footer":{
+		"CGU": "2021 | GaelO - Mentions légales et conditions générales d'utilisation",
+		"create": "Site réalisé par BEDIA Julien"
+
+	}
+
+
+}

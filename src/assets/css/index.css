@@ -4,9 +4,7 @@
 html, body{
     padding: 0;
     margin: 0px;
-}
-body {
     font-family: 'Maven Pro', sans-serif;
-    color: #353275;
-    overflow: hidden;
+    color: #353375;
+    
 }
