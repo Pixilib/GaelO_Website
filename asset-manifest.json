@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GaelO_Website/static/css/main.93e2f5aa.chunk.css",
+    "main.css": "/GaelO_Website/static/css/main.49d81979.chunk.css",
     "main.js": "/GaelO_Website/static/js/main.980dc723.chunk.js",
     "main.js.map": "/GaelO_Website/static/js/main.980dc723.chunk.js.map",
     "runtime-main.js": "/GaelO_Website/static/js/runtime-main.92270784.js",
@@ -10,7 +10,7 @@
     "static/js/2.1de768fd.chunk.js.map": "/GaelO_Website/static/js/2.1de768fd.chunk.js.map",
     "index.html": "/GaelO_Website/index.html",
     "static/css/2.455652b6.chunk.css.map": "/GaelO_Website/static/css/2.455652b6.chunk.css.map",
-    "static/css/main.93e2f5aa.chunk.css.map": "/GaelO_Website/static/css/main.93e2f5aa.chunk.css.map",
+    "static/css/main.49d81979.chunk.css.map": "/GaelO_Website/static/css/main.49d81979.chunk.css.map",
     "static/js/2.1de768fd.chunk.js.LICENSE.txt": "/GaelO_Website/static/js/2.1de768fd.chunk.js.LICENSE.txt",
     "static/media/admin-1.d1ef74e0.png": "/GaelO_Website/static/media/admin-1.d1ef74e0.png",
     "static/media/authentication-1.f8380f09.png": "/GaelO_Website/static/media/authentication-1.f8380f09.png",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.92270784.js",
     "static/css/2.455652b6.chunk.css",
     "static/js/2.1de768fd.chunk.js",
-    "static/css/main.93e2f5aa.chunk.css",
+    "static/css/main.49d81979.chunk.css",
     "static/js/main.980dc723.chunk.js"
   ]
 }
