@@ -9,16 +9,7 @@ import Navbar from './Navbar.js';
 
 
 function getStyleRow(h, w) {
-    if(w < 768){
-        return{
-            backgroundImage: `url(${Background})`,
-           
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            height: h/2 + 'px',
-            filter: "blur(3px) contrast(80%)"
-        }
-    }
+    
    
     return{
         backgroundImage: `url(${Background})`,

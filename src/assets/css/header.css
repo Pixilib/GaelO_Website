@@ -29,7 +29,7 @@
 @media only screen and (max-width: 768px) {
     .styleTexte {
         position: absolute;
-        top: 20%;
+        top: 40%;
         left: 50%;
         color: #0595A0;
         transform: translateX(-50%);
