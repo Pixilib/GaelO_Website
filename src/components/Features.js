@@ -23,9 +23,10 @@ function Features(props) {
 
     return (
         <Row id="features" className="bg-light p-5 text-center align-items-center border-top" style={getStyleFeatures()}>
+             <h3>{t('features.title')}</h3>
             <Col md={6}>
-                <h3>{t('features.title')}</h3>
-                <p className="text-start">
+               
+                <div className="h-100 align-items-right">
                     {t('features.body.0')}<br />
                     {t('features.body.1')}<br />
                     {t('features.body.2')}<br />
@@ -34,7 +35,7 @@ function Features(props) {
                     {t('features.body.5')}<br />
                     {t('features.body.6')}<br />
                     {t('features.body.7')}<br />
-                </p>
+                </div>
             </Col>
             <Col md={6} className="styleCarouselImage text-center align-items-center">
                 <Carousel className="p-5" variant="dark" interval={null}>

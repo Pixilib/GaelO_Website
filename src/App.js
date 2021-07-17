@@ -6,7 +6,7 @@ import Work from './components/Work.js';
 import Features from './components/Features.js';
 import Video from './components/Video.js';
 import Footer from './components/Footer.js';
-import About from './components/About.js';
+import About from './components/FAQ.js';
 import Contact from './components/Contact.js';
 import License from './components/License.js';
 

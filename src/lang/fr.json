@@ -14,18 +14,15 @@
 		"7": "Licence"
 	},
 	"gaelo":{
-		"introduction": {
-			"title":"GaelO"
-		},
 		"body":  "GaelO est une application web open source pour la gestion de l'imagerie dans les essais cliniques."
 	},
 	"features":{
-		"title": "Caractéristiques",
+		"title": "Fonctionalités",
 		"body":[
 			"Accès personnel à une plateforme web pour la gestion des essais d'imageries",
 			"Gestion d'études multiples",
 			"Anonymisation et téléchargement des DICOM sans application tierce",
-			"5 Roles pour les utilisateurs de chaque étude : Investigateur, Moniteur, Contrôleur, Superviseur, Réviseur",
+			"5 Roles pour les utilisateurs de chaque étude : Investigateur, Moniteur, Contrôleur, Superviseur, Expert",
 			"Role d'administrateur pour la gestion de la plateforme",
 			"Relecture centralisée des examens avec détéction des adjudications",
 			"Alertes par courriel lorsqu'une intervention est requise",
@@ -54,14 +51,13 @@
 			"Exemple : Intégration des Fidji"
 		]
 	},
-	"about":{
+	"faq":{
 		"title": "À propos",
 		"question": [
 			"Comment puis-je l'avoir ?",
 			"Je le veux mais je n'ai aucune compétence informatique pour installer un serveur",
 			"Quelles sont les modalités d'images supportées ?",
 			"Qu'est-ce que la licence GNU Affero-GPL ?",
-			"Pourquoi GaelO ?",
 			"Comment l'avez-vous construit ?"
 		],
 		"answer":[
@@ -73,7 +69,6 @@
 				"La licence de GaelO utilise la licence GNU Affero-GPL. En quelques mots, GaelO est un logiciel libre et open source. Vous êtes libre de l'utiliser à n'importe quelle fin sans aucune limitation de temps ou de fonctionnalité.",
 				"Vous êtes également libre de modifier le code source de GaelO, mais vous devez redistribuer vos modifications avec la même licence, cela s'applique également même si vous modifiez votre propre copie privée de GaelO. En savoir plus sur la licence AGPL sur le site de la FSF"
 			],
-			"GaelO, porte le nom du fils de Salim, Gaël, et O est pour faire un clin d'œil au projet Orthanc (car GaelO l'utilise en interne pour stocker dicom) et l'Oncopole (centre universitaire français de cancérologie de Toulouse où travaille Salim).",
 			[
 				"GaelO est construit avec une combinaison de librairies et de logiciels libres / open sources que nous tenons à remercier chaleureusement :",
 				"Orthanc : Logiciel PACS Gratuit et Open source",
@@ -89,7 +84,7 @@
 	"contact": {
 		"title": "Contact",
 		"body": "GaelO a été développé par Salim Kanoun, médecin spécialiste en médecine nucléaire à Toulouse (France).",
-		"source": "Le code source est disponible sur github : ",
+		"source": "GitHub : ",
 		"subtitle": "Contributeurs",
 		"contributors": [
 			"Salim Kanoun : Project leader et developpeur.",

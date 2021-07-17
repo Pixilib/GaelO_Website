@@ -16,7 +16,6 @@ function Gaelo(props) {
     return (
         <Row id="gaelo" className="bg-light p-5" style={getStyleGaelo()}>
             <Col md={6} >
-                <h3 className="text-center">{t('gaelo.introduction.title')}</h3>
                 <div className="h-100 d-flex align-items-center">
                     {t('gaelo.body')}
                 </div>
