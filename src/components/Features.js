@@ -5,7 +5,6 @@ import '../assets/css/features.css';
 import slide1 from '../assets/images/dicomimport.png';
 import slide2 from '../assets/images/patientpanel.png';
 import slide3 from '../assets/images/admin-1.png';
-import slide4 from '../assets/images/visitinterface2.png';
 import slide5 from '../assets/images/authentication-1.png';
 import slide6 from '../assets/images/gaelo_stat.png';
 import slide7 from '../assets/images/gaelo_stat2.png';
@@ -35,7 +34,6 @@ function Features(props) {
                     {t('features.body.5')}<br />
                     {t('features.body.6')}<br />
                     {t('features.body.7')}<br />
-                    {t('features.body.8')}
                 </p>
             </Col>
             <Col md={6} className="styleCarouselImage text-center align-items-center">
@@ -48,9 +46,6 @@ function Features(props) {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="d-block w-100" src={slide3} alt="3 slide" style={{width:"80%",height:"80%"}} />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="d-block w-100" src={slide4} alt="4 slide" style={{width:"80%",height:"80%"}} />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="d-block w-100" src={slide5} alt="5 slide" style={{width:"80%",height:"80%"}} />

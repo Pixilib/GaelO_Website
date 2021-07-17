@@ -17,8 +17,7 @@ function License(props) {
         <Row id="license" className="bg-light p-5 text-center align-items-center border-top" style={getStyleLicense()}>
             <Col className="text-center align-items-center w-50">
                 <h3>{t('license.title')}</h3>
-                <p>{t('license.body.0')}</p>
-                <p>{t('license.body.1')}</p>
+                <p>{t('license.body')}</p>
             </Col>
         </Row>
     );

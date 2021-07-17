@@ -15,16 +15,9 @@
 	},
 	"gaelo":{
 		"introduction": {
-			"title":"GaelO",
-			"body": "GaelO is a free and open source web app for imaging management in clinical trials."
+			"title":"GaelO"
 		},
-		"body": [
-			"Imaging became a major endpoint in clinical trials.",
-			"To produce high quality trials we need high quality software capable of image anonymization, storage, centralized review and follow-up management tools.",
-			"A lot of imaging CROs are providing such services. Most of them are doing good job but their prices exclude the small / academic research projects that are unable to afford their services.",
-			"The idea of the GaelO project is to make a collaborative web application, free and open source that provide high level services to manage imaging in clinical trials.",
-			"As a free project, we are open to everyone who want to contribute to the ecosystem, we are concerned about continuously enhance the GaelO platform to bring it to new capabilities , so feel free to share your ideas."
-		],
+		"body": "GaelO is a free and open source web app for imaging management in clinical trials.",
 		"image":{
 			"legend": "DICOM study import interface"
 		}
@@ -107,17 +100,14 @@
 			"Salim Kanoun : Project leader and developper.",
 			"Bastien Proudhom and Ludwig Chieng : student internships developpers."
 		],
-		"mail": [
-			"salim.kanoun@gmail.com"
-		]
+		"mail": "salim.kanoun@gmail.com"
+		
 	},
 
 	"license":{
 		"title": "License and contributions",
-		"body": [
-			"GaelO platform is AGPL v.3 licenced.",
-			"Contributors, academic or commercial are welcome in the project."
-		]
+		"body": "GaelO platform is AGPL v.3 licenced."
+		
 	},
 
 	"footer":{

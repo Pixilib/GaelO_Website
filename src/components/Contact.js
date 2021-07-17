@@ -21,7 +21,7 @@ function Contact(props) {
                 <p>{t('contact.source')} <a href="https://github.com/salimkanoun/GaelO">https://github.com/salimkanoun/GaelO</a></p>
                 <h4>{t('contact.subtitle')}</h4>
                 <p>
-                    <p>{t('contact.contributors.0')} - {t('contact.mail.0')}</p>
+                    <p>{t('contact.contributors.0')} - {t('contact.mail')}</p>
                     <p>{t('contact.contributors.1')}</p>
                 </p>
             </Col>

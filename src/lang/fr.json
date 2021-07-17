@@ -15,19 +15,9 @@
 	},
 	"gaelo":{
 		"introduction": {
-			"title":"GaelO",
-			"body": "GaelO est une application web gratuite et open source pour la gestion de l'imagerie dans les essais cliniques."
+			"title":"GaelO"
 		},
-		"body": [
-			"L'imagerie est devenue un critère d'évaluation majeur dans les essais cliniques.",
-			"Pour produire des essais de haute qualité, nous avons besoin d'un logiciel de haute qualité capable d'anonymisation, de stockage, d'examen centralisé et d'outils de gestion du suivi.",
-			"Beaucoup de CRO d'imagerie fournissent de tels services. La plupart d'entre eux font du bon travail mais leurs prix excluent les petits projets de recherche académiques qui ne peuvent pas se permettre leurs services.",
-			"L'idée du projet GaelO est de faire une application web collaborative, gratuite et open source qui offre des services de haut niveau pour gérer l'imagerie dans les essais cliniques.",
-			"En tant que projet gratuit, nous sommes ouverts à tous ceux qui souhaitent contribuer à l'écosystème, nous sommes soucieux d'améliorer continuellement la plate-forme GaelO pour l'amener à de nouvelles capacités, alors n'hésitez pas à partager vos idées."
-		],
-		"image":{
-			"legend": "Interface d'import d'étude DICOM"
-		}
+		"body":  "GaelO est une application web open source pour la gestion de l'imagerie dans les essais cliniques."
 	},
 	"features":{
 		"title": "Caractéristiques",
@@ -35,12 +25,11 @@
 			"Accès personnel à une plateforme web pour la gestion des essais d'imageries",
 			"Gestion d'études multiples",
 			"Anonymisation et téléchargement des DICOM sans application tierce",
-			"5 Rôles qui pourraient être attribués aux utilisateurs pour chaque étude : Investigateur, Moniteur, Contrôleur, Superviseur, Réviseur",
-			"Rôle d'administrateur pour la gestion de la plateforme",
-			"Gestion centralisée des avis avec arbitrage automatique",
+			"5 Roles pour les utilisateurs de chaque étude : Investigateur, Moniteur, Contrôleur, Superviseur, Réviseur",
+			"Role d'administrateur pour la gestion de la plateforme",
+			"Relecture centralisée des examens avec détéction des adjudications",
 			"Alertes par courriel lorsqu'une intervention est requise",
-			"Audit Trail de chaque action dans la plateforme",
-			"RestAPIs pour se connecter avec une visionneuse DICOM tierce"
+			"Audit Trail de chaque action dans la plateforme"
 		],
 		"image":{
 			"legend": "Interface d'import d'étude DICOM"
@@ -106,15 +95,12 @@
 			"Salim Kanoun : Project leader et developpeur.",
 			"Bastien Proudhom et Ludwig Chieng : stage étudiants en tant que développeurs."
 		],
-		"mail": "Salim Kanoun - salim.kanoun@gmail.com"
+		"mail": "salim.kanoun@gmail.com"
 	},
 
 	"license":{
 		"title": "Licence et contributions",
-		"body": [
-			"La plate-forme GaelO est sous licence AGPL v.3.",
-			"Les contributeurs, académiques ou commerciaux sont les bienvenus dans le projet."
-		]
+		"body": "La plate-forme GaelO est sous licence AGPL v.3."
 	},
 
 	"footer":{

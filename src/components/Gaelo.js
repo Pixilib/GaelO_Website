@@ -1,40 +1,31 @@
-import {Row, Col} from "../../node_modules/react-bootstrap";
+import { Row, Col } from "../../node_modules/react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 function getStyleGaelo() {
-   
+
     return {
         color: "#353275"
-       
+
     };
 }
 function Gaelo(props) {
 
     const { t } = useTranslation();
-    
+
 
     return (
         <Row id="gaelo" className="bg-light p-5" style={getStyleGaelo()}>
-            <Col md={6} className="text-center align-items-center">
-                
-                <h3>{t('gaelo.introduction.title')}</h3>
-                <p>{t('gaelo.introduction.body')}</p>
-                <p className="text-start">
-                    <p><span className="ps-4"></span>{t('gaelo.body.0')}</p>
-                    <p><span className="ps-4"></span>{t('gaelo.body.1')}</p>
-                    <p><span className="ps-4"></span>{t('gaelo.body.2')}</p>
-                    <p><span className="ps-4"></span>{t('gaelo.body.3')}</p>
-                    <p><span className="ps-4"></span>{t('gaelo.body.4')}</p>
-                </p>
-                
+            <Col md={6} >
+                <h3 className="text-center">{t('gaelo.introduction.title')}</h3>
+                <div className="h-100 d-flex align-items-center">
+                    {t('gaelo.body')}
+                </div>
             </Col>
             <Col md={6} className="text-center align-items-center">
-                <iframe className="embed-responsive-item d-block w-100" src={t('header.linkVideo')} style={{width:"100%",height:"360px"}} title="Video presentation Gaelo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="embed-responsive-item d-block w-100" src={t('header.linkVideo')} style={{ width: "100%", height: "360px" }} title="Video presentation Gaelo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </Col>
-            
-            
         </Row>
     );
-  }
-  
-  export default Gaelo;
+}
+
+export default Gaelo;
