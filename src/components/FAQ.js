@@ -18,7 +18,7 @@ function About(props) {
         <Row id="about" className="bg-light p-5 text-center align-items-center border-top" style={getStyleAbout()}>
             <h3>{t('faq.title')}</h3>
             <Col className="p-5">
-                <Row className="text-start align-items-center">
+                <Row className="text-start">
                     <Col md={4}>
                         <Card border="dark">
                             <Card.Header>{t('faq.question.0')}</Card.Header>
@@ -51,7 +51,7 @@ function About(props) {
                     </Col>
                 </Row>
                 <br/>
-                <Row className="text-start align-items-center">
+                <Row className="text-start">
                     <Col md={4} >
                         <Card border="dark">
                             <Card.Header>{t('faq.question.3')}</Card.Header>

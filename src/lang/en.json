@@ -78,7 +78,8 @@
 				"Stone of Orthanc", 
 				"OHIF for their javascript viewer",
 				"A lot of Javascript libraries : Cornerstone, ChartJS, DataTable, JSTree, JsZIP, jQuery, moment, Bootstrap, Chosen, TinyMCE, Alertify, Crypto, AlaSQL, simple statistics",
-				"Several PHP libraires : PHPMailer, monolog, proxy, mysqldump, html2text"
+				"Several PHP libraires : PHPMailer, monolog, proxy, mysqldump, html2text",
+				"Php and mysql"
 			]
 		]
 	},
