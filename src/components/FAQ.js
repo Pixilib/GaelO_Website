@@ -52,30 +52,17 @@ function About(props) {
                 </Row>
                 <br/>
                 <Row className="text-start">
-                    <Col md={4} >
+                    <Col md={4}>
                         <Card border="dark">
                             <Card.Header>{t('faq.question.3')}</Card.Header>
                             <Card.Body>
                                 <Card.Text>
-                                    <p><span className="ps-4"></span>{t('faq.answer.3.0')}</p>
-                                    <p><span className="ps-4"></span>{t('faq.answer.3.1')}</p>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card border="dark">
-                            <Card.Header>{t('faq.question.4')}</Card.Header>
-                            <Card.Body>
-                                <Card.Text>
                                     <ul>
-                                        <li><span className="ps-4"></span>{t('faq.answer.4.0')}</li>
-                                        <li>- {t('faq.answer.4.1')}</li>
-                                        <li>- {t('faq.answer.4.2')}</li>
-                                        <li>- {t('faq.answer.4.3')}</li>
-                                        <li>- {t('faq.answer.4.4')}</li>
-                                        <li>- {t('faq.answer.4.5')}</li>
-                                        <li>- {t('faq.answer.4.6')}</li>
+                                        <li><span className="ps-4"></span>{t('faq.answer.3.0')}</li>
+                                        <li>- {t('faq.answer.3.1')}</li>
+                                        <li>- {t('faq.answer.3.2')}</li>
+                                        <li>- {t('faq.answer.3.3')}</li>
+                                        <li>- {t('faq.answer.3.4')}</li>
                                     </ul>
                                 </Card.Text>
                             </Card.Body>

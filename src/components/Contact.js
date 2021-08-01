@@ -19,7 +19,7 @@ function Contact(props) {
                 <h3>{t('contact.title')}</h3>
                 <p>{t('contact.body')}</p>
                 <a href={"mailto:"+t('contact.mail')}>{t('contact.mail')}</a>
-                <p>{t('contact.source')} <a href="https://github.com/salimkanoun/GaelO">https://github.com/salimkanoun/GaelO</a></p>
+                <p>{t('contact.source')} <a href="https://github.com/pixilib/GaelO">https://github.com/pixilib/GaelO</a></p>
             </Col>
         </Row>
     );

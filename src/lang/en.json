@@ -55,31 +55,23 @@
 	},
 
 	"faq":{
-		"title": "About",
+		"title": "FAQ",
 		"question": [
 			"How can I get it ?",
-			"I want it but I don’t have any computing skills to install a server",
+			"Do you provide an offer of service ?",
 			"What images modalities are supported ?",
-			"What is the GNU Affero-GPL Licence ?",
 			"How did you built it ?"
 		],
 		"answer":[
-			
-			"To use GaelO you can choose to install it to the infrastructure of your choice",
-			"Contact us to get an installed GaelO server for the needs of your trial",
-			"GaelO has been primarly designed for PET/CT but almost all modalities should be supported, MRI, PET-CT, CT, Scintigraphy can be uploaded in GaelO. As long as the image is DICOM it should be able to store and share with GaelO. Contact us if you are trying to work with a specific modalities we will adapt the code to extends GaelO to new horizons.",
+			"GaelO backend is open source, you can use it following the developper documentation",
+			"Yes, get in touch to get more details",
+			"All kind of DICOM images are supported (Radiology, Nuclear Medicine, Radiotherapy)",
 			[
-				"The GaelO ‘s licence is ussing the GNU Affero-GPL licence. In few word, GaelO is a Free and Open Source software. You are free to use it for any purpose without any limitation of time or feature.",
-				"You are also free to modify GaelO source code, but you must redistribuate your changes with the same licence, this also apply even if you modify your own private copy of GaelO. Learn more about the AGPL licence on the FSF website"
-			],
-			[
-				"GaelO is built with a combination of free / open sources librairies and software that we want to say a warm thank :",
-				"Orthanc : Free and Open source PACS software",
-				"Stone of Orthanc", 
-				"OHIF for their javascript viewer",
-				"A lot of Javascript libraries : Cornerstone, ChartJS, DataTable, JSTree, JsZIP, jQuery, moment, Bootstrap, Chosen, TinyMCE, Alertify, Crypto, AlaSQL, simple statistics",
-				"Several PHP libraires : PHPMailer, monolog, proxy, mysqldump, html2text",
-				"Php and mysql"
+				"GaelO is build using a combination of free software for which GaelO contributes, notably :",
+				"Orthanc : Free and Open source PACS (GPL)",
+				"DcmJS (MIT)",
+				"OHIF (MIT)",
+				"Stone Of Orthanc (AGPL, included without change of source code)"
 			]
 		]
 	},
@@ -103,9 +95,9 @@
 	},
 
 	"footer":{
-		"CGU": "2021 | GaelO - Legal notices and general conditions of use",
-		"create": "Site created by BEDIA Julien"
-
+		"mentions" : "Legal Mentions",
+		"CGU": "Terms of Use",
+		"author": "Created by BEDIA Julien"
 	}
 		
 	

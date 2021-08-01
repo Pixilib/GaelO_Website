@@ -52,31 +52,23 @@
 		]
 	},
 	"faq":{
-		"title": "À propos",
+		"title": "FAQ",
 		"question": [
-			"Comment puis-je l'avoir ?",
-			"Je le veux mais je n'ai aucune compétence informatique pour installer un serveur",
+			"Comment l'utiliser",
+			"Y a t'il une offre de service pour GaelO",
 			"Quelles sont les modalités d'images supportées ?",
-			"Qu'est-ce que la licence GNU Affero-GPL ?",
 			"Comment l'avez-vous construit ?"
 		],
 		"answer":[
-			
-			"Pour utiliser GaelO vous devez l'installer sur un serveur web avec Php, Apache et MySQL. Téléchargez le code source, installez-le sur votre serveur en suivant les instructions un fly !",
-			"Nous recherchons des partenaires commerciaux pour fournir GaelO en tant que service hébergé et prêt à l'emploi.",
-			"GaelO a été principalement conçu pour le PET/CT mais presque toutes les modalités doivent être prises en charge, l'IRM, le PET-CT, le CT, la scintigraphie peuvent être téléchargés dans GaelO. Tant que l'image est DICOM, elle devrait pouvoir être stockée et partagée avec GaelO Contactez-nous si vous essayez de travailler avec des modalités spécifiques, nous adapterons le code pour étendre GaelO à de nouveaux horizons.",
+			"La partie serveur de GaelO est open source, vous pouvez l'utiliser en suivant la documantion developpeur",
+			"Oui, contactez nous pour en savoir plus",
+			"Toutes les images DICOMs sont supportées (Radiologie, Medecine nuclaire, Radiotherapie...)",
 			[
-				"La licence de GaelO utilise la licence GNU Affero-GPL. En quelques mots, GaelO est un logiciel libre et open source. Vous êtes libre de l'utiliser à n'importe quelle fin sans aucune limitation de temps ou de fonctionnalité.",
-				"Vous êtes également libre de modifier le code source de GaelO, mais vous devez redistribuer vos modifications avec la même licence, cela s'applique également même si vous modifiez votre propre copie privée de GaelO. En savoir plus sur la licence AGPL sur le site de la FSF"
-			],
-			[
-				"GaelO est construit avec une combinaison de librairies et de logiciels libres / open sources que nous tenons à remercier chaleureusement :",
-				"Orthanc : Logiciel PACS Gratuit et Open source",
-				"Projet de pierre angulaire pour leur parseur Javascript DICOM",
-				"OHIF pour leur visionneuse javascript",
-				"Beaucoup de librairies Javascript : ChartJS, DataTable, JSTree, JsZIP, jQuery, moment, Bootstrap, Chosen, TinyMCE, Alertify, Crypto, AlaSQL, statistiques simples",
-				"Plusieurs bibliothèques PHP : PHPMailer, monolog, proxy, mysqldump, html2text",
-				"Php et mysql lui-même"
+				"GaelO est construit avec une combinaison de librairies et de logiciels libres / open sources auquel GaelO contribue, notamment :",
+				"Orthanc : Logiciel PACS Gratuit et Open source (GPL)",
+				"DcmJS (MIT)",
+				"OHIF (MIT)",
+				"Stone Of Orthanc (AGPL, inclus sans modification de code source)"
 			]
 		]
 	},
@@ -99,8 +91,9 @@
 	},
 
 	"footer":{
-		"CGU": "2021 | GaelO - Mentions légales et conditions générales d'utilisation",
-		"create": "Site réalisé par BEDIA Julien"
+		"mentions" : "Mentions légales",
+		"CGU": "Conditions Générales d'Utilisation",
+		"author": "Site réalisé par BEDIA Julien"
 
 	}
 
