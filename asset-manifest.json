@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/GaelO_Website/static/css/main.f475c7ff.chunk.css",
-    "main.js": "/GaelO_Website/static/js/main.1c68785a.chunk.js",
-    "main.js.map": "/GaelO_Website/static/js/main.1c68785a.chunk.js.map",
+    "main.js": "/GaelO_Website/static/js/main.170c1caf.chunk.js",
+    "main.js.map": "/GaelO_Website/static/js/main.170c1caf.chunk.js.map",
     "runtime-main.js": "/GaelO_Website/static/js/runtime-main.8b6d4781.js",
     "runtime-main.js.map": "/GaelO_Website/static/js/runtime-main.8b6d4781.js.map",
     "static/css/2.3ab4f688.chunk.css": "/GaelO_Website/static/css/2.3ab4f688.chunk.css",
@@ -24,7 +24,7 @@
     "static/media/gaelo_step.b4953b07.png": "/GaelO_Website/static/media/gaelo_step.b4953b07.png",
     "static/media/investigator-1.92ed8182.png": "/GaelO_Website/static/media/investigator-1.92ed8182.png",
     "static/media/main-1.3c932fd7.png": "/GaelO_Website/static/media/main-1.3c932fd7.png",
-    "static/media/mentions-legales.8ee68886.md": "/GaelO_Website/static/media/mentions-legales.8ee68886.md",
+    "static/media/mentions-legales.15501a6b.md": "/GaelO_Website/static/media/mentions-legales.15501a6b.md",
     "static/media/patientpanel.7975019b.png": "/GaelO_Website/static/media/patientpanel.7975019b.png"
   },
   "entrypoints": [
@@ -32,6 +32,6 @@
     "static/css/2.3ab4f688.chunk.css",
     "static/js/2.ffdd807f.chunk.js",
     "static/css/main.f475c7ff.chunk.css",
-    "static/js/main.1c68785a.chunk.js"
+    "static/js/main.170c1caf.chunk.js"
   ]
 }

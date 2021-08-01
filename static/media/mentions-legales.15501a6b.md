@@ -14,7 +14,7 @@ L’édition et la direction de la publication du site gaelo.fr est assurée par
 
 L'hébergeur du site gaelo.fr est la Société GitHub Pages, dont le siège social est situé au GitHub, Inc. 88 Colin P Kelly Jr St San Francisco, CA 94107 United States  , avec le numéro de téléphone : +1 (877) 448-4820.
 
-### Article 3 : Accès au site
+## Article 3 : Accès au site
 
 Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant d’une nécessité de maintenance.
 En cas de modification, interruption ou suspension des services le site gaelo.fr ne saurait être tenu responsable.
