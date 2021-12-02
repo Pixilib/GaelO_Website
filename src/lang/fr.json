@@ -89,15 +89,22 @@
 		"author": "Site réalisé par BEDIA Julien"
 
 	},
-	"ourviews":{
-		"card" : {
-			"Efficacity": [
-				""
-			]
-		}
-			
 
-		}
-	
+	"ourviews":{
+		"title":"Nôtre vision",
+		"body1":" GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académiques. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
+		"body2":"Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
+		"subtitle":"Nos clés de succès"
+		
+	},
+
+	"card":{
+		"keyword": [
+			0,1,2,3,4
+		],
+		"definition":[
+			0,1,2,3,4
+		]
+	}
 
 }

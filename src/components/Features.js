@@ -1,6 +1,6 @@
 import {Row, Col, Carousel} from "../../node_modules/react-bootstrap";
 import { useTranslation } from "react-i18next";
-import '../assets/css/features.css';
+import '../assets/css/index.css';
 
 import slide1 from '../assets/images/dicomimport.png';
 import slide2 from '../assets/images/patientpanel.png';

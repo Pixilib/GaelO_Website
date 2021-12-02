@@ -1,3 +1,4 @@
+/* -- Global -- */
 * {
     box-sizing: border-box;
 }
@@ -8,3 +9,190 @@ html, body{
     color: #353375;
     
 }
+
+/* -- Navbar --*/
+
+.StyleLang {
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    height: 26px;
+    width: 50px;
+}
+.navbarPerso {
+    padding: 0.4rem 1.0rem;
+    font-size: 1.5rem;
+    
+}
+
+#imageLogo {
+    max-width: 70px;
+}
+
+.test {
+    padding-left: 15px;
+}
+
+/* Hamburger style */
+.hamburger {
+    display: none;
+    overflow: visible;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+/* style classic for other item hover etc */
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item {
+    margin-left: 1.0rem;
+}
+
+.navbar-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000; 
+}
+
+.navbar-link:hover{
+    color: #FFD698;
+}
+
+.navbar-active {
+    color: #FFD698;
+}
+/* -- Header --*/
+.styleTexte {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.background {
+    background: linear-gradient(90deg, #353275, #0495A0);
+  }
+
+
+#styleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* -- OurViews --*/
+
+/* -- Solution --*/
+
+/* -- Service --*/
+
+/* -- Expertise -- */
+
+/* -- Contact -- */
+
+/* -- Modal ? --*/
+
+/* -- Vidéo ? -- */ 
+
+/*-- A garder? --*/ 
+.styleCarouselImage {
+    width: 50%;
+    position: relative;
+}
+@media only screen and (max-width: 768px) {
+    .styleCarouselImage {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.styleCarouselVideo {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+    .styleCarouselVideo {
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* ---- Responsive   ---- */ 
+
+/* -- Header --*/
+@media only screen and (max-width: 768px) {
+    .styleTexte {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        color: #0595A0;
+        transform: translateX(-50%);
+        transition: 1s;
+        font-size: 0.8rem;
+        font-weight: bold;
+        transition-duration: 1s;
+        border-radius: 25% 10%;
+    }
+    
+    .styleTexte:hover {
+        font-size: 1rem;
+    }
+
+}
+ /*-- Navbar --*/
+ @media only screen and (max-width: 768px) {
+    .navbar-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #FEBA4D;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-menu.active {
+        left: 0;
+    }
+
+    .navbar-item {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+

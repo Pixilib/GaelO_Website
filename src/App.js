@@ -10,6 +10,7 @@ import About from './components/FAQ.js';
 import Contact from './components/Contact.js';
 import License from './components/License.js';
 
+
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
