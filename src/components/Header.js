@@ -1,46 +1,71 @@
-import {Row, Figure} from "../../node_modules/react-bootstrap";
+import { Row, Figure, Col, Container, Button, Modal } from "../../node_modules/react-bootstrap";
 import useWindowDimensions from "../Fonctions/getDimension.js";
-import Background from '../assets/images/background.png';
+import Background from '../assets/images/backgroundblue.png';
 import '../assets/css/header.css';
 import { useTranslation } from "react-i18next";
-import logoPrincipal from '../assets/images/gaelo-logo.svg';
-
+import logoPrincipal from '../assets/images/gaelo-logo-white.png';
 import Navbar from './Navbar.js';
-
+//import Modal from "react-responsive-modal";
+import ReactPlayer from "react-player";
+import { render } from "@testing-library/react";
+import React, { useState } from "react";
 
 function getStyleRow(h, w) {
-    
-   
-    return{
-        backgroundImage: `url(${Background})`,
+
+    return {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         height: h + 'px',
         width: "100%",
-        filter: "blur(1px) contrast(80%)"
+        //filter: "contrast(80%)"
     }
 
 }
 
+function VideoModal(props) {
+    const { t } = useTranslation();
+    return (
+        <Modal
+          {...props}
+          size="xl"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+        >
+         
+          <Modal.Body>
+            <ReactPlayer url={t('header.linkVideo')} width="100%"/>
+          </Modal.Body>
 
-function Header(props) {
+        </Modal>
+      );
+    }
+
+const Header = (props) => {
 
     const { t } = useTranslation();
 
+    const [modalShow, setModalShow] = React.useState(false);
 
-
-    return (
-        <Row id="header" className="bg-light">
-            <div style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)}></div>
-            <div className="text-center align-items-center">
-                
-                <Navbar /> 
-                <h2 className="styleTexte bg-light p-5">{t('header.title')}</h2>
-                <Figure.Image id="imageLogo" src={logoPrincipal} className="styleImage" alt="Image logo Principal of Gaelo"/>
-            </div>
-            
-        </Row>
+    return (  
+        <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} id="styleContainer" className="text-center justify-content">
+            <Row >
+                <Col>
+                    <Figure.Image id="styleLogo" className="text-center" src="/gaelo-logo-white.png" />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <h2 className="styleTexte">{t('header.title')}</h2>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <img src="logo-video.png" className="styleTexte" variant ="primary" onClick={()=>setModalShow(true)} style={{ maxWidth: '250px' }} ></img>
+                    <VideoModal show={modalShow} onHide={()=>setModalShow(false)}/>
+                </Col>
+            </Row>
+        </Container>
     );
-  }
-  
-  export default Header;
+}
+
+export default Header;

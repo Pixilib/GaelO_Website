@@ -1,31 +1,27 @@
-import React, { ChangeEvent} from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Language } from '../enums/Language';
+import i18next from "i18next";
 
 import '../assets/css/lang.css';
 
 
-const Lang = (props : any) => {
-    
+
+
+const Lang = (props: any) => {
+
+    const [lang, setLang] = useState('EN');
+
+
     let changeLanguage = (event: ChangeEvent<HTMLSelectElement>) => {
         let language = event.target.value;
- 
-        switch (language) {
-            case Language.EN:
-                
-                props.onLanguageChange(Language.EN);
-                break;
-            case Language.FR:
-            default:
-                
-                props.onLanguageChange(Language.FR);
-                break;
-        }
+        setLang(language);
+        i18next.changeLanguage(language)
     }
- 
+
     return (
         <div>
-            <div className="StyleLang">
-                <select value={props.language} name="language" onChange={changeLanguage}>
+            <div >
+                <select value={lang} name="language" onChange={changeLanguage}>
                     <option value={Language.FR}>FR</option>
                     <option value={Language.EN}>EN</option>
                 </select>
@@ -33,5 +29,5 @@ const Lang = (props : any) => {
         </div>
     )
 }
- 
+
 export default Lang;

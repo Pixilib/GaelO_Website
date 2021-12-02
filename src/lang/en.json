@@ -5,13 +5,12 @@
 		"linkVideo": "https://www.youtube.com/embed/g4Rr3YKCb-4"
 	},
 	"navbar":{
-		"1": "GaelO",
-		"2": "How it works ?",
-		"3": "Features",
-		"4": "In videos",
-		"5": "About",
-		"6": "Contact",
-		"7": "License"
+		"1": "Our vision",
+		"2": "Solution",
+		"3": "Service",
+		"4": "Expertise",
+		"5": "Team",
+		"6": "Contact us"
 	},
 	"gaelo":{
 		"body": "GaelO is a free and open source web app for imaging management in clinical trials."
@@ -99,6 +98,8 @@
 		"CGU": "Terms of Use",
 		"author": "Created by BEDIA Julien"
 	}
+
+
 		
 	
 

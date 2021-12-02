@@ -1,5 +1,6 @@
 import {Row, Col, Card} from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import fr from "../lang/fr.json"
 
 function getStyleAbout(h, w) {
    
@@ -9,65 +10,38 @@ function getStyleAbout(h, w) {
     };
 }
 
-function About(props) {
+const About = (props) => {
 
     const { t } = useTranslation();
-    
+
+    const generateCard = () =>{
+        let faqNumber = [...Array(fr.faq.question.length).keys()];
+
+        let componentArray = faqNumber.map( (item) => { 
+            return (
+                <Card key={'cardFaq'+item} border="dark">
+                    <Card.Header>{t('faq.question.'+item)}</Card.Header>
+                    <Card.Body>
+                        <Card.Text>
+                            <span className="ps-4">
+                                {t('faq.answer.'+item)}
+                            </span>
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            )
+            
+         })
+
+         return componentArray
+    }     
 
     return (
         <Row id="about" className="bg-light p-5 text-center align-items-center border-top" style={getStyleAbout()}>
             <h3>{t('faq.title')}</h3>
             <Col className="p-5">
                 <Row className="text-start">
-                    <Col md={4}>
-                        <Card border="dark">
-                            <Card.Header>{t('faq.question.0')}</Card.Header>
-                            <Card.Body>
-                                <Card.Text>
-                                    <span className="ps-4"></span>{t('faq.answer.0')}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card border="dark">
-                            <Card.Header>{t('faq.question.1')}</Card.Header>
-                            <Card.Body>
-                                <Card.Text>
-                                    <span className="ps-4"></span>{t('faq.answer.1')}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={4}>
-                        <Card border="dark">
-                            <Card.Header>{t('faq.question.2')}</Card.Header>
-                            <Card.Body>
-                                <Card.Text>
-                                    <span className="ps-4"></span>{t('faq.answer.2')}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-                <br/>
-                <Row className="text-start">
-                    <Col md={4}>
-                        <Card border="dark">
-                            <Card.Header>{t('faq.question.3')}</Card.Header>
-                            <Card.Body>
-                                <Card.Text>
-                                    <ul>
-                                        <li><span className="ps-4"></span>{t('faq.answer.3.0')}</li>
-                                        <li>- {t('faq.answer.3.1')}</li>
-                                        <li>- {t('faq.answer.3.2')}</li>
-                                        <li>- {t('faq.answer.3.3')}</li>
-                                        <li>- {t('faq.answer.3.4')}</li>
-                                    </ul>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                    {generateCard()}
                 </Row>
             </Col>
         </Row>

@@ -1,23 +1,28 @@
 import '../assets/css/navbar.css';
 import { useTranslation } from "react-i18next";
+import Lang from './Lang';
+import { Col, Container, Figure, Nav, Navbar } from 'react-bootstrap';
+import logoPrincipal from '../assets/images/logoPrincipal.png';
 
 
-function NavigationBar(props) {
+function NavBar(props) {
 
 
+    
     window.addEventListener('scroll', (event) => {
-        var elementHeader = document.getElementById("header").offsetHeight * 50/100;
-        var navbar = document.getElementById("navbar");
+       // var elementHeader = document.getElementById("Gaelo").offsetHeight * 50/100;
+        /*var navbar = document.getElementById("navbar");
       
         if(window.pageYOffset > elementHeader){
-            navbar.style.backgroundColor = "#314053";
-            navbar.style.height = "4rem";
-            navbar.style.fontSize = "1.2rem";
+            navbar.style.backgroundColor = " #ffffff ";
+            navbar.style.height = "2rem";
+            navbar.style.fontSize = "1.0rem";
+            navbar.style.width = "100%";
         }
         if(window.pageYOffset < elementHeader){
             navbar.style.backgroundColor = "";
-            navbar.style.height = "auto";
-            navbar.style.fontSize = "1.5rem";
+            navbar.style.height = "3rem";
+            navbar.style.fontSize = "1.3rem";
            
 
         }
@@ -55,20 +60,21 @@ function NavigationBar(props) {
         if(window.pageYOffset > elementLicense){
             activeItem("navLicense");
         }
-
+        */
 
        
 
     });
+    
 
-    function activeItem(item){
+    function activeItem(item) {
         var navLink = document.getElementsByClassName('navbar-link');
-        for(var i = 0; i < navLink.length; i++){
+        for (var i = 0; i < navLink.length; i++) {
             navLink[i].classList.remove("navbar-active");
         }
         document.getElementById(item).classList.add("navbar-active");
     }
-   
+
     var mobileMenu = () => {
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".navbar-menu");
@@ -83,48 +89,45 @@ function NavigationBar(props) {
         navMenu.classList.remove("active");
 
         var navLink = document.getElementsByClassName('navbar-link');
-        for(var i = 0; i < navLink.length; i++){
+        for (var i = 0; i < navLink.length; i++) {
             navLink[i].classList.remove("navbar-active");
         }
         e.target.classList.add("navbar-active");
     }
-    
-   
+
+
     const { t } = useTranslation();
 
     return (
-        <nav id="navbar" className="navbarPerso fixed-top justify-content-end">
-            <ul className="navbar-menu">
-                <li className="navbar-item">
-                    <a id="navGaelo" href="#gaelo" className="navbar-link" onClick={closeMenu}>{t('navbar.1')}</a>
-                </li>
-                <li className="navbar-item">
-                    <a id="navWork" href="#work" className="navbar-link" onClick={closeMenu}>{t('navbar.2')}</a>
-                </li>
-                <li className="navbar-item">
-                    <a id="navFeatures" href="#features" className="navbar-link" onClick={closeMenu}>{t('navbar.3')}</a>
-                </li>
-                <li className="navbar-item">
-                    <a id="navVideos" href="#videos" className="navbar-link" onClick={closeMenu}>{t('navbar.4')}</a>
-                </li>
-                <li className="navbar-item">
-                    <a id="navAbout" href="#about" className="navbar-link" onClick={closeMenu}>{t('navbar.5')}</a>
-                </li>
-                <li className="navbar-item">
-                    <a id="navContact" href="#contact" className="navbar-link" onClick={closeMenu}>{t('navbar.6')}</a>
-                </li>
-                <li className="navbar-item">
-                    <a id="navLicense" href="#license" className="navbar-link" onClick={closeMenu}>{t('navbar.7')}</a>
-                </li>
-            </ul>
-            <div className="hamburger" onClick={mobileMenu}>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-            </div>
-        </nav>
+        <Navbar sticky="top"  >
+            
+            <Col sm={1} className="test">
+                <Nav href="#home">
+                    <Figure.Image src={logoPrincipal} id="imageLogo" alt="Image logo Principal of Gaelo" />
+                </Nav>
+            </Col>
+
+            <Col >
+                <Nav className="me-auto justify-content-center">
+                    <Nav.Link href="#gaelo">{t('navbar.1')}</Nav.Link>
+                    <Nav.Link href="#work">{t('navbar.2')}</Nav.Link>
+                    <Nav.Link href="#features">{t('navbar.3')}</Nav.Link>
+
+                    <Nav.Link href="#video">{t('navbar.4')}</Nav.Link>
+                    <Nav.Link href="#about">{t('navbar.5')}</Nav.Link>
+                    <Nav.Link href="#contact">{t('navbar.6')}</Nav.Link>
+                </Nav>
+            </Col>
+            
+            <Col sm ={1}>
+                <Nav className="me-auto">
+                    <Nav.Link href="#pricing"><Lang /></Nav.Link>
+                </Nav>
+            </Col>
+
+        </Navbar>
     );
-  }
-  
-  export default NavigationBar;
+}
+
+export default NavBar;
 

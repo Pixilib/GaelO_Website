@@ -4,11 +4,18 @@ li {
 }
 
 .navbarPerso {
-    padding: 1rem 1.5rem;
+    padding: 0.4rem 1.0rem;
     font-size: 1.5rem;
-    transition: 1s;
+    
 }
 
+#imageLogo {
+    max-width: 70px;
+}
+
+.test {
+    padding-left: 15px;
+}
 
 /* Hamburger style */
 .hamburger {
@@ -29,18 +36,18 @@ li {
 /* style classic for other item hover etc */
 .navbar-menu {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
 .navbar-item {
-    margin-left: 1.5rem;
+    margin-left: 1.0rem;
 }
 
 .navbar-link{
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: #101010; 
 }
 
 .navbar-link:hover{

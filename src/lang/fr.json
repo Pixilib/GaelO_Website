@@ -5,13 +5,12 @@
 		"linkVideo": "https://www.youtube.com/embed/rEp9pMxCiYg"
 	},
 	"navbar":{
-		"1": "GaelO",
-		"2": "Comment ça marche ?",
-		"3": "Caractéristiques",
-		"4": "En vidéos",
-		"5": "À propos",
-		"6": "Contact",
-		"7": "Licence"
+		"1": "Notre vision",
+		"2": "Solution ",
+		"3": "Service",
+		"4": "Expertise",
+		"5": "L'équipe",
+		"6": "Contact"
 	},
 	"gaelo":{
 		"body":  "GaelO est une application web open source pour la gestion de l'imagerie dans les essais cliniques."
@@ -63,13 +62,7 @@
 			"La partie serveur de GaelO est open source, vous pouvez l'utiliser en suivant la documantion developpeur",
 			"Oui, contactez nous pour en savoir plus",
 			"Toutes les images DICOMs sont supportées (Radiologie, Medecine nuclaire, Radiotherapie...)",
-			[
-				"GaelO est construit avec une combinaison de librairies et de logiciels libres / open sources auquel GaelO contribue, notamment :",
-				"Orthanc : Logiciel PACS Gratuit et Open source (GPL)",
-				"DcmJS (MIT)",
-				"OHIF (MIT)",
-				"Stone Of Orthanc (AGPL, inclus sans modification de code source)"
-			]
+			"GaelO est construit avec une combinaison de librairies et de logiciels libres / open sources auquel GaelO contribue, notamment  Orthanc Logiciel PACS Gratuit et Open source (GPL) DCMJS, OHIF, Stone Of Orthanc (AGPL inclus dans modificiation de code source)"
 		]
 	},
 
@@ -95,7 +88,16 @@
 		"CGU": "Conditions Générales d'Utilisation",
 		"author": "Site réalisé par BEDIA Julien"
 
-	}
+	},
+	"ourviews":{
+		"card" : {
+			"Efficacity": [
+				""
+			]
+		}
+			
 
+		}
+	
 
 }

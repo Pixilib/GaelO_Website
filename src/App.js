@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Row } from 'react-bootstrap';
+import React, { Fragment } from 'react'
+import { Container} from 'react-bootstrap';
 import Header from './components/Header.js';
 import Gaelo from './components/Gaelo.js';
 import Work from './components/Work.js';
@@ -10,14 +10,13 @@ import About from './components/FAQ.js';
 import Contact from './components/Contact.js';
 import License from './components/License.js';
 
-import { useState } from 'react';
-import Lang from "./components/Lang.tsx";
-import i18n from "i18next";
+import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { Language } from "./enums/Language";
 import translationEN from './lang/en.json';
 import translationFR from './lang/fr.json';
+import NavBar from './components/Navbar.js';
 
 let defaultLanguage = Language.FR;
  
@@ -31,7 +30,7 @@ const resources = {
   }
 };
  
-i18n
+i18next
   .use(LanguageDetector)
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
@@ -48,33 +47,22 @@ i18n
 
 function App() {
 
-    const [lang, setLang] = useState('EN');
-
   
-    function changeLanguage(language){
-      setLang(language);
-      i18n.changeLanguage(language)
-    }
   
     return (
-        <div>
-            <Container fluid>
-                <Row>
-                    <Container>
-                        <Header />
-                        <Lang onLanguageChange = {changeLanguage} language = {lang} />
-                        <Gaelo />
-                        <Work />
-                        <Features />
-                        <Video />
-                        <About />
-                        <Contact />
-                        <License />
-                        <Footer />
-                    </Container>
-                </Row>
+        <Fragment>
+            <NavBar />
+            <Container fluid className="background">
+                <Header />
+                <Gaelo />
+                <Work />
+                <Features />
+                <Video />
+                <About />
+                <Contact />
+                <Footer />
             </Container>
-        </div>
+        </Fragment>
     )
 }
 
