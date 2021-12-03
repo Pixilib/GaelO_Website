@@ -92,6 +92,19 @@ html, body{
 }
 /* -- OurViews --*/
 
+.styleOurViews {
+    background-color: lightgreen;
+   
+    padding: 15px;
+}
+
+.StyleCard{
+    border:solid,black,5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 /* -- Solution --*/
 
 /* -- Service --*/

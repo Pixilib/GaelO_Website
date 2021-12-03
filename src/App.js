@@ -9,6 +9,7 @@ import Footer from './components/Footer.js';
 import About from './components/FAQ.js';
 import Contact from './components/Contact.js';
 import License from './components/License.js';
+import ourViews from './components/Ourviews.js';
 
 
 import i18next from "i18next";
@@ -18,6 +19,8 @@ import { Language } from "./enums/Language";
 import translationEN from './lang/en.json';
 import translationFR from './lang/fr.json';
 import NavBar from './components/Navbar.js';
+import OurViews from './components/Ourviews.js';
+import CreateCard from './components/CreateCard.js';
 
 let defaultLanguage = Language.FR;
  
@@ -55,7 +58,8 @@ function App() {
             <NavBar />
             <Container fluid className="background">
                 <Header />
-                <Gaelo />
+                <OurViews />
+                <CreateCard/>
                 <Work />
                 <Features />
                 <Video />

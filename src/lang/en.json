@@ -105,8 +105,17 @@
 		"body2":"Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
 		"subtitle":"Nos clés de succès"
 
+	},
+	"card":{
+		"keyword": [
+			"0","1","2","3","4"
+		],
+		"definition":[
+			"a","z","e","r","t"
+		]
 	}
-		
+
+
 	
 
 

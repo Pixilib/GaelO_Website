@@ -1,37 +1,36 @@
 import ReactCardFlip from "react-card-flip";
 import { useTranslation } from "react-i18next";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container, Card } from "react-bootstrap";
 import fr from "../lang/fr.json"
-import { useState } from "react";
+import React,{ useState } from "react";
 
 
 
 const CreateCard = (props) => {
     const { t } = useTranslation();
 
-    useState = {
-        isFlipped: false
+    const [ isFlipped , setisFlipped ] = useState (false);
+
+   const handleClick =(event) => {
+        event.preventDefault();
+        setisFlipped(!isFlipped);
     }
-    handleClick(props) {
-        props.preventDefault();
-        setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-    };
 
     const generateCard = () => {
         let ourViewNumber = [...Array(fr.card.keyword.length).keys()];
 
 
-        let componentArray = ourViewNumber.itemmap((item) => {
+        let componentArray = ourViewNumber.map((item) => {
             return (
-                <ReactCardFlip isFlipped={useState.isFlipped} key={'cardFaq' + item} border="dark">
+                <ReactCardFlip isFlipped={isFlipped}  key={'card'+item} >
                     {/* vue du front de la card*/}
-                    <div onClick={handleClick}>
+                    <Card   onClick={handleClick }>
                         {t('card.keyword.' + item)}
-                    </div>
+                    </Card>
                     {/* vue du back de la card*/}
-                    <div onClick={handleClick}>
+                    <Card  onClick={handleClick }> 
                         {t('card.definition.' + item)}
-                    </div>
+                    </Card>
                 </ReactCardFlip>
             )
 
@@ -40,4 +39,17 @@ const CreateCard = (props) => {
         return componentArray
     }
 
+    return( 
+    <Container className="bg-light p-1 text-center align-items-center ">
+        <Col className="p-1">
+        {generateCard()}
+        </Col>
+    </Container>
+
+
+    );
+
 }
+
+
+export default CreateCard;
