@@ -19,7 +19,7 @@ const OurViews = (props) => {
             <Row>
                 <h2>{t('ourviews.subtitle')}</h2>
             </Row>
-            
+
         </Container>
     )
 }

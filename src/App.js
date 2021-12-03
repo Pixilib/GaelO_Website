@@ -1,5 +1,10 @@
 import React, { Fragment } from 'react'
+
 import { Container} from 'react-bootstrap';
+import i18next from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
+
 import Header from './components/Header.js';
 import Gaelo from './components/Gaelo.js';
 import Work from './components/Work.js';
@@ -10,11 +15,6 @@ import About from './components/FAQ.js';
 import Contact from './components/Contact.js';
 import License from './components/License.js';
 import ourViews from './components/Ourviews.js';
-
-
-import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from 'i18next-browser-languagedetector';
 import { Language } from "./enums/Language";
 import translationEN from './lang/en.json';
 import translationFR from './lang/fr.json';
@@ -57,7 +57,7 @@ function App() {
         <Fragment>
             <NavBar />
             <Container fluid className="background">
-                <Header />
+                <Header  />
                 <OurViews />
                 <CreateCard/>
                 <Work />

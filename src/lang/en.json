@@ -108,10 +108,21 @@
 	},
 	"card":{
 		"keyword": [
-			"0","1","2","3","4"
+			"Efficacité","Intuitivité","Réactivité","Liberté","Ouvert"
+		],
+		"icon": [
+			"biceps.png",
+			"biceps.png",
+			"biceps.png",
+			"biceps.png",
+			"biceps.png"
 		],
 		"definition":[
-			"a","z","e","r","t"
+			"Une plateforme pensée avec les chercheurs et qui répond à leurs besoins. L’expérience utilisateur est notre principal guide pour proposer une plateforme toujours plus innovante.",
+			"Nous pensons qu’une plateforme d’imagerie doit pouvoir être utilisée de manière intuitive sans besoin de formation spécifique.",
+			"Une plateforme rapide et également évolutive, nous voulons être au rendez vous des nouveaux défis de l’imagerie ",
+			"Votre imagerie doit pouvoir être disponible à tout moment sans restriction d’usage. Nous pensons que la recherche se porte mieux sans verrous.",
+			"la grande majorité de nos solutions sont open source. Nous contribuons en permanence à des projets logiciels libres structurant en imagerie, nous pensons qu’une bonne recherche est une recherche ouverte."
 		]
 	}
 

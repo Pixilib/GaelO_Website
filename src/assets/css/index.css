@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 html, body{
     padding: 0;
     margin: 0px;
@@ -93,18 +94,56 @@ html, body{
 /* -- OurViews --*/
 
 .styleOurViews {
-    background-color: lightgreen;
+
+   background-color: white !important;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align:center ;
+    width: 475px;
    
-    padding: 15px;
+
 }
 
-.StyleCard{
-    border:solid,black,5px;
+
+.testCol {
+    
+    display: flex;
+    justify-content: center;
+    padding:15px;
+    width: 100%;
+}
+ .testCard {
+   background-color: #314053;
+   color :#FFBA4D;
+    width: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color:#ffffff;
+    border-style: solid;
+    border-radius: 10%;
+    
     
 }
 
+
+.testIcon {
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    
+}
+
+
+.testRow {
+    padding: 150px;
+    color: red;
+   background-color: cyan;
+}
 /* -- Solution --*/
 
 /* -- Service --*/

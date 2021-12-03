@@ -4,17 +4,13 @@ import GaeloRole from "../assets/images/gaelo_role.png";
 import GaeloStep from "../assets/images/gaelo_step.png";
 
 
-function getStyleWork(){
-    return {
-        color: "#353275"
-    }
-}
+
 function Work(props) {
 
     const { t } = useTranslation();
 
     return (
-        <Row id="work" className="bg-light p-5 text-center align-items-center border-top" style={getStyleWork()}>
+        <Row id="work" className="bg-light p-5 text-center align-items-center border-top" >
             <h3>{t('work.title')}</h3>
             <Col md={6}>
                 <h4>{t('work.subtitle.0')}</h4>
