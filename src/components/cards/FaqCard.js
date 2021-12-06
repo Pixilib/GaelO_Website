@@ -11,14 +11,14 @@ const FaqCard = (props) => {
     }
 
     return (
-        <ReactCardFlip isFlipped={isFlipped} >
+        <ReactCardFlip className="justify-content-center" isFlipped={isFlipped} >
             {/* vue du front de la card*/}
-            <Card className="testCard"onClick={handleClick}>
-                <img className="testIcon" src={props.imageUrl} />
+            <Card className=" text-center  styleCard"onClick={handleClick}>
+                <img className="justify-content-center cardIcon" src={props.imageUrl} />
                 {props.textFront}
             </Card>
             {/* vue du back de la card*/}
-            <Card className="testCard" onClick={handleClick}>
+            <Card className="text-center font-weight-bold styleCard" onClick={handleClick}>
                 {props.textBack}
             </Card>
         </ReactCardFlip>

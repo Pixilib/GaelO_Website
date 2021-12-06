@@ -11,7 +11,7 @@ const OurViews = (props) => {
     const { t } = useTranslation();
     return (
         <Container className ="styleOurViews" >
-            <Row>
+            <Row >
                 <h1>{t('ourviews.title')}</h1>
                 <p>{t('ourviews.body1')}</p>
                 <p>{t('ourviews.body2')}</p>

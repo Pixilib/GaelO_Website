@@ -1,44 +1,23 @@
-/* -- Global -- */
-* {
-    box-sizing: border-box;
-}
 
 html, body{
-    padding: 0;
-    margin: 0px;
     font-family: 'Maven Pro', sans-serif;
     color: #353375;    
 }
+h1 , h2 {
+    font-weight: bold;
+    color: #FFBA4D;
+}
+
 
 .background {
     background: linear-gradient(90deg, #353275, #0495A0);
   }
 /* -- Navbar --*/
 
-#logoNavbar {
+.logoNavbar {
     max-width: 70px;
     margin-left: 20px;
 }
-
-
-
-
-/* Hamburger style */
-.hamburger {
-    display: none;
-    overflow: visible;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
 
 
 /* -- Header --*/
@@ -48,8 +27,32 @@ html, body{
     font-weight: bold;
 }
 
-#logoPrincipal {
-    max-width: 290px;
+.logoPrincipal {
+    width: 650px;
+}
+/* -- Card --*/
+.styleCard {
+    background: #314053 ;
+    color: white;
+    border-color:#FFBA4D;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid  #FFBA4D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 255px;
+    min-height: 305px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 7%;
+}
+
+.rowCard{
+    display: flex;
+    justify-content: center;
+
 }
 
 
@@ -67,41 +70,22 @@ html, body{
    flex-direction: column;
    align-items: center;
    text-align:center ;
-    width: 475px;
+
    
 
 }
 
-.testCard {
-   background-color: #314053;
-    color :#FFBA4D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-color:#ffffff;
-    box-shadow: 0 0 10px #ffffff;
-    border-style: solid;
-    border-radius: 10%;
-    
-    
-}
 
 
-.testIcon {
+
+.cardIcon {
     max-width: 20%;
     display: flex;
     justify-content: center;
     background-color: transparent;
-    
 }
 
 
-.testRow {
-    padding: 150px;
-    color: red;
-   background-color: cyan;
-}
 /* -- Solution --*/
 
 /* -- Service --*/
@@ -116,94 +100,3 @@ html, body{
 
 /*
 /*-- A garder? --*/ 
-.styleCarouselImage {
-    width: 50%;
-    position: relative;
-}
-@media only screen and (max-width: 768px) {
-    .styleCarouselImage {
-        width: 100%;
-        position: relative;
-    }
-}
-
-.styleCarouselVideo {
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@media only screen and (max-width: 768px) {
-    .styleCarouselVideo {
-        width: 100%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-/* ---- Responsive   ---- */ 
-
-/* -- Header --*/
-@media only screen and (max-width: 768px) {
-    .styleTexte {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        color: #0595A0;
-        transform: translateX(-50%);
-        transition: 1s;
-        font-size: 0.8rem;
-        font-weight: bold;
-        transition-duration: 1s;
-        border-radius: 25% 10%;
-    }
-    
-    .styleTexte:hover {
-        font-size: 1rem;
-    }
-
-}
- /*-- Navbar --*/
- @media only screen and (max-width: 768px) {
-    .navbar-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #FEBA4D;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .navbar-menu.active {
-        left: 0;
-    }
-
-    .navbar-item {
-        margin: 1rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-}
-

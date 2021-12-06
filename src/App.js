@@ -5,7 +5,7 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import Header from './components/Header.js';
+import Welcome from './components/Welcome.js';
 import Work from './components/Work.js';
 import Features from './components/Features.js';
 import Video from './components/Video.js';
@@ -15,14 +15,16 @@ import Contact from './components/Contact.js';
 import { Language } from "./enums/Language";
 import translationEN from './lang/en.json';
 import translationFR from './lang/fr.json';
-import NavBar from './components/Navbar.js';
+import NavBar from './components/Header.js';
 import OurViews from './components/Ourviews.js';
 import CreateCard from './components/CreateCard.js';
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
+
 import './assets/css/gaelo.css';
+import Header from './components/Header.js';
 
 
 let defaultLanguage = Language.FR;
@@ -58,9 +60,9 @@ function App() {
 
   return (
     <Fragment>
+      <Header />
       <Container fluid className="background" >
-        <NavBar />
-        <Header />
+        <Welcome />
       </Container>
       <Container fluid>
         <Row>

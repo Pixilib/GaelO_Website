@@ -1,47 +1,56 @@
-import { Row, Figure, Col, Container, Button, Modal,  } from "../../node_modules/react-bootstrap";
-import useWindowDimensions from "../Fonctions/getDimension.js";
 
 import { useTranslation } from "react-i18next";
-import React, { useState } from "react";
-import VideoModal from "./VideoModal";
-
-function getStyleRow(h, w) {
-
-    return {
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        height: h + 'px',
-        width: "100%",
-        //filter: "contrast(80%)"
-    }
-
-}
+import Lang from './Lang';
+import { Col, Container, Figure, Nav, Navbar } from 'react-bootstrap';
+import logoPrincipal from '../assets/images/logoPrincipal.png';
+import { useState } from 'react';
 
 
 
-const Header = (props) => {
+
+function Header (props) {
+    const [isScrolled, setScrolled] = useState(false);
+
+    const NavBarTransparentToWhite = (event) => {
+        if (window.pageYOffset >= 100) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    window.addEventListener('scroll', NavBarTransparentToWhite);
 
     const { t } = useTranslation();
 
-    const [modalShow, setModalShow] = React.useState(false);
-
     return (
-        <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} id="styleContainer" className="text-center justify-content">
-            <Row >
-                <Col>
-                    <Figure.Image id="logoPrincipal" className="text-center" src="/gaelo-logo-white.png" />
-                    <h2 className="styleTexte">{t('header.title')}</h2>
 
+            
+            <Navbar sticky="top" className={isScrolled ? 'bg-white' : 'bg-transparent background'}>
+                <Col sm={1}>
+                    <Nav href="#home">
+                        <Figure.Image src={logoPrincipal} alt="Image logo Principal of Gaelo" />
+                    </Nav>
                 </Col>
-            </Row>
-            <Row>
                 <Col>
-                    <img src="logo-video.png" className="styleTexte" variant="primary" onClick={() => setModalShow(true)} style={{ maxWidth: '150px' }} ></img>
-                    <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
+                    <Nav className="me-auto justify-content-center ">
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#gaelo">{t('navbar.1')}</Nav.Link>
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#work">{t('navbar.2')}</Nav.Link>
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#features">{t('navbar.3')}</Nav.Link>
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#video">{t('navbar.4')}</Nav.Link>
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#about">{t('navbar.5')}</Nav.Link>
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#contact">{t('navbar.6')}</Nav.Link>
+                    </Nav>
                 </Col>
-            </Row>
-        </Container>
+                <Col sm={1}>
+                    <Nav className="me-auto">
+                        <Nav.Link><Lang /></Nav.Link>
+                    </Nav>
+                </Col>
+            </Navbar>
+        
     );
 }
 
 export default Header;
+
