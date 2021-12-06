@@ -7,32 +7,21 @@ html, body{
     padding: 0;
     margin: 0px;
     font-family: 'Maven Pro', sans-serif;
-    color: #353375;
-    
+    color: #353375;    
 }
 
+.background {
+    background: linear-gradient(90deg, #353275, #0495A0);
+  }
 /* -- Navbar --*/
 
-.StyleLang {
-    position: fixed;
-    top: 5rem;
-    right: 2rem;
-    height: 26px;
-    width: 50px;
-}
-.navbarPerso {
-    padding: 0.4rem 1.0rem;
-    font-size: 1.5rem;
-    
-}
-
-#imageLogo {
+#logoNavbar {
     max-width: 70px;
+    margin-left: 20px;
 }
 
-.test {
-    padding-left: 15px;
-}
+
+
 
 /* Hamburger style */
 .hamburger {
@@ -50,30 +39,8 @@ html, body{
     background-color: #101010;
 }
 
-/* style classic for other item hover etc */
-.navbar-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.navbar-item {
-    margin-left: 1.0rem;
-}
 
-.navbar-link{
-    text-decoration: none;
-    font-weight: bold;
-    color: #000000; 
-}
-
-.navbar-link:hover{
-    color: #FFD698;
-}
-
-.navbar-active {
-    color: #FFD698;
-}
 /* -- Header --*/
 .styleTexte {
     color: white;
@@ -81,9 +48,9 @@ html, body{
     font-weight: bold;
 }
 
-.background {
-    background: linear-gradient(90deg, #353275, #0495A0);
-  }
+#logoPrincipal {
+    max-width: 290px;
+}
 
 
 #styleContainer{
@@ -105,24 +72,15 @@ html, body{
 
 }
 
-
-.testCol {
-    
-    display: flex;
-    justify-content: center;
-    padding:15px;
-    width: 100%;
-}
- .testCard {
+.testCard {
    background-color: #314053;
-   color :#FFBA4D;
-    width: 200px;
-    height: 300px;
+    color :#FFBA4D;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-color:#ffffff;
+    box-shadow: 0 0 10px #ffffff;
     border-style: solid;
     border-radius: 10%;
     
@@ -156,6 +114,7 @@ html, body{
 
 /* -- Vidéo ? -- */ 
 
+/*
 /*-- A garder? --*/ 
 .styleCarouselImage {
     width: 50%;

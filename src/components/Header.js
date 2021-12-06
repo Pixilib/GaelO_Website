@@ -1,14 +1,9 @@
 import { Row, Figure, Col, Container, Button, Modal,  } from "../../node_modules/react-bootstrap";
 import useWindowDimensions from "../Fonctions/getDimension.js";
 
-import '../assets/css/index.css';
 import { useTranslation } from "react-i18next";
-import logoPrincipal from '../assets/images/gaelo-logo-white.png';
-import Navbar from './Navbar.js';
-
-import ReactPlayer from "react-player";
-import { render } from "@testing-library/react";
 import React, { useState } from "react";
+import VideoModal from "./VideoModal";
 
 function getStyleRow(h, w) {
 
@@ -22,22 +17,7 @@ function getStyleRow(h, w) {
 
 }
 
-function VideoModal(props) {
-    const { t } = useTranslation();
-    return (
-        <Modal
-            {...props}
-            fullscreen="md-down"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-        >
-            <Modal.Body>
-                <ReactPlayer url={t('header.linkVideo')} width="100%" />
-            </Modal.Body>
 
-        </Modal>
-    );
-}
 
 const Header = (props) => {
 
@@ -49,7 +29,7 @@ const Header = (props) => {
         <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} id="styleContainer" className="text-center justify-content">
             <Row >
                 <Col>
-                    <Figure.Image id="styleLogo" className="text-center" src="/gaelo-logo-white.png" />
+                    <Figure.Image id="logoPrincipal" className="text-center" src="/gaelo-logo-white.png" />
                     <h2 className="styleTexte">{t('header.title')}</h2>
 
                 </Col>

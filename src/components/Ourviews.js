@@ -1,4 +1,4 @@
-import '../assets/css/index.css';
+
 
 import { Container, Row,Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next"

@@ -2,7 +2,6 @@ import React, { ChangeEvent, useState } from "react";
 import { Language } from '../enums/Language';
 import i18next from "i18next";
 
-import '../assets/css/index.css';
 
 
 

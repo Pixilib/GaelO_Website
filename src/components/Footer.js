@@ -8,7 +8,7 @@ import mentionLegales from "../assets/md/mentions-legales.md"
 import cgu from "../assets/md/cgu.md"
 
 
-function Footer() {
+function Footer(props) {
 
     const [content, setContent] = useState()
 
@@ -34,9 +34,9 @@ function Footer() {
     }
 
     return (
-        <div>
-            <Row style={styleFooter} className="align-items-center text-center">  
-                <Col className="">
+        <footer>
+            <Row {...props}>  
+                <Col>
                     <p>
                         <Button variant = {"link"} onClick={() => loadMentionsLegales()}>
                         {t('footer.mentions')}
@@ -49,12 +49,12 @@ function Footer() {
                     </p>
                 </Col>
             </Row>
-            <Row  style={styleFooter}>
+            <Row >
                 <Markdown>
                     {content}
                 </Markdown>
             </Row>
-        </div>
+        </footer>
     );
   }
   

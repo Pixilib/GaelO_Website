@@ -1,41 +1,21 @@
-import ReactCardFlip from "react-card-flip"
 import { useTranslation } from "react-i18next"
-import { Row, Col, Container, Card, Figure } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 import fr from "../lang/fr.json"
 import React, { useState } from "react";
-import { Image } from "react-bootstrap";
+import FaqCard from "./cards/FaqCard";
 
 
 
-const CreateCard = (props) => {
+const CreateCardOurViews = (props) => {
     const { t } = useTranslation();
 
-    const [isFlipped, setisFlipped] = useState(new Array(fr.card.keyword.length).fill(false));
-
-    const handleClick = (item) => {
-        let newState = [...isFlipped]
-        newState[item] = !newState[item]
-        setisFlipped(newState);
-    }
-
-
-    const generateCard = () => {
+    const generateCardOurViews = () => {
         let ourViewNumber = [...Array(fr.card.keyword.length).keys()];
 
         let componentArray = ourViewNumber.map((item) => {
             return (
-                <Col className="testCol" >
-                    <ReactCardFlip className="testCardFlip" isFlipped={isFlipped[item]} key={'card' + item}>
-                        {/* vue du front de la card*/}
-                        <div className="testCard"   onClick={() => { handleClick(item) }}>
-                            <img className="testIcon" src={t('card.icon.' + item)}  />
-                            {t('card.keyword.' + item)}
-                        </div>
-                        {/* vue du back de la card*/}
-                        <div className="testCard"  onClick={() => { handleClick(item) }}>
-                            {t('card.definition.' + item)}
-                        </div>
-                    </ReactCardFlip>
+                <Col >
+                    <FaqCard imageUrl={t('card.icon.' + item)} textBack={t('card.definition.' + item)} textFront={t('card.keyword.' + item)} />
                 </Col>
             )
 
@@ -48,7 +28,7 @@ const CreateCard = (props) => {
      
             <Row className=" row-cols-md-3 justify-content-center  " >
                 {
-                    generateCard()
+                    generateCardOurViews()
                 }
             </Row>
       
@@ -59,4 +39,4 @@ const CreateCard = (props) => {
 }
 
 
-export default CreateCard;
+export default CreateCardOurViews;

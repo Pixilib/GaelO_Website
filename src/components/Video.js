@@ -1,6 +1,5 @@
 import {Row, Col, Carousel} from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import '../assets/css/index.css';
 
 
 function getStyleVideo() {
