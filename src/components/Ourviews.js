@@ -2,7 +2,7 @@
 
 import { Container, Row,Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next"
-import CreateCard from "./CreateCard";
+
 
 
 

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import { Row, Col, Container } from "react-bootstrap"
 import fr from "../lang/fr.json"
 import React, { useState } from "react";
-import FaqCard from "./cards/FaqCard";
+import OurViewsCard from "./cards/OurViewsCard";
 
 
 
@@ -15,7 +15,7 @@ const CreateCardOurViews = (props) => {
         let componentArray = ourViewNumber.map((item) => {
             return (
                 <Col className="" >
-                    <FaqCard imageUrl={t('card.icon.' + item)} textBack={t('card.definition.' + item)} textFront={t('card.keyword.' + item)} />
+                    <OurViewsCard imageUrl={t('card.icon.' + item)} textBack={t('card.definition.' + item)} textFront={t('card.keyword.' + item)} />
                 </Col>
             )
         })
@@ -23,10 +23,12 @@ const CreateCardOurViews = (props) => {
     }
 
     return (     
-            <Row className=" row-cols-md-3 rowCard" >
-                {
-                    generateCardOurViews()
-                }
+            <Row className=" row-cols-md-3  rowCard " >
+                
+                    {
+                        generateCardOurViews()
+                    }
+                
             </Row>
     );
 }

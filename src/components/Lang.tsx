@@ -1,13 +1,16 @@
 import React, { ChangeEvent, useState } from "react";
 import { Language } from '../enums/Language';
 import i18next from "i18next";
+import { Dropdown } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+
 
 
 
 
 
 const Lang = (props: any) => {
-
+    const { t } = useTranslation();
     const [lang, setLang] = useState('EN');
 
 
@@ -16,17 +19,18 @@ const Lang = (props: any) => {
         setLang(language);
         i18next.changeLanguage(language)
     }
-
+        
+ //<Dropdown onSelect={changeLanguage} value={lang}>
     return (
-        <div>
-            <div >
-                <select value={lang} name="language" onChange={changeLanguage}>
-                    <option value={Language.FR}>FR</option>
-                    <option value={Language.EN}>EN</option>
-                </select>
-            </div>
-        </div>
+        <Dropdown >
+            <Dropdown.Toggle    className="bg-transparent border-0 shadow-none">
+                
+            </Dropdown.Toggle>
+            <Dropdown.Menu    >
+                <Dropdown.Item  value={Language.FR} >Francais</Dropdown.Item>
+                <Dropdown.Item  value={Language.EN} >English</Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
     )
 }
-
 export default Lang;

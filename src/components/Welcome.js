@@ -1,4 +1,4 @@
-import { Row, Figure, Col, Container, Button, Modal,  } from "react-bootstrap";
+import { Row, Figure, Col, Container, Button, Modal, } from "react-bootstrap";
 import useWindowDimensions from "../Fonctions/getDimension.js";
 
 import { useTranslation } from "react-i18next";
@@ -31,16 +31,20 @@ const Header = (props) => {
         <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} id="styleContainer" className="text-center justify-content">
             <Row >
                 <Col>
-                    <Figure.Image  className="text-center logoPrincipal" src={logoPrincipalWhite} />
+                    <Figure.Image className="text-center logoPrincipal" src={logoPrincipalWhite} />
                     <h2 className="styleTexte">{t('header.title')}</h2>
 
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <img src="logo-video.png" className="styleTexte" variant="primary" onClick={() => setModalShow(true)} style={{ maxWidth: '150px' }} ></img>
+            <Row >
+                <Col >
+                    <button type="button" onClick={() => setModalShow(true)} >
+                        <img src="logo-video.png" variant="primary" style={{ maxWidth: '150px' }} ></img>
+                    </button>
                     <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
+
                 </Col>
+
             </Row>
         </Container>
     );

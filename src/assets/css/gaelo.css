@@ -5,7 +5,8 @@ html, body{
 }
 h1 , h2 {
     font-weight: bold;
-    color: #FFBA4D;
+    color: #353275;
+
 }
 
 
@@ -32,9 +33,8 @@ h1 , h2 {
 }
 /* -- Card --*/
 .styleCard {
-    background: #314053 ;
-    color: white;
-    border-color:#FFBA4D;
+    background: linear-gradient(90deg, #353275, #0495A0);
+    color: #FFBA4D;
     font-size: large;
     font-weight: bold;
     border: 3px solid  #FFBA4D;
@@ -42,16 +42,31 @@ h1 , h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 255px;
-    min-height: 305px;
-    margin-top: 20px;
+    height: 300px;
+    width: 260px;
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
     border-radius: 7%;
+    padding: 20px;
+    
+        
+ 
+}
+.ColCard{
+   
+    display: flex;
+    justify-content: center;
+    padding:15px;
+    width:100%,
+
 }
 
 .rowCard{
+  
     display: flex;
     justify-content: center;
+    padding:75px;
+    padding-top: 50px;
+    width:100%,
 
 }
 
@@ -79,10 +94,11 @@ h1 , h2 {
 
 
 .cardIcon {
-    max-width: 20%;
+    max-width: 45%;
     display: flex;
     justify-content: center;
     background-color: transparent;
+    
 }
 
 

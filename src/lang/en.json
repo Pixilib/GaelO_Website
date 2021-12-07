@@ -12,9 +12,7 @@
 		"5": "Team",
 		"6": "Contact us"
 	},
-	"gaelo":{
-		"body": "GaelO is a free and open source web app for imaging management in clinical trials."
-	},
+
 	"features":{
 		"title": "Features",
 		"body":[
@@ -124,6 +122,13 @@
 			"Votre imagerie doit pouvoir être disponible à tout moment sans restriction d’usage. Nous pensons que la recherche se porte mieux sans verrous.",
 			"la grande majorité de nos solutions sont open source. Nous contribuons en permanence à des projets logiciels libres structurant en imagerie, nous pensons qu’une bonne recherche est une recherche ouverte."
 		]
+	},
+	"lang":{
+		"flag":[
+			"french.png",
+			"english.png"
+		]
+		
 	}
 
 

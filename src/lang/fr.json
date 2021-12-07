@@ -1,10 +1,10 @@
 {
-	"header":{
+	"header": {
 		"title": "Plateforme d'imagerie pour essais cliniques",
 		"button": "Présentation en vidéo",
 		"linkVideo": "https://www.youtube.com/embed/rEp9pMxCiYg"
 	},
-	"navbar":{
+	"navbar": {
 		"1": "Notre vision",
 		"2": "Solution ",
 		"3": "Service",
@@ -12,10 +12,9 @@
 		"5": "L'équipe",
 		"6": "Contact"
 	},
-	
-	"features":{
+	"features": {
 		"title": "Fonctionalités",
-		"body":[
+		"body": [
 			"Accès personnel à une plateforme web pour la gestion des essais d'imageries",
 			"Gestion d'études multiples",
 			"Anonymisation et téléchargement des DICOM sans application tierce",
@@ -25,18 +24,18 @@
 			"Alertes par courriel lorsqu'une intervention est requise",
 			"Audit Trail de chaque action dans la plateforme"
 		],
-		"image":{
+		"image": {
 			"legend": "Interface d'import d'étude DICOM"
 		}
 	},
-	"work":{
+	"work": {
 		"title": "Comment ça marche ?",
-		"subtitle":[
+		"subtitle": [
 			"Structure de GaelO",
 			"Rôle de l'utilisateur dans GaelO défini pour chaque étude"
 		]
 	},
-	"videos":{
+	"videos": {
 		"title": "En vidéos",
 		"carousel-legend": [
 			"Upload des études DICOM",
@@ -48,7 +47,7 @@
 			"Exemple : Intégration des Fidji"
 		]
 	},
-	"faq":{
+	"faq": {
 		"title": "FAQ",
 		"question": [
 			"Comment l'utiliser",
@@ -56,14 +55,13 @@
 			"Quelles sont les modalités d'images supportées ?",
 			"Comment l'avez-vous construit ?"
 		],
-		"answer":[
+		"answer": [
 			"La partie serveur de GaelO est open source, vous pouvez l'utiliser en suivant la documantion developpeur",
 			"Oui, contactez nous pour en savoir plus",
 			"Toutes les images DICOMs sont supportées (Radiologie, Medecine nuclaire, Radiotherapie...)",
 			"GaelO est construit avec une combinaison de librairies et de logiciels libres / open sources auquel GaelO contribue, notamment  Orthanc Logiciel PACS Gratuit et Open source (GPL) DCMJS, OHIF, Stone Of Orthanc (AGPL inclus dans modificiation de code source)"
 		]
 	},
-
 	"contact": {
 		"title": "Contact",
 		"body": "GaelO a été développé par Salim Kanoun, médecin spécialiste en médecine nucléaire à Toulouse (France).",
@@ -75,45 +73,48 @@
 		],
 		"mail": "salim.kanoun@gmail.com"
 	},
-
-	"license":{
+	"license": {
 		"title": "Licence et contributions",
 		"body": "La plate-forme GaelO est sous licence AGPL v.3."
 	},
-
-	"footer":{
-		"mentions" : "Mentions légales",
+	"footer": {
+		"mentions": "Mentions légales",
 		"CGU": "Conditions Générales d'Utilisation",
 		"author": "Site réalisé par BEDIA Julien"
-
 	},
-
-	"ourviews":{
-		"title":"Nôtre vision",
-		"body1":" GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académiques. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
-		"body2":"Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
-		"subtitle":"Nos clés de succès"
-		
+	"ourviews": {
+		"title": "Nôtre vision",
+		"body1": " GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académiques. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
+		"body2": "Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
+		"subtitle": "Nos clés de succès"
 	},
-
-	"card":{
+	"card": {
 		"keyword": [
-			"Efficacité","Intuitivité","Réactivité","Liberté","Ouvert"
+			"Efficacité",
+			"Intuitivité",
+			"Réactivité",
+			"Liberté",
+			"Open Source"
 		],
 		"icon": [
-			"biceps.png",
-			"biceps.png",
-			"biceps.png",
-			"biceps.png",
-			"biceps.png"
+			"efficacity.png",
+			"intuitivity.png",
+			"reactivity.png",
+			"liberty.png",
+			"open-source.png"
 		],
-		"definition":[
+		"definition": [
 			"Une plateforme pensée avec les chercheurs et qui répond à leurs besoins. L’expérience utilisateur est notre principal guide pour proposer une plateforme toujours plus innovante.",
 			"Nous pensons qu’une plateforme d’imagerie doit pouvoir être utilisée de manière intuitive sans besoin de formation spécifique.",
 			"Une plateforme rapide et également évolutive, nous voulons être au rendez vous des nouveaux défis de l’imagerie ",
 			"Votre imagerie doit pouvoir être disponible à tout moment sans restriction d’usage. Nous pensons que la recherche se porte mieux sans verrous.",
 			"La grande majorité de nos solutions sont open source. Nous contribuons en permanence à des projets logiciels libres structurant en imagerie, nous pensons qu’une bonne recherche est une recherche ouverte."
 		]
+	},
+	"lang": {
+		"flag": {
+			"FR": "french.png",
+			"EN": "english.png"
+		}
 	}
-
 }
