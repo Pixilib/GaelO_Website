@@ -19,6 +19,17 @@ h1 , h2 {
     max-width: 70px;
     margin-left: 20px;
 }
+.styleSelect  .css-1s2u09g-control {
+    border : transparent;
+    background : transparent;
+}
+.styleSelect .css-1okebmr-indicatorSeparator {
+    border : transparent;
+    background : transparent;
+}
+.styleSelect .css-tj5bde-Svg {
+    color:black;
+}
 
 
 /* -- Header --*/
@@ -27,6 +38,36 @@ h1 , h2 {
     font-size: 1.5rem;
     font-weight: bold;
 }
+.btn-ytb {background-image: linear-gradient(to right, #353275 0%, #0495A0  51%, #353275  100%)}
+.btn-ytb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:225px;
+    height: 95px ;
+    margin: 10px;
+    margin-bottom: 200px;
+    padding: 5px ;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color:#FFBA4D;
+    text-shadow: 1px 1px 1px black;
+    font-size: x-large;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 15px;
+    font-weight: bold;
+ }
+
+ .btn-ytb:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #FFBA4D;
+   text-decoration: none;
+ }
+ .logoVideo {
+
+    height: 35px;
+}
+
 
 .logoPrincipal {
     width: 650px;
@@ -51,6 +92,7 @@ h1 , h2 {
         
  
 }
+
 .ColCard{
    
     display: flex;
@@ -80,14 +122,16 @@ h1 , h2 {
 
 .styleOurViews {
 
-   background-color: white !important;
+   
    display: flex;
    flex-direction: column;
    align-items: center;
    text-align:center ;
-
-   
-
+}
+.BckImage{
+    background-repeat: no-repeat;
+    
+    background-image:url("/src/assets/images/background.png");
 }
 
 

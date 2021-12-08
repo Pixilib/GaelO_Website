@@ -1,8 +1,10 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useState, Component } from "react";
 import { Language } from '../enums/Language';
 import i18next from "i18next";
 import { Dropdown } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import  Flag  from "../../src/assets/images/english.png"
+import Select from 'react-select'
 
 
 
@@ -10,27 +12,31 @@ import { useTranslation } from "react-i18next";
 
 
 const Lang = (props: any) => {
+
+
     const { t } = useTranslation();
-    const [lang, setLang] = useState('EN');
+    const options = [
+        { value: Language.FR, label: <>Francais</> },
+        { value: Language.EN, label: <>English</> },
+
+    ]
+    const [lang, setLang] = useState(options[0]);
 
 
-    let changeLanguage = (event: ChangeEvent<HTMLSelectElement>) => {
-        let language = event.target.value;
+    let changeLanguage = (language: any) => {
+        console.log(language)
         setLang(language);
-        i18next.changeLanguage(language)
+        i18next.changeLanguage(language.value)
     }
-        
- //<Dropdown onSelect={changeLanguage} value={lang}>
+
+
+       
+    
     return (
-        <Dropdown >
-            <Dropdown.Toggle    className="bg-transparent border-0 shadow-none">
-                
-            </Dropdown.Toggle>
-            <Dropdown.Menu    >
-                <Dropdown.Item  value={Language.FR} >Francais</Dropdown.Item>
-                <Dropdown.Item  value={Language.EN} >English</Dropdown.Item>
-            </Dropdown.Menu>
-        </Dropdown>
+        <Select className="styleSelect" isSearchable={false} options={options} value={{
+            value: lang.value,
+            label: <img src={t('lang.flag')} style={{width: "20px", height: "20px"}}/>
+        }}  onChange={changeLanguage} />
     )
 }
 export default Lang;

@@ -36,14 +36,16 @@ const Header = (props) => {
 
                 </Col>
             </Row>
-            <Row >
-                <Col >
-                    <button type="button" onClick={() => setModalShow(true)} >
-                        <img src="logo-video.png" variant="primary" style={{ maxWidth: '150px' }} ></img>
+            <Row className="justify-content-center">
+               
+                    <button className="btn-ytb" type="button" onClick={() => setModalShow(true)} >
+                        <img src="logo-video.png" variant="primary" className="logoVideo" >    
+                        </img>
+                        <p className="m-0">Présentation</p>
                     </button>
                     <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
 
-                </Col>
+                
 
             </Row>
         </Container>

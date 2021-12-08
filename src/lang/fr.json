@@ -112,9 +112,6 @@
 		]
 	},
 	"lang": {
-		"flag": {
-			"FR": "french.png",
-			"EN": "english.png"
+		"flag":"french.png"
 		}
 	}
-}

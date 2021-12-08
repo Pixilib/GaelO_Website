@@ -19,6 +19,7 @@
     "react-player": "^2.9.0",
     "react-responsive-modal": "^6.1.0",
     "react-scripts": "4.0.3",
+    "react-select": "^5.2.1",
     "typescript": "^4.3.5",
     "web-vitals": "^1.0.1"
   },

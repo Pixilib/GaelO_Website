@@ -15,18 +15,17 @@ const  OurviewsCard= (props) => {
         <Col className="ColCard">
             <ReactCardFlip className="justify-content-center" role="button" isFlipped={isFlipped} >
                 {/* vue du front de la card*/}
-                <Card className=" text-center fs-3  styleCard" role="button" onClick={handleClick}>
+                <Card className=" text-center fs-3  styleCard" role="button" onMouseEnter={handleClick}>
                     <img className="justify-content-center cardIcon" src={props.imageUrl} />
                     {props.textFront}
                 </Card>
                 {/* vue du back de la card*/}
-                <Card className="text-center text-white  font-weight-bold styleCard" role="button" onClick={handleClick}>
+                <Card className="text-center text-white  font-weight-bold styleCard" role="button" onMouseLeave={handleClick}>
                     {props.textBack}
                 </Card>
             </ReactCardFlip>
         </Col>
     )
-
 }
 
 export default OurviewsCard;
