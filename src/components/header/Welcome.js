@@ -1,10 +1,10 @@
 import { Row, Figure, Col, Container, Button, Modal, } from "react-bootstrap";
-import useWindowDimensions from "../Fonctions/getDimension.js";
+import useWindowDimensions from "../../Fonctions/getDimension.js";
 
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import VideoModal from "./VideoModal";
-import logoPrincipalWhite from "../assets/images/gaelo-logo-white.svg";
+import logoPrincipalWhite from "../../assets/images/gaelo-logo-white.svg";
 
 
 function getStyleRow(h, w) {
@@ -28,7 +28,7 @@ const Header = (props) => {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
-        <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} id="styleContainer" className="text-center justify-content">
+        <Container id="home"  style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)}  className="text-center styleContainer">
             <Row >
                 <Col>
                     <Figure.Image className="text-center logoPrincipal" src={logoPrincipalWhite} />

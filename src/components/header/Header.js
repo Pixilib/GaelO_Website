@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 import Lang from './Lang';
 import { Col, Container, Figure, Nav, Navbar } from 'react-bootstrap';
-import logoPrincipal from '../assets/images/logoPrincipal.png';
+import logoPrincipal from '../../assets/images/logoPrincipal.png';
 import { useState } from 'react';
 
 
@@ -26,16 +26,16 @@ function Header (props) {
     return (
 
             
-            <Navbar sticky="top" className={isScrolled ? 'bg-white' : 'bg-transparent background'}>
+            <Navbar  sticky="top" className={isScrolled ? 'bg-white' : 'bg-transparent background'}>
                 <Col sm={1}>
-                    <Nav href="#home">
-                        <Figure.Image href="#home" src={logoPrincipal} alt="Image logo Principal of Gaelo" />
-                    </Nav>
+                    <Nav.Link href="#home">
+                        <Figure.Image type="button"  src={logoPrincipal} alt="Image logo Principal of Gaelo" />
+                    </Nav.Link>
                 </Col>
                 <Col>
                     <Nav className="me-auto justify-content-center ">
-                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#Ourviews">{t('navbar.1')}</Nav.Link>
-                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#work">{t('navbar.2')}</Nav.Link>
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#ourviews">{t('navbar.1')}</Nav.Link>
+                        <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#solution">{t('navbar.2')}</Nav.Link>
                         <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#features">{t('navbar.3')}</Nav.Link>
                         <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#video">{t('navbar.4')}</Nav.Link>
                         <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href="#about">{t('navbar.5')}</Nav.Link>

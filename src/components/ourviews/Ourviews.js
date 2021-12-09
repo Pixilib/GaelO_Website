@@ -10,7 +10,7 @@ const OurViews = (props) => {
 
     const { t } = useTranslation();
     return (
-        <Container className ="styleOurViews" >
+        <Container id="ourviews" className ="styleOurViews" >
             <Row className="BckImage" >
 
                 <Col className="col-md-3">

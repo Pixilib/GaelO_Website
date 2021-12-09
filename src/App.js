@@ -5,8 +5,11 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import Welcome from './components/Welcome.js';
-import Work from './components/Work.js';
+import Header from './components/header/Header.js';
+import Welcome from './components/header/Welcome.js';
+import OurViews from './components/ourviews/Ourviews.js';
+import CreateCard from './components/ourviews/CreateCard.js';
+import Solutions from './components/solution/Solutions.js';
 import Features from './components/Features.js';
 import Video from './components/Video.js';
 import Footer from './components/Footer.js';
@@ -15,16 +18,15 @@ import Contact from './components/Contact.js';
 import { Language } from "./enums/Language";
 import translationEN from './lang/en.json';
 import translationFR from './lang/fr.json';
-import NavBar from './components/Header.js';
-import OurViews from './components/Ourviews.js';
-import CreateCard from './components/CreateCard.js';
+
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
 
 import './assets/css/gaelo.css';
-import Header from './components/Header.js';
+
+
 
 
 let defaultLanguage = Language.FR;
@@ -62,7 +64,7 @@ function App() {
     <Fragment>
       <Header />
       <Container fluid className="background" >
-        <Welcome />
+        <Welcome id="home" />
       </Container>
       <Container fluid>
         <Row>
@@ -72,7 +74,7 @@ function App() {
           <CreateCard />
         </Row>
         <Row>
-          <Work />
+          <Solutions/>
         </Row>
         <Row>
           <Features />

@@ -28,13 +28,7 @@
 			"legend": "Interface d'import d'étude DICOM"
 		}
 	},
-	"work": {
-		"title": "Comment ça marche ?",
-		"subtitle": [
-			"Structure de GaelO",
-			"Rôle de l'utilisateur dans GaelO défini pour chaque étude"
-		]
-	},
+
 	"videos": {
 		"title": "En vidéos",
 		"carousel-legend": [
@@ -113,5 +107,18 @@
 	},
 	"lang": {
 		"flag":"french.png"
-		}
+		
+	},
+
+	"solutions":{
+		"title":"Nos solutions",
+		"body":"La plateforme GaelO est articulé suivant les concepts suivant :",
+		"hover":["Une étude clinique correspondant à un projet de recherche clinique",
+			     "Des patients inclus dans une étude",
+			 	 "La réalisation d’un workflow de Visites correspondant chacune à la réalisation d’une imagerie (ex : TDM baseline et TDM fin de traitement)",
+				 "Des Relectures : correspondant à l’interprétation d’une imagerie par un médecin experts",
+				 "Une conclusion à la visite correspondant à la décision finale (par exemple à l’issue d’une double lecture en aveugle ou d’une adjudication)"
+   ]
 	}
+
+}

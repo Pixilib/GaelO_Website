@@ -113,7 +113,7 @@ h1 , h2 {
 }
 
 
-#styleContainer{
+.styleContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -147,6 +147,9 @@ h1 , h2 {
 
 
 /* -- Solution --*/
+.imgTest{
+    width: 1000px;
+}
 
 /* -- Service --*/
 

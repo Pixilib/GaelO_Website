@@ -30,13 +30,7 @@
 			"legend": "DICOM study import interface"
 		}
 	},
-	"work":{
-		"title": "How it works?",
-		"subtitle":[
-			"GaelO structure",
-			"User’s Role in GaelO defined for each study"
-		]
-	},
+
 	"videos":{
 		"title": "In videos",
 		"carousel-legend": [
@@ -128,6 +122,16 @@
 			"english.png"
 		
 		
+	},
+	"solutions":{
+		"title":"Our solutions",
+		"body":"The GaelO platform is articulated according to the following concepts: ",
+		"hover":["A clinical study corresponding to a clinical research project",
+				 "Patients included in a study",
+				 "The realization of a workflow of visits, each corresponding to the realization of an imaging (e.g.: baseline CT and end-of-treatment CT)",
+				 "Reviews: corresponding to the interpretation of an image by an expert doctor.",
+				 "A conclusion to the visit corresponding to the final decision (e.g. after a double blind reading or an adjudication)"
+		]
 	}
 
 

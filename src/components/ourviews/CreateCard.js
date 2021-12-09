@@ -1,8 +1,7 @@
 import { useTranslation } from "react-i18next"
-import { Row, Col, Container } from "react-bootstrap"
-import fr from "../lang/fr.json"
-import React, { useState } from "react";
-import OurViewsCard from "./cards/OurViewsCard";
+import { Row, Col } from "react-bootstrap"
+import fr from "../../lang/fr.json"
+import OurViewsCard from "./OurViewsCard";
 
 
 
