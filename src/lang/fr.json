@@ -28,7 +28,6 @@
 			"legend": "Interface d'import d'étude DICOM"
 		}
 	},
-
 	"videos": {
 		"title": "En vidéos",
 		"carousel-legend": [
@@ -106,19 +105,56 @@
 		]
 	},
 	"lang": {
-		"flag":"french.png"
-		
+		"flag": "french.png"
 	},
-
-	"solutions":{
-		"title":"Nos solutions",
-		"body":"La plateforme GaelO est articulé suivant les concepts suivant :",
-		"hover":["Une étude clinique correspondant à un projet de recherche clinique",
-			     "Des patients inclus dans une étude",
-			 	 "La réalisation d’un workflow de Visites correspondant chacune à la réalisation d’une imagerie (ex : TDM baseline et TDM fin de traitement)",
-				 "Des Relectures : correspondant à l’interprétation d’une imagerie par un médecin experts",
-				 "Une conclusion à la visite correspondant à la décision finale (par exemple à l’issue d’une double lecture en aveugle ou d’une adjudication)"
-   ]
+	"study": {
+		"img": "study-graph-fr.svg",
+		"title": "Nos solutions",
+		"body": "La plateforme GaelO est articulé suivant les concepts suivant :",
+		"graph": {
+			"study": "Une étude clinique correspondant à un projet de recherche clinique",
+			"nPatient": "Des patients inclus dans une étude",
+			"nVisite": "La réalisation d’un workflow de Visites correspondant chacune à la réalisation d’une imagerie (ex : TDM baseline et TDM fin de traitement)",
+			"nReviews": "Des Relectures  correspondant à l’interprétation d’une imagerie par un médecin experts",
+			"conclusion": "Une conclusion à la visite correspondant à la décision finale (par exemple à l’issue d’une double lecture en aveugle ou d’une adjudication)"
+		}
+	},
+	"role": {
+		"img": "role-graph-fr.svg",
+		"title": "Roles dans l'etude",
+		"graph": {
+			"investigator": {
+				"title": "Investigateur",
+				"content": {
+					"p1": "Création de visites",
+					"p2": "Envoi des images",
+					"p3": "formulaire données locales"
+				}
+			},
+			"controller": {
+				"title": "Controlleur",
+				"content": {
+					"p1": "Visualisation des images et formulaire",
+					"p2": "Validation du contrôle qualité"
+				}
+			},
+			"reviewer": {
+				"title": "Relecteur",
+				"content": {
+					"p1": "Visualisation des images pour décision médicale",
+					"p2": "Envoie CRF d'interprétation"
+				}
+			},
+			"supervisor": {
+				"title": "Relecteur",
+				"content": {
+					"p1": "Gestion d'etude",
+					"p2": "Déclaration patients",
+					"p3": "Envoi de rappel",
+					"p4":"Suivi progression de l'étude",
+					"p5":"Accès aux données: Formulaires, images,conclusions, audit trail "
+				}
+			}
+		}
 	}
-
 }

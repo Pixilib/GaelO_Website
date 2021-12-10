@@ -22,7 +22,7 @@ const Lang = (props: any) => {
 
 
     let changeLanguage = (language: any) => {
-        console.log(language)
+        //console.log(language)
         setLang(language);
         i18next.changeLanguage(language.value)
     }

@@ -9,7 +9,8 @@ import Header from './components/header/Header.js';
 import Welcome from './components/header/Welcome.js';
 import OurViews from './components/ourviews/Ourviews.js';
 import CreateCard from './components/ourviews/CreateCard.js';
-import Solutions from './components/solution/Solutions.js';
+import Study from './components/solution/Study.js';
+import Role from './components/solution/Role.js';
 import Features from './components/Features.js';
 import Video from './components/Video.js';
 import Footer from './components/Footer.js';
@@ -74,7 +75,10 @@ function App() {
           <CreateCard />
         </Row>
         <Row>
-          <Solutions/>
+          <Study/>
+        </Row>
+        <Role/>
+        <Row>
         </Row>
         <Row>
           <Features />
