@@ -1,55 +1,66 @@
-import { Row, Figure, Col, Container, Button, Modal, } from "react-bootstrap";
-import useWindowDimensions from "../../Fonctions/getDimension.js";
+import React, { useEffect, useState } from 'react'
 
-import { useTranslation } from "react-i18next";
-import React, { useState } from "react";
-import VideoModal from "./VideoModal";
-import logoPrincipalWhite from "../../assets/images/gaelo-logo-white.svg";
+import { Row, Figure, Col, Container } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 
-
-function getStyleRow(h, w) {
-
-    return {
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        height: h + 'px',
-        width: "100%",
-        //filter: "contrast(80%)"
-    }
-
-}
-
-
+import VideoModal from './VideoModal'
+import logoPrincipalWhite from '../../assets/images/gaelo-logo-white.svg'
 
 const Header = (props) => {
 
-    const { t } = useTranslation();
+   const getStyleRow  = (h, w) => {
+    return {
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      height: h + 'px',
+      width: '100%'
+    }
+  }
 
-    const [modalShow, setModalShow] = React.useState(false);
+  const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window
+    return {
+      width,
+      height
+    }
+  }
+  
+  const useWindowDimensions = () => {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
+  
+    useEffect(() => {
+      function handleResize () {
+        setWindowDimensions(getWindowDimensions())
+      }
+  
+      window.addEventListener('resize', handleResize)
+      return () => window.removeEventListener('resize', handleResize)
+    }, [])
+  
+    return windowDimensions
+  }
 
-    return (
-        <Container id="home"  style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)}  className="text-center styleContainer">
-            <Row >
-                <Col>
-                    <Figure.Image className="text-center logoPrincipal" src={logoPrincipalWhite} />
-                    <h2 className="styleTexte">{t('header.title')}</h2>
+  const { t } = useTranslation()
 
-                </Col>
-            </Row>
-            <Row className="justify-content-center">
-               
-                    <button className="btn-ytb" type="button" onClick={() => setModalShow(true)} >
-                        <img src="logo-video.png" variant="primary" className="logoVideo" >    
-                        </img>
-                        <p className="m-0">Présentation</p>
-                    </button>
-                    <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
+  const [modalShow, setModalShow] = React.useState(false)
 
-                
-
-            </Row>
-        </Container>
-    );
+  return (
+    <Container id='home' style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className='text-center styleContainer'>
+      <Row>
+        <Col>
+          <Figure.Image className='text-center logoPrincipal' src={logoPrincipalWhite} />
+          <h2 className='styleTexte'>{t('header.title')}</h2>
+        </Col>
+      </Row>
+      <Row className='justify-content-center'>
+        <button className='btn-ytb' type='button' onClick={() => setModalShow(true)}>
+          <img src='logo-video.png' variant='primary' className='logoVideo' />
+          <p className='m-0'>Présentation</p>
+        </button>
+        <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
+      </Row>
+    </Container>
+  )
 }
 
-export default Header;
+export default Header

@@ -125,35 +125,27 @@
 		"graph": {
 			"investigator": {
 				"title": "Investigateur",
-				"content": {
-					"p1": "Création de visites",
-					"p2": "Envoi des images",
-					"p3": "formulaire données locales"
-				}
+				"content": " Oui",
+				"video": "Création de visites",
+				"pdf": "Envoi des images"
 			},
 			"controller": {
 				"title": "Controlleur",
-				"content": {
-					"p1": "Visualisation des images et formulaire",
-					"p2": "Validation du contrôle qualité"
-				}
+				"content": " Oui",
+				"video": "Création de visites",
+				"pdf": "Envoi des images"
 			},
 			"reviewer": {
 				"title": "Relecteur",
-				"content": {
-					"p1": "Visualisation des images pour décision médicale",
-					"p2": "Envoie CRF d'interprétation"
-				}
+				"content": "Oui",
+				"video": "Création de visites",
+				"pdf": "Envoi des images"
 			},
 			"supervisor": {
-				"title": "Relecteur",
-				"content": {
-					"p1": "Gestion d'etude",
-					"p2": "Déclaration patients",
-					"p3": "Envoi de rappel",
-					"p4":"Suivi progression de l'étude",
-					"p5":"Accès aux données: Formulaires, images,conclusions, audit trail "
-				}
+				"title": "Superviseur",
+				"content": "Oui",
+				"video": "Création de visites",
+				"pdf": "Envoi des images"
 			}
 		}
 	}

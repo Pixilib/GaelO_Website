@@ -1,10 +1,10 @@
 {
-	"header":{
+	"header": {
 		"title": "Clinical trial imaging managment platform",
 		"button": "Video",
 		"linkVideo": "https://www.youtube.com/embed/g4Rr3YKCb-4"
 	},
-	"navbar":{
+	"navbar": {
 		"1": "Our vision",
 		"2": "Solution",
 		"3": "Service",
@@ -12,10 +12,9 @@
 		"5": "Team",
 		"6": "Contact us"
 	},
-
-	"features":{
+	"features": {
 		"title": "Features",
-		"body":[
+		"body": [
 			"Personnal access to a web plateform for imaging trial management",
 			"Multiple study management",
 			"Anonymization and upload of DICOMs without third party app",
@@ -26,12 +25,11 @@
 			"Audit Trail of each action in the plateform",
 			"RestAPIs to connect with third party DICOM viewer"
 		],
-		"image":{
+		"image": {
 			"legend": "DICOM study import interface"
 		}
 	},
-
-	"videos":{
+	"videos": {
 		"title": "In videos",
 		"carousel-legend": [
 			"Investigators: Upload from DICOM",
@@ -41,11 +39,9 @@
 			"Reviewer : Send results and Adjudication",
 			"Example : Study, visit and user creation",
 			"Example : Fiji Integration"
-
 		]
 	},
-
-	"faq":{
+	"faq": {
 		"title": "FAQ",
 		"question": [
 			"How can I get it ?",
@@ -53,7 +49,7 @@
 			"What images modalities are supported ?",
 			"How did you built it ?"
 		],
-		"answer":[
+		"answer": [
 			"GaelO backend is open source, you can use it following the developper documentation",
 			"Yes, get in touch to get more details",
 			"All kind of DICOM images are supported (Radiology, Nuclear Medicine, Radiotherapy)",
@@ -76,31 +72,29 @@
 			"Bastien Proudhom and Ludwig Chieng : student internships developpers."
 		],
 		"mail": "salim.kanoun@gmail.com"
-		
 	},
-
-	"license":{
+	"license": {
 		"title": "License and contributions",
 		"body": "GaelO platform is AGPL v.3 licenced."
-		
 	},
-
-	"footer":{
-		"mentions" : "Legal Mentions",
+	"footer": {
+		"mentions": "Legal Mentions",
 		"CGU": "Terms of Use",
 		"author": "Created by BEDIA Julien"
 	},
-
-	"ourviews":{
-		"title":"Our Views",
-		"body1":" GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académiques. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
-		"body2":"Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
-		"subtitle":"Nos clés de succès"
-
+	"ourviews": {
+		"title": "Our Views",
+		"body1": " GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académiques. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
+		"body2": "Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
+		"subtitle": "Nos clés de succès"
 	},
-	"card":{
+	"card": {
 		"keyword": [
-			"Efficiency", "Intuitiveness", "Responsiveness", "Freedom", "Open"
+			"Efficiency",
+			"Intuitiveness",
+			"Responsiveness",
+			"Freedom",
+			"Open"
 		],
 		"icon": [
 			"efficacity.png",
@@ -109,78 +103,57 @@
 			"liberty.png",
 			"open-source.png"
 		],
-		"definition":[
+		"definition": [
 			"A platform designed with researchers in mind and that meets their needs. The user experience is our main guide to offer an ever more innovative platform",
 			"We believe that an imaging platform should be intuitive to use without the need for specific training",
 			"A platform that is fast and also scalable, we want to keep up with the new challenges in imaging",
 			"Your imaging should be available at any time without restriction of use. We believe that research is better off without locks",
 			"The vast majority of our solutions are open source. We are constantly contributing to structuring open source projects in imaging, we believe that good research is open research."
-
-
 		]
 	},
-	"lang":{
-		"flag":
-			"english.png"
-		
-		
+	"lang": {
+		"flag": "english.png"
 	},
-	"study":{
+	"study": {
 		"img": "study-graph-en.svg",
-		"title":"Our solutions",
-		"body":"The GaelO platform is articulated according to the following concepts: ",
-		"graph":{
-			"study":"A clinical study corresponding to a clinical research project",
-				"nPatient" :"Patients included in a study",
-				 "nVisite":"The realization of a workflow of visits, each corresponding to the realization of an imaging (e.g.: baseline CT and end-of-treatment CT)",
-				 "nReviews":"Reviews: corresponding to the interpretation of an image by an expert doctor.",
-				 "conclusion":"A conclusion to the visit corresponding to the final decision (e.g. after a double blind reading or an adjudication)"
+		"title": "Our solutions",
+		"body": "The GaelO platform is articulated according to the following concepts: ",
+		"graph": {
+			"study": "A clinical study corresponding to a clinical research project",
+			"nPatient": "Patients included in a study",
+			"nVisite": "The realization of a workflow of visits, each corresponding to the realization of an imaging (e.g.: baseline CT and end-of-treatment CT)",
+			"nReviews": "Reviews: corresponding to the interpretation of an image by an expert doctor.",
+			"conclusion": "A conclusion to the visit corresponding to the final decision (e.g. after a double blind reading or an adjudication)"
 		}
 	},
-	"role":{
-		"img":"role-graph-en.svg",
-		"title":"Roles in the study",
+	"role": {
+		"img": "role-graph-en.svg",
+		"title": "Roles in the study",
 		"graph": {
 			"investigator": {
 				"title": "investigator",
-				"content": {
-					"p1": "Creation of visits",
-					"p2": "Send images",
-					"p3": "local data form"
-				}
+				"content": "Creation of visits",
+				"video": "Send images",
+				"pdf": "local data form"
 			},
 			"controller": {
 				"title": "Controller",
-				"content": {
-					"p1": "Image viewing and form",
-					"p2": "Quality control validation"
-				}
+				"content": "coucou",
+				"video": "Image viewing and form",
+				"pdf": "Quality control validation"
 			},
 			"reviewer": {
 				"title": "Reviewer",
-				"content": {
-					"p1": "View images for medical decision",
-					"p2": "Send CRF interpretation"
-				}
+				"content": "coucou",
+				"video": "View images for medical decision",
+				"p2": "Send CRF interpretation"
 			},
 			"supervisor": {
-				"title": "Reviewer",
-				"content": {
-					"p1": "Study management",
-					"p2": "Patient declaration",
-					"p3": "Send reminder",
-					"p4": "Follow-up of study progress",
-					"p5": "Access to data: Forms, images, conclusions, audit trail "
-				}
+				"title": "Supervisor",
+				"content": "Study management",
+				"video": "Patient declaration",
+				"pdf": "Send reminder"
 			}
 		}
 	}
 }
-
-	
-
-
-
-	
-
-
