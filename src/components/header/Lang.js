@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { Language } from '../../enums/Language';
 import i18next from "i18next"
 import { useTranslation } from "react-i18next"
@@ -19,58 +19,47 @@ const Lang = (props) => {
     let changeLanguage = (language: any) => {
         setLang(language);
         i18next.changeLanguage(language.value)
-    }     
-    
+    }
+
+
     const customStyles = {
-        indicatorContainer: (provided, state) => ({
-            ...provided,
+
+        dropdownIndicator: () => ({
+            padding: 5,
+            color:'black'
             
-            color : 'black',
-          
-            Color: state.isFocused ? 'red' : 'blue' ,
-          
-          }),
-        dropdownIndicator: (provided, state) => ({
-          ...provided,
-          
-          color : 'black',
-        
-          Color: state.isFocused ? 'red' : 'blue' ,
-        
         }),
-        control:(provided,state) => ({
+
+       control : (provided) => ({
             ...provided,
+            backgroundColor : 'none',
             borderColor : 'transparent',
+            boxShadow :'black',     
 
-            backgroundColor: 'transparent',
+            ':hover' :{ 
+                borderColor:"black"
+            }
         }),
-        border: (provided,state) => ({
+
+        indicatorSeparator : () => ({
+            background: "none"
+        }),
+
+        menu : (provided) => ({
             ...provided,
-
-            backgroundColor: 'transparent',
-        }),
-        indicatorSeparator:(provided,state) => ({
-            ...provided,
-
-            backgroundColor: 'transparent',
+            backgroundColor:"none",
+            
         }),
 
-        singleValue: (provided, state) => {
-        
-          
-      
-          return { ...provided };
-        }
-      }
-      
+
+  }
 
 
-    
     return (
-        <Select styles={customStyles} isSearchable={false} options={options} value={{
+        <Select className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
             value: lang.value,
-            label: <img src={t('lang.flag')} style={{width: "20px", height: "20px"}}/>
-        }}  onChange={changeLanguage} />
+            label: <img src={t('lang.flag')} style={{ width: "20px", height: "20px" }} />
+        }} onChange={changeLanguage} />
     )
 }
 export default Lang;
