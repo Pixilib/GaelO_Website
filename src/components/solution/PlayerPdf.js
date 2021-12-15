@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import ReactPlayer from "react-player"
 import { useTranslation } from "react-i18next"
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
+import { Document,Outline, Page } from 'react-pdf/dist/esm/entry.webpack'
 import { Button } from 'react-bootstrap'
 
 
@@ -34,6 +34,9 @@ const PlayerPdf = (props) => {
         setNumPages(numPages);
         setPageNumber(1);
     }
+    function onItemClick({ pageNumber: itemPageNumber }) {
+        setPageNumber(itemPageNumber);
+      }
 
     function changePage(offset) {
         setPageNumber(prevPageNumber => prevPageNumber + offset);
@@ -67,9 +70,11 @@ const PlayerPdf = (props) => {
                             file={t('role.graph.' + props.role + ".pdf")}
                             options={options}
                             onLoadSuccess={onDocumentLoadSuccess}
-                            onLoadError={() => console.log("error")}
-                            height={'auto'}
-                        ><Page pageNumber={pageNumber} />
+                            onLoadError={() => console.log("error")}>
+                            
+                        <Outline onItemClick={onItemClick} />
+                            <Page pageNumber={pageNumber} 
+                                  renderAnnotationLayer={false} />
                             <button
                                 type="button"
                                 disabled={pageNumber <= 1}
