@@ -133,26 +133,26 @@
 			"investigator": {
 				"title": "investigator",
 				"content": "Creation of visits",
-				"video": "Send images",
-				"pdf": "local data form"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "investigator-en.pdf"
 			},
 			"controller": {
 				"title": "Controller",
 				"content": "coucou",
-				"video": "Image viewing and form",
-				"pdf": "Quality control validation"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "controller-en.pdf"
 			},
 			"reviewer": {
 				"title": "Reviewer",
 				"content": "coucou",
-				"video": "View images for medical decision",
-				"p2": "Send CRF interpretation"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "reviewer-en.pdf"
 			},
 			"supervisor": {
 				"title": "Supervisor",
 				"content": "Study management",
-				"video": "Patient declaration",
-				"pdf": "Send reminder"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "supervisor-en.pdf"
 			}
 		}
 	}

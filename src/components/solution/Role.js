@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
-import { Container, Row, Col, OverlayTrigger, Card } from 'react-bootstrap'
+import { Container, Row, Col, OverlayTrigger, Card, Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
+import PlayerPdf from './PlayerPdf'
 
 const Role = (props) => {
   const Investigator = 'investigator'
@@ -11,19 +12,18 @@ const Role = (props) => {
   const { t } = useTranslation()
 
   const [currentRole, setCurrentRole] = React.useState(false)
-  const [show, setShow] = useState(false)
-  const target = useRef(null)
+ 
+
 
   const onClickCircle = (role) => {
     setCurrentRole(role)
   }
 
   const openPopover = (
-    <Card>
-      <h1>{t('role.graph.' + currentRole + '.title')} </h1>
+    <Card className='w-auto h-auto'>
+      <h2 className='text-center'>{t('role.graph.' + currentRole + '.title')} </h2>
       <p> {t('role.graph.' + currentRole + '.content')} </p>
-      <p> {t('role.graph.' + currentRole + '.video')} </p>
-      <p> {t('role.graph.' + currentRole + '.pdf')}  </p>
+      {/* <PlayerPdf/> */}
     </Card>
   )
 
@@ -39,7 +39,7 @@ const Role = (props) => {
             <img src={t('role.img')} />
 
             <div
-              onMouseEnter={() => onClickCircle(Investigator)}
+              onMouseLeave={() => onClickCircle(Investigator)}
               style={{ position: 'absolute', left: '23.25%', top: '76.5%', width: '3%', height: '6%', borderRadius: '50%', backgroundColor: 'red', opacity: '50%' }}
             />
 
@@ -60,7 +60,7 @@ const Role = (props) => {
 
             <OverlayTrigger show={!!currentRole} backgroundColor='danger' placement='bottom' overlay={openPopover}>
               <div
-                style={{ position: 'absolute', left: '40%', top: '10%', width: '3%', height: '6%', borderRadius: '50%', backgroundColor: 'black', opacity: '50%' }}
+                style={{ position: 'absolute', left: '40%', top: '5%', width: '1%', height: '1%', borderRadius: '50%', backgroundColor: 'black', opacity: '50%' }}
               />
             </OverlayTrigger>
           </div>

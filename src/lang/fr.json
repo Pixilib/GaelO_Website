@@ -126,26 +126,26 @@
 			"investigator": {
 				"title": "Investigateur",
 				"content": " Oui",
-				"video": "Création de visites",
-				"pdf": "Envoi des images"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "investigator-fr.pdf"
 			},
 			"controller": {
 				"title": "Controlleur",
 				"content": " Oui",
-				"video": "Création de visites",
-				"pdf": "Envoi des images"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "controller-fr.pdf"
 			},
 			"reviewer": {
 				"title": "Relecteur",
 				"content": "Oui",
-				"video": "Création de visites",
-				"pdf": "Envoi des images"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "reviewer-fr.pdf"
 			},
 			"supervisor": {
 				"title": "Superviseur",
 				"content": "Oui",
-				"video": "Création de visites",
-				"pdf": "Envoi des images"
+				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"pdf": "supervisor-fr.pdf"
 			}
 		}
 	}
