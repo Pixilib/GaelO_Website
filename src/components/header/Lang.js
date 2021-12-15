@@ -25,20 +25,26 @@ const Lang = (props) => {
     const customStyles = {
 
         dropdownIndicator: () => ({
-            padding: 5,
+   
             color:'black'
             
         }),
 
+        valueContainer: (provided) => ({
+            ...provided,
+            paddingLeft: 25,
+        }),
+
+
        control : (provided) => ({
             ...provided,
-            backgroundColor : 'none',
-            borderColor : 'transparent',
-            boxShadow :'black',     
 
-            ':hover' :{ 
-                borderColor:"black"
-            }
+
+            backgroundColor : 'none',
+            border : 'none',
+            boxShadow :'none',     
+
+        
         }),
 
         indicatorSeparator : () => ({
@@ -47,18 +53,28 @@ const Lang = (props) => {
 
         menu : (provided) => ({
             ...provided,
-            backgroundColor:"none",
-            
+
+            backgroundColor: "#314053" ,
+            width: "150%",
+            color :"#78E08F",
+            //color: "#FFBA4D"
+            borderRadius : 15,
+
         }),
 
-
+        option : (provided, state) => ({
+            ...provided,
+            backgroundColor :" none",
+            fontWeight: state.isSelected ? "bold" : "normal",
+            color: state.isSelected ? "#78E08F" : "#FFBA4D",
+        })
   }
 
 
     return (
-        <Select className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
+        <Select type="button" className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
             value: lang.value,
-            label: <img src={t('lang.flag')} style={{ width: "20px", height: "20px" }} />
+            label: <img src={t('lang.flag')} style={{ width: "100%", height: "20px" }} />
         }} onChange={changeLanguage} />
     )
 }
