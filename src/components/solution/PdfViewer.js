@@ -9,7 +9,7 @@ const PdfViewer = (props) => {
 
     const { t } = useTranslation()
 
-    const [currentPDF, setCurrentPDF] = React.useState(null)
+   
     const [numPages, setNumPages] = React.useState(null);
     const [pageNumber, setPageNumber] = React.useState(1);
 
