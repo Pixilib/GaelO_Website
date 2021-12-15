@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
 import ReactPlayer from "react-player"
 import { useTranslation } from "react-i18next"
-import { Document,Outline, Page } from 'react-pdf/dist/esm/entry.webpack'
 import { Button } from 'react-bootstrap'
+import PdfViewer from "./PdfViewer";
+
+
 
 
 const PlayerPdf = (props) => {
@@ -11,49 +13,16 @@ const PlayerPdf = (props) => {
 
     const { t } = useTranslation()
 
-    const [currentPDF, setCurrentPDF] = React.useState(null)
-    const [numPages, setNumPages] = React.useState(null);
-    const [pageNumber, setPageNumber] = React.useState(1);
-
 
     const switchView = () => {
+    
         let newView = currentView === 'video' ? 'pdf' : 'video'
         setCurrentView(newView)
-        if (newView === 'pdf') getPdf()
+        
 
     }
 
-    const getPdf = async () => {
-        let pdf = await fetch(t('role.graph.' + props.role + ".pdf")).then((response) => {
-            return response.blob()
-        })
-        setCurrentPDF(pdf)
-    }
 
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-        setPageNumber(1);
-    }
-    function onItemClick({ pageNumber: itemPageNumber }) {
-        setPageNumber(itemPageNumber);
-      }
-
-    function changePage(offset) {
-        setPageNumber(prevPageNumber => prevPageNumber + offset);
-    }
-
-    function previousPage() {
-        changePage(-1);
-    }
-
-    function nextPage() {
-        changePage(1);
-    }
-
-    const options = {
-        cMapUrl: 'cmaps/',
-        cMapPacked: true,
-    };
     const getComponent = () => {
         switch (currentView) {
             case 'video':
@@ -65,33 +34,7 @@ const PlayerPdf = (props) => {
             case 'pdf':
 
                 return (
-                    <Fragment>
-                        <Document
-                            file={t('role.graph.' + props.role + ".pdf")}
-                            options={options}
-                            onLoadSuccess={onDocumentLoadSuccess}
-                            onLoadError={() => console.log("error")}>
-                            
-                        <Outline onItemClick={onItemClick} />
-                            <Page pageNumber={pageNumber} 
-                                  renderAnnotationLayer={false} />
-                            <button
-                                type="button"
-                                disabled={pageNumber <= 1}
-                                onClick={previousPage}
-                            >
-                                Previous
-                            </button>
-                            <button
-                                type="button"
-                                disabled={pageNumber >= numPages}
-                                onClick={nextPage}
-                            >
-                                Next
-                            </button>
-                        </Document>
-
-                    </Fragment>
+                    <PdfViewer role={props.role}/>
                 )
 
             default:
