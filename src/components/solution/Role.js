@@ -14,7 +14,6 @@ const Role = (props) => {
   const [currentRole, setCurrentRole] = React.useState(false)
  
 
-
   const onClickCircle = (role) => {
     setCurrentRole(role)
   }
@@ -23,7 +22,7 @@ const Role = (props) => {
     <Card className='w-auto h-auto'>
       <h2 className='text-center'>{t('role.graph.' + currentRole + '.title')} </h2>
       <p> {t('role.graph.' + currentRole + '.content')} </p>
-      {/* <PlayerPdf/> */}
+      <PlayerPdf role = {currentRole} />
     </Card>
   )
 
@@ -58,7 +57,7 @@ const Role = (props) => {
               style={{ position: 'absolute', left: '74.25%', top: '28.25%', width: '3%', height: '6%', borderRadius: '50%', backgroundColor: 'green', opacity: '50%' }}
             />
 
-            <OverlayTrigger show={!!currentRole} backgroundColor='danger' placement='bottom' overlay={openPopover}>
+            <OverlayTrigger show={currentRole} backgroundColor='danger' placement='bottom' overlay={openPopover}>
               <div
                 style={{ position: 'absolute', left: '40%', top: '5%', width: '1%', height: '1%', borderRadius: '50%', backgroundColor: 'black', opacity: '50%' }}
               />
