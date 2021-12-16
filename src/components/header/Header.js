@@ -5,7 +5,7 @@ import { Col, Figure, Nav, Navbar } from 'react-bootstrap'
 import logoPrincipal from '../../assets/images/logoPrincipal.png'
 import { useState } from 'react'
 
-function Header (props) {
+function Header(props) {
   const [isScrolled, setScrolled] = useState(false)
 
   const NavBarTransparentToWhite = (event) => {
@@ -16,26 +16,29 @@ function Header (props) {
     }
   }
 
+  const customLink = isScrolled ? 'text-dark' : 'text-white'
+  const customNav = isScrolled ? 'bg-white py-0' : 'bg-transparent background py-0'
+  
   window.addEventListener('scroll', NavBarTransparentToWhite)
 
   const { t } = useTranslation()
 
   return (
 
-    <Navbar sticky='top' className={isScrolled ? 'bg-white' : 'bg-transparent background'}>
+    <Navbar sticky='top' className={customNav}>
       <Col sm={1}>
         <Nav.Link href='#home'>
-          <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
+          <Figure.Image className="w-80 " type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
         </Nav.Link>
       </Col>
       <Col>
-        <Nav className='me-auto justify-content-center '>
-          <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href='#ourviews'>{t('navbar.1')}</Nav.Link>
-          <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href='#solution'>{t('navbar.2')}</Nav.Link>
-          <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href='#features'>{t('navbar.3')}</Nav.Link>
-          <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href='#video'>{t('navbar.4')}</Nav.Link>
-          <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href='#about'>{t('navbar.5')}</Nav.Link>
-          <Nav.Link className={isScrolled ? 'text-dark' : 'text-white'} href='#contact'>{t('navbar.6')}</Nav.Link>
+        <Nav className='justify-content-center fw-bold'>
+          <Nav.Link className={customLink} href='#ourviews'>{t('navbar.1')}</Nav.Link>
+          <Nav.Link className={customLink} href='#solution'>{t('navbar.2')}</Nav.Link>
+          <Nav.Link className={customLink} href='#features'>{t('navbar.3')}</Nav.Link>
+          <Nav.Link className={customLink} href='#video'>{t('navbar.4')}</Nav.Link>
+          <Nav.Link className={customLink} href='#about'>{t('navbar.5')}</Nav.Link>
+          <Nav.Link className={customLink} href='#contact'>{t('navbar.6')}</Nav.Link>
         </Nav>
       </Col>
       <Col sm={1}>

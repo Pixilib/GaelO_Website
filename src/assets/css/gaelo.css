@@ -14,14 +14,13 @@ h1 , h2 {
     background: linear-gradient(90deg, #353275, #0495A0);
   }
 /* -- Navbar --*/
-
-.logoNavbar {
-    max-width: 70px;
-    margin-left: 20px;
+.customNavbar {
+    max-height: 150px;
 }
 
 
-/* -- Header --*/
+
+/* -- Welcome --*/
 .styleTexte {
     color: white;
     font-size: 1.5rem;
@@ -53,13 +52,10 @@ h1 , h2 {
    text-decoration: none;
  }
  .logoVideo {
-
-    height: 35px;
+    height: 40%;
 }
-
-
 .logoPrincipal {
-    width: 650px;
+    width: 50%;
 }
 /* -- Card --*/
 .styleCard {
