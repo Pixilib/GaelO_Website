@@ -5,7 +5,7 @@ html, body{
 }
 h1 , h2 {
     font-weight: bold;
-    color: #353275;
+    color: #353375;
 
 }
 
@@ -118,12 +118,21 @@ h1 , h2 {
    flex-direction: column;
    align-items: center;
    text-align:center ;
-}
-.BckImage{
-    background-repeat: no-repeat;
+   /*-- 
+                color: #0495A0;
+                   color :#2ec086;
+                      color: #FFBA4D;
+                         color: #78E08F;
+   --*/
+   background-size: cover;    
+   background-image:url("/src/assets/images/background1.jpg");
+   
     
-    background-image:url("/src/assets/images/background.png");
 
+}
+.textOv{ 
+    text-shadow: white 1px 0 8px;
+    font-weight: bold;
     
    
 }
