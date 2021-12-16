@@ -129,28 +129,30 @@
 	"role": {
 		"img": "role-graph-en.svg",
 		"title": "Roles in the study",
+		"switchpdf":"See Video",
+		"switchvideo":"See Documentation",
 		"graph": {
 			"investigator": {
 				"title": "investigator",
-				"content": "Creation of visits",
+				"content": "Sending imagery from the investigator site",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "investigator-en.pdf"
 			},
 			"controller": {
 				"title": "Controller",
-				"content": "coucou",
+				"content": "Centralized quality control of shipments before medical interpretation",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "controller-en.pdf"
 			},
 			"reviewer": {
 				"title": "Reviewer",
-				"content": "coucou",
+				"content": "Expert doctor for centralized interpretation",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "reviewer-en.pdf"
 			},
 			"supervisor": {
 				"title": "Supervisor",
-				"content": "Study management",
+				"content": "Study management (progress monitoring, data access, corrective actions)",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "supervisor-en.pdf"
 			}

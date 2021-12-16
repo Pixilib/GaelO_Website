@@ -122,28 +122,30 @@
 	"role": {
 		"img": "role-graph-fr.svg",
 		"title": "Roles dans l'etude",
+		"switchpdf":"Voir Video",
+		"switchvideo":"Voir Documentation",
 		"graph": {
 			"investigator": {
 				"title": "Investigateur",
-				"content": " Oui",
+				"content": " Envoi des imagerie depuis le site investigateur",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "investigator-fr.pdf"
 			},
 			"controller": {
 				"title": "Controlleur",
-				"content": " Oui",
+				"content": " Controle qualité centralisé des envois avant interprétation médicale",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "controller-fr.pdf"
 			},
 			"reviewer": {
 				"title": "Relecteur",
-				"content": "Oui",
+				"content": "Médecin expert pour l’interprétation centralisée",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "reviewer-fr.pdf"
 			},
 			"supervisor": {
 				"title": "Superviseur",
-				"content": "Oui",
+				"content": "Gestion d’étude (suivi progression, accès aux données, actions correctives)",
 				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
 				"pdf": "supervisor-fr.pdf"
 			}

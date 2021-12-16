@@ -15,10 +15,9 @@ const PlayerPdf = (props) => {
 
 
     const switchView = () => {
-    
+        
         let newView = currentView === 'video' ? 'pdf' : 'video'
         setCurrentView(newView)
-        
 
     }
 
@@ -27,7 +26,7 @@ const PlayerPdf = (props) => {
         switch (currentView) {
             case 'video':
                 return (
-                    <ReactPlayer height={'400px'} width={'700px'} url={t('role.graph.' + props.role + ".video")} />
+                    <ReactPlayer controls="true" height={'400px'} width={'700px'} url={t('role.graph.' + props.role + ".video")} />
 
                 )
 
@@ -46,7 +45,11 @@ const PlayerPdf = (props) => {
     return (
         <Fragment>
             {getComponent()}
-            <Button onClick={switchView} >  {currentView === 'video' ? 'See pdf' : 'see video'} </Button>
+            <Button 
+            className="Btn-pdfvideo"
+            onClick={switchView} >  {currentView === 'video' ?  t('role.switchvideo') : t('role.switchpdf')} 
+            
+            </Button>
         </Fragment>
 
     )

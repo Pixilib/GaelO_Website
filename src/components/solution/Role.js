@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react'
-import { Container, Row, Col, OverlayTrigger, Card, Button } from 'react-bootstrap'
+import React from 'react'
+import { Container, Row, Col, OverlayTrigger, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import PlayerPdf from './PlayerPdf'
 
@@ -19,9 +19,9 @@ const Role = (props) => {
   }
 
   const openPopover = (
-    <Card className='w-auto h-auto'>
+    <Card className='w-auto h-auto CardRole'>
       <h2 className='text-center'>{t('role.graph.' + currentRole + '.title')} </h2>
-      <p> {t('role.graph.' + currentRole + '.content')} </p>
+      <p className='text-center'> {t('role.graph.' + currentRole + '.content')} </p>
       <PlayerPdf role = {currentRole} />
     </Card>
   )
@@ -35,7 +35,7 @@ const Role = (props) => {
 
         <Col>
           <div className='position-relative'>
-            <img src={t('role.img')} />
+            <img className='ImgRole' src={t('role.img')} />
 
             <div
               onMouseLeave={() => onClickCircle(Investigator)}

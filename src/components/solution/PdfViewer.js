@@ -9,17 +9,17 @@ const PdfViewer = (props) => {
 
     const { t } = useTranslation()
 
-   
+
     const [numPages, setNumPages] = React.useState(null);
     const [pageNumber, setPageNumber] = React.useState(1);
 
 
 
-    const onDocumentLoadSuccess = ({ numPages })=> {
+    const onDocumentLoadSuccess = ({ numPages }) => {
         setNumPages(numPages);
         setPageNumber(1);
     }
-    const onItemClick= ({ pageNumber: itemPageNumber })=> {
+    const onItemClick = ({ pageNumber: itemPageNumber }) => {
         setPageNumber(itemPageNumber);
     }
 
@@ -50,21 +50,26 @@ const PdfViewer = (props) => {
 
                 <Outline onItemClick={onItemClick} />
                 <Page pageNumber={pageNumber}
+
                     renderAnnotationLayer={false} />
-                <Button
-                    type="button"
-                    disabled={pageNumber <= 1}
-                    onClick={previousPage}
-                >
-                    Previous
-                </Button>
-                <Button
-                    type="button"
-                    disabled={pageNumber >= numPages}
-                    onClick={nextPage}
-                >
-                    Next
-                </Button>
+                <div className="d-flex justify-content-between">
+                    <Button
+                        className=" bg-transparent text-dark fw-bold border-0 shadow-none"
+                        disabled={pageNumber <= 1}
+                        onClick={previousPage}
+                    >
+                        &#12296;
+                    </Button>
+                    <span className="align-self-center"> {pageNumber} / {numPages} </span>
+                    <Button
+                        className="bg-transparent text-dark fw-bold border-0 shadow-none"
+                        type="button"
+                        disabled={pageNumber >= numPages}
+                        onClick={nextPage}
+                    >
+                        &#12297;
+                    </Button>
+                </div>
             </Document>
 
         </Fragment>
