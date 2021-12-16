@@ -31,8 +31,7 @@ function Footer (props) {
   }
 
   return (
-    <footer>
-      <Row {...props}>
+    <footer className='background'>   
         <Col>
           <p>
             <Button variant='link' onClick={() => loadMentionsLegales()}>
@@ -45,7 +44,6 @@ function Footer (props) {
             {t('footer.author')}
           </p>
         </Col>
-      </Row>
       <Row>
         <Markdown>
           {content}
