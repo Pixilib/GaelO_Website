@@ -119,18 +119,23 @@
 		"title": "Our solutions",
 		"body": "The GaelO platform is articulated according to the following concepts: ",
 		"graph": {
-			"study": "A clinical study corresponding to a clinical research project",
-			"nPatient": "Patients included in a study",
-			"nVisite": "The realization of a workflow of visits, each corresponding to the realization of an imaging (e.g.: baseline CT and end-of-treatment CT)",
-			"nReviews": "Reviews: corresponding to the interpretation of an image by an expert doctor.",
-			"conclusion": "A conclusion to the visit corresponding to the final decision (e.g. after a double blind reading or an adjudication)"
+			"studyT": "A clinical study corresponding to a clinical research project",
+			"studyC": "For example: DESCART study, real-life registry of Car-T Cell treatment",
+			"nPatientT": "Corresponds to patients included in a study.",
+			"nPatientC": "A patient is defined by a pseudonymization code. GaelO also manages study exits such as withdrawal of consent",
+			"nVisiteT": "A visit is the realization of an imaging acquisition",
+			"nVisiteC": "Whatever the modality (CT, MR, X-ray, NM, PT, RT...). \n Following a workflow predefined in the study \n Example: Baseline CT and CT at the end of the treatment",
+			"nReviewsT": "Interpretation of an imaging by an expert physician",
+			"nReviewsC": "We customize GaelO to insert the form (imaging e-CRF) of your choice (RECIST, PERCIST, Lugano ...) The reviews can be scheduled to be multiple and blind (and possibly after adjudication)",
+			"conclusionT": "Final decision of medical interpretation",
+			"conclusionC": "Your data are collected in real time and available at any time"
 		}
 	},
 	"role": {
 		"img": "role-graph-en.svg",
 		"title": "Roles in the study",
-		"switchpdf":"See Video",
-		"switchvideo":"See Documentation",
+		"switchpdf": "See Video",
+		"switchvideo": "See Documentation",
 		"graph": {
 			"investigator": {
 				"title": "investigator",

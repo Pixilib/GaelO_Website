@@ -112,43 +112,48 @@
 		"title": "Nos solutions",
 		"body": "La plateforme GaelO est articulé suivant les concepts suivant :",
 		"graph": {
-			"study": "Une étude clinique correspondant à un projet de recherche clinique",
-			"nPatient": "Des patients inclus dans une étude",
-			"nVisite": "La réalisation d’un workflow de Visites correspondant chacune à la réalisation d’une imagerie (ex : TDM baseline et TDM fin de traitement)",
-			"nReviews": "Des Relectures  correspondant à l’interprétation d’une imagerie par un médecin experts",
-			"conclusion": "Une conclusion à la visite correspondant à la décision finale (par exemple à l’issue d’une double lecture en aveugle ou d’une adjudication)"
+			"studyT": "Une étude clinique correspondant à un projet de recherche clinique ",
+			"studyC": "Par exemple : Etude DESCART, registre en vrai vie de traitement par Car-T Cell",
+			"nPatientT": "Correspond aux patients inclus dans une étude.",
+			"nPatientC": "Un patient est défini par un code de pseudonymisation. GaelO gère également les sortie d’étude tel que le retrait de consentement",
+			"nVisiteT": "Une visite est la réalisation d’un acquisition d’imagerie",
+			"nVisiteC": "Quelque soit la modalité (CT, MR, RX, NM, PT, RT…). Suivant un workflow prédéfini dans l’étude Exemple : TDM Baseline et TDM en fin de traitement",
+			"nReviewsT": "Interprétation d’une imagerie par un médecin expert",
+			"nReviewsC": "Nous personnalisons GaelO pour y insérer le formulaire (e-CRF d’imagerie) de votre choix (RECIST, PERCIST, Lugano …) Les relectures peuvent être programmées pour être multiple et en aveugle (et éventuellement après adjudication)",
+			"conclusionT": "Décision finale d’interprétation médicale",
+			"conclusionC": "Vos données sont collectées en temps réel et disponibles à tout moment"
 		}
 	},
-	"role": {
-		"img": "role-graph-fr.svg",
-		"title": "Roles dans l'etude",
-		"switchpdf":"Voir Video",
-		"switchvideo":"Voir Documentation",
-		"graph": {
-			"investigator": {
-				"title": "Investigateur",
-				"content": " Envoi des imagerie depuis le site investigateur",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
-				"pdf": "investigator-fr.pdf"
-			},
-			"controller": {
-				"title": "Controlleur",
-				"content": " Controle qualité centralisé des envois avant interprétation médicale",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
-				"pdf": "controller-fr.pdf"
-			},
-			"reviewer": {
-				"title": "Relecteur",
-				"content": "Médecin expert pour l’interprétation centralisée",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
-				"pdf": "reviewer-fr.pdf"
-			},
-			"supervisor": {
-				"title": "Superviseur",
-				"content": "Gestion d’étude (suivi progression, accès aux données, actions correctives)",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
-				"pdf": "supervisor-fr.pdf"
+		"role": {
+			"img": "role-graph-fr.svg",
+			"title": "Roles dans l'etude",
+			"switchpdf": "Voir Video",
+			"switchvideo": "Voir Documentation",
+			"graph": {
+				"investigator": {
+					"title": "Investigateur",
+					"content": " Envoi des imagerie depuis le site investigateur",
+					"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+					"pdf": "investigator-fr.pdf"
+				},
+				"controller": {
+					"title": "Controlleur",
+					"content": " Controle qualité centralisé des envois avant interprétation médicale",
+					"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+					"pdf": "controller-fr.pdf"
+				},
+				"reviewer": {
+					"title": "Relecteur",
+					"content": "Médecin expert pour l’interprétation centralisée",
+					"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+					"pdf": "reviewer-fr.pdf"
+				},
+				"supervisor": {
+					"title": "Superviseur",
+					"content": "Gestion d’étude (suivi progression, accès aux données, actions correctives)",
+					"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+					"pdf": "supervisor-fr.pdf"
+				}
 			}
 		}
 	}
-}

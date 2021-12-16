@@ -28,14 +28,14 @@ const Role = (props) => {
 
   return (
 
-    <Container>
+    <Container >
       <Row>
 
         <h1 className='text-center'>{t('role.title')}</h1>
 
         <Col>
           <div className='position-relative'>
-            <img className='ImgRole' src={t('role.img')} />
+            <img onMouseOut={()=>onClickCircle(null)} className='ImgRole' src={t('role.img')} />
 
             <div
               onMouseLeave={() => onClickCircle(Investigator)}
