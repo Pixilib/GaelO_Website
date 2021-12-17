@@ -18,7 +18,7 @@ function Header(props) {
 
   const handleClick = () => {
     console.log(history)
-   history.("/ourviews");
+   history("/ourviews");
   }
 
 

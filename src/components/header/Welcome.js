@@ -49,7 +49,7 @@ const Header = (props) => {
       <Row>
         <Col>
           <Figure.Image className='text-center logoPrincipal' src={logoPrincipalWhite} />
-          <h2 className='styleTexte'>{t('header.title')}</h2>
+          <p className='styleTexte'>{t('header.title')}</p>
         </Col>
       </Row>
       <Row className='justify-content-center'>

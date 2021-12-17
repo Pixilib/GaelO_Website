@@ -24,6 +24,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 
 import './assets/css/gaelo.css'
+import { BrowserRouter } from 'react-router-dom'
 
 const defaultLanguage = Language.FR
 
@@ -54,7 +55,9 @@ i18next
 function App() {
   return (
     <>
-      <Header />
+  <BrowserRouter>
+
+  <Header />
       <Container fluid className='background'>
         <Welcome id='home' />
       </Container>
@@ -84,6 +87,10 @@ function App() {
         </Row>
       </Container>
       <Footer fluid className='background' />
+  
+  </BrowserRouter>
+
+
 
     </>
   )

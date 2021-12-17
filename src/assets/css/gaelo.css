@@ -26,9 +26,10 @@ h1 {
 }
 
 h2 {
-    color: #2ec086;
-    font-weight: bolder;
-
+    color: #353275;
+    font-weight: bold;
+    opacity: 75%;
+    
 }
 
 
@@ -173,19 +174,11 @@ h2 {
     height: 150%;
 }
 
-.Btn-pdfvideo {
-    background-color: #0495A0;
-    border: none;
-    border-radius: 3%;
-    color: #FFBA4D;
-    font-weight: bolder;
+.btncard {
+    position: absolute;
+top: 0;
+right: 0;
 }
-
-.Btn-pdfvideo:hover {
-    background-color: #FFBA4D;
-    color: #0495A0;
-}
-
 /* -- Service --*/
 
 /* -- Expertise -- */
