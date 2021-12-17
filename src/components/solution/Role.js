@@ -19,9 +19,9 @@ const Role = (props) => {
   }
 
   const openPopover = (
-    <Card className='w-auto h-auto CardRole'>
-      <h2 className='text-center'>{t('role.graph.' + currentRole + '.title')} </h2>
-      <p className='text-center'> {t('role.graph.' + currentRole + '.content')} </p>
+    <Card className='bg-light border-2 CardRole'>
+      <Card.Header className=' border-bottom-0 text-primary bg-light fs-3  fw-bold text-center'>{t('role.graph.' + currentRole + '.title')}</Card.Header>
+      <p className='text-center  fst-italic'> {t('role.graph.' + currentRole + '.content')} </p>
       <ReactPlayer controls="true" height={'400px'} width={'700px'} url={t('role.graph.' + currentRole+ ".video")} />
     </Card>
   )
@@ -36,7 +36,7 @@ const Role = (props) => {
 
         <Col>
           <div className='position-relative'>
-            <img  className='ImgRole ' src={t('role.img')} />
+            <img  className='ImgRole ' src={t('role.img')} alt='Design des roles' />
 
             <div
               onMouseLeave={() => onClickCircle(Investigator)}

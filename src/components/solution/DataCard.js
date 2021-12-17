@@ -21,9 +21,9 @@ const DataCard = (props) => {
         }
         
         return (
-            <Card>
-                <Card.Header> {t('study.graph.'+props.level+ '.title')} </Card.Header>
-                <Card.Body>
+            <Card className="mt-4 border-2 bg-light">
+                <Card.Header className=" bg-light border-bottom-0 text-primary fw-bold fs-3 text-center"> {t('study.graph.'+props.level+ '.title')} </Card.Header>
+                <Card.Body className=" text-dark text-center fst-italic">
                     {
                     bodyArray
                     }

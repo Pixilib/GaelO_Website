@@ -6,8 +6,7 @@ import DataCard from './DataCard'
 const Study = () => {
   const { t } = useTranslation()
 
-  const [DisplayTitle, setDisplayTitle] = React.useState(false)
-  const [DisplayContent, setDisplayContent] = React.useState(false)
+  
   const [currentData , setCurrentData]=React.useState(null)
 
   const Study = 'study'
@@ -21,12 +20,12 @@ const Study = () => {
   
 
   return (
-    <Container onMouseLeave={()=>setCurrentData(null)}>
-      <Row>
-        <Col>
+    <Container >
+      <Row >
+        <Col >
             <h2 className='text-center'>Structure de données </h2>
-            <div className='position-relative'>
-              <img className='w-100' src={t('study.img')}   />
+            <div className=' mt-4 position-relative' onMouseLeave={()=>setCurrentData(null)}>
+              <img className='w-100' src={t('study.img')} alt='Graph d etude'   />
               <div
                 onMouseEnter={() => setCurrentData(Study)}
                 style={{ position: 'absolute', left: '0%', top: '0%', width: '16%', height: '100%' ,borderRadius: '50%' }}
@@ -49,7 +48,7 @@ const Study = () => {
               />
             </div>
         </Col>
-        <Row className='d-flex justify-content-center'>
+        <Row className='d-flex mb-4 justify-content-center'>
           <DataCard level={currentData}/>
         </Row>
       </Row>
