@@ -9,9 +9,12 @@ const OurviewsCard = (props) => {
     setisFlipped(!isFlipped)
   }
 
+
   return (
 
+
     <Col className='ColCard'>
+
       <ReactCardFlip className='justify-content-center' role='button' isFlipped={isFlipped}>
         {/* vue du front de la card */}
         <Card className=' text-center fs-3  styleCard' role='button' onMouseEnter={handleClick}>
@@ -24,6 +27,7 @@ const OurviewsCard = (props) => {
         </Card>
       </ReactCardFlip>
     </Col>
+
   )
 }
 

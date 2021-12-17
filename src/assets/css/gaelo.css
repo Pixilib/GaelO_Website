@@ -1,14 +1,32 @@
-
-html, body{
-    font-family: 'Maven Pro', sans-serif;
-        
+.border-dark{
+    border-color:#314053 !important
 }
-h1  {
+.bg-light{
+    background-color:#f7f7f7 !important
+}
+.text-dark{
+    color:#314053 !important
+}
+.text-primary{
+    color:#353275 !important
+}
+.text-secondary{
+    color:#FFBA4D !important
+}
+
+html,
+body {
+    font-family: 'Maven Pro', sans-serif;
+
+}
+
+h1 {
     font-weight: bold;
     color: #353275;
 }
+
 h2 {
-    color : #2ec086;
+    color: #2ec086;
     font-weight: bolder;
 
 }
@@ -16,7 +34,8 @@ h2 {
 
 .background {
     background: linear-gradient(90deg, #353275, #0495A0);
-  }
+}
+
 /* -- Navbar --*/
 .customNavbar {
     max-height: 150px;
@@ -30,44 +49,52 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
 }
-.btn-ytb {background-image: linear-gradient(to right, #353275 0%, #0495A0  51%, #353275  100%)}
+
+.btn-ytb {
+    background-image: linear-gradient(to right, #353275 0%, #0495A0 51%, #353275 100%)
+}
+
 .btn-ytb {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width:225px;
-    height: 95px ;
+    width: 225px;
+    height: 95px;
     margin: 10px;
     margin-bottom: 200px;
-    padding: 5px ;
+    padding: 5px;
     transition: 0.5s;
     background-size: 200% auto;
-    color:#FFBA4D;
+    color: #FFBA4D;
     text-shadow: 1px 1px 1px black;
-    font-size: x-large;            
+    font-size: x-large;
     box-shadow: 0 0 20px #eee;
     border-radius: 15px;
     font-weight: bold;
- }
+}
 
- .btn-ytb:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #FFBA4D;
-   text-decoration: none;
- }
- .logoVideo {
+.btn-ytb:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #FFBA4D;
+    text-decoration: none;
+}
+
+.logoVideo {
     height: 40%;
 }
+
 .logoPrincipal {
     width: 50%;
 }
+
 /* -- Card --*/
 .styleCard {
     background: linear-gradient(90deg, #353275, #0495A0);
     color: #FFBA4D;
     font-size: large;
     font-weight: bold;
-    border: 3px solid  #FFBA4D;
+    border: 3px solid #FFBA4D;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,9 +104,9 @@ h2 {
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
     border-radius: 7%;
     padding: 20px;
-    
-        
- 
+
+
+
 }
 
 .cardIcon {
@@ -87,64 +114,74 @@ h2 {
     display: flex;
     justify-content: center;
     background-color: transparent;
-    
-}
-
-.ColCard{
-   
-    display: flex;
-    justify-content: center;
-    padding:15px;
-    width:100%,
 
 }
 
-.rowCard{
-  
+.ColCard {
+
     display: flex;
     justify-content: center;
-    padding:75px;
+    padding: 15px;
+    width: 100%,
+
+}
+
+.rowCard {
+
+    display: flex;
+    justify-content: center;
+    padding: 75px;
     padding-top: 50px;
-    width:100%,
+    width: 100%,
 
 }
 
 
-.styleContainer{
+.styleContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
 /* -- OurViews --*/
 
-.styleOurViews {   
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align:center ;
-   /*-- 
+.styleOurViews {
+    min-height: 470px;
+    background-image: url("../images/backgroundISTOCK.jpg");
+    background-size: cover;
+    /*-- 
      Noir moins sombre  color: #314053
      Bleu / Violet      color: #353275
      Bleu               color: #0495A0;
      Orange             color: #FFBA4D;
      Vert CG            color: #78E08F;
      Vert               color :#2ec086;
-   --*/   
+   --*/
 }
 
-.ImgRole{
+.coltext {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+
+}
+
+.ImgRole {
     width: 100%;
     height: 150%;
 }
 
-.Btn-pdfvideo{
+.Btn-pdfvideo {
     background-color: #0495A0;
-    border:none;
+    border: none;
     border-radius: 3%;
     color: #FFBA4D;
-    font-weight:bolder ;
+    font-weight: bolder;
 }
-.Btn-pdfvideo:hover{
+
+.Btn-pdfvideo:hover {
     background-color: #FFBA4D;
     color: #0495A0;
 }
@@ -157,7 +194,7 @@ h2 {
 
 /* -- Modal ? --*/
 
-/* -- Vidéo ? -- */ 
+/* -- Vidéo ? -- */
 
 /*
-/*-- A garder? --*/ 
+/*-- A garder? --*/
