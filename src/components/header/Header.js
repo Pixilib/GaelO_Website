@@ -3,12 +3,32 @@ import { useTranslation } from 'react-i18next'
 import Lang from './Lang'
 import { Col, Row, Figure, Nav, Navbar, NavbarBrand } from 'react-bootstrap'
 import logoPrincipal from '../../assets/images/logoPrincipal.png'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import logoGitHub from '../../assets/images/github.svg'
+import { useNavigate, useLocation, useMatch, Link, Route, Routes, BrowserRouter, } from 'react-router-dom'
 
+import Welcome from './Welcome.js'
+import Role from '../solution/Role'
+import OurViews from '../ourviews/Ourviews'
 
 function Header(props) {
   const [isScrolled, setScrolled] = useState(false)
+
+  const history = useNavigate();
+
+  const handleClick = () => {
+    console.log(history)
+   history.("/ourviews");
+  }
+
+
+  const location = useLocation()
+
+  React.useEffect(() => {
+    // runs on location, i.e. route, change
+    console.log('handle route change here', location)
+  }, [location])
+
 
   const NavBarTransparentToWhite = (event) => {
     if (window.pageYOffset >= 100) {
@@ -24,30 +44,42 @@ function Header(props) {
   const { t } = useTranslation()
 
   return (
+    <div>
 
-    <Navbar sticky='top' className={customNav}>
-      <Col sm={1}>
-        <Nav.Link href='#home'>
-          <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
-        </Nav.Link>
-      </Col>
-      <Col>
-        <Nav className='justify-content-center fw-bold'>
-          <Nav.Link className={customLink} href='#ourviews'>{t('navbar.1')}</Nav.Link>
-          <Nav.Link className={customLink} href='#solution'>{t('navbar.2')}</Nav.Link>
-          <Nav.Link className={customLink} href='#features'>{t('navbar.3')}</Nav.Link>
-          <Nav.Link className={customLink} href='#video'>{t('navbar.4')}</Nav.Link>
-          <Nav.Link className={customLink} href='#about'>{t('navbar.5')}</Nav.Link>
-          <Nav.Link className={customLink} href='#contact'>{t('navbar.6')}</Nav.Link>
-        </Nav>
-      </Col>
-      <a href="https://github.com/Pixilib/"><img className='' src={logoGitHub} /></a>
-      <Col sm={1}>
-        <Lang />
-      </Col>
-    </Navbar>
+      <Navbar sticky='top' className={customNav}>
+        <Col sm={1}>
+          <Nav.Link href='#home'>
+            <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
+          </Nav.Link>
+        </Col>
+
+        <Col>
+
+
+          <Nav className='justify-content-center fw-bold'>
+            <Link to="/ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
+
+
+          </Nav>
+
+        </Col>
+        <a href="https://github.com/Pixilib/"><img className='' src={logoGitHub} /></a>
+        <Col sm={1}>
+          <Lang />
+        </Col>
+      </Navbar>
+
+      <Routes>
+
+        <Route exact path="/ourviews" component={OurViews} />
+      
+    </Routes>
+
+    </div >
   )
 }
 
 
 export default Header
+
+
