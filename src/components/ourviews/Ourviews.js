@@ -9,9 +9,9 @@ const OurViews = (props) => {
     <Container  id='ourviews' className='styleOurViews'>
       <Row>
         <Col className=''>
-          <h1 className="">{t('ourviews.title')}</h1>
-          <p className="fw-bold">{t('ourviews.body1')}</p>
-          <p className="fw-bold ">{t('ourviews.body2')}</p>
+          <h1 className="fs-1">{t('ourviews.title')}</h1>
+          <p className=" ">{t('ourviews.body1')}</p>
+          <p className=" ">{t('ourviews.body2')}</p>
         </Col>
       </Row>
       <Row>
