@@ -10,15 +10,14 @@ const OurViews = (props) => {
       <Row>
         <Col className=''>
           <h1>{t('ourviews.title')}</h1>
-          <p className="textOv">{t('ourviews.body1')}</p>
-          <p className="textOv">{t('ourviews.body2')}</p>
+          <p className="fw-bold">{t('ourviews.body1')}</p>
+          <p className="fw-bold">{t('ourviews.body2')}</p>
         </Col>
       </Row>
       <Row>
         <h2>{t('ourviews.subtitle')}</h2>
       </Row>
 
-    <CreateCardOurViews/>
     </Container>
   )
 }

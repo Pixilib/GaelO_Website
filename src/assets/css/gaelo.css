@@ -5,8 +5,7 @@ html, body{
 }
 h1 , h2 {
     font-weight: bold;
-    color: #353375;
-
+    color: #78E08F;
 }
 
 
@@ -119,23 +118,15 @@ h1 , h2 {
    align-items: center;
    text-align:center ;
    /*-- 
+            color: #314053
+            color: #353275
                 color: #0495A0;
                    color :#2ec086;
                       color: #FFBA4D;
                          color: #78E08F;
-   --*/
-   background-size: cover;    
-   background-image:url("/src/assets/images/background1.jpg");
-   
-    
+   --*/   
+}
 
-}
-.textOv{ 
-    text-shadow: white 1px 0 8px;
-    font-weight: bold;
-    
-   
-}
 .ImgRole{
     width: 100%;
     height: 150%;
