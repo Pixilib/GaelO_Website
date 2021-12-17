@@ -6,12 +6,12 @@ import CreateCardOurViews from './CreateCard'
 const OurViews = (props) => {
   const { t } = useTranslation()
   return (
-    <Container className='styleOurViews'>
+    <Container  id='ourviews' className='styleOurViews'>
       <Row>
         <Col className=''>
-          <h1>{t('ourviews.title')}</h1>
+          <h1 className="">{t('ourviews.title')}</h1>
           <p className="fw-bold">{t('ourviews.body1')}</p>
-          <p className="fw-bold">{t('ourviews.body2')}</p>
+          <p className="fw-bold ">{t('ourviews.body2')}</p>
         </Col>
       </Row>
       <Row>

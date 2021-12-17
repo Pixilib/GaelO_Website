@@ -1,11 +1,16 @@
 
 html, body{
     font-family: 'Maven Pro', sans-serif;
-    color: #353375;    
+        
 }
-h1 , h2 {
+h1  {
     font-weight: bold;
-    color: #78E08F;
+    color: #353275;
+}
+h2 {
+    color : #FFBA4D;
+    font-weight: bolder;
+
 }
 
 
@@ -118,12 +123,12 @@ h1 , h2 {
    align-items: center;
    text-align:center ;
    /*-- 
-            color: #314053
-            color: #353275
-                color: #0495A0;
-                   color :#2ec086;
-                      color: #FFBA4D;
-                         color: #78E08F;
+     Noir moins sombre  color: #314053
+     Bleu / Violet      color: #353275
+     Bleu               color: #0495A0;
+     Orange             color: #FFBA4D;
+     Vert CG            color: #78E08F;
+     Vert               color :#2ec086;
    --*/   
 }
 

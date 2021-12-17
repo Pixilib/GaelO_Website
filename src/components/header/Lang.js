@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Language } from '../../enums/Language';
+import { Container, Figure } from 'react-bootstrap'
+
 import i18next from "i18next"
 import { useTranslation } from "react-i18next"
 import Select from 'react-select'
+import logoGitHub from '../../assets/images/github.svg'
 
 
 const Lang = (props) => {
@@ -23,28 +26,20 @@ const Lang = (props) => {
 
 
     const customStyles = {
-
         dropdownIndicator: () => ({
-   
-            color:'black'
-            
+            color:'black'       
         }),
 
         valueContainer: (provided) => ({
             ...provided,
-            paddingLeft: 25,
+            paddingLeft: 15,         
         }),
-
 
        control : (provided) => ({
             ...provided,
-
-
             backgroundColor : 'none',
             border : 'none',
-            boxShadow :'none',     
-
-        
+            boxShadow :'none',           
         }),
 
         indicatorSeparator : () => ({
@@ -53,13 +48,11 @@ const Lang = (props) => {
 
         menu : (provided) => ({
             ...provided,
-
             backgroundColor: "#314053" ,
             width: "150%",
             color :"#78E08F",
             //color: "#FFBA4D"
             borderRadius : 15,
-
         }),
 
         option : (provided, state) => ({
@@ -70,12 +63,20 @@ const Lang = (props) => {
         })
   }
 
-
     return (
+
+        <Container className='d-flex'>
+           
         <Select type="button" className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
             value: lang.value,
             label: <img src={t('lang.flag')} style={{ width: "100%", height: "20px" }} />
         }} onChange={changeLanguage} />
+
+        
+        
+        </Container>
     )
 }
+
+
 export default Lang;

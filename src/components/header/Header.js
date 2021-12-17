@@ -1,9 +1,11 @@
 
 import { useTranslation } from 'react-i18next'
 import Lang from './Lang'
-import { Col, Figure, Nav, Navbar } from 'react-bootstrap'
+import { Col, Row, Figure, Nav, Navbar } from 'react-bootstrap'
 import logoPrincipal from '../../assets/images/logoPrincipal.png'
 import { useState } from 'react'
+import logoGitHub from '../../assets/images/github.svg'
+
 
 function Header(props) {
   const [isScrolled, setScrolled] = useState(false)
@@ -18,9 +20,7 @@ function Header(props) {
 
   const customLink = isScrolled ? 'text-dark' : 'text-white'
   const customNav = isScrolled ? 'bg-white py-0' : 'bg-transparent background py-0'
-  
   window.addEventListener('scroll', NavBarTransparentToWhite)
-
   const { t } = useTranslation()
 
   return (
@@ -41,14 +41,13 @@ function Header(props) {
           <Nav.Link className={customLink} href='#contact'>{t('navbar.6')}</Nav.Link>
         </Nav>
       </Col>
+      <a href="https://github.com/Pixilib/"><img className='' src={logoGitHub} /></a>
       <Col sm={1}>
-        <Nav className='me-auto'>
-          <Nav.Link><Lang /></Nav.Link>
-        </Nav>
+        <Nav><Lang /></Nav>
       </Col>
     </Navbar>
-
   )
 }
+
 
 export default Header
