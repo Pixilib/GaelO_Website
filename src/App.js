@@ -51,7 +51,7 @@ i18next
     }
   })
 
-function App () {
+function App() {
   return (
     <>
       <Header />
@@ -66,9 +66,9 @@ function App () {
           <CreateCard />
         </Row>
         <Row>
-          <Study />
+          <Role />
         </Row>
-        <Role />
+        <Study />
         <Row />
         <Row>
           <Features />

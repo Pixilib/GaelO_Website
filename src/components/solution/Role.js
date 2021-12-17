@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, OverlayTrigger, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import PlayerPdf from './PlayerPdf'
+import ReactPlayer from "react-player"
 
 const Role = (props) => {
   const Investigator = 'investigator'
@@ -22,20 +22,21 @@ const Role = (props) => {
     <Card className='w-auto h-auto CardRole'>
       <h2 className='text-center'>{t('role.graph.' + currentRole + '.title')} </h2>
       <p className='text-center'> {t('role.graph.' + currentRole + '.content')} </p>
-      <PlayerPdf role = {currentRole} />
+      <ReactPlayer controls="true" height={'400px'} width={'700px'} url={t('role.graph.' + currentRole+ ".video")} />
     </Card>
   )
 
   return (
 
     <Container >
+       <h1 className='text-center'>{t('study.title')}</h1>
       <Row>
 
-        <h1 className='text-center'>{t('role.title')}</h1>
+        <h2 className='text-center'>{t('role.title')}</h2>
 
         <Col>
           <div className='position-relative'>
-            <img onMouseOut={()=>onClickCircle(null)} className='ImgRole' src={t('role.img')} />
+            <img  className='ImgRole ' src={t('role.img')} />
 
             <div
               onMouseLeave={() => onClickCircle(Investigator)}
@@ -59,7 +60,7 @@ const Role = (props) => {
 
             <OverlayTrigger show={currentRole} backgroundColor='danger' placement='bottom' overlay={openPopover}>
               <div
-                style={{ position: 'absolute', left: '40%', top: '5%', width: '1%', height: '1%', borderRadius: '50%', backgroundColor: 'black', opacity: '50%' }}
+                style={{ position: 'absolute', left: '40%', top: '0%', width: '1%', height: '1%', borderRadius: '50%', backgroundColor: 'black', opacity: '50%' }}
               />
             </OverlayTrigger>
           </div>
