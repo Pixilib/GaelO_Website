@@ -83,7 +83,7 @@
 		"author": "Created by BEDIA Julien"
 	},
 	"ourviews": {
-		"title": "Our Views",
+		"title": "Our Vision",
 		"body1": " GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académiques. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
 		"body2": "Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
 		"subtitle": "Nos clés de succès"
@@ -117,18 +117,30 @@
 	"study": {
 		"img": "study-graph-en.svg",
 		"title": "Our solutions",
-		"body": "The GaelO platform is articulated according to the following concepts: ",
+		
 		"graph": {
-			"studyT": "A clinical study corresponding to a clinical research project",
-			"studyC": "For example: DESCART study, real-life registry of Car-T Cell treatment",
-			"nPatientT": "Corresponds to patients included in a study.",
-			"nPatientC": "A patient is defined by a pseudonymization code. GaelO also manages study exits such as withdrawal of consent",
-			"nVisiteT": "A visit is the realization of an imaging acquisition",
-			"nVisiteC": "Whatever the modality (CT, MR, X-ray, NM, PT, RT...). \n Following a workflow predefined in the study \n Example: Baseline CT and CT at the end of the treatment",
-			"nReviewsT": "Interpretation of an imaging by an expert physician",
-			"nReviewsC": "We customize GaelO to insert the form (imaging e-CRF) of your choice (RECIST, PERCIST, Lugano ...) The reviews can be scheduled to be multiple and blind (and possibly after adjudication)",
-			"conclusionT": "Final decision of medical interpretation",
-			"conclusionC": "Your data are collected in real time and available at any time"
+			"study":{ 
+				"title":"A clinical study corresponding to a clinical research project",
+				"content": ["For example: DESCART study, real-life registry of Car-T Cell treatment"]},
+			"nPatient":{ 
+				"title": "Corresponds to patients included in a study.",
+				"content": ["A patient is defined by a pseudonymization code.", 
+				            "GaelO also manages study exits such as withdrawal of consent"
+						   ]},
+			"nVisite":{
+				"title": "A visit is the realization of an imaging acquisition",
+				"content": ["Whatever the modality (CT, MR, X-ray, NM, PT, RT...)", 
+						   "Following a workflow predefined in the study", 
+				           "Example: Baseline CT and CT at the end of the treatment"
+						   ]},
+			"nReviews": { 
+				"title":"Interpretation of an imaging by an expert doctor",
+				"content": ["We customize GaelO to insert the form (imaging e-CRF) of your choice (RECIST, PERCIST, Lugano ...)", 
+						"The reviews can be scheduled to be multiple and blind (and possibly after adjudication)"
+						]},
+			"conclusion":{
+				"title": "Final decision of medical interpretation",
+				"content": ["Your data are collected in real time and available at any time"]}
 		}
 	},
 	"role": {
