@@ -6,17 +6,21 @@ import CreateCardOurViews from './CreateCard'
 const OurViews = (props) => {
   const { t } = useTranslation()
   return (
-    <Container  id='ourviews' className='styleOurViews'>
-      <Row>
-        <Col className=''>
-          <h1 className="fs-1">{t('ourviews.title')}</h1>
-          <p className=" ">{t('ourviews.body1')}</p>
-          <p className=" ">{t('ourviews.body2')}</p>
-        </Col>
+    <Container id='ourviews' className='styleOurViews'>
+
+<h1 className="text-center  ">{t('ourviews.title')}</h1>
+
+
+      <Row className=' d-flex justify-content-center'>
+        <Col className='coltext'>
+        <p >{t('ourviews.body1')}</p>
+        <p >{t('ourviews.body2')}</p>
+      </Col>
+
+      <Col/>
+
       </Row>
-      <Row>
-        <h2>{t('ourviews.subtitle')}</h2>
-      </Row>
+
 
     </Container>
   )

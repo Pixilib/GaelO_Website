@@ -14,7 +14,7 @@ const Header = (props) => {
       backgroundRepeat: 'no-repeat',
       height: h + 'px',
       width: '100%'
-    }
+    } 
   }
 
   const getWindowDimensions = () => {

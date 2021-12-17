@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 
 import fr from '../../lang/fr.json'
 import OurViewsCard from './OurViewsCard'
@@ -21,9 +21,15 @@ const CreateCardOurViews = (props) => {
   }
 
   return (
-    <Row className=' row-cols-md-3  rowCard '>
-      {generateCardOurViews()}
-    </Row>
+    <Container>
+      <Row>
+        <h2 className='text-center'>{t('ourviews.subtitle')}</h2>
+      </Row>
+
+      <Row className=' row-cols-md-3  rowCard '>
+        {generateCardOurViews()}
+      </Row>
+    </Container>
   )
 }
 
