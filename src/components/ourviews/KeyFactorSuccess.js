@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next'
 import { Row, Col, Container } from 'react-bootstrap'
 
 import fr from '../../lang/fr.json'
-import OurViewsCard from './OurViewsCard'
+import KeyFactorCard from './KeyFactorCard'
 
-const CreateCardOurViews = (props) => {
+const CreateCardOurViews = ( ) => {
   const { t } = useTranslation()
 
   const generateCardOurViews = () => {
@@ -12,8 +12,8 @@ const CreateCardOurViews = (props) => {
 
     const componentArray = ourViewNumber.map((item) => {
       return (
-        <Col>
-          <OurViewsCard imageUrl={t('card.icon.' + item)} textBack={t('card.definition.' + item)} textFront={t('card.keyword.' + item)} />
+        <Col  className=''>
+          <KeyFactorCard imageUrl={t('card.icon.' + item)} textBack={t('card.definition.' + item)} textFront={t('card.keyword.' + item)} />
         </Col>
       )
     })

@@ -64,14 +64,8 @@
 	},
 	"contact": {
 		"title": "Contact",
-		"body": "GaelO has been developped by Salim Kanoun, nuclear medicine physician in Toulouse (France).",
-		"source": "GitHub : ",
-		"subtitle": "Contributors",
-		"contributors": [
-			"Salim Kanoun : Project leader and developper.",
-			"Bastien Proudhom and Ludwig Chieng : student internships developpers."
-		],
-		"mail": "salim.kanoun@gmail.com"
+		"body": "GaelO is powered by Pixilib, Toulouse, France",
+		"mail": "Contact@Pixilib.fr"
 	},
 	"license": {
 		"title": "License and contributions",
@@ -80,7 +74,7 @@
 	"footer": {
 		"mentions": "Legal Mentions",
 		"CGU": "Terms of Use",
-		"author": "Created by BEDIA Julien"
+		"author": "Pixilib All Rights Reserved"
 	},
 	"ourviews": {
 		"title": "Our Vision",

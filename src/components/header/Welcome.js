@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import VideoModal from './VideoModal'
 import logoPrincipalWhite from '../../assets/images/gaelo-logo-white.svg'
 
-const Header = (props) => {
+const Header = () => {
 
    const getStyleRow  = (h, w) => {
     return {

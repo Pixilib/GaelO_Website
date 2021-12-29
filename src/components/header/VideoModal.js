@@ -16,7 +16,6 @@ const VideoModal = (props) => {
       <Modal.Body>
         <ReactPlayer height='800px' url={t('header.linkVideo')} width='100%' />
       </Modal.Body>
-
     </Modal>
   )
 }

@@ -31,7 +31,7 @@ function Footer (props) {
   }
 
   return (
-    <footer className='background'>   
+    <footer className='background text-center'>   
         <Col>
           <p>
             <Button variant='link' onClick={() => loadMentionsLegales()}>

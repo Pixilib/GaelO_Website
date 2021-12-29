@@ -11,12 +11,11 @@ function Contact (props) {
   const { t } = useTranslation()
 
   return (
-    <Row id='contact' className='bg-light p-5 text-center align-items-center border-top' style={getStyleContact()}>
+    <Row id='contact' className='p-5 text-center align-items-center' style={getStyleContact()}>
       <Col className='text-center align-items-center w-50'>
-        <h3>{t('contact.title')}</h3>
+        <h1>{t('contact.title')}</h1>
         <p>{t('contact.body')}</p>
         <a href={'mailto:' + t('contact.mail')}>{t('contact.mail')}</a>
-        <p>{t('contact.source')} <a href='https://github.com/pixilib/GaelO'>https://github.com/pixilib/GaelO</a></p>
       </Col>
     </Row>
   )

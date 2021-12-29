@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Language } from '../../enums/Language';
-import { Container, Figure } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 import i18next from "i18next"
 import { useTranslation } from "react-i18next"
 import Select from 'react-select'
-import logoGitHub from '../../assets/images/github.svg'
 
 
 const Lang = (props) => {

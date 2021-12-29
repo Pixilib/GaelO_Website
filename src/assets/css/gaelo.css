@@ -119,12 +119,10 @@ h2 {
 }
 
 .ColCard {
-
     display: flex;
     justify-content: center;
     padding: 15px;
-    width: 100%,
-
+    width: 100%
 }
 
 .rowCard {
@@ -147,9 +145,11 @@ h2 {
 /* -- OurViews --*/
 
 .styleOurViews {
-    min-height: 470px;
+    min-height: 900px;
     background-image: url("../images/backgroundISTOCK.jpg");
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
     /*-- 
      Noir moins sombre  color: #314053
      Bleu / Violet      color: #353275

@@ -1,30 +1,28 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 import { Container, Row } from 'react-bootstrap'
 import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
-import Header from './components/header/Header.js'
-import Welcome from './components/header/Welcome.js'
-import OurViews from './components/ourviews/Ourviews.js'
-import CreateCard from './components/ourviews/CreateCard.js'
-import Study from './components/solution/Study.js'
-import Role from './components/solution/Role.js'
-import Features from './components/Features.js'
-import Video from './components/Video.js'
-import Footer from './components/Footer.js'
-import About from './components/FAQ.js'
-import Contact from './components/Contact.js'
 import { Language } from './enums/Language'
 import translationEN from './lang/en.json'
 import translationFR from './lang/fr.json'
+
+import Header from './components/header/Header'
+import Welcome from './components/header/Welcome'
+import OurViewRoot from './components/ourviews/OurViewRoot'
+import Study from './components/solution/Study'
+import Role from './components/solution/Role'
+import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 
 import './assets/css/gaelo.css'
-import { BrowserRouter } from 'react-router-dom'
+
 
 const defaultLanguage = Language.FR
 
@@ -55,43 +53,28 @@ i18next
 function App() {
   return (
     <>
-  <BrowserRouter>
+      <BrowserRouter>
 
-  <Header />
-      <Container fluid className='background'>
-        <Welcome id='home' />
-      </Container>
-      <Container fluid>
-        <Row>
-          <OurViews />
-        </Row>
-        <Row>
-          <CreateCard />
-        </Row>
-        <Row>
-          <Role />
-        </Row>
-        <Study />
-        <Row />
-        <Row>
-          <Features />
-        </Row>
-        <Row>
-          <Video />
-        </Row>
-        <Row>
-          <About />
-        </Row>
-        <Row>
-          <Contact />
-        </Row>
-      </Container>
-      <Footer fluid className='background' />
-  
-  </BrowserRouter>
+        <Header />
+        <Container fluid className='background'>
+          <Welcome id='home' />
+        </Container>
+        <Container fluid>
+          <Row>
+            <OurViewRoot />
+          </Row>
+          <Row>
+            <Role />
+          </Row>
+          <Study />
+          <Row />
+          <Row>
+            <Contact />
+          </Row>
+        </Container>
+        <Footer fluid className='background' />
 
-
-
+      </BrowserRouter>
     </>
   )
 }

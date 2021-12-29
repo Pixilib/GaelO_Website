@@ -9,7 +9,7 @@ import { useNavigate, useLocation, useMatch, Link, Route, Routes, BrowserRouter,
 
 import Welcome from './Welcome.js'
 import Role from '../solution/Role'
-import OurViews from '../ourviews/Ourviews'
+import OurViewRoot from '../ourviews/OurViewRoot'
 
 function Header(props) {
   const [isScrolled, setScrolled] = useState(false)
@@ -18,7 +18,7 @@ function Header(props) {
 
   const handleClick = () => {
     console.log(history)
-   history("/ourviews");
+    history("/ourviews");
   }
 
 
@@ -54,12 +54,8 @@ function Header(props) {
         </Col>
 
         <Col>
-
-
           <Nav className='justify-content-center fw-bold'>
             <Link to="/ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
-
-
           </Nav>
 
         </Col>
@@ -71,9 +67,9 @@ function Header(props) {
 
       <Routes>
 
-        <Route exact path="/ourviews" component={OurViews} />
-      
-    </Routes>
+        <Route exact path="/ourviews" component={OurViewRoot} />
+
+      </Routes>
 
     </div >
   )
