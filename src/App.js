@@ -22,6 +22,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 
 import './assets/css/gaelo.css'
+import SolutionRoot from './components/solution/SolutionRoot'
 
 
 const defaultLanguage = Language.FR
@@ -64,10 +65,8 @@ function App() {
             <OurViewRoot />
           </Row>
           <Row>
-            <Role />
+            <SolutionRoot/>
           </Row>
-          <Study />
-          <Row />
           <Row>
             <Contact />
           </Row>
