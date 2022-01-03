@@ -107,7 +107,9 @@
 		"graph": {
 			"study": {
 				"title": "Une étude clinique correspondant à un projet de recherche clinique ",
-				"content": ["Par exemple : Etude DESCART, registre en vrai vie de traitement par Car-T Cell"]
+				"content": [
+					"Par exemple : Etude DESCART, registre en vrai vie de traitement par Car-T Cell"
+				]
 			},
 			"nPatient": {
 				"title": "Correspond aux patients inclus dans une étude.",
@@ -133,7 +135,9 @@
 			},
 			"conclusion": {
 				"title": "Décision finale d’interprétation médicale",
-				"content": ["Vos données sont collectées en temps réel et disponibles à tout moment"]
+				"content": [
+					"Vos données sont collectées en temps réel et disponibles à tout moment"
+				]
 			}
 		}
 	},
@@ -169,16 +173,50 @@
 			}
 		}
 	},
-	"service":{
-		"title":"Nos Solutions",
-		"intro":"Nous avons désigné une offre de service adapté aux académiques. Au delà de l’aspect technologique c’est une des plus grande innovation apporté à l’écosystème de recherche clinique en imagerie",
-		"content":"L’offre de service est édité par Pixilib et vous propose GaelO clé en main, installé et hébergé sur un serveur situé en France, maintenu par les créateurs de GaelO et vous assure une disponibilité complète de la plateforme.",
-		"card":["Complète, 100% des fonctionnalités de GaelO d'aujourd'hui et de demain. Vous bénéficierez automatiquement des évolutions de GaelO, nous n’aimons pas la recherche à deux vitesses.",
+	"service": {
+		"title": "Nos Solutions",
+		"intro": "Nous avons désigné une offre de service adapté aux académiques. Au delà de l’aspect technologique c’est une des plus grande innovation apporté à l’écosystème de recherche clinique en imagerie",
+		"content": "L’offre de service est édité par Pixilib et vous propose GaelO clé en main, installé et hébergé sur un serveur situé en France, maintenu par les créateurs de GaelO et vous assure une disponibilité complète de la plateforme.",
+		"card": [
+			"Complète, 100% des fonctionnalités de GaelO d'aujourd'hui et de demain. Vous bénéficierez automatiquement des évolutions de GaelO, nous n’aimons pas la recherche à deux vitesses.",
 			"Unique : Une seule offre sans option. Nous préférons utiliser notre temps à innover plutôt qu’à éditer des offres.",
 			"Simple : Pas de coût unitaire par patient, examen, utilisateur, centre. Une étude ne se passe jamais comme prévu, nous pensons qu’une fois l’outil entre vos mains, il vous appartient de conduire votre étude comme bon vous semble. Des patients additionnels à inclure ? c’est sans surcoût.",
 			"Prédictible : Votre budget est souvent fixe, alors nous pensons que le  prix doit être prévisible dès le début de votre étude, pas de mauvaise surprise en cours de route.",
 			"Abordable : Le service n’est pas gratuit mais nous pensons que nous avons trouvé le prix juste. Contactez nous et jugez."
 		],
-		"img":"offre-service-fr.svg"
+		"img": "offre-service-fr.svg"
+	},
+	"expertise": {
+		"title": "Expertise",
+		"satisfaction": {
+			"text": "Satisfaction Utilisateur",
+			"value": "4.1/5"
+		},
+		"trials": {
+			"text": "Essais",
+			"value": 7
+		},
+		"dicom": {
+			"text": "Etudes Dicom",
+			"value": 915
+		},
+		"center": {
+			"text": "Centres",
+			"value": 45
+		},
+		"user": {
+			"text": "Utilisateurs",
+			"value": 116
+		},
+		"testimonial": {
+			"name":[
+				"lysarc",
+				"lysa"
+			],
+			"text":[
+				"text1",
+				"text2"
+			]
+		}
 	}
 }

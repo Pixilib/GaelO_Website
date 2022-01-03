@@ -1,6 +1,6 @@
 
 import { Fragment } from 'react'
-import { Container} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
 import KeyFactorSuccess from './KeyFactorSuccess'
@@ -10,9 +10,9 @@ const OurViewRoot = () => {
     const { t } = useTranslation()
     return (
         <Fragment>
-            <OurViewsText/>
+            <OurViewsText />
             <Container>
-                    <KeyFactorSuccess />
+                <KeyFactorSuccess />
             </Container>
         </Fragment>
     )

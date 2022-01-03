@@ -111,30 +111,41 @@
 	"study": {
 		"img": "study-graph-en.svg",
 		"title": "Our solutions",
-		
 		"graph": {
-			"study":{ 
-				"title":"A clinical study corresponding to a clinical research project",
-				"content": ["For example: DESCART study, real-life registry of Car-T Cell treatment"]},
-			"nPatient":{ 
+			"study": {
+				"title": "A clinical study corresponding to a clinical research project",
+				"content": [
+					"For example: DESCART study, real-life registry of Car-T Cell treatment"
+				]
+			},
+			"nPatient": {
 				"title": "Corresponds to patients included in a study.",
-				"content": ["A patient is defined by a pseudonymization code.", 
-				            "GaelO also manages study exits such as withdrawal of consent"
-						   ]},
-			"nVisite":{
+				"content": [
+					"A patient is defined by a pseudonymization code.",
+					"GaelO also manages study exits such as withdrawal of consent"
+				]
+			},
+			"nVisite": {
 				"title": "A visit is the realization of an imaging acquisition",
-				"content": ["Whatever the modality (CT, MR, X-ray, NM, PT, RT...)", 
-						   "Following a workflow predefined in the study", 
-				           "Example: Baseline CT and CT at the end of the treatment"
-						   ]},
-			"nReviews": { 
-				"title":"Interpretation of an imaging by an expert doctor",
-				"content": ["We customize GaelO to insert the form (imaging e-CRF) of your choice (RECIST, PERCIST, Lugano ...)", 
-						"The reviews can be scheduled to be multiple and blind (and possibly after adjudication)"
-						]},
-			"conclusion":{
+				"content": [
+					"Whatever the modality (CT, MR, X-ray, NM, PT, RT...)",
+					"Following a workflow predefined in the study",
+					"Example: Baseline CT and CT at the end of the treatment"
+				]
+			},
+			"nReviews": {
+				"title": "Interpretation of an imaging by an expert doctor",
+				"content": [
+					"We customize GaelO to insert the form (imaging e-CRF) of your choice (RECIST, PERCIST, Lugano ...)",
+					"The reviews can be scheduled to be multiple and blind (and possibly after adjudication)"
+				]
+			},
+			"conclusion": {
 				"title": "Final decision of medical interpretation",
-				"content": ["Your data are collected in real time and available at any time"]}
+				"content": [
+					"Your data are collected in real time and available at any time"
+				]
+			}
 		}
 	},
 	"role": {
@@ -169,16 +180,50 @@
 			}
 		}
 	},
-	"service":{
-		"title":"Our Solutions",
-		"intro":"We have designated a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
-		"content":"The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
-		"card":["Complete, 100% of the GaelO functionalities of today and tomorrow. You will automatically benefit from GaelO's evolutions, we don't like two-speed search.",
+	"service": {
+		"title": "Our Solutions",
+		"intro": "We have designated a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
+		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
+		"card": [
+			"Complete, 100% of the GaelO functionalities of today and tomorrow. You will automatically benefit from GaelO's evolutions, we don't like two-speed search.",
 			"Unique: A single offer with no options. We prefer to spend our time innovating rather than editing offers.",
 			"Simple: No unit cost per patient, exam, user, center. A study never goes as planned, we believe that once you have the tool in your hands, it is up to you to conduct your study as you see fit. Additional patients to be included? no extra cost.",
 			"Predictable: Your budget is often fixed, so we believe that the price should be predictable from the beginning of your study, no bad surprises along the way.",
 			"Affordable: The service is not free but we think we have found the right price. Contact us and see for yourself."
 		],
-		"img":"offre-service-en.svg"
+		"img": "offre-service-en.svg"
+	},
+	"expertise": {
+		"title": "Expertise",
+		"satisfaction": {
+			"text": "User Satisfaction",
+			"value": "4.1/5"
+		},
+		"trials": {
+			"text": "Trials",
+			"value": 7
+		},
+		"dicom": {
+			"text": "Dicom Studies",
+			"value": 915
+		},
+		"center": {
+			"text": "Centers",
+			"value": 45
+		},
+		"user": {
+			"text": "Users",
+			"value": 116
+		},
+		"testimonial": {
+			"name":[
+				"lysarc",
+				"lysa"
+			],
+			"text":[
+				"text1",
+				"text2"
+			]
+		}
 	}
 }

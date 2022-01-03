@@ -15,6 +15,7 @@ import Welcome from './components/header/Welcome'
 import OurViewRoot from './components/ourviews/OurViewRoot'
 import SolutionRoot from './components/solution/SolutionRoot'
 import ServiceRoot from './components/services/ServiceRoot'
+import ExpertiseRoot from './components/expertise/ExpertiseRoot'
 
 import Footer from './components/Footer'
 import Contact from './components/Contact'
@@ -71,6 +72,9 @@ function App() {
           </Row>
           <Row>
             <ServiceRoot/>
+          </Row>
+          <Row>
+            <ExpertiseRoot/>
           </Row>
           <Row>
             <Contact />

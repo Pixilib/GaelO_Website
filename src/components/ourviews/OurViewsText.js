@@ -4,21 +4,21 @@ import { Col, Row, Container } from 'react-bootstrap'
 
 const OurViewsText = () => {
 
-const {t} = useTranslation()
+    const { t } = useTranslation()
 
-return(
+    return (
 
-    <Container id='ourviews' className='styleOurViews'>
-    <h1 className="text-center  ">{t('ourviews.title')}</h1>
-    <Row className=' d-flex justify-content-center'>
-        <Col className='coltext'>
-            <p >{t('ourviews.body1')}</p>
-            <p >{t('ourviews.body2')}</p>
-        </Col>
-        <Col />
-    </Row>
-</Container>
-)
+        <Container id='ourviews' className='styleOurViews'>
+            <h1 className="text-center  ">{t('ourviews.title')}</h1>
+            <Row className=' d-flex justify-content-center'>
+                <Col className='coltext'>
+                    <p >{t('ourviews.body1')}</p>
+                    <p >{t('ourviews.body2')}</p>
+                </Col>
+                <Col />
+            </Row>
+        </Container>
+    )
 
 
 }
