@@ -9,7 +9,7 @@ return (
 
 
     <Fragment className="bg-dark">
-        <img className="bg-dark" src={t('solution.img')} ></img>
+        <img className="bg-dark" src={t('service.img')} ></img>
     </Fragment>
 )
 

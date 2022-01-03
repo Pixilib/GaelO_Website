@@ -14,6 +14,8 @@ import Header from './components/header/Header'
 import Welcome from './components/header/Welcome'
 import OurViewRoot from './components/ourviews/OurViewRoot'
 import SolutionRoot from './components/solution/SolutionRoot'
+import ServiceRoot from './components/services/ServiceRoot'
+
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 
@@ -21,7 +23,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 
 import './assets/css/gaelo.css'
-import ServiceRoot from './components/services/ServiceRoot'
+
 
 
 
