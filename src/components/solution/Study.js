@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import DataCard from './DataCard'
+import StudyCard from './StudyCard'
 
 const Study = () => {
   const { t } = useTranslation()
@@ -49,7 +49,7 @@ const Study = () => {
             </div>
         </Col>
         <Row className='d-flex mb-4 justify-content-center'>
-          <DataCard level={currentData}/>
+          <StudyCard level={currentData}/>
         </Row>
       </Row>
     </Container>

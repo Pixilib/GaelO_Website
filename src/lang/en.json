@@ -168,5 +168,17 @@
 				"pdf": "supervisor-en.pdf"
 			}
 		}
+	},
+	"solution":{
+		"title":"Our Solutions",
+		"intro":"We have designated a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
+		"content":"The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
+		"card":["Complete, 100% of the GaelO functionalities of today and tomorrow. You will automatically benefit from GaelO's evolutions, we don't like two-speed search.",
+			"Unique: A single offer with no options. We prefer to spend our time innovating rather than editing offers.",
+			"Simple: No unit cost per patient, exam, user, center. A study never goes as planned, we believe that once you have the tool in your hands, it is up to you to conduct your study as you see fit. Additional patients to be included? no extra cost.",
+			"Predictable: Your budget is often fixed, so we believe that the price should be predictable from the beginning of your study, no bad surprises along the way.",
+			"Affordable: The service is not free but we think we have found the right price. Contact us and see for yourself."
+		],
+		"img":"offre-service-en.svg"
 	}
 }

@@ -11,7 +11,7 @@ const OurviewsCard = (props) => {
 
 
   return (
-    <ReactCardFlip className='justify-content-center ColCard' role='button' isFlipped={isFlipped}>
+    <ReactCardFlip className='justify-content-center' role='button' isFlipped={isFlipped}>
       {/* vue du front de la card */}
       <Card className=' text-center fs-3 styleCard' role='button' onMouseEnter={handleClick}>
         <img className='justify-content-center cardIcon ' src={props.imageUrl} />

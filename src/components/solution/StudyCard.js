@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 
 import fr from '../../lang/fr.json'
 
-const DataCard = (props) => {
+const StudyCard = (props) => {
 
     const { t } = useTranslation()
 
@@ -43,4 +43,4 @@ const DataCard = (props) => {
 
 }
 
-export default DataCard
+export default StudyCard
