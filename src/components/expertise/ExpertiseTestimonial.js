@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Carousel } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import fr from '../../lang/fr.json'
-import FactorCarouselExpertise from "./FactorCarouselExpertise";
+
 
 
 const ExpertiseTestimonial = () => {
