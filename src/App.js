@@ -61,16 +61,13 @@ function App() {
 
   const [isScrolled, setScrolled] = useState(false)
 
-
-  let ref = useRef();
-  let HomeRef = useIntersection(HomeRef, '0px')
-  let OurViewsRef = useIntersection(ref,'10px')
-  let SolutionRef = useIntersection(ref,'50px')
-  let ServiceRef = useIntersection(ref,'150px')
-  let ExpertiseRef = useIntersection(ref,'200px')
-  let OurteamRef = useIntersection(ref,'300px')
-  let ContactRef = useIntersection(ref,'400px')
-
+  let HomeRef = useRef()
+  let OurViewsRef = useRef()
+  let SolutionRef = useRef()
+  let ServiceRef = useRef()
+  let ExpertiseRef = useRef()
+  let OurteamRef = useRef()
+  let ContactRef = useRef()
 
   const NavBarTransparentToWhite = (event) => {
     if (window.pageYOffset >= 100) {
@@ -84,15 +81,12 @@ function App() {
 
   const location = useLocation()
 
-
-
   React.useEffect(() => {
     // runs on location, i.e. route, change
     switch (location.pathname) {
-
-      case "/" : HomeRef.scrollIntoView()
-        break;
-
+      case "" : HomeRef.scrollIntoView()
+      break;
+      
       case "/ourviews": OurViewsRef.scrollIntoView()
         break;
 
@@ -123,30 +117,30 @@ function App() {
 
       <Header scrolled={isScrolled} />
       <Container fluid className='background'>
-       <Row ref={(ref) => HomeRef = ref} >
-        <Welcome />
-          </Row>
+        <Row ref={HomeRef} >
+          <Welcome />
+        </Row>
       </Container>
       <Container fluid>
-        <Row ref={(ref) => OurViewsRef = ref} >
+        <Row ref={OurViewsRef} >
           <OurViewRoot />
         </Row>
-        <Row ref={(ref) => SolutionRef = ref} >
+        <Row ref={SolutionRef} >
           <SolutionRoot />
         </Row>
-        <Row ref={(ref) => ServiceRef = ref} >
+        <Row ref={ServiceRef} >
           <ServiceRoot />
         </Row>
-        <Row ref={(ref) => ExpertiseRef = ref} >
+        <Row ref={ExpertiseRef} >
           <ExpertiseRoot />
         </Row>
         <Row>
           <Partner />
         </Row>
-        <Row ref={(ref) => OurteamRef = ref}>
+        <Row ref={OurteamRef}>
           <Ourteam />
         </Row>
-        <Row ref={(ref) => ContactRef = ref}>
+        <Row ref={ContactRef}>
           <Contact />
         </Row>
       </Container>
