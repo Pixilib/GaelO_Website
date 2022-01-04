@@ -10,7 +10,6 @@ import { useNavigate, useLocation, useMatch, Link, Route, Routes, BrowserRouter,
 import OurViewRoot from '../ourviews/OurViewRoot'
 
 function Header(props) {
-  const [isScrolled, setScrolled] = useState(false)
 
   const history = useNavigate();
 
@@ -20,25 +19,11 @@ function Header(props) {
   }
 
 
-  const location = useLocation()
-
-  React.useEffect(() => {
-    // runs on location, i.e. route, change
-    console.log('handle route change here', location)
-  }, [location])
 
 
-  const NavBarTransparentToWhite = (event) => {
-    if (window.pageYOffset >= 100) {
-      setScrolled(true)
-    } else {
-      setScrolled(false)
-    }
-  }
 
-  const customLink = () => isScrolled ? 'text-dark' : 'text-white'
-  const customNav = () => isScrolled ? 'bg-white py-0 ' : 'bg-transparent background py-0 '
-  window.addEventListener('scroll', NavBarTransparentToWhite)
+  const customLink = () => props.scrolled ? 'text-dark' : 'text-white'
+  const customNav = () => props.scrolled ? 'bg-white py-0 ' : 'bg-transparent background py-0 '
   const { t } = useTranslation()
 
   return (
@@ -53,7 +38,7 @@ function Header(props) {
 
         <Col>
           <Nav className={'justify-content-center fw-bold '+ customLink()}>
-            <Link to="/ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
+            <Link to="ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
           </Nav>
 
         </Col>
@@ -62,12 +47,6 @@ function Header(props) {
           <Lang />
         </Col>
       </Navbar>
-
-      <Routes>
-
-        <Route exact path="/ourviews" component={OurViewRoot} />
-
-      </Routes>
 
     </Fragment >
   )

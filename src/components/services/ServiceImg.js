@@ -8,7 +8,7 @@ const {t}= useTranslation()
 return (
 
 
-    <Fragment className="bg-dark">
+    <Fragment >
         <img className="bg-dark" src={t('service.img')} ></img>
     </Fragment>
 )
