@@ -15,7 +15,7 @@ function Header(props) {
 
   const handleClick = () => {
     console.log(history)
-    history("/ourviews");
+    history("/");
   }
 
 
@@ -31,14 +31,17 @@ function Header(props) {
 
       <Navbar sticky='top' className={customNav()}>
         <Col sm={1}>
-          <Nav.Link href='#home'>
+          <Nav>
+            <Link to="/">
             <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
-          </Nav.Link>
+            </Link>
+          </Nav>
         </Col>
 
         <Col>
           <Nav className={'justify-content-center fw-bold '+ customLink()}>
             <Link to="ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
+            <Link to="solution" onClick={handleClick}>{t('navbar.2')} </Link>
           </Nav>
 
         </Col>

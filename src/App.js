@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import React, { useRef, useState } from 'react'
+import { BrowserRouter, useLocation } from 'react-router-dom'
 
 import { Container, Row } from 'react-bootstrap'
 import i18next from 'i18next'
@@ -58,40 +58,63 @@ i18next
   })
 
 function App() {
+
+  const [isScrolled, setScrolled] = useState(false)
+
+  let myRef = useRef()
+  
+
+  const NavBarTransparentToWhite = (event) => {
+    if (window.pageYOffset >= 100) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
+
+  window.addEventListener('scroll', NavBarTransparentToWhite)
+
+  const location = useLocation()
+
+  React.useEffect(() => {
+    // runs on location, i.e. route, change
+    myRef.scrollIntoView()
+    console.log(myRef)
+    console.log('handle route change here', location)
+  }, [location])
+
   return (
     <>
-      <BrowserRouter>
 
-        <Header />
-        <Container fluid className='background'>
-          <Welcome id='home' />
-        </Container>
-        <Container fluid>
-          <Row>
-            <OurViewRoot />
-          </Row>
-          <Row>
-            <SolutionRoot/>
-          </Row>
-          <Row>
-            <ServiceRoot/>
-          </Row>
-          <Row>
-            <ExpertiseRoot/>
-          </Row>
-          <Row>
-            <Partner/>
-          </Row>
-          <Row>
-            <Ourteam/>
-          </Row>
-          <Row>
-            <Contact />
-          </Row>
-        </Container>
-        <Footer fluid className='background' />
+      <Header scrolled={isScrolled} />
+      <Container fluid className='background'>
+        <Welcome />
+      </Container>
+      <Container fluid>
+        <Row ref={(ref) => myRef = ref} >
+          <OurViewRoot />
+        </Row>
+        <Row>
+          <SolutionRoot  />
+        </Row>
+        <Row>
+          <ServiceRoot />
+        </Row>
+        <Row>
+          <ExpertiseRoot />
+        </Row>
+        <Row>
+          <Partner />
+        </Row>
+        <Row>
+          <Ourteam />
+        </Row>
+        <Row>
+          <Contact />
+        </Row>
+      </Container>
+      <Footer fluid className='background' />
 
-      </BrowserRouter>
     </>
   )
 }
