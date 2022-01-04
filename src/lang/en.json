@@ -227,13 +227,7 @@
 		}
 	},
 	"partner":{
-		"title":"Our Partner",		
-		"logo":[
-			"Lysa.svg",
-			"Lysarc.svg",
-			"carnot.svg",
-			"ovh.svg"
-		]
+		"title":"Our Partner"	
 	},
 	"team":{
 		"title":"Our Team",
