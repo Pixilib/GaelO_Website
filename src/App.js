@@ -24,7 +24,7 @@ import Contact from './components/contact/Contact'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
-
+import useIntersection from './useIntersection'
 import './assets/css/gaelo.css'
 
 
@@ -61,14 +61,15 @@ function App() {
 
   const [isScrolled, setScrolled] = useState(false)
 
-  let HomeRef = useRef()
-  let OurViewsRef = useRef()
-  let SolutionRef = useRef()
-  let ServiceRef = useRef()
-  let ExpertiseRef = useRef()
-  let OurteamRef = useRef()
-  let ContactRef = useRef()
 
+  let ref = useRef();
+  let HomeRef = useIntersection(HomeRef, '0px')
+  let OurViewsRef = useIntersection(ref,'10px')
+  let SolutionRef = useIntersection(ref,'50px')
+  let ServiceRef = useIntersection(ref,'150px')
+  let ExpertiseRef = useIntersection(ref,'200px')
+  let OurteamRef = useIntersection(ref,'300px')
+  let ContactRef = useIntersection(ref,'400px')
 
 
   const NavBarTransparentToWhite = (event) => {
@@ -83,6 +84,8 @@ function App() {
 
   const location = useLocation()
 
+
+
   React.useEffect(() => {
     // runs on location, i.e. route, change
     switch (location.pathname) {
@@ -91,9 +94,6 @@ function App() {
         break;
 
       case "/ourviews": OurViewsRef.scrollIntoView()
-        break;
-
-      case "/solution": SolutionRef.scrollIntoView()
         break;
 
       case "/solution": SolutionRef.scrollIntoView()
@@ -116,6 +116,8 @@ function App() {
     console.log('handle route change here', location)
   }, [location])
 
+
+  console.log()
   return (
     <>
 

@@ -40,7 +40,7 @@ function Header(props) {
 
         <Col>
           <Nav className={'justify-content-center fw-bold '+ customLink()}>
-            <Link to="ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
+            <Link id="ourviews" to="ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
             <Link to="solution" onClick={handleClick}>{t('navbar.2')} </Link>
             <Link to="service" onClick={handleClick}>{t('navbar.3')} </Link>
             <Link to="expertise" onClick={handleClick}>{t('navbar.4')} </Link>
