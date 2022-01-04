@@ -18,7 +18,7 @@ import ServiceRoot from './components/services/ServiceRoot'
 import ExpertiseRoot from './components/expertise/ExpertiseRoot'
 
 import Footer from './components/Footer'
-import Contact from './components/Contact'
+import Contact from './components/contact/Contact'
 
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'

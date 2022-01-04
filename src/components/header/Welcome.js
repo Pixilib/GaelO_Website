@@ -53,10 +53,10 @@ const Header = () => {
         </Col>
       </Row>
       <Row className='justify-content-center'>
-        <button className='btn-ytb' type='button' onClick={() => setModalShow(true)}>
+       <button className='btn-ytb' type='button' onClick={() => setModalShow(true)}>
           <img src='logo-video.png' variant='primary' className='logoVideo' />
           <p className='m-0'>Présentation</p>
-        </button>
+        </button> 
         <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
       </Row>
     </Container>
