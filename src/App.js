@@ -25,6 +25,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 
 import './assets/css/gaelo.css'
+import Partner from './components/Partner'
 
 
 
@@ -76,6 +77,9 @@ function App() {
           </Row>
           <Row>
             <ExpertiseRoot/>
+          </Row>
+          <Row>
+            <Partner/>
           </Row>
           <Row>
             <Contact />
