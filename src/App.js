@@ -61,8 +61,15 @@ function App() {
 
   const [isScrolled, setScrolled] = useState(false)
 
-  let myRef = useRef()
-  
+  let HomeRef = useRef()
+  let OurViewsRef = useRef()
+  let SolutionRef = useRef()
+  let ServiceRef = useRef()
+  let ExpertiseRef = useRef()
+  let OurteamRef = useRef()
+  let ContactRef = useRef()
+
+
 
   const NavBarTransparentToWhite = (event) => {
     if (window.pageYOffset >= 100) {
@@ -78,8 +85,34 @@ function App() {
 
   React.useEffect(() => {
     // runs on location, i.e. route, change
-    myRef.scrollIntoView()
-    console.log(myRef)
+    switch (location.pathname) {
+
+      case "/" : HomeRef.scrollIntoView()
+        break;
+
+      case "/ourviews": OurViewsRef.scrollIntoView()
+        break;
+
+      case "/solution": SolutionRef.scrollIntoView()
+        break;
+
+      case "/solution": SolutionRef.scrollIntoView()
+        break;
+
+      case "/service": ServiceRef.scrollIntoView()
+        break;
+
+      case "/expertise": ExpertiseRef.scrollIntoView()
+        break;
+
+      case "/team": OurteamRef.scrollIntoView()
+        break;
+
+      case "/contact": ContactRef.scrollIntoView()
+        break;
+
+    }
+    console.log(location.pathname)
     console.log('handle route change here', location)
   }, [location])
 
@@ -88,28 +121,30 @@ function App() {
 
       <Header scrolled={isScrolled} />
       <Container fluid className='background'>
+       <Row ref={(ref) => HomeRef = ref} >
         <Welcome />
+          </Row>
       </Container>
       <Container fluid>
-        <Row ref={(ref) => myRef = ref} >
+        <Row ref={(ref) => OurViewsRef = ref} >
           <OurViewRoot />
         </Row>
-        <Row>
-          <SolutionRoot  />
+        <Row ref={(ref) => SolutionRef = ref} >
+          <SolutionRoot />
         </Row>
-        <Row>
+        <Row ref={(ref) => ServiceRef = ref} >
           <ServiceRoot />
         </Row>
-        <Row>
+        <Row ref={(ref) => ExpertiseRef = ref} >
           <ExpertiseRoot />
         </Row>
         <Row>
           <Partner />
         </Row>
-        <Row>
+        <Row ref={(ref) => OurteamRef = ref}>
           <Ourteam />
         </Row>
-        <Row>
+        <Row ref={(ref) => ContactRef = ref}>
           <Contact />
         </Row>
       </Container>

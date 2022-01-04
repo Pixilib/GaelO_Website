@@ -32,7 +32,7 @@ function Header(props) {
       <Navbar sticky='top' className={customNav()}>
         <Col sm={1}>
           <Nav>
-            <Link to="/">
+            <Link to="/" onClick={handleClick}>
             <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
             </Link>
           </Nav>
@@ -42,8 +42,11 @@ function Header(props) {
           <Nav className={'justify-content-center fw-bold '+ customLink()}>
             <Link to="ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
             <Link to="solution" onClick={handleClick}>{t('navbar.2')} </Link>
+            <Link to="service" onClick={handleClick}>{t('navbar.3')} </Link>
+            <Link to="expertise" onClick={handleClick}>{t('navbar.4')} </Link>
+            <Link to="team" onClick={handleClick}>{t('navbar.5')} </Link>
+            <Link to="contact" onClick={handleClick}>{t('navbar.6')} </Link>
           </Nav>
-
         </Col>
         <a href="https://github.com/Pixilib/"><img className='' src={logoGitHub} /></a>
         <Col sm={1}>
