@@ -1,19 +1,18 @@
 import React from "react";
 import { Row, Col } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
-import fr from '../lang/fr.json'
+import logo from '../lang/logo.json'
 
 const Partner = () => {
 
     const { t } = useTranslation()
 
     const generatePartner = () => {
-        const partnerNumero = [...Array(fr.partner.logo.length).keys()]
-
-        const componentArray = partnerNumero.map((item) => {
+       
+        const componentArray = logo.partner.logo.map((url) => {
             return (
                 <Col>
-                    <img src={t('partner.logo.' + item)}></img>
+                    <img src={url}></img>
                 </Col>
             )
         })
