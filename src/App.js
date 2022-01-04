@@ -16,15 +16,17 @@ import OurViewRoot from './components/ourviews/OurViewRoot'
 import SolutionRoot from './components/solution/SolutionRoot'
 import ServiceRoot from './components/services/ServiceRoot'
 import ExpertiseRoot from './components/expertise/ExpertiseRoot'
-
+import Partner from './components/Partner'
+import Ourteam from './components/team/OurTeam'
 import Footer from './components/Footer'
-import Contact from './components/Contact'
+import Contact from './components/contact/Contact'
 
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 
 import './assets/css/gaelo.css'
+
 
 
 
@@ -76,6 +78,12 @@ function App() {
           </Row>
           <Row>
             <ExpertiseRoot/>
+          </Row>
+          <Row>
+            <Partner/>
+          </Row>
+          <Row>
+            <Ourteam/>
           </Row>
           <Row>
             <Contact />

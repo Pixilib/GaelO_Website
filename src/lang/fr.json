@@ -218,5 +218,42 @@
 				"text2"
 			]
 		}
-	}
+	},
+	"partner":{
+		"title":"Nos Partenaires",
+		"logo":[
+			"Lysa.svg",
+			"Lysarc.svg",
+			"carnot.svg",
+			"ovh.svg"
+		]
+	},
+	"team":{
+		"title":"Notre Equipe",
+		"name":[
+			"Salim",
+			"Omar",
+			"Emilie",
+			"Josselin"
+		],
+		"img":[
+			"logotete.png",
+			"logotete.png",
+			"logotete.png",
+			"logotete.png"
+		],
+		"text":[
+			"Médecin nucléaire passionné par le développement et la technologie",
+			"Étudiant en Master 2 en école de commerce passionné par l’innovation et la créativité.",
+			"texte d'Emilie's ",
+			"Devops passionné par son métier et la technologie"
+		],
+		"role":[
+			"Créateur et Chef de projet",
+			"Responsable Commerciale",
+			"Emilie role",
+			"DevOps"
+		]
+		
+		}
 }

@@ -179,9 +179,9 @@ right: 0;
 
 /* -- Contact -- */
 
-/* -- Modal ? --*/
+/*-- Partner --*/
 
-/* -- Vidéo ? -- */
-
-/*
-/*-- A garder? --*/
+.logocontact{
+    max-width: 150px;
+    max-height: 150px;
+}
