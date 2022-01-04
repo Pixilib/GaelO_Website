@@ -228,5 +228,33 @@
 	},
 	"partner":{
 		"title":"Our Partner"
+	},
+	"team":{
+		"title":"Our Team",
+		"name":[
+			"Salim",
+			"Omar",
+			"Emilie",
+			"Josselin"
+		],
+		"img":[
+			"logotete.png",
+			"logotete.png",
+			"logotete.png",
+			"logotete.png"
+		],
+		"text":[
+			"Nuclear doctor with a passion for development and technology",
+			"Master 2 student in business school with a passion for innovation and creativity.",
+			"Emilie's text",
+			"Devops passionate about his job and technology"
+		],
+		"role":[
+			"Designer and Project Manager",
+			"Sales Manager",
+			"Emilie's role",
+			"DevOps"
+		]
+		
+		}
 	}
-}
