@@ -9,6 +9,8 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { Language } from './enums/Language'
 import translationEN from './lang/en.json'
 import translationFR from './lang/fr.json'
+import useIntersection from './useIntersection'
+
 
 import Header from './components/header/Header'
 import Welcome from './components/header/Welcome'
@@ -24,7 +26,7 @@ import Contact from './components/contact/Contact'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
-import useIntersection from './useIntersection'
+
 import './assets/css/gaelo.css'
 
 
@@ -61,86 +63,84 @@ function App() {
 
   const [isScrolled, setScrolled] = useState(false)
 
-  let HomeRef = useRef()
-  let OurViewsRef = useRef()
-  let SolutionRef = useRef()
-  let ServiceRef = useRef()
-  let ExpertiseRef = useRef()
-  let OurteamRef = useRef()
-  let ContactRef = useRef()
+  let refs = useRef([])
 
-  const NavBarTransparentToWhite = (event) => {
+
+  window.addEventListener('scroll', () => {
     if (window.pageYOffset >= 100) {
       setScrolled(true)
     } else {
       setScrolled(false)
     }
-  }
+  })
 
-  window.addEventListener('scroll', NavBarTransparentToWhite)
+
+
+
+
+
 
   const location = useLocation()
 
   React.useEffect(() => {
     // runs on location, i.e. route, change
     switch (location.pathname) {
-      case "" : HomeRef.scrollIntoView()
-      break;
-      
-      case "/ourviews": OurViewsRef.scrollIntoView()
+      case "/": refs.current[0].scrollIntoView()
         break;
 
-      case "/solution": SolutionRef.scrollIntoView()
+      case "/ourviews": refs.current[1].scrollIntoView()
         break;
 
-      case "/service": ServiceRef.scrollIntoView()
+      case "/solution": refs.current[2].scrollIntoView()
         break;
 
-      case "/expertise": ExpertiseRef.scrollIntoView()
+      case "/service": refs.current[3].scrollIntoView()
         break;
 
-      case "/team": OurteamRef.scrollIntoView()
+      case "/expertise": refs.current[4].scrollIntoView()
         break;
 
-      case "/contact": ContactRef.scrollIntoView()
+      case "/team": refs.current[6].scrollIntoView()
+        break;
+
+      case "/contact": refs.current[7].scrollIntoView()
+        break;
+      default:
         break;
 
     }
-    console.log(location.pathname)
-    console.log('handle route change here', location)
   }, [location])
 
-
-  console.log()
   return (
+
     <>
 
       <Header scrolled={isScrolled} />
       <Container fluid className='background'>
-        <Row ref={HomeRef} >
+        <Row ref={(ref) => refs.current[0] = ref} >
           <Welcome />
         </Row>
       </Container>
       <Container fluid>
-        <Row ref={OurViewsRef} >
+        <Row ref={(ref) => refs.current[1] = ref} >
           <OurViewRoot />
         </Row>
-        <Row ref={SolutionRef} >
+        <Row ref={(ref) => refs.current[2] = ref} >
           <SolutionRoot />
         </Row>
-        <Row ref={ServiceRef} >
+        <Row ref={(ref) => refs.current[3] = ref} >
           <ServiceRoot />
         </Row>
-        <Row ref={ExpertiseRef} >
+        <Row ref={(ref) => refs.current[4] = ref} >
           <ExpertiseRoot />
         </Row>
-        <Row>
+        <Row ref={(ref) => refs.current[5] = ref}>
           <Partner />
         </Row>
-        <Row ref={OurteamRef}>
+        <Row ref={(ref) => refs.current[6] = ref}>
           <Ourteam />
         </Row>
-        <Row ref={ContactRef}>
+        <Row ref={(ref) => refs.current[7] = ref}>
           <Contact />
         </Row>
       </Container>

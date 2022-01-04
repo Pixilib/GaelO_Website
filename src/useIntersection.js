@@ -1,21 +1,29 @@
-import { useEffect, useState } from "react"; 
+import { useEffect, useState } from "react";
 
-const useIntersection = (element, rootMargin) => {
-    const [isVisible, setState] = useState(false);
 
+function useIntersection(ref, rootMargin = "0px") {
+    console.log(ref)
+    // State and setter for storing whether element is visible
+    const [isIntersecting, setIntersecting] = useState(false);
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                setState(entry.isIntersecting);
-            }, { rootMargin }
+                console.log(entry)
+                // Update our state when observer callback fires
+                setIntersecting(entry.isIntersecting);
+            },
+            {
+                rootMargin,
+            }
         );
-
-        element && observer.observe(element);
-
-        return () => observer.unobserve(element);
-    }, []);
-
-    return isVisible;
-};
+        if (ref) {
+            observer.observe(ref);
+        }
+        return () => {
+            observer.unobserve(ref);
+        };
+    }, []); // Empty array ensures that effect is only run on mount and unmount
+    return isIntersecting;
+}
 
 export default useIntersection
