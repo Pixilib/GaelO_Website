@@ -8,7 +8,7 @@ const ServiceIntro = () => {
 
     return(
         <Fragment>
-            <h1>{t('service.title')} </h1>
+            <h1 className="text-center">{t('service.title')} </h1>
             <p>{t('service.intro')}</p>
             <p>{t('service.content')}</p>
         </Fragment>

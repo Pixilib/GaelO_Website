@@ -181,15 +181,36 @@
 		}
 	},
 	"service": {
-		"title": "Our Solutions",
+		"title": "Our Services",
 		"intro": "We have designated a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
 		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
-		"card": [
-			"Complete, 100% of the GaelO functionalities of today and tomorrow. You will automatically benefit from GaelO's evolutions, we don't like two-speed search.",
-			"Unique: A single offer with no options. We prefer to spend our time innovating rather than editing offers.",
-			"Simple: No unit cost per patient, exam, user, center. A study never goes as planned, we believe that once you have the tool in your hands, it is up to you to conduct your study as you see fit. Additional patients to be included? no extra cost.",
-			"Predictable: Your budget is often fixed, so we believe that the price should be predictable from the beginning of your study, no bad surprises along the way.",
-			"Affordable: The service is not free but we think we have found the right price. Contact us and see for yourself."
+		"subtitle": [
+			"Complete",
+			"Unique",
+			"Simple",
+			"Predictable",
+			"Affordable"
+		],
+		"logo":[
+			"complet.png",
+			"unic.png",
+			"target.png",
+			"predictive.png",
+			"abordable.png"
+		],
+		"front":[
+			"100% of the GaelO features of today and tomorrow.",
+			"One offer without options. ",
+			"Simple and transparent pricing",
+			"No hidden costs!",
+			"Seriously?"
+		],
+		"back":[
+			"You will automatically benefit from the evolutions of GaelO, we don't like two-speed research.",
+			"We prefer to use our time to innovate rather than publish offers.",
+			"No unit cost per patient, exam, user, centre. Include a few more patients, open an additional centre is no longer a problem!",
+			"Your budget is often fixed, we believe that the price should be predictable from the beginning of your study.",
+			"Seriously! Our customers rarely negotiate our price, we prefer to focus on our added value: innovation."
 		],
 		"img": "offre-service-en.svg"
 	},
