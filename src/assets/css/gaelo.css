@@ -174,7 +174,7 @@ top: 0;
 right: 0;
 }
 /* -- Service --*/
-.cardService{
+.cardServiceFront{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,9 +183,36 @@ right: 0;
     height: 200px;
     border-color:#0495A0 ;
     color: #0495A0;
-    
-    
+     
 }
+
+
+.cardServiceBack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 200px;
+    border-color:#0495A0 ;
+    color: #0495A0;
+  
+}
+.fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+
 .CardFade{
     
 width: 250px;
