@@ -12,13 +12,10 @@ const CardFade = (props) => {
     return (
 
         <Fragment>
-            <CSSTransition in={isFront} timeout={400}
+            <CSSTransition in={isFront} 
                 classNames="fade">
                 
                     <div onMouseEnter={() => setIsFront(false)} onMouseLeave={() => setIsFront(true)}>{isFront ? props.children[0] : props.children[1]}</div>
-                
-             
-                
             </CSSTransition>
         </Fragment>
     )

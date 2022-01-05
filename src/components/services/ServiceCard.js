@@ -17,9 +17,10 @@ const ServiceCard = () => {
 
     const generateCardSolution = () => {
         const solutionNumber = [...Array(fr.service.subtitle.length).keys()]
-
+        const colorChoices =['text-primary','text-secondary','text-dark','text-success','text-info']
+        const borderChoices =['border-primary','border-secondary','border-dark','border-success','border-info']
         const componentArray = solutionNumber.map((item) => {
-            return (
+            return ( 
                 <Col>
                     <CardFade>
                         {/* vue du front de la card */}
