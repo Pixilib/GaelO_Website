@@ -1,17 +1,49 @@
+/* -- Override Bootstrap --*/
+
+/* -- Bordure --*/
+
+.border-primary{
+    border-color:#353275 !important
+}
+.border-secondary{
+    border-color:#FFBA4D !important
+}
 .border-dark{
     border-color:#314053 !important
 }
+.border-success{
+    border-color:#78E08F !important
+}   
+.border-info{
+    border-color: #0495A0 !important
+} /*-- 
+Noir moins sombre  color: #314053
+Bleu / Violet      color: #353275
+Bleu               color: #0495A0;
+Orange             color: #FFBA4D;
+Vert CG            color: #78E08F;
+Vert               color :#2ec086;
+--*/
+/* -- background --*/
 .bg-light{
     background-color:#f7f7f7 !important
 }
-.text-dark{
-    color:#314053 !important
-}
+/* -- Texte --*/
+
 .text-primary{
     color:#353275 !important
 }
 .text-secondary{
     color:#FFBA4D !important
+}
+.text-dark{
+    color:#314053 !important
+}
+.text-success{
+    color:#78E08F !important
+}
+.text-info{
+    color:#0495A0 !important
 }
 
 html,
@@ -174,7 +206,7 @@ top: 0;
 right: 0;
 }
 /* -- Service --*/
-.cardService{
+.cardServiceFront{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,15 +215,38 @@ right: 0;
     height: 200px;
     border-color:#0495A0 ;
     color: #0495A0;
-    
-    
+     
 }
-.CardFade{
-    
-width: 250px;
-height: 200px;
-    
+
+
+.cardServiceBack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 200px;
+    border-color:#0495A0 ;
+    color: #0495A0;
+  
 }
+.fade-enter {
+    opacity: 0;
+  }
+  .fade-appear-done {
+    opacity: 1;
+    transition: opacity 5s;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 5s;
+  }
+ 
+
+
 .serviceIcon{
     width: 25%;
 }
