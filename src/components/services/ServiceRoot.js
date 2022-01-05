@@ -1,17 +1,32 @@
-import React,{Fragment} from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import ServiceCard from "./ServiceCard";
 import ServiceImg from "./ServiceImg";
-import ServiceIntro from "./ServiceIntro";
 
 const ServiceRoot=()=>{
 
+    const {t}= useTranslation()
+
     return(
 
-        <Fragment>
-            <ServiceIntro/>
-            <ServiceCard/>
+        <Container fluid>
+            <h1 className="text-center">{t('service.title')} </h1>
+            <Row>
+                <Col>
+                    <p>{t('service.intro')}</p>
+                    <p>{t('service.content')}</p>
+                </Col>
+                <Col>
+                    <ServiceCard/>
+                </Col>
+            </Row>
+            <Row>
             <ServiceImg/>
-        </Fragment>    
+            </Row>
+            
+            
+            
+        </Container>    
     )
 
 }

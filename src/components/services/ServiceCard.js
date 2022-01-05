@@ -21,22 +21,20 @@ const ServiceCard = () => {
         const borderChoices =['border-primary','border-secondary','border-dark','border-success','border-info']
         const componentArray = solutionNumber.map((item) => {
             return ( 
-                <Col>
-                    <CardFade>
-                        {/* vue du front de la card */}
-                        <Card className="cardServiceFront">
-                            <p className="text-center fw-bold fs-4 ">{t('service.subtitle.' + item)}</p>
-                            <img className="serviceIcon " src={t('service.logo.' + item)}></img>
-                            <p className="text-center text-dark">{t('service.front.' + item)}</p>
-                        </Card>
-                        {/* vue du back de la card */}
-                        <Card className="cardServiceBack " >
-                            <p className="text-center text-dark ">{t('service.back.' + item)}</p>
-                        </Card>
+                <CardFade>
+                    {/* vue du front de la card */}
+                    <Card className="cardServiceFront">
+                        <p className="text-center fw-bold fs-4 ">{t('service.subtitle.' + item)}</p>
+                        <img className="serviceIcon " src={t('service.logo.' + item)}></img>
+                        <p className="text-center text-dark">{t('service.front.' + item)}</p>
+                    </Card>
+                    {/* vue du back de la card */}
+                    <Card className="cardServiceBack " >
+                        <p className="text-center text-dark ">{t('service.back.' + item)}</p>
+                    </Card>
 
-                    </CardFade>
+                </CardFade>
 
-                </Col>
             )
         })
         return componentArray
@@ -45,7 +43,7 @@ const ServiceCard = () => {
     return (
 
 
-        <Row className='w-100 h-100 row-cols-md-3 d-flex rowCard'>
+        <Row className='row-cols-md-3'>
             {generateCardSolution()}
         </Row>
 
