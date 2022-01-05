@@ -1,9 +1,8 @@
 import { Container, Col, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
-import CardHeader from "react-bootstrap/esm/CardHeader";
 import { useTranslation } from "react-i18next";
 import fr from '../../lang/fr.json'
-import CardFade from "./FactorCardService";
+import CardFade from "./CardFade";
 
 const ServiceCard = () => {
 
@@ -16,13 +15,18 @@ const ServiceCard = () => {
             return (
                 <Col  >
                     <CardFade>
-                       
+
                         {/* vue du front de la card */}
-                        <Card className="text-center fs-4 text-primary cardService">{t('service.subtitle.'+item)}
-                         <img className="serviceIcon " src={t('service.logo.'+item)}></img>  {t('service.front.'+item)}</Card>
+                        <Card className="cardService">
+                            <p className="text-center fw-bold fs-4 ">{t('service.subtitle.' + item)}</p>
+                            <img className="serviceIcon " src={t('service.logo.' + item)}></img>
+                            <p className="text-center text-dark">{t('service.front.' + item)}</p>
+                        </Card>
                         {/* vue du back de la card */}
-                        <Card className="text-center">{t('service.back.'+item)}</Card>
-                        <button>Read More</button>
+                        <Card className="cardService">
+                            <p className="text-center text-dark ">{t('service.back.' + item)}</p>
+                        </Card>
+
                     </CardFade>
 
                 </Col>
@@ -33,11 +37,11 @@ const ServiceCard = () => {
 
     return (
 
-        <Container>
-            <Row className='w-100 h-100 '>
+       
+            <Row className='w-100 h-100 row-cols-md-3 d-flex rowCard'>
                 {generateCardSolution()}
             </Row>
-        </Container>
+        
     )
 
 }
