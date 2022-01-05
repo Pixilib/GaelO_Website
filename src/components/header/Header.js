@@ -5,26 +5,46 @@ import { Col, Row, Figure, Nav, Navbar, NavbarBrand } from 'react-bootstrap'
 import logoPrincipal from '../../assets/images/logoPrincipal.png'
 import React, { Fragment, useState } from 'react'
 import logoGitHub from '../../assets/images/github.svg'
-import { useNavigate, useLocation, useMatch, Link, Route, Routes, BrowserRouter, } from 'react-router-dom'
+import { useNavigate, useLocation, useMatch, Link, Route, Routes, BrowserRouter } from 'react-router-dom'
 
-import OurViewRoot from '../ourviews/OurViewRoot'
+
+
+ 
 
 function Header(props) {
+
+  const location = useLocation()
 
   const history = useNavigate();
 
   const handleClick = () => {
-    console.log(history)
+   // console.log(history)
     history("/");
   }
 
+  const customStyle= {
+    marginLeft : "10px",
+    textDecoration : "none"
+  }
 
 
+  const customLink = (origin) =>{
+    let className = props.scrolled ? 'text-dark'  : 'text-white'  
 
+    if(origin == location.pathname)
+      {
+        className = "text-secondary"
+      }
+    
+    return className;
+  }
+  
 
-  const customLink = () => props.scrolled ? 'text-dark' : 'text-white'
   const customNav = () => props.scrolled ? 'bg-white py-0 ' : 'bg-transparent background py-0 '
+  
   const { t } = useTranslation()
+
+
 
   return (
     <Fragment>
@@ -39,13 +59,13 @@ function Header(props) {
         </Col>
 
         <Col>
-          <Nav className={'justify-content-center fw-bold ' + customLink()}>
-            <Link to="ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
-            <Link to="solution" onClick={handleClick}>{t('navbar.2')} </Link>
-            <Link to="service" onClick={handleClick}>{t('navbar.3')} </Link>
-            <Link to="expertise" onClick={handleClick}>{t('navbar.4')} </Link>
-            <Link to="team" onClick={handleClick}>{t('navbar.5')} </Link>
-            <Link to="contact" onClick={handleClick}>{t('navbar.6')} </Link>
+          <Nav className={'justify-content-center fw-bold ' }>
+            <Link to="ourviews" style={customStyle} className={ customLink("/ourviews") }  onClick={handleClick} >{t('navbar.1')}</Link>
+            <Link to="solution" style={customStyle} className={customLink("/solution")} onClick={handleClick}>{t('navbar.2')} </Link>
+            <Link to="service" style={customStyle} className={customLink("/service")} onClick={handleClick}>{t('navbar.3')} </Link>
+            <Link to="expertise" style={customStyle} className={customLink("/expertise")} onClick={handleClick}>{t('navbar.4')} </Link>
+            <Link to="team" style={customStyle} className={customLink("/team")} onClick={handleClick}>{t('navbar.5')} </Link>
+            <Link to="contact" style={customStyle} className={customLink("/contact")} onClick={handleClick}>{t('navbar.6')} </Link>
           </Nav>
         </Col>
         <a href="https://github.com/Pixilib/"><img className='' src={logoGitHub} /></a>

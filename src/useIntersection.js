@@ -8,7 +8,7 @@ function useIntersection(ref, rootMargin = "0px") {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                console.log(entry)
+               // console.log(entry)
                 // Update our state when observer callback fires
                 setIntersecting(entry.isIntersecting);
             },
