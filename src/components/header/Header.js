@@ -33,13 +33,13 @@ function Header(props) {
         <Col sm={1}>
           <Nav>
             <Link to="" onClick={handleClick}>
-            <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
+              <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
             </Link>
           </Nav>
         </Col>
 
         <Col>
-          <Nav className={'justify-content-center fw-bold '+ customLink()}>
+          <Nav className={'justify-content-center fw-bold ' + customLink()}>
             <Link to="ourviews" onClick={handleClick} >{t('navbar.1')}</Link>
             <Link to="solution" onClick={handleClick}>{t('navbar.2')} </Link>
             <Link to="service" onClick={handleClick}>{t('navbar.3')} </Link>
