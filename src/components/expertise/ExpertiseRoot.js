@@ -9,28 +9,23 @@ import ExpertiseTestimonial from "./ExpertiseTestimonial";
 
 
 const ExpertiseRoot = () => {
-    
-    const{t}=useTranslation()
+
+    const { t } = useTranslation()
     return (
 
-        <Container className ="bg-light">
-            <Row  className="p-5">
-
-            <Row className="text-center" >
+        <Container className="">
+            <Row>
                 <h1>{t('expertise.title')}</h1>
             </Row>
-
-                <Col className=" p-3 m-3 text-center" >
-                    <ExpertiseStat />
-                </Col>
-
-                <Col className="">
-                    <ExpertiseTestimonial />
-                </Col>
-
+            <Row className="p-5" >
+                <ExpertiseStat />
             </Row>
+            <Container>
+                <Row>
+                    <ExpertiseTestimonial />
+                </Row>
+            </Container>
         </Container>
-
     )
 }
 

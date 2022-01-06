@@ -131,7 +131,7 @@ function App() {
         <Row ref={(ref) => refs.current[3] = ref} >
           <ServiceRoot />
         </Row>
-        <Row ref={(ref) => refs.current[4] = ref} >
+        <Row className='bg-light p-5' ref={(ref) => refs.current[4] = ref} >
           <ExpertiseRoot />
         </Row>
         <Row ref={(ref) => refs.current[5] = ref}>
