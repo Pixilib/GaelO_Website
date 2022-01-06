@@ -3,13 +3,13 @@ import Role from "./Role";
 import Study from "./Study";
 
 
-const SolutionRoot=()=>{
+const SolutionRoot = () => {
 
 
-    return(
+    return (
         <Fragment>
-            <Role/>
-            <Study/>
+            <Role />
+            <Study />
         </Fragment>
     )
 }

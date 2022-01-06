@@ -9,7 +9,7 @@ import { useNavigate, useLocation, useMatch, Link, Route, Routes, BrowserRouter 
 
 
 
- 
+
 
 function Header(props) {
 
@@ -18,30 +18,29 @@ function Header(props) {
   const history = useNavigate();
 
   const handleClick = () => {
-   // console.log(history)
+    // console.log(history)
     history("/");
   }
 
-  const customStyle= {
-    marginLeft : "10px",
-    textDecoration : "none"
+  const customStyle = {
+    marginLeft: "10px",
+    textDecoration: "none"
   }
 
 
-  const customLink = (origin) =>{
-    let className = props.scrolled ? 'text-dark'  : 'text-white'  
+  const customLink = (origin) => {
+    let className = props.scrolled ? 'text-dark' : 'text-white'
 
-    if(origin == location.pathname)
-      {
-        className = "text-secondary"
-      }
-    
+    if (origin == location.pathname) {
+      className = "text-secondary"
+    }
+
     return className;
   }
-  
+
 
   const customNav = () => props.scrolled ? 'bg-white py-0 ' : 'bg-transparent background py-0 '
-  
+
   const { t } = useTranslation()
 
 
@@ -53,14 +52,14 @@ function Header(props) {
         <Col sm={1}>
           <Nav>
             <Link to="" onClick={handleClick}>
-              <Figure.Image type='button' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
+              <Figure.Image className='logoNavbar' src={logoPrincipal} alt='Image logo Principal of Gaelo' />
             </Link>
           </Nav>
         </Col>
 
         <Col>
-          <Nav className={'justify-content-center fw-bold ' }>
-            <Link to="ourviews" style={customStyle} className={ customLink("/ourviews") }  onClick={handleClick} >{t('navbar.1')}</Link>
+          <Nav className={'justify-content-center fw-bold '}>
+            <Link to="ourviews" style={customStyle} className={customLink("/ourviews")} onClick={handleClick} >{t('navbar.1')}</Link>
             <Link to="solution" style={customStyle} className={customLink("/solution")} onClick={handleClick}>{t('navbar.2')} </Link>
             <Link to="service" style={customStyle} className={customLink("/service")} onClick={handleClick}>{t('navbar.3')} </Link>
             <Link to="expertise" style={customStyle} className={customLink("/expertise")} onClick={handleClick}>{t('navbar.4')} </Link>

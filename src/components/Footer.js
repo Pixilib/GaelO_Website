@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import mentionLegales from '../assets/md/mentions-legales.md'
 import cgu from '../assets/md/cgu.md'
 
-function Footer (props) {
+function Footer(props) {
   const [content, setContent] = useState()
 
   const styleFooter = {
@@ -31,19 +31,19 @@ function Footer (props) {
   }
 
   return (
-    <footer className='background text-center'>   
-        <Col>
-          <p>
-            <Button variant='link' onClick={() => loadMentionsLegales()}>
-              {t('footer.mentions')}
-            </Button>
-            <Button variant='link' onClick={() => loadCGU()}>
-              {t('footer.CGU')}
-            </Button>
-            <br />
-            {t('footer.author')}
-          </p>
-        </Col>
+    <footer className='background text-center'>
+      <Col>
+        <p>
+          <Button variant='link' onClick={() => loadMentionsLegales()}>
+            {t('footer.mentions')}
+          </Button>
+          <Button variant='link' onClick={() => loadCGU()}>
+            {t('footer.CGU')}
+          </Button>
+          <br />
+          {t('footer.author')}
+        </p>
+      </Col>
       <Row>
         <Markdown>
           {content}

@@ -2,7 +2,7 @@ import { Row, Col, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import fr from '../lang/fr.json'
 
-function getStyleAbout (h, w) {
+function getStyleAbout(h, w) {
   return {
     color: '#353275'
 
