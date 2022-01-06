@@ -48,9 +48,9 @@ const Study = () => {
               />
             </div>
         </Col>
-        <Col className='d-flex mb-4 justify-content-center'>
+        <Row className='d-flex mb-4 justify-content-center'>
           <StudyCard level={currentData}/>
-        </Col>
+        </Row>
       </Row>
     </Container>
 

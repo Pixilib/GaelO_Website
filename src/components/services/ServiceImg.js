@@ -9,8 +9,8 @@ return (
 
 
     <Fragment >
-        <h2>Service Workflow </h2>
-        <img className="bg-dark" src={t('service.img')} ></img>
+        <h2 className="text-center">Service Workflow </h2>
+        <img  src={t('service.img')} ></img>
     </Fragment>
 )
 
