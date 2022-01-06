@@ -20,13 +20,13 @@ const ServiceCard = () => {
 
                 createdCard.push((<CardFade >
                                     {/* vue du front de la card */}
-                                    <Card className={"cardServiceFront  rounded border-"+value.color }>
+                                    <Card className={"cardService border-"+value.color }>
                                         <p className={"text-center fw-bold fs-4 text-"+value.color} >{t('service.card.'+key+'.title')}</p>
                                         <img className="serviceIcon " src={t('service.card.'+key+'.logo')}></img>
                                         <p className="text-center fw-bold  text-dark">{t('service.card.'+key+'.front')}  </p>
                                     </Card>
                                     {/* vue du back de la card */}
-                                    <Card className={"cardServiceFront rounded border-"+value.color } >
+                                    <Card className={"cardService border-"+value.color } >
                                         <p className="text-center text-dark ">{t('service.card.'+key+'.back')}</p>
                                     </Card>
                                 </CardFade>))
