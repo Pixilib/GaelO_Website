@@ -14,7 +14,6 @@ const CardFade = (props) => {
         <Fragment>
             <CSSTransition in={isFront} 
                 classNames="fade">
-                
                     <div onMouseEnter={() => setIsFront(false)} onMouseLeave={() => setIsFront(true)}>{isFront ? props.children[0] : props.children[1]}</div>
             </CSSTransition>
         </Fragment>
