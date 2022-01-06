@@ -184,34 +184,37 @@
 		"title": "Our Services",
 		"intro": "We have designated a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
 		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
-		"subtitle": [
-			"Complete",
-			"Unique",
-			"Simple",
-			"Predictable",
-			"Affordable"
-		],
-		"logo":[
-			"complet.png",
-			"unic.png",
-			"target.png",
-			"predictive.png",
-			"abordable.png"
-		],
-		"front":[
-			"100% of the GaelO features.",
-			"One offer without options. ",
-			"Simple and transparent pricing",
-			"No hidden costs!",
-			"Seriously?"
-		],
-		"back":[
-			"You will automatically benefit from the evolutions of GaelO, we don't like two-speed research.",
-			"We prefer to use our time to innovate rather than publish offers.",
-			"No unit cost per patient, exam, user, centre. Include a few more patients, open an additional centre is no longer a problem!",
-			"Your budget is often fixed, we believe that the price should be predictable from the beginning of your study.",
-			"Seriously! Our customers rarely negotiate our price, we prefer to focus on our added value: innovation."
-		],
+		"card":{ "Complete":
+					{ "title": "Complete",
+					"logo": "complete.png",
+					"front": "100% of GaelO's features",
+					"back": "You will automatically benefit from GaelO's evolutions, we don't like two speed search",
+					"color": "primary"},
+				"Unique":
+					{ "title": "Unique",
+					"logo": "unic.png",
+					"front": "One offer with no options",
+					"back": "We prefer to use our time innovating rather than editing offers",
+					"color": "secondary"},
+				"simple":
+					{ "title": "Simple",
+					"logo": "target.png",
+					"front": "Simple and transparent pricing",
+					"back": "No unit cost per patient, exam, user, centre. Include a few more patients, open an additional centre is no longer a problem!",
+					"color": "dark"},
+				"Predictable":
+					{ "title": "Predictable",
+					"logo": "predictive.png",
+					"front": "No hidden costs!",
+					"back": "Your budget is often fixed, we believe that the price should be predictable from the start of your study",
+					"color": "success"},
+				"Affordable":
+					{ "title": "Affordable",
+					"logo": "affordable.png",
+					"front": "Seriously?",
+					"back":"Serieusement ! Nos clients négocient rarement notre prix, nous préférons nous concentrer sur notre valeur ajoutée : l’innovation.",
+					"color":"info"}
+	},
 		"img": "offre-service-en.svg"
 	},
 	"expertise": {
