@@ -9,9 +9,7 @@ const ExpertiseStat =()=>{
 
     return (
         <Fragment>
-            <Row>
-                <h1>{t('expertise.title')}</h1>
-            </Row>
+
             <Row>
                 <p>{t('expertise.satisfaction.text')}:{t('expertise.satisfaction.value')}</p>
                 <p>{t('expertise.trials.text')}:<CountUp end={t('expertise.trials.value')} duration="3"/></p>

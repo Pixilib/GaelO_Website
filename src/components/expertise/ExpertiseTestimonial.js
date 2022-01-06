@@ -9,15 +9,21 @@ const ExpertiseTestimonial = () => {
 
     const { t } = useTranslation()
 
+ 
+
     const generateCarousel = () => {
         const expertiseNumero = [...Array(fr.expertise.testimonial.name.length).keys()]
 
         const componentArray = expertiseNumero.map((item) => {
             return (
                 <Carousel.Item>
-                       
+                       <div className="">
                         <p>{t('expertise.testimonial.text.'+item)}</p>
+                        </div>
+                        
+                        <div className=" ">
                         <p>{t('expertise.testimonial.name.'+item)}</p>
+                        </div>
                         
                 </Carousel.Item>
             )
@@ -27,7 +33,11 @@ const ExpertiseTestimonial = () => {
 
     return (
         <Fragment>
-            <Carousel className="bg-dark text-secondary">
+            <Carousel 
+            interval={null}
+             className=" d-flex justify-content-center align-items-center  h-100 p-3  bg-secondary text-secondary "
+            
+            >
                 {generateCarousel()}
             </Carousel>
         </Fragment>
