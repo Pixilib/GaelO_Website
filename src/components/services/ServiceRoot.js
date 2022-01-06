@@ -12,7 +12,7 @@ const ServiceRoot=()=>{
         <Container fluid>
             <h1 className="text-center">{t('service.title')} </h1>
             <Row>
-                <Col>
+                <Col sm={3}>
                     <p>{t('service.intro')}</p>
                     <p>{t('service.content')}</p>
                 </Col>

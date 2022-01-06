@@ -177,34 +177,39 @@
 		"title": "Nos Services",
 		"intro": "Nous avons désigné une offre de service adapté aux académiques. Au delà de l’aspect technologique c’est une des plus grande innovation apporté à l’écosystème de recherche clinique en imagerie",
 		"content": "L’offre de service est édité par Pixilib et vous propose GaelO clé en main, installé et hébergé sur un serveur situé en France, maintenu par les créateurs de GaelO et vous assure une disponibilité complète de la plateforme.",
-		"subtitle": [
-			"Complète",
-			"Unique",
-			"Simple",
-			"Prédictible ",
-			"Abordable "
-		],
-		"logo":[
-			"complet.png",
-			"unic.png",
-			"target.png",
-			"predictive.png",
-			"abordable.png"
-		],
-		"front":[
-			"100% des fonctionnalités de GaelO.",
-			"Une seule offre sans option. ",
-			"Une tarification simple et transparente.",
-			"Pas de frais cachés!",
-			"Serieusement? "
-		],
-		"back":[
-			"Vous bénéficierez automatiquement des évolutions de GaelO, nous n’aimons pas la recherche à deux vitesses.",
-			"Nous préférons utiliser notre temps à innover plutôt qu’à éditer des offres.",
-			"Pas de coût unitaire par patient, examen, utilisateur, centre.. Inclure quelques patients en plus, ouvrir un centre additionel n’est plus un problème !",
-			"Votre budget est souvent fixe, nous pensons que le  prix doit être prévisible dès le début de votre étude.",
-			"Serieusement ! Nos clients négocient rarement notre prix, nous préférons nous concentrer sur notre valeur ajoutée : l’innovation. "
-		],
+		"card":{"Complete":
+					{"title":"Complete",
+					"logo":"complet.png",
+					"front":"100% des fonctionnalités de GaelO",
+					"back":"Vous bénéficierez automatiquement des évolutions de GaelO, nous n’aimons pas la recherche à deux vitesses",
+					"color":"primary"},
+				"Unique":
+					{"title":"Unique",
+					"logo":"unic.png",
+					"front":"Une seule offre sans option",
+					"back":"Nous préférons utiliser notre temps à innover plutôt qu’à éditer des offres",
+					"color":"secondary"},
+				"Simple":
+					{"title":"Simple",
+					"logo":"target.png",
+					"front":"Une tarification simple et transparente",
+					"back":"Pas de coût unitaire par patient, examen, utilisateur, centre.. Inclure quelques patients en plus, ouvrir un centre additionel n’est plus un problème !",
+					"color":"dark"},
+				"Predictable":
+					{"title":"Prédictible",
+					"logo":"predictive.png",
+					"front":"Pas de frais cachés!",
+					"back":"Votre budget est souvent fixe, nous pensons que le  prix doit être prévisible dès le début de votre étude",
+					"color":"success"},
+				"Affordable":
+					{"title":"Abordable",
+					"logo":"abordable.png",
+					"front":"Serieusement?",
+					"back":"Serieusement ! Nos clients négocient rarement notre prix, nous préférons nous concentrer sur notre valeur ajoutée :l’innovation",
+					"color":"info"}
+			},
+	
+
 		"img": "offre-service-fr.svg"
 	},
 	"expertise": {

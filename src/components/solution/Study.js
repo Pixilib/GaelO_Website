@@ -43,9 +43,9 @@ const Study = () => {
             />
           </div>
         </Col>
-        <Col className='d-flex mb-4 justify-content-center'>
-          <StudyCard level={currentData} />
-        </Col>
+        <Row className='d-flex mb-4 justify-content-center'>
+          <StudyCard level={currentData}/>
+        </Row>
       </Row>
     </Container>
 

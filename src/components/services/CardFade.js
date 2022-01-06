@@ -7,7 +7,7 @@ const CardFade = (props) => {
 
     const [isFront, setIsFront] = useState(true);
     
-    console.log(props.children)
+ 
 
     return (
 

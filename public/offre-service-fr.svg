@@ -7,7 +7,7 @@
 	.st1{display:inline;fill:#FFFFFF;}
 	.st2{display:inline;}
 	.st3{fill:#010101;}
-	.st4{fill:#FFFFFF;}
+	.st4{fill:#314053;}
 	.st5{font-family:'MavenProBold';}
 	.st6{font-size:6.0546px;}
 	.st7{font-family:'MavenProRegular';}
@@ -139,7 +139,7 @@ XPKcGKYVUWod4tFhGlBdZClj3xDe0SCeDGYN2JRn7OzG951O6jdgd/p/yfByvBzdO/4TYADqi/8a
 VRWQqAAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 26.1625 1.7309)">
 				</image>
 				<g>
-					<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 16.801 41.653)" class="st4" cx="34.7" cy="10.2" rx="6.8" ry="6.8"/>
+					<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 16.801 41.653)" class="st1" cx="34.7" cy="10.2" rx="6.8" ry="6.8"/>
 				</g>
 			</g>
 		</g>
@@ -198,7 +198,7 @@ QmCC" transform="matrix(0.24 0 0 0.24 122.8825 1.7309)">
 				</image>
 				<g>
 					
-						<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 91.306 135.6704)" class="st4" cx="131.3" cy="10.2" rx="6.8" ry="6.8"/>
+						<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 91.306 135.6704)" class="st1" cx="131.3" cy="10.2" rx="6.8" ry="6.8"/>
 				</g>
 			</g>
 		</g>
@@ -257,7 +257,7 @@ gg==" transform="matrix(0.24 0 0 0.24 219.6025 1.7309)">
 				</image>
 				<g>
 					
-						<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 166.0702 230.0149)" class="st4" cx="228.2" cy="10.2" rx="6.8" ry="6.8"/>
+						<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 166.0702 230.0149)" class="st1" cx="228.2" cy="10.2" rx="6.8" ry="6.8"/>
 				</g>
 			</g>
 		</g>
@@ -316,7 +316,7 @@ AABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 316.5625 1.7309)">
 				</image>
 				<g>
 					
-						<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 240.7125 324.2057)" class="st4" cx="324.9" cy="10.2" rx="6.8" ry="6.8"/>
+						<ellipse transform="matrix(0.2285 -0.9735 0.9735 0.2285 240.7125 324.2057)" class="st1" cx="324.9" cy="10.2" rx="6.8" ry="6.8"/>
 				</g>
 			</g>
 		</g>
@@ -375,7 +375,7 @@ BRgAIrixRxkqgysAAAAASUVORK5CYII=" transform="matrix(0.24 0 0 0.24 73.4688 60.317
 				</image>
 				<g>
 					
-						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -13.9307 21.3587)" class="st4" cx="81.9" cy="68.6" rx="6.7" ry="6.7"/>
+						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -13.9307 21.3587)" class="st1" cx="81.9" cy="68.6" rx="6.7" ry="6.7"/>
 				</g>
 			</g>
 		</g>
@@ -433,7 +433,7 @@ eKcS+WvOa3ddAvdyvVync/0vwADTxsUGWmPRCgAAAABJRU5ErkJggg==" transform="matrix(0.24
 				</image>
 				<g>
 					
-						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -11.1764 44.2773)" class="st4" cx="178.6" cy="68.6" rx="6.7" ry="6.7"/>
+						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -11.1764 44.2773)" class="st1" cx="178.6" cy="68.6" rx="6.7" ry="6.7"/>
 				</g>
 			</g>
 		</g>
@@ -491,7 +491,7 @@ dwAAAABJRU5ErkJggg==" transform="matrix(0.24 0 0 0.24 267.1488 60.3172)">
 				</image>
 				<g>
 					
-						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -8.4215 67.2012)" class="st4" cx="275.4" cy="68.6" rx="6.7" ry="6.7"/>
+						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -8.4215 67.2012)" class="st1" cx="275.4" cy="68.6" rx="6.7" ry="6.7"/>
 				</g>
 			</g>
 		</g>
@@ -549,7 +549,7 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 363.8688 60.3172)">
 				</image>
 				<g>
 					
-						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -5.6666 90.1242)" class="st4" cx="372.1" cy="68.6" rx="6.7" ry="6.7"/>
+						<ellipse transform="matrix(0.9715 -0.2369 0.2369 0.9715 -5.6666 90.1242)" class="st1" cx="372.1" cy="68.6" rx="6.7" ry="6.7"/>
 				</g>
 			</g>
 		</g>
