@@ -36,7 +36,7 @@ const ExpertiseTestimonial = () => {
             <Carousel 
             interval={null}
              className=" d-flex justify-content-center align-items-center  h-100 p-3  bg-secondary text-secondary "
-            
+             fade={true}
             >
                 {generateCarousel()}
             </Carousel>

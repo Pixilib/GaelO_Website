@@ -13,7 +13,7 @@ const ExpertiseRoot = () => {
     const{t}=useTranslation()
     return (
 
-        <Container>
+        <Container className ="bg-light">
             <Row  className="p-5">
 
             <Row className="text-center" >
