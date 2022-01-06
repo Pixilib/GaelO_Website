@@ -8,7 +8,7 @@ const Partner = () => {
     const { t } = useTranslation()
 
     const generatePartner = () => {
-       
+
         const componentArray = logo.partner.logo.map((url) => {
             return (
                 <Col>

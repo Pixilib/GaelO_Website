@@ -4,7 +4,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 import fr from '../../lang/fr.json'
 import KeyFactorCard from './KeyFactorCard'
 
-const CreateCardOurViews = ( ) => {
+const CreateCardOurViews = () => {
   const { t } = useTranslation()
 
   const generateCardOurViews = () => {
@@ -12,7 +12,7 @@ const CreateCardOurViews = ( ) => {
 
     const componentArray = ourViewNumber.map((item) => {
       return (
-        <Col  className=''>
+        <Col className=''>
           <KeyFactorCard imageUrl={t('card.icon.' + item)} textBack={t('card.definition.' + item)} textFront={t('card.keyword.' + item)} />
         </Col>
       )

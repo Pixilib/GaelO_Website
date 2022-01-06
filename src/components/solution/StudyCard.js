@@ -10,36 +10,31 @@ const StudyCard = (props) => {
 
 
     const buildComponent = () => {
-        if(!props.level) return null;
+        if (!props.level) return null;
         let lignesNumber = fr.study.graph[props.level].content.length
-        
+
         let bodyArray = []
-        for(let i=0; i<lignesNumber; i++){
+        for (let i = 0; i < lignesNumber; i++) {
             bodyArray.push(<p>
-                {t('study.graph.'+props.level+ '.content.'+i)}
+                {t('study.graph.' + props.level + '.content.' + i)}
             </p>)
         }
-        
+
         return (
             <Card className="mt-4 border-2 bg-light">
-                <Card.Header className=" bg-light border-bottom-0 text-primary fw-bold fs-3 text-center"> {t('study.graph.'+props.level+ '.title')} </Card.Header>
+                <Card.Header className=" bg-light border-bottom-0 text-primary fw-bold fs-3 text-center"> {t('study.graph.' + props.level + '.title')} </Card.Header>
                 <Card.Body className=" text-dark text-center fst-italic">
                     {
-                    bodyArray
+                        bodyArray
                     }
                 </Card.Body>
             </Card>
         )
     }
 
-
-
     return (
         buildComponent()
     )
-
-
-
 
 }
 

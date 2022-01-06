@@ -2,21 +2,27 @@
 
 /* -- Bordure --*/
 
-.border-primary{
-    border-color:#353275 !important
+.border-primary {
+    border-color: #353275 !important
 }
-.border-secondary{
-    border-color:#FFBA4D !important
+
+.border-secondary {
+    border-color: #FFBA4D !important
 }
-.border-dark{
-    border-color:#314053 !important
+
+.border-dark {
+    border-color: #314053 !important
 }
-.border-success{
-    border-color:#78E08F !important
-}   
-.border-info{
+
+.border-success {
+    border-color: #78E08F !important
+}
+
+.border-info {
     border-color: #0495A0 !important
-} /*-- 
+}
+
+/*-- 
 Noir moins sombre  color: #314053
 Bleu / Violet      color: #353275
 Bleu               color: #0495A0;
@@ -25,25 +31,30 @@ Vert CG            color: #78E08F;
 Vert               color :#2ec086;
 --*/
 /* -- background --*/
-.bg-light{
-    background-color:#f7f7f7 !important
+.bg-light {
+    background-color: #f7f7f7 !important
 }
+
 /* -- Texte --*/
 
-.text-primary{
-    color:#353275 !important
+.text-primary {
+    color: #353275 !important
 }
-.text-secondary{
-    color:#FFBA4D !important
+
+.text-secondary {
+    color: #FFBA4D !important
 }
-.text-dark{
-    color:#314053 !important
+
+.text-dark {
+    color: #314053 !important
 }
-.text-success{
-    color:#78E08F !important
+
+.text-success {
+    color: #78E08F !important
 }
-.text-info{
-    color:#0495A0 !important
+
+.text-info {
+    color: #0495A0 !important
 }
 
 html,
@@ -55,12 +66,13 @@ body {
 h1 {
     font-weight: bold;
     color: #353275;
+    margin-top: 40px;
 }
 
 h2 {
     color: #050505;
     font-weight: bold;
-    
+
 }
 
 
@@ -73,7 +85,10 @@ h2 {
     max-height: 150px;
 }
 
+.logoNavbar {
+    width: 70%;
 
+}
 
 /* -- Welcome --*/
 .styleTexte {
@@ -136,9 +151,6 @@ h2 {
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
     border-radius: 7%;
     padding: 20px;
-
-
-
 }
 
 .cardIcon {
@@ -146,10 +158,7 @@ h2 {
     display: flex;
     justify-content: center;
     background-color: transparent;
-
 }
-
-
 
 .rowCard {
 
@@ -161,7 +170,6 @@ h2 {
 
 }
 
-
 .styleContainer {
     display: flex;
     flex-direction: column;
@@ -169,21 +177,12 @@ h2 {
 }
 
 /* -- OurViews --*/
-
 .styleOurViews {
     min-height: 900px;
     background-image: url("../images/backgroundISTOCK.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    /*-- 
-     Noir moins sombre  color: #314053
-     Bleu / Violet      color: #353275
-     Bleu               color: #0495A0;
-     Orange             color: #FFBA4D;
-     Vert CG            color: #78E08F;
-     Vert               color :#2ec086;
-   --*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .coltext {
@@ -192,7 +191,6 @@ h2 {
     justify-content: center;
     flex-direction: column;
     font-size: larger;
-
 }
 
 .ImgRole {
@@ -202,61 +200,65 @@ h2 {
 
 .btncard {
     position: absolute;
-top: 0;
-right: 0;
+    top: 0;
+    right: 0;
 }
+
 /* -- Service --*/
-.cardServiceFront{
+.cardServiceFront {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 250px;
     height: 200px;
-    border-color:#0495A0 ;
+    border-color: #0495A0;
     color: #0495A0;
-     
 }
 
 
-.cardServiceBack{
+.cardServiceBack {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 250px;
     height: 200px;
-    border-color:#0495A0 ;
+    border-color: #0495A0;
     color: #0495A0;
-  
 }
+
 .fade-enter {
     opacity: 0;
-  }
-  .fade-appear-done {
+}
+
+.fade-appear-done {
     opacity: 1;
     transition: opacity 5s;
-  }
-  .fade-exit {
+}
+
+.fade-exit {
     opacity: 1;
-  }
-  .fade-exit-active {
+}
+
+.fade-exit-active {
     opacity: 0;
     transition: opacity 5s;
-  }
- 
+}
 
 
-.serviceIcon{
+
+.serviceIcon {
     width: 25%;
 }
+
 /* -- Expertise -- */
 
 /* -- Contact -- */
 
 /*-- Partner --*/
 
-.logocontact{
+.logocontact {
     max-width: 150px;
     max-height: 150px;
 }
