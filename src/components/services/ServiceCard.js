@@ -1,4 +1,4 @@
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import fr from '../../lang/fr.json'
@@ -14,32 +14,40 @@ const ServiceCard = () => {
 
         let createdCard = [];
 
-
         for (const [key, value] of Object.entries(fr.service.card)) {
-       console.log(key)     
-
-                createdCard.push((<CardFade  >
-                                    {/* vue du front de la card */}
-                                    <Card className={"cardService mt-3 border-"+value.color }>
-                                        <p className={"text-center fw-bold fs-4 text-"+value.color} >{t('service.card.'+key+'.title')}</p>
-                                        <img className="serviceIcon " src={t('service.card.'+key+'.logo')}></img>
-                                        <p className="text-center fw-bold  text-dark">{t('service.card.'+key+'.front')}  </p>
-                                    </Card>
-                                    {/* vue du back de la card */}
-                                    <Card className={" mt-3 border-"+value.color } >
-                                        <p className="text-center text-dark ">{t('service.card.'+key+'.back')}</p>
-                                    </Card>
-                                </CardFade>))
-
-            
+            createdCard.push((
+                <Col  className="d-flex justify-content-center  "> 
+                    <CardFade  >
+                        {/* vue du front de la card */}
+                        <Card className={"cardService center mt-3 border-" + value.color}>
+                            <p className={"text-center fw-bold fs-4 text-" + value.color} >{t('service.card.' + key + '.title')}</p>
+                            <img className="serviceIcon " src={t('service.card.' + key + '.logo')}></img>
+                            <p className="text-center fw-bold  text-dark">{t('service.card.' + key + '.front')}  </p>
+                        </Card>
+                        {/* vue du back de la card */}
+                        <Card className={"cardService mt-3 border-" + value.color} >
+                            <p className="text-center text-dark ">{t('service.card.' + key + '.back')}</p>
+                        </Card>
+                    </CardFade>
+                </Col>))
         }
-        return createdCard
+
+        let finalComponent = []
+
+        for (let i = 0; i < createdCard.length; i += 3) { // i+=3 can solve your problem
+            finalComponent.push([<Row sm={3} className='d-flex justify-content-center' > {[createdCard[i], createdCard[i + 1], createdCard[i + 2]]} </Row>])
+        }
+
+
+
+
+        return finalComponent
     }
 
     return (
 
 
-        <Row className='row-cols-md-3  rowCard'>
+        <Row>
             {generateCardSolution()}
         </Row>
 

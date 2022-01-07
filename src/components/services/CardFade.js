@@ -7,14 +7,13 @@ const CardFade = (props) => {
 
     const [isFront, setIsFront] = useState(true);
     
- 
 
     return (
 
         <Fragment>
-            <CSSTransition in={isFront} 
-                classNames="fade">
-                    <div onMouseEnter={() => setIsFront(false)} onMouseLeave={() => setIsFront(true)}>{isFront ? props.children[0] : props.children[1]}</div>
+            <CSSTransition  in={isFront} 
+               >
+                    <div  onMouseEnter={() => setIsFront(false)} onMouseLeave={() => setIsFront(true)}>{isFront ? props.children[0] : props.children[1]}</div>
             </CSSTransition>
         </Fragment>
     )
