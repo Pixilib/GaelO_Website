@@ -19,15 +19,18 @@ const Role = (props) => {
   }
 
   const openPopover = (
-    <Card className='bg-light border-2 CardRole'>
+    <Card className='border-2 CardRole'>
       <div className='position-relative' >
         <button
           type="button" onClick={() => onClickCircle(null)} className="btn-close btncard" aria-label="Close">
         </button>
-        <Card.Header className=' border-bottom-0 text-primary bg-light fs-3  fw-bold text-center'>{t('role.graph.' + currentRole + '.title')}
+        <Card.Header className=' border-bottom-0 '>
+          
+          <span className='text-center text-primary fs-3  fw-bold text-center fst-italic'> {t('role.graph.' + currentRole + '.title')}  : </span>
+          <span>{t('role.graph.' + currentRole + '.content')}</span>
         </Card.Header>
       </div>
-      <p className='text-center  fst-italic'> {t('role.graph.' + currentRole + '.content')} </p>
+      
       <ReactPlayer controls="true" height={'400px'} width={'700px'} url={t('role.graph.' + currentRole + ".video")} />
     </Card>
   )
@@ -38,7 +41,6 @@ const Role = (props) => {
       <h1 className='text-center'>{t('study.title')}</h1>
       <Row>
 
-        <h2 className='text-center'>{t('role.title')}</h2>
 
         <Col>
           <div className='position-relative'>

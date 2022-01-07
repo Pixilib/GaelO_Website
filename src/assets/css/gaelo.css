@@ -221,23 +221,7 @@ h2 {
 
 
 
-.fade-enter {
-    opacity: 0;
-}
 
-.fade-appear-done {
-    opacity: 1;
-    transition: opacity 5s;
-}
-
-.fade-exit {
-    opacity: 1;
-}
-
-.fade-exit-active {
-    opacity: 0;
-    transition: opacity 5s;
-}
 
 
 

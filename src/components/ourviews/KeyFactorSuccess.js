@@ -4,21 +4,34 @@ import { Row, Col, Container } from 'react-bootstrap'
 import fr from '../../lang/fr.json'
 import KeyFactorCard from './KeyFactorCard'
 
-const CreateCardOurViews = () => {
+const KeyFactorSuccess  = () => {
   const { t } = useTranslation()
 
   const generateCardOurViews = () => {
-    const ourViewNumber = [...Array(fr.card.keyword.length).keys()]
+    
+    let createdCard=[]
+  
+    for (const [key,value] of Object.entries(fr.card)){
 
-    const componentArray = ourViewNumber.map((item) => {
-      return (
-        <Col className=''>
-          <KeyFactorCard imageUrl={t('card.icon.' + item)} textBack={t('card.definition.' + item)} textFront={t('card.keyword.' + item)} />
+    createdCard.push((
+       <Col className='mr-2' >
+          <KeyFactorCard imageUrl={t('card.'+key+'.icon' )} 
+          textBack={t('card.'+key+'.definition')} 
+          textFront={t('card.'+key+'.keyword')} />
         </Col>
-      )
-    })
-    return componentArray
+    ))
+    }
+   
+    let finalComponent=[]
+
+    for (let i=0 ; i< createdCard.length; i+=3) 
+    {
+      finalComponent.push([<Row sm={3} className='m-3 d-flex justify-content-center' >{[createdCard[i],createdCard[i+1],createdCard[i+2]]}</Row>])
+    }
+  
+    return finalComponent
   }
+  
 
   return (
     <Container>
@@ -26,11 +39,11 @@ const CreateCardOurViews = () => {
         <h2 className='text-center'>{t('ourviews.subtitle')}</h2>
       </Row>
 
-      <Row className=' row-cols-md-3  rowCard '>
+      <Row className='rowCard p-2'>
         {generateCardOurViews()}
       </Row>
     </Container>
   )
 }
 
-export default CreateCardOurViews
+export default KeyFactorSuccess 
