@@ -21,10 +21,17 @@ const ExpertiseRoot = () => {
                 <ExpertiseStat />
             </Row>
             <Container>
-                <Row className="p-5">
+            <Row className="text-center">
+                <h2>{t('expertise.testimonial.title')}</h2>
+            </Row>
+           
+
+                <Row className="d-flex justify-content-center  ">
                     <ExpertiseTestimonial />
                 </Row>
-            </Container>
+                </Container>
+
+            
         </Container>
     )
 }

@@ -17,14 +17,10 @@ const ExpertiseTestimonial = () => {
         const componentArray = expertiseNumero.map((item) => {
             return (
                 <Carousel.Item>
-                       <div className="">
-                        <p>{t('expertise.testimonial.text.'+item)}</p>
+                       <div className="p-5">
+                        <p className="fst-italic fw-bold" >"{t('expertise.testimonial.text.'+item)}"</p>
+                        <p className="d-flex justify-content-end  ">{t('expertise.testimonial.name.'+item)}</p>
                         </div>
-                        
-                        <div className=" ">
-                        <p>{t('expertise.testimonial.name.'+item)}</p>
-                        </div>
-                        
                 </Carousel.Item>
             )
         })
@@ -35,8 +31,7 @@ const ExpertiseTestimonial = () => {
         <Fragment>
             <Carousel 
             interval={null}
-             className=" d-flex justify-content-center align-items-center     bg-white text-dark  "
-             fade={true}
+             className="carousel d-flex bg-white text-dark  "
             >
                 {generateCarousel()}
             </Carousel>

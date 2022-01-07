@@ -230,6 +230,15 @@ h2 {
 }
 
 /* -- Expertise -- */
+.expertiseStyle {
+    min-height: 800px;
+    
+}
+
+.carousel {
+    max-width: 600px ;
+    max-height: 800px;
+}
 
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
