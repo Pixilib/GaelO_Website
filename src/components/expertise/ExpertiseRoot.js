@@ -14,14 +14,14 @@ const ExpertiseRoot = () => {
     return (
 
         <Container className="">
-            <Row>
+            <Row className="text-center">
                 <h1>{t('expertise.title')}</h1>
             </Row>
             <Row className="p-5" >
                 <ExpertiseStat />
             </Row>
             <Container>
-                <Row>
+                <Row className="p-5">
                     <ExpertiseTestimonial />
                 </Row>
             </Container>

@@ -35,7 +35,7 @@ const ExpertiseTestimonial = () => {
         <Fragment>
             <Carousel 
             interval={null}
-             className=" d-flex justify-content-center align-items-center     bg-white text-dark "
+             className=" d-flex justify-content-center align-items-center     bg-white text-dark  "
              fade={true}
             >
                 {generateCarousel()}

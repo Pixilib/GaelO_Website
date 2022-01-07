@@ -7,51 +7,53 @@ const ExpertiseStat = () => {
 
     const { t } = useTranslation()
 
+    const numberClass = "text-center text-secondary fs-1 fw-bold  "
+    const textClass = "d-flex justify-content-center fw-bold fs-5"
     return (
 
         <Fragment>
             <Col>
-                <Row className="d-flex justify-content-center">
-                    {t('expertise.satisfaction.text')}
-                </Row >
-                <Row className="d-flex justify-content-center">
+                <Row className="d-flex justify-content-center text-info fs-1 fw-bold">
                     {t('expertise.satisfaction.value')}
                 </Row >
+                <Row className={textClass}>
+                    {t('expertise.satisfaction.text')}
+                </Row >
             </Col>
 
             <Col>
-                <Row className="d-flex justify-content-center">
+                <Row className={numberClass}>
+                    <CountUp className="textChiffre" end={t('expertise.trials.value')} duration="3" />
+                </Row>
+                <Row className={textClass}>
                     {t('expertise.trials.text')}
                 </Row>
-                <Row className="text-center">
-                    <CountUp end={t('expertise.trials.value')} duration="3" />
-                </Row>
             </Col>
 
             <Col>
-                <Row className="d-flex justify-content-center">
-                    {t('expertise.dicom.text')}
-                </Row>
-                <Row className="text-center">
+                <Row className={numberClass}>
                     <CountUp end={t('expertise.dicom.value')} duration="3" />
                 </Row>
+                <Row className={textClass}>
+                    {t('expertise.dicom.text')}
+                </Row>
             </Col>
 
             <Col>
-                <Row className="d-flex justify-content-center" >
-                    {t('expertise.center.text')}
-                </Row>
-                <Row className="text-center" >
+                <Row className={numberClass} >
                     <CountUp end={t('expertise.center.value')} duration="3" />
                 </Row>
+                <Row className={textClass} >
+                    {t('expertise.center.text')}
+                </Row>
             </Col>
 
             <Col>
-                <Row className="d-flex justify-content-center">
-                    {t('expertise.user.text')}
-                </Row>
-                <Row className="text-center">
+                <Row className={numberClass}>
                     <CountUp end={t('expertise.user.value')} duration="3" />
+                </Row>
+                <Row className={textClass}>
+                    {t('expertise.user.text')}
                 </Row>
             </Col>
 
