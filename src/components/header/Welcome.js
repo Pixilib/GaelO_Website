@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-
 import { Row, Figure, Col, Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-
 import VideoModal from './VideoModal'
 import logoPrincipalWhite from '../../assets/images/gaelo-logo-white.svg'
 

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import fr from '../../lang/fr.json'

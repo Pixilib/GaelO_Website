@@ -1,10 +1,9 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import Role from "./Role";
 import Study from "./Study";
 
 
 const SolutionRoot = () => {
-
 
     return (
         <Fragment>

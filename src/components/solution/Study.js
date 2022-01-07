@@ -44,11 +44,10 @@ const Study = () => {
           </div>
         </Col>
         <Row className='d-flex mb-4 justify-content-center'>
-          <StudyCard level={currentData}/>
+          <StudyCard level={currentData} />
         </Row>
       </Row>
     </Container>
-
   )
 }
 export default Study

@@ -1,24 +1,23 @@
 
 import { useTranslation } from 'react-i18next'
 import Lang from './Lang'
-import { Col, Row, Figure, Nav, Navbar, NavbarBrand } from 'react-bootstrap'
+import { Col, Figure, Nav, Navbar, } from 'react-bootstrap'
 import logoPrincipal from '../../assets/images/logoPrincipal.png'
-import React, { Fragment, useState } from 'react'
+import { Fragment, } from 'react'
 import logoGitHub from '../../assets/images/github.svg'
-import { useNavigate, useLocation, useMatch, Link, Route, Routes, BrowserRouter } from 'react-router-dom'
+import { useNavigate, useLocation, Link } from 'react-router-dom'
 
 
 
 
 
-function Header(props) {
+const Header = (props) => {
 
   const location = useLocation()
 
   const history = useNavigate();
 
   const handleClick = () => {
-    // console.log(history)
     history("/");
   }
 
@@ -72,7 +71,6 @@ function Header(props) {
           <Lang />
         </Col>
       </Navbar>
-
     </Fragment >
   )
 }

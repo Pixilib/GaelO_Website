@@ -25,12 +25,12 @@ const Role = (props) => {
           type="button" onClick={() => onClickCircle(null)} className="btn-close btncard" aria-label="Close">
         </button>
         <Card.Header className=' border-bottom-0 '>
-          
+
           <span className='text-center text-primary fs-3  fw-bold text-center fst-italic'> {t('role.graph.' + currentRole + '.title')}  : </span>
           <span>{t('role.graph.' + currentRole + '.content')}</span>
         </Card.Header>
       </div>
-      
+
       <ReactPlayer controls="true" height={'400px'} width={'700px'} url={t('role.graph.' + currentRole + ".video")} />
     </Card>
   )
@@ -40,8 +40,6 @@ const Role = (props) => {
     <Container >
       <h1 className='text-center'>{t('study.title')}</h1>
       <Row>
-
-
         <Col>
           <div className='position-relative'>
             <img className='ImgRole ' src={t('role.img')} alt='Design des roles' />

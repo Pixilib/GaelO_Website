@@ -1,4 +1,3 @@
-
 import { Modal } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import ReactPlayer from 'react-player'

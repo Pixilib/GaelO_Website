@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Language } from '../../enums/Language';
 import { Container } from 'react-bootstrap'
 
@@ -50,7 +50,7 @@ const Lang = (props) => {
             backgroundColor: "#314053" ,
             width: "150%",
             color :"#78E08F",
-            //color: "#FFBA4D"
+            
             borderRadius : 15,
         }),
 
