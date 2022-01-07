@@ -135,10 +135,10 @@ function App() {
           <ExpertiseRoot />
         </Row>
         <Row ref={(ref) => refs.current[5] = ref}>
-          <Partner />
+          < Ourteam/>
         </Row>
         <Row ref={(ref) => refs.current[6] = ref}>
-          <Ourteam />
+          <Partner />
         </Row>
         <Row ref={(ref) => refs.current[7] = ref}>
           <Contact />

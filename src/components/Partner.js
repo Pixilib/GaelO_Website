@@ -11,8 +11,8 @@ const Partner = () => {
 
         const componentArray = logo.partner.logo.map((url) => {
             return (
-                <Col>
-                    <img src={url}></img>
+                <Col className="d-flex justify-content-center" sm={2}>
+                    <img className="w-75 h-75" src={url}></img>
                 </Col>
             )
         })
@@ -22,8 +22,8 @@ const Partner = () => {
 
     return (
         <Row>
-            <h1>{t('partner.title')}</h1>
-            {generatePartner()}
+            <h1 className="text-center">{t('partner.title')}</h1>
+            <Row className="d-flex mt-3 justify-content-center" >{generatePartner()}</Row>
         </Row>
     )
 }

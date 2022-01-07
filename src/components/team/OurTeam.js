@@ -13,11 +13,11 @@ const Ourteam = () => {
 
         const componentArray = teamNumero.map((item) => {
             return (
-                <Col>
-                    <p>{t('team.name.' + item)}</p>
-                    <img src={t('team.img.' + item)}></img>
-                    <p>{t('team.text.' + item)}</p>
-                    <p>{t('team.role.' + item)}</p>
+                <Col className="d-flex flex-column">
+                    <p className="text-center fw-bold text-primary">{t('team.name.' + item)}</p>
+                    <img className="d-flex align-self-center w-50" src={t('team.img.' + item)}></img>
+                    <p className='text-center fw-bold text-info' >{t('team.role.' + item)}</p>
+                    <p className='text-center text-dark' >{t('team.text.' + item)}</p>
                 </Col>
             )
         })
@@ -26,7 +26,7 @@ const Ourteam = () => {
 
     return (
         <Fragment>
-            <h1>{t('team.title')}</h1>
+            <h1 className="text-center">{t('team.title')}</h1>
             {generateTeam()}
         </Fragment>
     )
