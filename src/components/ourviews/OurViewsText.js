@@ -6,16 +6,11 @@ const OurViewsText = () => {
     const { t } = useTranslation()
 
     return (
-
-        <Container id='ourviews' className='styleOurViews'>
-            <h1 className="text-center  ">{t('ourviews.title')}</h1>
-            <Row className=' d-flex justify-content-center'>
-                <Col className='coltext'>
-                    <p >{t('ourviews.body1')}</p>
-                    <p >{t('ourviews.body2')}</p>
-                </Col>
-                <Col />
-            </Row>
+        <Container className="ourView d-flex" >
+            <Col md="5" className="d-flex align-items-center">
+                {t('ourviews.body1')}<br/>
+                {t('ourviews.body2')}
+            </Col>
         </Container>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { BrowserRouter, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 import { Container, Row } from 'react-bootstrap'
 import i18next from 'i18next'
@@ -9,7 +9,6 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { Language } from './enums/Language'
 import translationEN from './lang/en.json'
 import translationFR from './lang/fr.json'
-import useIntersection from './useIntersection'
 
 
 import Header from './components/header/Header'

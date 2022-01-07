@@ -1,13 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import ServiceCard from "./ServiceCard";
-import ServiceImg from "./ServiceImg";
 
-const ServiceRoot=()=>{
+const ServiceRoot = () => {
 
-    const {t}= useTranslation()
+    const { t } = useTranslation()
 
-    return(
+    return (
 
         <Container fluid>
             <h1 className="text-center">{t('service.title')} </h1>
@@ -17,11 +16,18 @@ const ServiceRoot=()=>{
                     <p>{t('service.content')}</p>
                 </Col>
                 <Col>
-                    <ServiceCard/>
+                    <ServiceCard />
                 </Col>
             </Row>
-            <ServiceImg/>
-        </Container>    
+            <Row className="mt-5">
+                <Col sm={3} className="d-flex align-items-center">
+                    <h2 className="text-center">Service Workflow </h2>
+                </Col>
+                <Col>
+                    <img src={t('service.img')} ></img>
+                </Col>
+            </Row>
+        </Container>
     )
 
 }

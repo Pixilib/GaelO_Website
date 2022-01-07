@@ -1,6 +1,7 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, OverlayTrigger, Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
+import Overlay from 'react-overlays/esm/Overlay'
 import StudyCard from './StudyCard'
 
 const Study = () => {
@@ -17,9 +18,12 @@ const Study = () => {
   return (
     <Container >
       <Row >
-        <Col >
+        <Col md="3" className="d-flex align-items-center" >
           <h2 className='text-center'>Structure de données </h2>
-          <div className=' mt-4 position-relative' onMouseLeave={() => setCurrentData(null)}>
+        </Col>
+        <Col>
+          <Row >
+          <div className='position-relative' onMouseLeave={() => setCurrentData(null)}>
             <img className='w-100' src={t('study.img')} alt='Graph d etude' />
             <div
               onMouseEnter={() => setCurrentData(Study)}
@@ -42,11 +46,18 @@ const Study = () => {
               style={{ position: 'absolute', left: '77%', top: '0%', width: '23%', height: '100%' }}
             />
           </div>
+          </Row>
+
+
+
+          <Row className='d-flex justify-content-center'>
+            <StudyCard level={currentData} />
+          </Row>
+
         </Col>
-        <Row className='d-flex mb-4 justify-content-center'>
-          <StudyCard level={currentData} />
-        </Row>
+        
       </Row>
+
     </Container>
   )
 }

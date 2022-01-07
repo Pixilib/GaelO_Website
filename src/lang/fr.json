@@ -56,7 +56,7 @@
 		]
 	},
 	"contact": {
-		"title": "Contact",
+		"title": "Contactez Nous",
 		"body": "GaelO est développé par Pixilib, Toulouse (France).",
 		"mail": "Contact@Pixilib.fr"
 	},
@@ -108,7 +108,7 @@
 	},
 	"study": {
 		"img": "study-graph-fr.svg",
-		"title": "Nos solutions",
+		"title": "Notre solution",
 		"graph": {
 			"study": {
 				"title": "Une étude clinique correspondant à un projet de recherche clinique ",
@@ -127,7 +127,6 @@
 				"title": "Une visite est la réalisation d’un acquisition d’imagerie",
 				"content": [
 					"Quelque soit la modalité (CT, MR, RX, NM, PT, RT…).",
-					"Suivant un workflow prédéfini dans l’étude ",
 					"Exemple : TDM Baseline et TDM en fin de traitement"
 				]
 			},
@@ -240,7 +239,7 @@
 			"value": 116
 		},
 		"testimonial": {
-			"title":"Testimonial",
+			"title":"Témoignages",
 			"name":[
 				"lysarc",
 				"lysa"

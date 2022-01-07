@@ -9,7 +9,7 @@ const ExpertiseTestimonial = () => {
 
     const { t } = useTranslation()
 
- 
+
 
     const generateCarousel = () => {
         const expertiseNumero = [...Array(fr.expertise.testimonial.name.length).keys()]
@@ -17,10 +17,10 @@ const ExpertiseTestimonial = () => {
         const componentArray = expertiseNumero.map((item) => {
             return (
                 <Carousel.Item>
-                       <div className="p-5">
-                        <p className="fst-italic fw-bold" >"{t('expertise.testimonial.text.'+item)}"</p>
-                        <p className="d-flex justify-content-end  ">{t('expertise.testimonial.name.'+item)}</p>
-                        </div>
+                    <div className="p-5">
+                        <p className="fst-italic fw-bold" >"{t('expertise.testimonial.text.' + item)}"</p>
+                        <p className="d-flex justify-content-end  ">{t('expertise.testimonial.name.' + item)}</p>
+                    </div>
                 </Carousel.Item>
             )
         })
@@ -29,9 +29,9 @@ const ExpertiseTestimonial = () => {
 
     return (
         <Fragment>
-            <Carousel 
-            interval={null}
-             className="carousel d-flex bg-white text-dark  "
+            <Carousel
+                interval={null}
+                className="carousel d-flex bg-white text-dark  "
             >
                 {generateCarousel()}
             </Carousel>

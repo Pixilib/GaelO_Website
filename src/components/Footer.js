@@ -9,13 +9,7 @@ import cgu from '../assets/md/cgu.md'
 
 function Footer(props) {
   const [content, setContent] = useState()
-
-  const styleFooter = {
-    height: '3%',
-    background: '#314053',
-    color: 'white'
-  }
-  console.log(mentionLegales)
+  
   const { t } = useTranslation()
 
   const loadMentionsLegales = () => {

@@ -41,29 +41,8 @@
 			"Example : Fiji Integration"
 		]
 	},
-	"faq": {
-		"title": "FAQ",
-		"question": [
-			"How can I get it ?",
-			"Do you provide an offer of service ?",
-			"What images modalities are supported ?",
-			"How did you built it ?"
-		],
-		"answer": [
-			"GaelO backend is open source, you can use it following the developper documentation",
-			"Yes, get in touch to get more details",
-			"All kind of DICOM images are supported (Radiology, Nuclear Medicine, Radiotherapy)",
-			[
-				"GaelO is build using a combination of free software for which GaelO contributes, notably :",
-				"Orthanc : Free and Open source PACS (GPL)",
-				"DcmJS (MIT)",
-				"OHIF (MIT)",
-				"Stone Of Orthanc (AGPL, included without change of source code)"
-			]
-		]
-	},
 	"contact": {
-		"title": "Contact",
+		"title": "Contact Us",
 		"body": "GaelO is powered by Pixilib, Toulouse, France",
 		"mail": "Contact@Pixilib.fr"
 	},
@@ -117,7 +96,7 @@
 	},
 	"study": {
 		"img": "study-graph-en.svg",
-		"title": "Our solutions",
+		"title": "Our solution",
 		"graph": {
 			"study": {
 				"title": "A clinical study corresponding to a clinical research project",
@@ -136,7 +115,6 @@
 				"title": "A visit is the realization of an imaging acquisition",
 				"content": [
 					"Whatever the modality (CT, MR, X-ray, NM, PT, RT...)",
-					"Following a workflow predefined in the study",
 					"Example: Baseline CT and CT at the end of the treatment"
 				]
 			},
@@ -247,7 +225,7 @@
 			"value": 116
 		},
 		"testimonial": {
-			"title":"Testimonial",
+			"title":"Testimonials",
 			"name":[
 				"lysarc",
 				"lysa"
