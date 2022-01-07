@@ -30,7 +30,7 @@ const Header = (props) => {
   const customLink = (origin) => {
     let className = props.scrolled ? 'text-dark' : 'text-white'
 
-    if (origin == location.pathname) {
+    if (origin === location.pathname) {
       className = "text-secondary"
     }
 

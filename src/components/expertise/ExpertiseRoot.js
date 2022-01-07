@@ -1,12 +1,8 @@
-import React, { Fragment } from "react";
-
 import { Container, Col, Row } from 'react-bootstrap'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
-import ExpertiseStat from "./ExpertiseStat";
-import ExpertiseTestimonial from "./ExpertiseTestimonial";
-
-
+import ExpertiseStat from "./ExpertiseStat"
+import ExpertiseTestimonial from "./ExpertiseTestimonial"
 
 const ExpertiseRoot = () => {
 
