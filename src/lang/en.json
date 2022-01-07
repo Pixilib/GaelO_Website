@@ -82,29 +82,36 @@
 		"body2": "Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
 		"subtitle": "Nos clés de succès"
 	},
-	"card": {
-		"keyword": [
-			"Efficiency",
-			"Intuitiveness",
-			"Responsiveness",
-			"Freedom",
-			"Open"
-		],
-		"icon": [
-			"efficacity.png",
-			"intuitivity.png",
-			"reactivity.png",
-			"liberty.png",
-			"open-source.png"
-		],
-		"definition": [
-			"A platform designed with researchers in mind and that meets their needs. The user experience is our main guide to offer an ever more innovative platform",
-			"We believe that an imaging platform should be intuitive to use without the need for specific training",
-			"A platform that is fast and also scalable, we want to keep up with the new challenges in imaging",
-			"Your imaging should be available at any time without restriction of use. We believe that research is better off without locks",
-			"The vast majority of our solutions are open source. We are constantly contributing to structuring open source projects in imaging, we believe that good research is open research."
-		]
+	"card":{
+		"efficacity":
+			{ "keyword": "Efficacity",
+			"icon": "efficacity.png",
+			"definition": "A platform designed with researchers in mind and that meets their needs. The user experience is our main guide to provide an ever more innovative platform."
+			},
+		"intuitivity":    
+			{ "keyword": "Intuitivity",
+			"icon": "intuitivity.png",
+			"definition": "We believe that an imaging platform should be intuitive to use without the need for specific training."
+			},
+		"reactivity":
+			{ "keyword": "Reactivity",
+			"icon": "reactivity.png",
+			"definition": "A fast and also scalable platform, we want to be at the forefront of new imaging challenges "
+			},   
+		"liberty":
+			{ "keyword": "Liberty",
+			"icon": "liberty.png",
+			"definition": "Your imagery should be available at any time without restrictions on use. We believe that research is better off without locks."
+			},
+		"source":
+			{ "keyword": "Open-source",
+			"icon": "open-source.png",
+			"definition": "The vast majority of our solutions are open source. We are constantly contributing to open source projects structuring imaging, we believe that good research is open research."
+			}  
+	
 	},
+
+
 	"lang": {
 		"flag": "english.png"
 	},
@@ -240,6 +247,7 @@
 			"value": 116
 		},
 		"testimonial": {
+			"title":"Testimonial",
 			"name":[
 				"lysarc",
 				"lysa"

@@ -34,7 +34,8 @@ const ServiceCard = () => {
 
         let finalComponent = []
 
-        for (let i = 0; i < createdCard.length; i += 3) { // i+=3 can solve your problem
+        for (let i = 0; i < createdCard.length; i += 3) 
+        { // i+=3 can solve your problem
             finalComponent.push([<Row sm={3} className='d-flex justify-content-center' > {[createdCard[i], createdCard[i + 1], createdCard[i + 2]]} </Row>])
         }
 
