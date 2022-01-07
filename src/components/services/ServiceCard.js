@@ -2,7 +2,6 @@ import { Col, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import fr from '../../lang/fr.json'
-
 import CardFade from "./CardFade";
 
 
@@ -16,7 +15,7 @@ const ServiceCard = () => {
 
         for (const [key, value] of Object.entries(fr.service.card)) {
             createdCard.push((
-                <Col  className="d-flex justify-content-center  "> 
+                <Col className="d-flex justify-content-center  ">
                     <CardFade  >
                         {/* vue du front de la card */}
                         <Card className={"cardService center mt-3 border-" + value.color}>
@@ -34,19 +33,14 @@ const ServiceCard = () => {
 
         let finalComponent = []
 
-        for (let i = 0; i < createdCard.length; i += 3) 
-        { // i+=3 can solve your problem
+        for (let i = 0; i < createdCard.length; i += 3) { // i+=3 can solve your problem
             finalComponent.push([<Row sm={3} className='d-flex justify-content-center' > {[createdCard[i], createdCard[i + 1], createdCard[i + 2]]} </Row>])
         }
-
-
-
 
         return finalComponent
     }
 
     return (
-
 
         <Row>
             {generateCardSolution()}

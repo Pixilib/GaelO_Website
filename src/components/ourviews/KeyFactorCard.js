@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Card } from 'react-bootstrap'
 import ReactCardFlip from 'react-card-flip'
 
@@ -8,7 +8,6 @@ const KeyFactorCard = (props) => {
   const handleClick = () => {
     setisFlipped(!isFlipped)
   }
-
 
   return (
     <ReactCardFlip className='justify-content-center ' role='button' isFlipped={isFlipped}>

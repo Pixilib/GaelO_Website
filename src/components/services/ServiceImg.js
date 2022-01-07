@@ -1,18 +1,17 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { useTranslation } from "react-i18next";
 
-const ServiceImg =()=>{
+const ServiceImg = () => {
 
-const {t}= useTranslation()
+    const { t } = useTranslation()
 
-return (
+    return (
 
-
-    <Fragment >
-        <h2 className="text-center">Service Workflow </h2>
-        <img  src={t('service.img')} ></img>
-    </Fragment>
-)
+        <Fragment >
+            <h2 className="text-center">Service Workflow </h2>
+            <img src={t('service.img')} ></img>
+        </Fragment>
+    )
 
 
 

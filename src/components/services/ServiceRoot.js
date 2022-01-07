@@ -20,12 +20,7 @@ const ServiceRoot=()=>{
                     <ServiceCard/>
                 </Col>
             </Row>
-            <Row>
             <ServiceImg/>
-            </Row>
-            
-            
-            
         </Container>    
     )
 

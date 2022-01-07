@@ -1,7 +1,5 @@
-import React from "react";
 import { Card } from "react-bootstrap"
 import { useTranslation } from "react-i18next"
-
 import fr from '../../lang/fr.json'
 
 const StudyCard = (props) => {
@@ -35,7 +33,6 @@ const StudyCard = (props) => {
     return (
         buildComponent()
     )
-
 }
 
 export default StudyCard

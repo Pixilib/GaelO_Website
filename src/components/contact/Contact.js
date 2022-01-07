@@ -9,7 +9,7 @@ function getStyleContact() {
 
   }
 }
-function Contact(props) {
+const Contact = (props) => {
   const { t } = useTranslation()
   const [modalShow, setModalShow] = React.useState(false)
 
@@ -21,7 +21,6 @@ function Contact(props) {
         <a href={'mailto:' + t('contact.mail')}>{t('contact.mail')}</a>
         <Row>
           <button type='button' onClick={() => setModalShow(true)}>
-          
             <p className='m-0'>Mailing</p>
           </button>
           <ModalForm show={modalShow} onHide={() => setModalShow(false)} />

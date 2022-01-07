@@ -134,11 +134,11 @@ function App() {
         <Row className='expertiseStyle bg-light p-5' ref={(ref) => refs.current[4] = ref} >
           <ExpertiseRoot />
         </Row>
-        <Row  ref={(ref) => refs.current[5] = ref}>
-          <Partner />
+        <Row ref={(ref) => refs.current[5] = ref}>
+          < Ourteam/>
         </Row>
         <Row ref={(ref) => refs.current[6] = ref}>
-          <Ourteam />
+          <Partner />
         </Row>
         <Row ref={(ref) => refs.current[7] = ref}>
           <Contact />
