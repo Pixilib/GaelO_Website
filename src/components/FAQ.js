@@ -2,14 +2,7 @@ import { Row, Col, Card } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import fr from '../lang/fr.json'
 
-function getStyleAbout(h, w) {
-  return {
-    color: '#353275'
-
-  }
-}
-
-const About = (props) => {
+const About = () => {
   const { t } = useTranslation()
 
   const generateCard = () => {
@@ -34,7 +27,7 @@ const About = (props) => {
   }
 
   return (
-    <Row id='about' className='bg-light p-5 text-center align-items-center border-top' style={getStyleAbout()}>
+    <Row id='about' className='bg-light p-5 text-center align-items-center border-top'>
       <h3>{t('faq.title')}</h3>
       <Col className='p-5'>
         <Row className='text-start'>

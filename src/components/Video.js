@@ -1,16 +1,11 @@
 import { Row, Col, Carousel } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 
-function getStyleVideo () {
-  return {
-    color: '#353275'
-  }
-}
-function Video () {
+const Video = () => {
   const { t } = useTranslation()
 
   return (
-    <Row id='videos' className='bg-light pt-5 text-center border-top' style={getStyleVideo()}>
+    <Row id='videos' className='bg-light pt-5 text-center border-top'>
       <h3>{t('videos.title')}</h3>
       <Col md={6} className='styleCarouselVideo text-center align-items-center'>
         <Carousel className='p-5' variant='dark'>
