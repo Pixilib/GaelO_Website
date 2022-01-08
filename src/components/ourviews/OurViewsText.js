@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Col, Row, Container } from 'react-bootstrap'
+import { Col, Container } from 'react-bootstrap'
 
 const OurViewsText = () => {
 

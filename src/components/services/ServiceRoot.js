@@ -24,7 +24,7 @@ const ServiceRoot = () => {
                     <h2 className="text-center">Service Workflow </h2>
                 </Col>
                 <Col>
-                    <img src={t('service.img')} ></img>
+                    <img alt="service workflow" src={t('service.img')} ></img>
                 </Col>
             </Row>
         </Container>

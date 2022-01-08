@@ -7,10 +7,6 @@ import { Fragment, } from 'react'
 import logoGitHub from '../../assets/images/github.svg'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 
-
-
-
-
 const Header = (props) => {
 
   const location = useLocation()
@@ -66,7 +62,7 @@ const Header = (props) => {
             <Link to="contact" style={customStyle} className={customLink("/contact")} onClick={handleClick}>{t('navbar.6')} </Link>
           </Nav>
         </Col>
-        <a href="https://github.com/Pixilib/"><img className='' src={logoGitHub} /></a>
+        <a href="https://github.com/Pixilib/"><img alt="GitHub" className='' src={logoGitHub} /></a>
         <Col sm={1}>
           <Lang />
         </Col>

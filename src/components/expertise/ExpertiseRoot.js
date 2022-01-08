@@ -9,7 +9,7 @@ const ExpertiseRoot = () => {
     const { t } = useTranslation()
     return (
 
-        <Container className="">
+        <Container>
             <Row className="text-center">
                 <h1>{t('expertise.title')}</h1>
             </Row>

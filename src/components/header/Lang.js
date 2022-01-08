@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next"
 import Select from 'react-select'
 
 
-const Lang = (props) => {
+const Lang = () => {
 
     const { t } = useTranslation();
     const options = [
@@ -18,7 +18,7 @@ const Lang = (props) => {
     const [lang, setLang] = useState(options[0]);
 
 
-    let changeLanguage = (language: any) => {
+    let changeLanguage = (language) => {
         setLang(language);
         i18next.changeLanguage(language.value)
     }
@@ -26,53 +26,49 @@ const Lang = (props) => {
 
     const customStyles = {
         dropdownIndicator: () => ({
-            color:'black'       
+            color: 'black'
         }),
 
         valueContainer: (provided) => ({
             ...provided,
-            paddingLeft: 15,         
+            paddingLeft: 15,
         }),
 
-       control : (provided) => ({
+        control: (provided) => ({
             ...provided,
-            backgroundColor : 'none',
-            border : 'none',
-            boxShadow :'none',           
+            backgroundColor: 'none',
+            border: 'none',
+            boxShadow: 'none',
         }),
 
-        indicatorSeparator : () => ({
+        indicatorSeparator: () => ({
             background: "none"
         }),
 
-        menu : (provided) => ({
+        menu: (provided) => ({
             ...provided,
-            backgroundColor: "#314053" ,
+            backgroundColor: "#314053",
             width: "150%",
-            color :"#78E08F",
-            
-            borderRadius : 15,
+            color: "#78E08F",
+
+            borderRadius: 15,
         }),
 
-        option : (provided, state) => ({
+        option: (provided, state) => ({
             ...provided,
-            backgroundColor :" none",
+            backgroundColor: " none",
             fontWeight: state.isSelected ? "bold" : "normal",
             color: state.isSelected ? "#78E08F" : "#FFBA4D",
         })
-  }
+    }
 
     return (
 
         <Container className='d-flex'>
-           
-        <Select type="button" className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
-            value: lang.value,
-            label: <img src={t('lang.flag')} style={{ width: "100%", height: "20px" }} />
-        }} onChange={changeLanguage} />
-
-        
-        
+            <Select type="button" className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
+                value: lang.value,
+                label: <img alt="language" src={t('lang.flag')} style={{ width: "100%", height: "20px" }} />
+            }} onChange={changeLanguage} />
         </Container>
     )
 }

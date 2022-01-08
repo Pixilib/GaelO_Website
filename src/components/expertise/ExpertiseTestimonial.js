@@ -3,13 +3,9 @@ import { Carousel } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import fr from '../../lang/fr.json'
 
-
-
 const ExpertiseTestimonial = () => {
 
     const { t } = useTranslation()
-
-
 
     const generateCarousel = () => {
         const expertiseNumero = [...Array(fr.expertise.testimonial.name.length).keys()]

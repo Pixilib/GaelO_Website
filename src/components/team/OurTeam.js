@@ -15,7 +15,7 @@ const Ourteam = () => {
             return (
                 <Col className="d-flex flex-column">
                     <p className="text-center fw-bold text-primary">{t('team.name.' + item)}</p>
-                    <img className="d-flex align-self-center w-50" src={t('team.img.' + item)}></img>
+                    <img alt="team" className="d-flex align-self-center w-50" src={t('team.img.' + item)}></img>
                     <p className='text-center fw-bold text-info' >{t('team.role.' + item)}</p>
                     <p className='text-center text-dark' >{t('team.text.' + item)}</p>
                 </Col>
