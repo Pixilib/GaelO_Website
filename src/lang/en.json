@@ -2,7 +2,7 @@
 	"header": {
 		"title": "Clinical trial imaging managment platform",
 		"button": "Video",
-		"linkVideo": "https://www.youtube.com/embed/g4Rr3YKCb-4"
+		"linkVideo": "https://www.youtube.com/embed/nawCODnp05g"
 	},
 	"navbar": {
 		"1": "Our vision",
@@ -171,7 +171,7 @@
 		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
 		"card":{ "Complete":
 					{ "title": "Complete",
-					"logo": "complete.png",
+					"logo": "complet.png",
 					"front": "100% of GaelO's features",
 					"back": "You will automatically benefit from GaelO's evolutions, we don't like two speed search",
 					"color": "primary"},
@@ -181,7 +181,7 @@
 					"front": "One offer with no options",
 					"back": "We prefer to use our time innovating rather than editing offers",
 					"color": "secondary"},
-				"simple":
+				"Simple":
 					{ "title": "Simple",
 					"logo": "target.png",
 					"front": "Simple and transparent pricing",
@@ -195,7 +195,7 @@
 					"color": "success"},
 				"Affordable":
 					{ "title": "Affordable",
-					"logo": "affordable.png",
+					"logo": "abordable.png",
 					"front": "Seriously?",
 					"back":"Serieusement ! Nos clients négocient rarement notre prix, nous préférons nous concentrer sur notre valeur ajoutée : l’innovation.",
 					"color":"info"}
