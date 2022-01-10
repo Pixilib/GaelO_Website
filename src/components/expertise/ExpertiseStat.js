@@ -23,7 +23,7 @@ const ExpertiseStat = () => {
 
             <Col>
                 <Row className={numberClass}>
-                    <CountUp className="textChiffre" end={t('expertise.trials.value')} duration="3" />
+                    <CountUp delay={1} redraw={true} className="textChiffre" end={t('expertise.trials.value')} duration="3" />
                 </Row>
                 <Row className={textClass}>
                     {t('expertise.trials.text')}
@@ -32,7 +32,7 @@ const ExpertiseStat = () => {
 
             <Col>
                 <Row className={numberClass}>
-                    <CountUp end={t('expertise.dicom.value')} duration="3" />
+                    <CountUp delay={1} redraw={true}  end={t('expertise.dicom.value')} duration="3" />
                 </Row>
                 <Row className={textClass}>
                     {t('expertise.dicom.text')}
@@ -41,7 +41,7 @@ const ExpertiseStat = () => {
 
             <Col>
                 <Row className={numberClass} >
-                    <CountUp end={t('expertise.center.value')} duration="3" />
+                    <CountUp delay={1} redraw={true} end={t('expertise.center.value')} duration="3" />
                 </Row>
                 <Row className={textClass} >
                     {t('expertise.center.text')}
@@ -50,7 +50,7 @@ const ExpertiseStat = () => {
 
             <Col>
                 <Row className={numberClass}>
-                    <CountUp end={t('expertise.user.value')} duration="3" />
+                    <CountUp delay={1} redraw={true} end={t('expertise.user.value')} duration="3" />
                 </Row>
                 <Row className={textClass}>
                     {t('expertise.user.text')}
