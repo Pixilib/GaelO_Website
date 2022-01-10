@@ -19,7 +19,7 @@ import ServiceRoot from './components/services/ServiceRoot'
 import ExpertiseRoot from './components/expertise/ExpertiseRoot'
 import Partner from './components/Partner'
 import Ourteam from './components/team/OurTeam'
-import Footer from './components/Footer'
+import Footer from './components/footer/Footer'
 import Contact from './components/contact/Contact'
 
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
@@ -99,7 +99,8 @@ function App() {
       case "/expertise": refs.current[4].scrollIntoView()
         break;
 
-
+      case "/ourteam": refs.current[5].scrollIntoView()
+        break;
 
       case "/contact": refs.current[6].scrollIntoView()
         break;
@@ -120,7 +121,7 @@ function App() {
         </Row>
       </Container>
       <Container fluid>
-        <Row  ref={(ref) => refs.current[1] = ref} >
+        <Row ref={(ref) => refs.current[1] = ref} >
           <OurViewRoot />
         </Row>
         <Row className="bg-light p-5" ref={(ref) => refs.current[2] = ref} >
@@ -132,7 +133,9 @@ function App() {
         <Row className='expertiseStyle bg-light p-5' ref={(ref) => refs.current[4] = ref} >
           <ExpertiseRoot />
         </Row>
-      
+        <Row hidden='true' className="bg-light p-5" ref={(ref) => refs.current[5] = ref}>
+          <Ourteam />
+        </Row>
         <Row className="p-5" >
           <Partner />
         </Row>
