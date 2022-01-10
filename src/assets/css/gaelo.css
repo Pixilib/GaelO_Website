@@ -89,9 +89,7 @@ h2 {
 }
 
 .logoNavbar {
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 60%;
+    width: 70%;
 
 }
 
@@ -207,6 +205,15 @@ h2 {
     position: absolute;
     top: 0;
     right: 0;
+}
+/*--Solution--*/
+
+.separator{
+    border-top: solid 1px;
+    border-image: linear-gradient(to right, #f5f5f5 ,black,#f5f5f5 );
+    border-image-slice: 1;
+    padding-top: 25px;
+    
 }
 
 /* -- Service --*/
