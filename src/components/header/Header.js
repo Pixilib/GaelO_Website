@@ -62,7 +62,7 @@ const Header = (props) => {
             <Link to="contact" style={customStyle} className={customLink("/contact")} onClick={handleClick}>{t('navbar.6')} </Link>
           </Nav>
         </Col>
-        <a href="https://github.com/Pixilib/"><img alt="GitHub" className='' src={logoGitHub} /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Pixilib/"><img alt="GitHub" className='' src={logoGitHub} /></a>
         <Col sm={1}>
           <Lang />
         </Col>
