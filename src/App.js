@@ -136,7 +136,7 @@ function App() {
         <Row className="p-5" >
           <Partner />
         </Row>
-        <Row className="bg-light p-5" ref={(ref) => refs.current[6] = ref}>
+        <Row className="background " ref={(ref) => refs.current[6] = ref}>
           <Contact />
         </Row>
       </Container>
