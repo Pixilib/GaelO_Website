@@ -89,7 +89,9 @@ h2 {
 }
 
 .logoNavbar {
-    width: 70%;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 50%;
 
 }
 
