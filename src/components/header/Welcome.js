@@ -44,9 +44,9 @@ const Header = () => {
 
   return (
     <Container id='home' style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className='text-center styleContainer'>
-      <Row>
+      <Row className='d-flex flex-column align-item-center justify-content-center' >
         <Col>
-          <Figure.Image className='text-center logoPrincipal' src={logoPrincipalWhite} />
+          <Figure.Image className='logoPrincipal' src={logoPrincipalWhite} />
           <p className='styleTexte'>{t('header.title')}</p>
         </Col>
       </Row>
