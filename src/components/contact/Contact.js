@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import ModalForm from './ModalForm'
+
 
 const Contact = () => {
   const { t } = useTranslation()
@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <Row id='contact' className='p-5 text-center align-items-center' >
-      <ModalForm show={modalShow} onHide={() => setModalShow(false)} />
+      
 
       <h1>{t('contact.title')}</h1>
       <a href={'mailto:' + t('contact.mail')}>{t('contact.mail')}</a>
