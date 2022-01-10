@@ -8,7 +8,9 @@ import mentionLegales from '../assets/md/mentions-legales.md'
 import cgu from '../assets/md/cgu.md'
 
 function Footer(props) {
-  const [content, setContent] = useState()
+  const [content, setContent] = useState(null)
+ 
+
   
   const { t } = useTranslation()
 
@@ -24,12 +26,14 @@ function Footer(props) {
     })
   }
 
+
+
   return (
-    <footer className='background text-center'>
-      <Col>
+    <footer className='background text-center'  onMouseLeave={() => setContent(null)}>
+      <Col  >
         <p>
-       
-          <Button className='text-white' variant='link' onClick={() => loadMentionsLegales()}   >
+        
+          <Button className='text-white' variant='link'  onClick={() => loadMentionsLegales()}   >
             {t('footer.mentions')}
           </Button>
           <Button className='text-white' variant='link' onClick={() => loadCGU()}>
@@ -42,7 +46,7 @@ function Footer(props) {
       </Col>
       <Row className="mw-100">
      
-        <Markdown >
+        <Markdown   >
           {content}
         </Markdown>
 
