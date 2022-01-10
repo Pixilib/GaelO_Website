@@ -58,7 +58,7 @@ const Header = (props) => {
             <Link to="solution" style={customStyle} className={customLink("/solution")} onClick={handleClick}>{t('navbar.2')} </Link>
             <Link to="service" style={customStyle} className={customLink("/service")} onClick={handleClick}>{t('navbar.3')} </Link>
             <Link to="expertise" style={customStyle} className={customLink("/expertise")} onClick={handleClick}>{t('navbar.4')} </Link>
-            <Link to="team" style={customStyle} className={customLink("/team")} onClick={handleClick}>{t('navbar.5')} </Link>
+            <Link hidden='true' to="team" style={customStyle} className={customLink("/team")} onClick={handleClick}>{t('navbar.5')} </Link>
             <Link to="contact" style={customStyle} className={customLink("/contact")} onClick={handleClick}>{t('navbar.6')} </Link>
           </Nav>
         </Col>

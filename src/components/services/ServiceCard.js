@@ -25,7 +25,7 @@ const ServiceCard = () => {
                         </Card>
                         {/* vue du back de la card */}
                         <Card className={"cardService mt-3 border-" + value.color} >
-                            <p className="text-center text-dark fw-bold ">{t('service.card.' + key + '.back')}</p>
+                            <p className="text-center text-dark p-3 fw-bold ">{t('service.card.' + key + '.back')}</p>
                         </Card>
                     </CardFade>
                 </Col>))
