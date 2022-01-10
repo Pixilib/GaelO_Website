@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap"
+import { Card , Row } from "react-bootstrap"
 import { useTranslation } from "react-i18next"
 import fr from '../../lang/fr.json'
 
@@ -19,15 +19,18 @@ const StudyCard = (props) => {
         }
 
         return (
-            <Card className="mt-4 border-2 bg-light">
-                <Card.Header className=" bg-light border-bottom-0 text-primary fw-bold fs-3 text-center"> {t('study.graph.' + props.level + '.title')} </Card.Header>
-                <Card.Body className=" text-dark text-center fst-italic">
-                    {
-                        bodyArray
-                    }
-                </Card.Body>
-            </Card>
-        )
+            <Row>
+                <Card className="mt-4 border-2 bg-light">
+                    <Card.Header className=" bg-light border-bottom-0 text-primary fw-bold fs-3 text-center"> {t('study.graph.' + props.level + '.title')} </Card.Header>
+                    <Card.Body className=" text-dark text-center fst-italic">
+                        {
+                            bodyArray
+                        }
+                    </Card.Body>
+                </Card>
+                </Row>
+                        )
+            
     }
 
     return (

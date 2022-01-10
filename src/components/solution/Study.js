@@ -15,7 +15,7 @@ const Study = () => {
   const Conclusion = 'conclusion'
 
   return (
-    <Container >
+    <Container className='separator' >
       <Row >
         <Col md="3" className="d-flex align-items-center" >
           <h2 className='text-center'>Structure de données </h2>
@@ -46,16 +46,14 @@ const Study = () => {
             />
           </div>
           </Row>
-
-
-
+        </Col>
+        
+      </Row>
           <Row className='d-flex justify-content-center'>
             <StudyCard level={currentData} />
           </Row>
 
-        </Col>
-        
-      </Row>
+
 
     </Container>
   )
