@@ -160,19 +160,19 @@
 			"controller": {
 				"title": "Controlleur",
 				"content": " Controle qualité centralisé des envois avant interprétation médicale",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"video": null,
 				"pdf": "controller-fr.pdf"
 			},
 			"reviewer": {
 				"title": "Relecteur",
 				"content": "Médecin expert pour l’interprétation centralisée",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"video": null,
 				"pdf": "reviewer-fr.pdf"
 			},
 			"supervisor": {
 				"title": "Superviseur",
 				"content": "Gestion d’étude (suivi progression, accès aux données, actions correctives)",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"video": null,
 				"pdf": "supervisor-fr.pdf"
 			}
 		}
