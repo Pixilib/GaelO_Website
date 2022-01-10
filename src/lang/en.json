@@ -142,25 +142,25 @@
 			"investigator": {
 				"title": "investigator",
 				"content": "Sending imagery from the investigator site",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"video": null,
 				"pdf": "investigator-en.pdf"
 			},
 			"controller": {
 				"title": "Controller",
 				"content": "Centralized quality control of shipments before medical interpretation",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"video": null,
 				"pdf": "controller-en.pdf"
 			},
 			"reviewer": {
 				"title": "Reviewer",
 				"content": "Expert doctor for centralized interpretation",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"video": null,
 				"pdf": "reviewer-en.pdf"
 			},
 			"supervisor": {
 				"title": "Supervisor",
 				"content": "Study management (progress monitoring, data access, corrective actions)",
-				"video": "https://www.youtube.com/watch?v=LcibqKqEClk",
+				"video": null,
 				"pdf": "supervisor-en.pdf"
 			}
 		}
