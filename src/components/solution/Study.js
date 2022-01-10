@@ -15,7 +15,7 @@ const Study = () => {
   const Conclusion = 'conclusion'
 
   return (
-    <Container className='separator' >
+    <Container className='studySeparator' >
       <Row >
         <Col md="3" className="d-flex align-items-center" >
           <h2 className='text-center'>Structure de données </h2>

@@ -208,7 +208,7 @@ h2 {
 }
 /*--Solution--*/
 
-.separator{
+.studySeparator{
     border-top: solid 1px;
     border-image: linear-gradient(to right, #f5f5f5 ,black,#f5f5f5 );
     border-image-slice: 1;
