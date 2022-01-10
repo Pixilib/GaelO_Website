@@ -5,12 +5,9 @@ import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
   const { t } = useTranslation()
-  const [modalShow, setModalShow] = React.useState(false)
 
   return (
     <Row id='contact' className='p-5 text-center align-items-center' >
-      
-
       <h1>{t('contact.title')}</h1>
       <a href={'mailto:' + t('contact.mail')}>{t('contact.mail')}</a>
       <div className="border border-dark">

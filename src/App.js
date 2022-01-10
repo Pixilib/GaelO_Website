@@ -99,8 +99,7 @@ function App() {
       case "/expertise": refs.current[4].scrollIntoView()
         break;
 
-      case "/team": refs.current[5].scrollIntoView()
-        break;
+
 
       case "/contact": refs.current[6].scrollIntoView()
         break;
@@ -133,13 +132,11 @@ function App() {
         <Row className='expertiseStyle bg-light p-5' ref={(ref) => refs.current[4] = ref} >
           <ExpertiseRoot />
         </Row>
-        <Row className="p-5" ref={(ref) => refs.current[5] = ref}>
-          < Ourteam/>
-        </Row>
-        <Row className="bg-light p-5" >
+      
+        <Row className="p-5" >
           <Partner />
         </Row>
-        <Row ref={(ref) => refs.current[6] = ref}>
+        <Row className="bg-light p-5" ref={(ref) => refs.current[6] = ref}>
           <Contact />
         </Row>
       </Container>
