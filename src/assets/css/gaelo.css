@@ -181,7 +181,7 @@ h2 {
 
 /* -- OurViews --*/
 .ourView {
-    min-height: 900px;
+    min-height: 550px;
     background-image: url("../images/backgroundISTOCK.jpg");
     background-repeat: no-repeat;
     background-size: cover;
