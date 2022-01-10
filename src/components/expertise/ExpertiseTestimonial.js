@@ -15,7 +15,7 @@ const ExpertiseTestimonial = () => {
                 <Carousel.Item>
                     <div className="p-5">
                         <p className="fst-italic fw-bold" >"{t('expertise.testimonial.text.' + item)}"</p>
-                        <p className="d-flex justify-content-end  ">{t('expertise.testimonial.name.' + item)}</p>
+                        <p className="d-flex justify-content-end fs-3 fst-italic  ">{t('expertise.testimonial.name.' + item)}</p>
                     </div>
                 </Carousel.Item>
             )
@@ -27,7 +27,7 @@ const ExpertiseTestimonial = () => {
         <Fragment>
             <Carousel
                 interval={null}
-                className="carousel d-flex bg-white text-dark  "
+                className="rounded d-flex bg-white text-dark shadow-lg  "
             >
                 {generateCarousel()}
             </Carousel>
