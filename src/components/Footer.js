@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col, Button, CloseButton } from 'react-bootstrap'
 import Markdown from 'react-markdown'
 import { useTranslation } from 'react-i18next'
 
@@ -28,20 +28,26 @@ function Footer(props) {
     <footer className='background text-center'>
       <Col>
         <p>
-          <Button variant='link' onClick={() => loadMentionsLegales()}>
+       
+          <Button className='text-white' variant='link' onClick={() => loadMentionsLegales()}   >
             {t('footer.mentions')}
           </Button>
-          <Button variant='link' onClick={() => loadCGU()}>
+          <Button className='text-white' variant='link' onClick={() => loadCGU()}>
             {t('footer.CGU')}
           </Button>
           <br />
           {t('footer.author')}
         </p>
+
       </Col>
-      <Row>
-        <Markdown>
+      <Row className="mw-100">
+     
+        <Markdown >
           {content}
         </Markdown>
+
+
+
       </Row>
     </footer>
   )
