@@ -51,7 +51,7 @@ const Footer = () => {
   return (
     <footer className='background text-center' >
       <Col  >
-        <p>
+        
 
           <Button onClick={() => handleClick(ML)} className='text-white' variant='link'    >
             {t('footer.mentions')}
@@ -62,7 +62,7 @@ const Footer = () => {
           <MarkdownModal show={modalShow} onHide={() => setModalShow(false)} />
           <br />
           {t('footer.author')}
-        </p>
+        
 
       </Col>
 
