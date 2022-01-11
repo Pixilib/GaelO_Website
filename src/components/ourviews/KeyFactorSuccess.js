@@ -10,7 +10,7 @@ const KeyFactorSuccess = () => {
 
     let createdCard = []
 
-    for (const [key, value] of Object.entries(fr.card)) {
+    for (const [key] of Object.entries(fr.card)) {
 
       createdCard.push((
         <Col className='mr-2 d-flex justify-content-center' >

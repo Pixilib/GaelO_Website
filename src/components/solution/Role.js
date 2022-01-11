@@ -12,7 +12,7 @@ const Role = (props) => {
   const { t } = useTranslation()
 
   const [currentRole, setCurrentRole] = React.useState(false)
-console.log('role.graph.'+currentRole+'.video')
+
 
   const onClickCircle = (role) => {
     setCurrentRole(role)
