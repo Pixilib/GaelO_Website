@@ -96,12 +96,6 @@ h2 {
 }
 
 /* -- Welcome --*/
-.styleTexte {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .btn-ytb {
     background-image: linear-gradient(to right, #353275 0%, #0495A0 51%, #353275 100%)
 }
@@ -136,9 +130,7 @@ h2 {
     height: 40%;
 }
 
-.logoPrincipal {
-    width: 50%;
-}
+
 
 /* -- Card --*/
 .styleCard {
@@ -175,11 +167,7 @@ h2 {
 
 }
 
-.styleContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+
 
 /* -- OurViews --*/
 .ourView {

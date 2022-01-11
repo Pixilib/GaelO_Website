@@ -3,6 +3,7 @@ import { Row, Figure, Col, Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import VideoModal from './VideoModal'
 import logoPrincipalWhite from '../../assets/images/gaelo-logo-white.svg'
+import { findByLabelText } from '@testing-library/react'
 
 const Header = () => {
 
@@ -11,7 +12,7 @@ const Header = () => {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       height: h + 'px',
-      width: '100%'
+      width: '100%',
     } 
   }
 
@@ -43,20 +44,20 @@ const Header = () => {
   const [modalShow, setModalShow] = React.useState(false)
 
   return (
-    <Container id='home' style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className='text-center styleContainer'>
-      <Row className='d-flex flex-column align-item-center justify-content-center' >
-        <Col>
-          <Figure.Image className='logoPrincipal' src={logoPrincipalWhite} />
-          <p className='styleTexte'>{t('header.title')}</p>
-        </Col>
-      </Row>
-      <Row className='justify-content-center'>
-       <button className='btn-ytb' type='button' onClick={() => setModalShow(true)}>
+    <Container  style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className=''>
+      
+       <Row className='mt-5 h-100 d-flex text-center justify-content-center flex-column align-items-center'>
+          <Row className='mt-5 d-flex text-center justify-content-center'>
+          <Figure.Image className='w-50' src={logoPrincipalWhite} />
+          <p className='text-white fs-4 fw-bold'>{t('header.title')}</p>
+          </Row>
+
+       <button className='mt-5 btn-ytb' type='button' onClick={() => setModalShow(true)}>
           <img alt="Presentation Video" src='logo-video.png' variant='primary' className='logoVideo' />
           <p className='m-0'>Presentation</p>
         </button> 
         <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
-      </Row>
+        </Row>
     </Container>
   )
 }
