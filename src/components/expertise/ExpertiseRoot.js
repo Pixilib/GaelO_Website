@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next"
 
 import ExpertiseStat from "./ExpertiseStat"
 import ExpertiseTestimonial from "./ExpertiseTestimonial"
+import logoQuote from '../../assets/images/quote.svg'
+
 
 const ExpertiseRoot = () => {
 
@@ -18,6 +20,8 @@ const ExpertiseRoot = () => {
             </Row>
             <Row className="mt-5">
                 <Col className="d-flex justify-content-center">
+                <img src={logoQuote} className="logoQuote"/>
+
                     <ExpertiseTestimonial />
                 </Col>
             </Row>
