@@ -9,10 +9,20 @@ import ML from '../../assets/md/mentions-legales.md'
 
 const Footer = () => {
 
+  const { t } = useTranslation()
+  const [modalShow, setModalShow] = React.useState(false)
+  const [url, setUrl] = React.useState(null)
+
+  const handleClick = (url) => {
+    setModalShow(true)
+    setUrl(url)
+  }
+
+
   const MarkdownModal = (props) => {
 
     const [content, setContent] = useState(null)
- 
+
     useEffect(() => {
 
       fetch(url).then((response) => response.text()).then((text) =>
@@ -36,28 +46,20 @@ const Footer = () => {
       </Modal>
     )
   }
-  const { t } = useTranslation()
-  const [modalShow, setModalShow] = React.useState(false)
-  const [url , setUrl]=React.useState(null)
- console.log(url)
-  const handleClick=(url)=>{
-    setModalShow(true)
-    setUrl(url)
-  }
- 
+
 
   return (
     <footer className='background text-center' >
       <Col  >
         <p>
 
-          <Button  onClick={()=> handleClick(ML)} className='text-white' variant='link'    >
+          <Button onClick={() => handleClick(ML)} className='text-white' variant='link'    >
             {t('footer.mentions')}
           </Button>
-          <Button  onClick={() => handleClick(CGU)} className='text-white' variant='link' >
+          <Button onClick={() => handleClick(CGU)} className='text-white' variant='link' >
             {t('footer.CGU')}
           </Button>
-          <MarkdownModal show={modalShow}  onHide={() => setModalShow(false)} />
+          <MarkdownModal show={modalShow} onHide={() => setModalShow(false)} />
           <br />
           {t('footer.author')}
         </p>
