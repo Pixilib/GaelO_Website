@@ -245,6 +245,19 @@ h2 {
     min-height: 800px;
 }
 
+.logoQuote {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 65px;
+    top: -15px;
+    left: 60px;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
 .carousel {
     max-width: 600px ;
     max-height: 800px;
