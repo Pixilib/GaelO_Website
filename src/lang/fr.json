@@ -5,7 +5,7 @@
 		"linkVideo": "https://www.youtube.com/embed/WEFmPxkdDEQ"
 	},
 	"navbar": {
-		"1": "Notre vision",
+		"1": "Notre Vision",
 		"2": "Solution ",
 		"3": "Service",
 		"4": "Expertise",
@@ -56,7 +56,7 @@
 		]
 	},
 	"contact": {
-		"title": "Contactez Nous",
+		"title": "Contactez-Nous",
 		"body": "GaelO est développé par Pixilib, Toulouse (France).",
 		"mail": "Contact@Pixilib.fr"
 	},
@@ -71,7 +71,7 @@
 		"data" : "Lorem Ipsum"
 	},
 	"ourviews": {
-		"title": "Notre vision",
+		"title": "Notre Vision",
 		"body1": " GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académique. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
 		"body2": "Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
 		"subtitle": "Nos clés de succès"
@@ -109,7 +109,7 @@
 	},
 	"study": {
 		"img": "study-graph-fr.svg",
-		"title": "Notre solution",
+		"title": "Notre Solution",
 		"subtitle":"Structure de données",
 		"graph": {
 			"study": {
