@@ -7,7 +7,7 @@
 	.st1{display:inline;fill:#FFFFFF;}
 	.st2{display:inline;}
 	.st3{fill:#010101;}
-	.st4{fill:#314053;}
+	.st4{fill:#314053;font-weight:bold;}
 	.st5{font-family:'MavenProBold';}
 	.st6{font-size:6.0546px;}
 	.st7{font-family:'MavenProRegular';}
@@ -80,9 +80,9 @@
 			</g>
 		</g>
 	</g>
-	<text transform="matrix(1 0 0 1 7.1237 50.9088)"><tspan x="0" y="0" class="st4 st5 st6">Study Specification</tspan><tspan x="5.1" y="5.7" class="st4 st7 st8">Study workflow, CRF</tspan></text>
+	<text transform="matrix(1 0 0 1 7.1237 50.9088)"><tspan x="0" y="0" class="st4 st5 st6">Study Specifications</tspan><tspan x="5.1" y="5.7" class="st4 st7 st8">Study workflow, CRF</tspan></text>
 	<text transform="matrix(1 0 0 1 111.7203 51.089)"><tspan x="0" y="0" class="st4 st5 st6">Testing phase</tspan><tspan x="1.8" y="5.7" class="st4 st7 st8">Study simulation</tspan></text>
-	<text transform="matrix(1 0 0 1 203.564 50.2728)"><tspan x="0" y="0" class="st4 st5 st6">Study Production</tspan><tspan x="0.8" y="5.7" class="st4 st7 st8">Maintenance, Backup.</tspan><tspan x="4.6" y="11.3" class="st4 st7 st8">Technical Support,</tspan><tspan x="-3.3" y="17" class="st4 st9 st8">Option</tspan><tspan x="11.4" y="17" class="st4 st7 st8">: Study supervision</tspan><tspan x="13.9" y="22.6" class="st4 st7 st8">by Lyrsarc</tspan></text>
+	<text transform="matrix(1 0 0 1 203.564 50.2728)"><tspan x="0" y="0" class="st4 st5 st6">Study Production</tspan><tspan x="0.8" y="5.7" class="st4 st7 st8">Maintenance, Backup.</tspan><tspan x="4.6" y="11.3" class="st4 st7 st8">Technical Support,</tspan><tspan x="-3.3" y="17" class="st4 st9 st8">Option</tspan><tspan x="11.4" y="17" class="st4 st7 st8">: Study supervision</tspan><tspan x="13.9" y="22.6" class="st4 st7 st8">by Lysarc</tspan></text>
 	<text transform="matrix(1 0 0 1 314.4576 50.9086)"><tspan x="0" y="0" class="st4 st5 st6">Closing</tspan><tspan x="-2" y="5.7" class="st4 st7 st8">Data export</tspan><tspan x="-6.9" y="11.3" class="st4 st7 st8">Deletion of data</tspan></text>
 	<text transform="matrix(1 0 0 1 60.1464 32.5574)" class="st4 st5 st6">Demo Platform</text>
 	<text transform="matrix(1 0 0 1 152.1348 32.3808)" class="st4 st5 st6">Ask for production</text>
