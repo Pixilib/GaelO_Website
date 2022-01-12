@@ -18,7 +18,7 @@ const Study = () => {
     <Container className='studySeparator' >
       <Row >
         <Col md="3" className="d-flex align-items-center" >
-          <h2 className='text-center'>Structure de données </h2>
+          <h2 className='text-center'> {t('study.subtitle')} </h2>
         </Col>
         <Col>
           <Row >

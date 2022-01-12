@@ -1,7 +1,7 @@
 {
 	"header": {
-		"title": "Clinical trial imaging managment platform",
-		"button": "Video",
+		"title": "Clinical trial imaging management platform",
+		"button": "Presentation",
 		"linkVideo": "https://www.youtube.com/embed/nawCODnp05g"
 	},
 	"navbar": {
@@ -12,35 +12,7 @@
 		"5": "Team",
 		"6": "Contact us"
 	},
-	"features": {
-		"title": "Features",
-		"body": [
-			"Personnal access to a web plateform for imaging trial management",
-			"Multiple study management",
-			"Anonymization and upload of DICOMs without third party app",
-			"5 Roles that could be given to users for each study : Investigator, Monitor, Controller, Supervisor, Reviewer",
-			"Administrator role for management of the plateform",
-			"Central review management with automatic adjudication",
-			"Emails alerts when intervention is required",
-			"Audit Trail of each action in the plateform",
-			"RestAPIs to connect with third party DICOM viewer"
-		],
-		"image": {
-			"legend": "DICOM study import interface"
-		}
-	},
-	"videos": {
-		"title": "In videos",
-		"carousel-legend": [
-			"Investigators: Upload from DICOM",
-			"Controller : Quality Control",
-			"Supervisor : Overview",
-			"Supervisor : Statistics module",
-			"Reviewer : Send results and Adjudication",
-			"Example : Study, visit and user creation",
-			"Example : Fiji Integration"
-		]
-	},
+
 	"contact": {
 		"title": "Contact Us",
 		"body": "GaelO is powered by Pixilib, Toulouse, France",
@@ -53,34 +25,35 @@
 	"footer": {
 		"mentions": "Legal Mentions",
 		"CGU": "Terms of Use",
-		"author": "Pixilib All Rights Reserved"
+		"author": "Pixilib All Rights Reserved",
+		"data":"Personal Data Policy"
 	},
 	"ourviews": {
 		"title": "Our Vision",
-		"body1": " GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académiques. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
-		"body2": "Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
-		"subtitle": "Nos clés de succès"
+		"body1": "GaelO was born from the observation of the difficulties for the exploitation of imaging in academic clinical research. All too often, image exchanges are carried out using traditional means (CD/USB key exchange or via online file sharing services that are not appropriate for clinical research)",
+		"body2": "Because researchers deserve better, we wanted to offer a solution that helps you collect imaging data from investigating centres, ensure centralised interpretation and effectively monitor the progress of your clinical trial.",
+		"subtitle": "Our keys to success"
 	},
 	"card":{
 		"efficacity":
-			{ "keyword": "Efficacity",
+			{ "keyword": "Efficiency",
 			"icon": "efficacity.png",
 			"definition": "A platform designed with researchers in mind and that meets their needs. The user experience is our main guide to provide an ever more innovative platform."
 			},
 		"intuitivity":    
-			{ "keyword": "Intuitivity",
+			{ "keyword": "Intuitiveness",
 			"icon": "intuitivity.png",
 			"definition": "We believe that an imaging platform should be intuitive to use without the need for specific training."
 			},
 		"reactivity":
-			{ "keyword": "Reactivity",
+			{ "keyword": "Responsiveness",
 			"icon": "reactivity.png",
 			"definition": "A fast and also scalable platform, we want to be at the forefront of new imaging challenges "
 			},   
 		"liberty":
-			{ "keyword": "Liberty",
+			{ "keyword": "Freedom",
 			"icon": "liberty.png",
-			"definition": "Your imagery should be available at any time without restrictions on use. We believe that research is better off without locks."
+			"definition": "Your imagering should be available at any time without restriction on use. We believe that research is better off without lock."
 			},
 		"source":
 			{ "keyword": "Open-source",
@@ -96,7 +69,8 @@
 	},
 	"study": {
 		"img": "study-graph-en.svg",
-		"title": "Our solution",
+		"title": "Our Solution",
+		"subtitle":"Data structure",
 		"graph": {
 			"study": {
 				"title": "A clinical study corresponding to a clinical research project",
@@ -141,13 +115,13 @@
 		"graph": {
 			"investigator": {
 				"title": "investigator",
-				"content": "Sending imagery from the investigator site",
+				"content": "Sending imaging from the investigator site",
 				"video": null,
 				"pdf": "investigator-en.pdf"
 			},
 			"controller": {
 				"title": "Controller",
-				"content": "Centralized quality control of shipments before medical interpretation",
+				"content": "Centralized quality control of uploads before medical interpretation",
 				"video": null,
 				"pdf": "controller-en.pdf"
 			},
@@ -167,13 +141,13 @@
 	},
 	"service": {
 		"title": "Our Services",
-		"intro": "We have designated a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
+		"intro": "We have designed a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
 		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
 		"card":{ "Complete":
 					{ "title": "Complete",
 					"logo": "complet.png",
 					"front": "100% of GaelO's features",
-					"back": "You will automatically benefit from GaelO's evolutions, we don't like two speed search",
+					"back": "You will automatically benefit from GaelO's evolutions, we don't like two tier search",
 					"color": "primary"},
 				"Unique":
 					{ "title": "Unique",
@@ -197,7 +171,7 @@
 					{ "title": "Affordable",
 					"logo": "abordable.png",
 					"front": "Seriously?",
-					"back":"Serieusement ! Nos clients négocient rarement notre prix, nous préférons nous concentrer sur notre valeur ajoutée : l’innovation.",
+					"back":"Seriously! Our customers rarely negotiate our price, we prefer to focus on our added value: innovation",
 					"color":"info"}
 	},
 		"img": "offre-service-en.svg"
@@ -237,7 +211,7 @@
 		}
 	},
 	"partner":{
-		"title":"Our Partner"	
+		"title":"Our Partners"	
 	},
 	"team":{
 		"title":"Our Team",
