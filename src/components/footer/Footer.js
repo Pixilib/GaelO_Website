@@ -4,13 +4,11 @@ import { Col, Button, } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { Modal } from 'react-bootstrap'
 import Markdown from "react-markdown";
-import CGU from '../../assets/md/cgu.md'
-import ML from '../../assets/md/mentions-legales.md'
+
 
 const Footer = () => {
 
   const { t } = useTranslation()
-  const [modalShow, setModalShow] = React.useState(false)
   const [url, setUrl] = React.useState(null)
 
   console.log(url)
@@ -50,12 +48,18 @@ const Footer = () => {
       <Col  >
         
 
-          <Button onClick={() => setUrl(ML)} className='text-white' variant='link'    >
+          <Button onClick={() => setUrl()} className='text-white' variant='link'    >
             {t('footer.mentions')}
           </Button>
-          <Button onClick={() => setUrl(CGU)} className='text-white' variant='link' >
+
+          <Button onClick={() => setUrl()} className='text-white' variant='link' >
             {t('footer.CGU')}
           </Button>
+
+          <Button className='text-white' variant='link'>
+
+          </Button>
+
           <MarkdownModal show={url !=null} onHide={() => setUrl(null)} />
           <br />
           {t('footer.author')}
