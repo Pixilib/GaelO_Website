@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { Language } from '../../enums/Language';
 
 
@@ -17,12 +17,10 @@ const Lang = () => {
     ]
     const [lang, setLang] = useState(options[0]);
 
-
     let changeLanguage = (language) => {
         setLang(language);
         i18next.changeLanguage(language.value)
     }
-
 
     const customStyles = {
         dropdownIndicator: () => ({
@@ -32,23 +30,13 @@ const Lang = () => {
         valueContainer: (provided) => ({
             ...provided,
             paddingLeft: 15,
-
-
         }),
-
-        valueContainer: (provided, state) => ({
-            ...provided,
-
-
-        }),
-
 
         control: (provided) => ({
             ...provided,
             backgroundColor: 'none',
             border: 'none',
             boxShadow: 'none',
-
         }),
 
         indicatorSeparator: () => ({
@@ -60,8 +48,6 @@ const Lang = () => {
             backgroundColor: "#314053",
             width: "auto",
             color: "#78E08F",
-
-
             borderRadius: 15,
         }),
 
@@ -70,18 +56,17 @@ const Lang = () => {
             backgroundColor: " none",
             fontWeight: state.isSelected ? "bold" : "normal",
             color: state.isSelected ? "#78E08F" : "#FFBA4D",
-
         })
     }
 
     return (
 
-        <>
+        <Fragment>
             <Select type="button" className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
                 value: lang.value,
                 label: <img alt="language" src={t('lang.flag')} style={{ width: "20px", height: "20px" }} />
             }} onChange={changeLanguage} />
-        </>
+        </Fragment>
     )
 }
 

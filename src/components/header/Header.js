@@ -40,8 +40,6 @@ const Header = (props) => {
     return {
       color: 'inherit',
       textdecoration: 'none',
-
-
     }
   }
 
@@ -72,10 +70,8 @@ const Header = (props) => {
             <LogoGitHub />
           </a>
         </Col>
-
-
-
       </Navbar>
+      
     </Fragment >
   )
 }
