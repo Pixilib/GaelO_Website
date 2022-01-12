@@ -9,8 +9,7 @@ const Footer = () => {
 
   const { t } = useTranslation()
   const [url, setUrl] = React.useState(null)
-console.log(url + '  ceci est l url')
-console.log(setUrl)
+
 
 
 

@@ -133,7 +133,7 @@ function App() {
         <Row className='expertiseStyle bg-light p-5' ref={(ref) => refs.current[4] = ref} >
           <ExpertiseRoot />
         </Row>
-        <Row hidden='true' className="bg-light p-5" ref={(ref) => refs.current[5] = ref}>
+        <Row hidden={true} className="bg-light p-5" ref={(ref) => refs.current[5] = ref}>
           <Ourteam />
         </Row>
         <Row className="p-5" >
