@@ -26,7 +26,10 @@
 		"mentions": "Legal Mentions",
 		"CGU": "Terms of Use",
 		"author": "Pixilib All Rights Reserved",
-		"data":"Personal Data Policy"
+		"data":"Personal Data Policy",
+		"mkCGU":"cgu.md",
+		"mkdata":"privacy-data-en.md",
+		"mkmention":"mentions-legales-en.md"
 	},
 	"ourviews": {
 		"title": "Our Vision",

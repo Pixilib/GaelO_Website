@@ -68,7 +68,10 @@
 		"mentions": "Mentions légales",
 		"CGU": "Conditions Générales d'Utilisation",
 		"author": "Pixilib, tous droits réservés",
-		"data" : "Lorem Ipsum"
+		"data" : "Politique Donnée Personnelles",
+		"mkCGU":"cgu.md",
+		"mkdata":"privacy-data.md",
+		"mkmention":"mentions-legales.md"
 	},
 	"ourviews": {
 		"title": "Notre Vision",
