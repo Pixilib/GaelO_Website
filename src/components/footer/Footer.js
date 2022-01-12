@@ -13,10 +13,7 @@ const Footer = () => {
   const [modalShow, setModalShow] = React.useState(false)
   const [url, setUrl] = React.useState(null)
 
-  const handleClick = (url) => {
-    setModalShow(true)
-    setUrl(url)
-  }
+  console.log(url)
 
 
   const MarkdownModal = (props) => {
@@ -53,13 +50,13 @@ const Footer = () => {
       <Col  >
         
 
-          <Button onClick={() => handleClick(ML)} className='text-white' variant='link'    >
+          <Button onClick={() => setUrl(ML)} className='text-white' variant='link'    >
             {t('footer.mentions')}
           </Button>
-          <Button onClick={() => handleClick(CGU)} className='text-white' variant='link' >
+          <Button onClick={() => setUrl(CGU)} className='text-white' variant='link' >
             {t('footer.CGU')}
           </Button>
-          <MarkdownModal show={modalShow} onHide={() => setModalShow(false)} />
+          <MarkdownModal show={url !=null} onHide={() => setUrl(null)} />
           <br />
           {t('footer.author')}
         
