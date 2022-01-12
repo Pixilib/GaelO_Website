@@ -8,7 +8,7 @@ const ExpertiseStat = () => {
     const { t } = useTranslation()
 
     const numberClass = "text-center text-info fs-1 fw-bold  "
-    const textClass = "d-flex justify-content-center fw-bold fs-5"
+    const textClass = "d-flex justify-content-center fw-bold fs-5 text-center"
     return (
 
         <Fragment>

@@ -54,7 +54,7 @@ const Header = () => {
 
        <button className='mt-5 btn-ytb' type='button' onClick={() => setModalShow(true)}>
           <img alt="Presentation Video" src='logo-video.png' variant='primary' className='logoVideo' />
-          <p className='m-0'>Presentation</p>
+          <p className='m-0'>{t('header.button')}</p>
         </button> 
         <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
         </Row>
