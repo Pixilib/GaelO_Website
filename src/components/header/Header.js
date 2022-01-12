@@ -1,10 +1,10 @@
 
 import { useTranslation } from 'react-i18next'
 import Lang from './Lang'
-import { Col, Figure, Nav, Navbar, Row, } from 'react-bootstrap'
+import { Col, Figure, Nav, Navbar, } from 'react-bootstrap'
 import logoPrincipal from '../../assets/images/logoPrincipal.png'
 import { Fragment, } from 'react'
-import {ReactComponent as LogoGitHub} from '../../assets/images/github.svg'
+import { ReactComponent as LogoGitHub } from '../../assets/images/github.svg'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 
 const Header = (props) => {
@@ -36,14 +36,14 @@ const Header = (props) => {
 
   const { t } = useTranslation()
 
-  const styleLogoGH = () =>  {
+  const styleLogoGH = () => {
     return {
-    color: 'inherit',
-    textdecoration: 'none',
-   
+      color: 'inherit',
+      textdecoration: 'none',
 
+
+    }
   }
-}
 
   return (
     <Fragment>
@@ -69,11 +69,11 @@ const Header = (props) => {
         <Col sm={1} className='d-flex align-items-center justify-content-around '>
           <Lang />
           <a style={styleLogoGH()} target="_blank" rel="noopener noreferrer" href="https://github.com/Pixilib/">
-          <LogoGitHub/>
+            <LogoGitHub />
           </a>
         </Col>
-       
-       
+
+
 
       </Navbar>
     </Fragment >

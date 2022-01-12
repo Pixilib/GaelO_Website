@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Language } from '../../enums/Language';
-import { Col, Container, Row } from 'react-bootstrap'
+
 
 import i18next from "i18next"
 import { useTranslation } from "react-i18next"
@@ -32,13 +32,13 @@ const Lang = () => {
         valueContainer: (provided) => ({
             ...provided,
             paddingLeft: 15,
-        
+
 
         }),
 
         valueContainer: (provided, state) => ({
             ...provided,
-           
+
 
         }),
 
@@ -48,7 +48,7 @@ const Lang = () => {
             backgroundColor: 'none',
             border: 'none',
             boxShadow: 'none',
-            
+
         }),
 
         indicatorSeparator: () => ({
