@@ -45,7 +45,7 @@ const Role = (props) => {
             <img className='ImgRole ' src={t('role.img')} alt='Design des roles' />
 
             <div
-              onMouseLeave={() => onClickCircle(Investigator)}
+              onMouseEnter={() => onClickCircle(Investigator)}
               style={{ position: 'absolute', left: '23.25%', top: '76.5%', width: '3%', height: '6%', borderRadius: '50%',  opacity: '50%' }}
             />
 
