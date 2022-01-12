@@ -1,7 +1,7 @@
 
 import { useTranslation } from 'react-i18next'
 import Lang from './Lang'
-import { Col, Figure, Nav, Navbar, } from 'react-bootstrap'
+import { Col, Figure, Nav, Navbar, Row, } from 'react-bootstrap'
 import logoPrincipal from '../../assets/images/logoPrincipal.png'
 import { Fragment, } from 'react'
 import {ReactComponent as LogoGitHub} from '../../assets/images/github.svg'
@@ -40,6 +40,8 @@ const Header = (props) => {
     return {
     color: 'inherit',
     textdecoration: 'none',
+   
+
   }
 }
 
@@ -55,7 +57,7 @@ const Header = (props) => {
           </Nav>
         </Col>
         <Col>
-          <Nav className={'justify-content-center fw-bold '}>
+          <Nav className='d-flex justify-content-center fw-bold  '>
             <Link to="ourviews" style={customStyle} className={customLink("/ourviews")} onClick={handleClick} >{t('navbar.1')}</Link>
             <Link to="solution" style={customStyle} className={customLink("/solution")} onClick={handleClick}>{t('navbar.2')} </Link>
             <Link to="service" style={customStyle} className={customLink("/service")} onClick={handleClick}>{t('navbar.3')} </Link>
@@ -64,12 +66,15 @@ const Header = (props) => {
             <Link to="contact" style={customStyle} className={customLink("/contact")} onClick={handleClick}>{t('navbar.6')} </Link>
           </Nav>
         </Col>
-        <a style={styleLogoGH()} target="_blank" rel="noopener noreferrer" href="https://github.com/Pixilib/">
+        <Col sm={1} className='d-flex align-items-center justify-content-around '>
+          <Lang />
+          <a style={styleLogoGH()} target="_blank" rel="noopener noreferrer" href="https://github.com/Pixilib/">
           <LogoGitHub/>
           </a>
-        <Col sm={1}>
-          <Lang />
         </Col>
+       
+       
+
       </Navbar>
     </Fragment >
   )

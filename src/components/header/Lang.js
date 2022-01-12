@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Language } from '../../enums/Language';
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 import i18next from "i18next"
 import { useTranslation } from "react-i18next"
@@ -32,13 +32,23 @@ const Lang = () => {
         valueContainer: (provided) => ({
             ...provided,
             paddingLeft: 15,
+        
+
         }),
+
+        valueContainer: (provided, state) => ({
+            ...provided,
+           
+
+        }),
+
 
         control: (provided) => ({
             ...provided,
             backgroundColor: 'none',
             border: 'none',
             boxShadow: 'none',
+            
         }),
 
         indicatorSeparator: () => ({
@@ -48,8 +58,9 @@ const Lang = () => {
         menu: (provided) => ({
             ...provided,
             backgroundColor: "#314053",
-            width: "150%",
+            width: "auto",
             color: "#78E08F",
+
 
             borderRadius: 15,
         }),
@@ -59,17 +70,18 @@ const Lang = () => {
             backgroundColor: " none",
             fontWeight: state.isSelected ? "bold" : "normal",
             color: state.isSelected ? "#78E08F" : "#FFBA4D",
+
         })
     }
 
     return (
 
-        <Container className='d-flex'>
+        <>
             <Select type="button" className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
                 value: lang.value,
-                label: <img alt="language" src={t('lang.flag')} style={{ width: "100%", height: "20px" }} />
+                label: <img alt="language" src={t('lang.flag')} style={{ width: "20px", height: "20px" }} />
             }} onChange={changeLanguage} />
-        </Container>
+        </>
     )
 }
 
