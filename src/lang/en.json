@@ -27,15 +27,15 @@
 		"CGU": "Terms of Use",
 		"author": "Pixilib All Rights Reserved",
 		"data":"Personal Data Policy",
-		"mkCGU":"cgu.md",
+		"mkCGU":"cgu-en.md",
 		"mkdata":"privacy-data-en.md",
 		"mkmention":"mentions-legales-en.md"
 	},
 	"ourviews": {
 		"title": "Our Vision",
-		"body1": "GaelO was born from the observation of the difficulties for the exploitation of imaging in academic clinical research. All too often, image exchanges are carried out using traditional means (CD/USB key exchange or via online file sharing services that are not appropriate for clinical research)",
-		"body2": "Because researchers deserve better, we wanted to offer a solution that helps you collect imaging data from investigating centres, ensure centralised interpretation and effectively monitor the progress of your clinical trial.",
-		"subtitle": "Our keys to success"
+		"body1": "GaelO was born from the observation of the difficulties for the exploitation of imaging in academic clinical research. All too often, image exchanges are carried out using traditional means (CD/USB key exchange or via online file sharing services that are not appropriate for clinical research).",
+		"body2": "Because researchers deserve better, we wanted to offer a solution that helps you collect imaging data from investigating centres, ensures centralised interpretation and efficiently monitor the progress of your clinical trial.",
+		"subtitle": "Our Keys To Success"
 	},
 	"card":{
 		"efficacity":
@@ -51,15 +51,15 @@
 		"reactivity":
 			{ "keyword": "Responsiveness",
 			"icon": "reactivity.png",
-			"definition": "A fast and also scalable platform, we want to be at the forefront of new imaging challenges "
+			"definition": "A fast and also scalable platform, we want to be at the forefront of new imaging challenges. "
 			},   
 		"liberty":
 			{ "keyword": "Freedom",
 			"icon": "liberty.png",
-			"definition": "Your imagering should be available at any time without restriction on use. We believe that research is better off without lock."
+			"definition": "Your imaging should be available at any time without restriction on use. We believe that research is better off without locks."
 			},
 		"source":
-			{ "keyword": "Open-source",
+			{ "keyword": "Open Source",
 			"icon": "open-source.png",
 			"definition": "The vast majority of our solutions are open source. We are constantly contributing to open source projects structuring imaging, we believe that good research is open research."
 			}  
@@ -73,7 +73,7 @@
 	"study": {
 		"img": "study-graph-en.svg",
 		"title": "Our Solution",
-		"subtitle":"Data structure",
+		"subtitle":"Data Structure",
 		"graph": {
 			"study": {
 				"title": "A clinical study corresponding to a clinical research project",
@@ -144,7 +144,7 @@
 	},
 	"service": {
 		"title": "Our Services",
-		"intro": "We have designed a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging",
+		"intro": "We have designed a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging.",
 		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
 		"card":{ "Complete":
 					{ "title": "Complete",
