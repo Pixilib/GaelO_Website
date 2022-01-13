@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.016a8581.chunk.css",
-    "main.js": "/static/js/main.bf22ca53.chunk.js",
-    "main.js.map": "/static/js/main.bf22ca53.chunk.js.map",
+    "main.js": "/static/js/main.bc72f9f1.chunk.js",
+    "main.js.map": "/static/js/main.bc72f9f1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3d28fbd7.js",
     "runtime-main.js.map": "/static/js/runtime-main.3d28fbd7.js.map",
     "static/css/2.455652b6.chunk.css": "/static/css/2.455652b6.chunk.css",
-    "static/js/2.f9f2ccf2.chunk.js": "/static/js/2.f9f2ccf2.chunk.js",
-    "static/js/2.f9f2ccf2.chunk.js.map": "/static/js/2.f9f2ccf2.chunk.js.map",
+    "static/js/2.57131ce2.chunk.js": "/static/js/2.57131ce2.chunk.js",
+    "static/js/2.57131ce2.chunk.js.map": "/static/js/2.57131ce2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.455652b6.chunk.css.map": "/static/css/2.455652b6.chunk.css.map",
     "static/css/main.016a8581.chunk.css.map": "/static/css/main.016a8581.chunk.css.map",
-    "static/js/2.f9f2ccf2.chunk.js.LICENSE.txt": "/static/js/2.f9f2ccf2.chunk.js.LICENSE.txt",
+    "static/js/2.57131ce2.chunk.js.LICENSE.txt": "/static/js/2.57131ce2.chunk.js.LICENSE.txt",
     "static/media/gaelo.css": "/static/media/backgroundISTOCK.7893418e.jpg",
     "static/media/gaelo-logo-white.6f03459f.svg": "/static/media/gaelo-logo-white.6f03459f.svg",
     "static/media/github.1dbcf7b2.svg": "/static/media/github.1dbcf7b2.svg",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.3d28fbd7.js",
     "static/css/2.455652b6.chunk.css",
-    "static/js/2.f9f2ccf2.chunk.js",
+    "static/js/2.57131ce2.chunk.js",
     "static/css/main.016a8581.chunk.css",
-    "static/js/main.bf22ca53.chunk.js"
+    "static/js/main.bc72f9f1.chunk.js"
   ]
 }
