@@ -60,10 +60,6 @@
 		"body": "GaelO est développé par Pixilib, Toulouse (France).",
 		"mail": "Contact@Pixilib.fr"
 	},
-	"license": {
-		"title": "Licence et contributions",
-		"body": "La plate-forme GaelO est sous licence AGPL v.3."
-	},
 	"footer": {
 		"mentions": "Mentions légales",
 		"CGU": "Conditions Générales d'Utilisation",
@@ -153,32 +149,26 @@
 	"role": {
 		"img": "role-graph-fr.svg",
 		"title": "Roles dans l'etude",
-		"switchpdf": "Voir Video",
-		"switchvideo": "Voir Documentation",
 		"graph": {
 			"investigator": {
 				"title": "Investigateur",
 				"content": " Envoi des imageries depuis le site investigateur",
-				"video": "https://www.youtube.com/watch?v=76a2AczOH-A",
-				"pdf": "investigator-fr.pdf"
+				"video": "https://www.youtube.com/watch?v=76a2AczOH-A"
 			},
 			"controller": {
 				"title": "Contrôleur",
 				"content": " Controle qualité centralisé des envois avant interprétation médicale",
-				"video": null,
-				"pdf": "controller-fr.pdf"
+				"video": null
 			},
 			"reviewer": {
 				"title": "Relecteur",
 				"content": "Médecin expert pour l’interprétation centralisée",
-				"video": null,
-				"pdf": "reviewer-fr.pdf"
+				"video": null
 			},
 			"supervisor": {
 				"title": "Superviseur",
 				"content": "Gestion d’étude (suivi progression, accès aux données, actions correctives)",
-				"video": null,
-				"pdf": "supervisor-fr.pdf"
+				"video": null
 			}
 		}
 	},
@@ -186,7 +176,8 @@
 		"title": "Nos Services",
 		"intro": "Nous avons designé une offre de service adaptée aux académiques. Au delà de l’aspect technologique c’est une des plus grandes innovations apporté à l’écosystème de recherche clinique en imagerie.",
 		"content": "L’offre de service est éditée par Pixilib et vous propose GaelO clé en main, installé et hébergé sur un serveur situé en France, maintenu par les créateurs de GaelO et vous assure une disponibilité complète de la plateforme.",
-		"card":{"Complete":
+		"card":{
+			"Complete":
 					{"title":"Complète",
 					"logo":"complet.png",
 					"front":"100% des fonctionnalités de GaelO",
