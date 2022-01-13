@@ -1,7 +1,6 @@
-import React from "react";
 import { Row, Col } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
-import logo from '../lang/logo.json'
+import logo from '../../lang/logo.json'
 
 const Partner = () => {
 
