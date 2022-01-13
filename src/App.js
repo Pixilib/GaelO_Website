@@ -120,7 +120,7 @@ function App() {
           <Welcome />
         </Row>
       </Container>
-      <Container >
+      <Container fluid >
         <Row ref={(ref) => refs.current[1] = ref} >
           <OurViewRoot />
         </Row>
