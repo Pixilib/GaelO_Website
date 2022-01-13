@@ -12,7 +12,7 @@ const Contact = () => {
       <h1 className='text-white'>{t('contact.title')}</h1>
       < Col className='d-flex flex-column align-items-center' >
           
-            <img className='logoMail'  src={logoMail}/>
+            <img className='logoMail' alt='LogoMail' src={logoMail}/>
             <a className='text-white fs-4' href={'mailto:' + t('contact.mail')}>  {t('contact.mail')}</a>
           
       </Col>

@@ -18,10 +18,6 @@
 		"body": "GaelO is powered by Pixilib, Toulouse, France",
 		"mail": "Contact@Pixilib.fr"
 	},
-	"license": {
-		"title": "License and contributions",
-		"body": "GaelO platform is AGPL v.3 licenced."
-	},
 	"footer": {
 		"mentions": "Legal Mentions",
 		"CGU": "Terms of Use",
@@ -113,32 +109,26 @@
 	"role": {
 		"img": "role-graph-en.svg",
 		"title": "Roles in the study",
-		"switchpdf": "See Video",
-		"switchvideo": "See Documentation",
 		"graph": {
 			"investigator": {
 				"title": "investigator",
 				"content": "Sending imaging from the investigator site",
-				"video": null,
-				"pdf": "investigator-en.pdf"
+				"video": null	
 			},
 			"controller": {
 				"title": "Controller",
 				"content": "Centralized quality control of uploads before medical interpretation",
-				"video": null,
-				"pdf": "controller-en.pdf"
+				"video": null
 			},
 			"reviewer": {
 				"title": "Reviewer",
 				"content": "Expert doctor for centralized interpretation",
-				"video": null,
-				"pdf": "reviewer-en.pdf"
+				"video": null	
 			},
 			"supervisor": {
 				"title": "Supervisor",
 				"content": "Study management (progress monitoring, data access, corrective actions)",
-				"video": null,
-				"pdf": "supervisor-en.pdf"
+				"video": null
 			}
 		}
 	},
@@ -146,7 +136,8 @@
 		"title": "Our Services",
 		"intro": "We have designed a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging.",
 		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",
-		"card":{ "Complete":
+		"card":{
+				"Complete":
 					{ "title": "Complete",
 					"logo": "complet.png",
 					"front": "100% of GaelO's features",
