@@ -68,7 +68,7 @@
 		"mentions": "Mentions légales",
 		"CGU": "Conditions Générales d'Utilisation",
 		"author": "Pixilib, tous droits réservés",
-		"data" : "Politique Donnée Personnelles",
+		"data" : "Politique Données Personnelles",
 		"mkCGU":"cgu.md",
 		"mkdata":"privacy-data.md",
 		"mkmention":"mentions-legales.md"
@@ -77,7 +77,7 @@
 		"title": "Notre Vision",
 		"body1": " GaelO est né du constat des difficultés pour l’exploitation de l’imagerie en recherche clinique académique. Trop souvent, les échanges d’images sont réalisés avec des moyens artisanaux ( échange de CD / Clé USB ou via des services en ligne de partage de fichiers non appropriés pour la recherche clinique).",
 		"body2": "Parce que les chercheurs méritent mieux, nous avons voulu proposer une solution qui vous aide à collecter les données d’imagerie depuis les centres investigateurs, à assurer une interprétation centralisée et à monitorer efficacement la progression de votre essai clinique.",
-		"subtitle": "Nos clés de succès"
+		"subtitle": "Nos Clés de Succès"
 	},
 	"card":{
 		"efficacity":
@@ -113,7 +113,7 @@
 	"study": {
 		"img": "study-graph-fr.svg",
 		"title": "Notre Solution",
-		"subtitle":"Structure de données",
+		"subtitle":"Structure Des Données",
 		"graph": {
 			"study": {
 				"title": "Une étude clinique correspondant à un projet de recherche clinique ",
@@ -184,7 +184,7 @@
 	},
 	"service": {
 		"title": "Nos Services",
-		"intro": "Nous avons désigné une offre de service adaptée aux académiques. Au delà de l’aspect technologique c’est une des plus grande innovations apporté à l’écosystème de recherche clinique en imagerie",
+		"intro": "Nous avons designé une offre de service adaptée aux académiques. Au delà de l’aspect technologique c’est une des plus grandes innovations apporté à l’écosystème de recherche clinique en imagerie.",
 		"content": "L’offre de service est éditée par Pixilib et vous propose GaelO clé en main, installé et hébergé sur un serveur situé en France, maintenu par les créateurs de GaelO et vous assure une disponibilité complète de la plateforme.",
 		"card":{"Complete":
 					{"title":"Complète",

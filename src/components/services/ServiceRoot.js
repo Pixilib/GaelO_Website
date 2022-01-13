@@ -21,7 +21,7 @@ const ServiceRoot = () => {
             </Row>
             <Row className="mt-5 serviceSeparator">
                 <Col sm={3} className="d-flex align-items-center">
-                    <h2 className="text-center">Service workflow </h2>
+                    <h2 className="text-center">Service Workflow </h2>
                 </Col>
                 <Col>
                     <img alt="service workflow" src={t('service.img')} ></img>
