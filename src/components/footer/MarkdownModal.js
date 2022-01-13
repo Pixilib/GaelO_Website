@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next'
       fetch(t('footer.'+props.url)).then((response) => response.text()).then((text) =>
         setContent(text)
       )
-    }, [props.url]);
+    }, [t, props.url]);
 
     return (
       <Modal
