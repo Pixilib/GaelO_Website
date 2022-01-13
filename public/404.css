@@ -1,0 +1,22 @@
+h1 {
+    font-weight: bold;
+    color: #353275;
+    
+}
+
+
+
+
+.text-primary {
+    color: #353275;
+}
+
+
+.flexBox{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
