@@ -11,7 +11,7 @@ const OurViewsText = () => {
          <h1 className='d-flex justify-content-center'>{t('ourviews.title')}</h1> 
       
       <Row className='fw-bold h-75 d-flex align-items-center ' >
-            <Col md="5" className=' m-5' >
+            <Col md="5" className='' >
                 {t('ourviews.body1')}<br/><br/>
                 {t('ourviews.body2')}
             </Col>

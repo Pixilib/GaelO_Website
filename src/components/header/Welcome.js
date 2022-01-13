@@ -7,13 +7,13 @@ import logoPrincipalWhite from '../../assets/images/gaelo-logo-white.svg'
 
 const Header = () => {
 
-   const getStyleRow  = (h, w) => {
+  const getStyleRow = (h, w) => {
     return {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       height: h + 'px',
       width: '100%',
-    } 
+    }
   }
 
   const getWindowDimensions = () => {
@@ -23,19 +23,19 @@ const Header = () => {
       height
     }
   }
-  
+
   const useWindowDimensions = () => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
-  
+
     useEffect(() => {
-      function handleResize () {
+      function handleResize() {
         setWindowDimensions(getWindowDimensions())
       }
-  
+
       window.addEventListener('resize', handleResize)
       return () => window.removeEventListener('resize', handleResize)
     }, [])
-  
+
     return windowDimensions
   }
 
@@ -44,18 +44,18 @@ const Header = () => {
   const [modalShow, setModalShow] = React.useState(false)
 
   return (
-    <Container  style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className=''>
+    <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className='  d-flex text-center justify-content-center flex-column align-items-center'>
+
       
-       <Row className='mt-5  d-flex text-center justify-content-center flex-column align-items-center'>
-          <Row className='mt-5 d-flex text-center justify-content-center'>
+       
           <Figure.Image className='w-50' src={logoPrincipalWhite} />
           <p className='text-white fs-4 fw-bold'>{t('header.title')}</p>
-          </Row>
-
-       <button className='mt-5 btn-ytb' type='button' onClick={() => setModalShow(true)}>
+        
+    <Row className="pt-3" >
+        <button className='btn-ytb' type='button' onClick={() => setModalShow(true)}>
           <img alt="Presentation Video" src='logo-video.png' variant='primary' className='logoVideo' />
           <p className='m-0'>{t('header.button')}</p>
-        </button> 
+        </button>
         <VideoModal show={modalShow} onHide={() => setModalShow(false)} />
         </Row>
     </Container>

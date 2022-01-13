@@ -89,10 +89,10 @@ h2 {
 }
 
 .logoNavbar {
-    margin-top: 10px;
-    padding-left: 10px;
-    width: 50%;
 
+    padding-left: 10px;
+    min-width: 20%;
+    width: 20%;
 }
 
 /* -- Welcome --*/
