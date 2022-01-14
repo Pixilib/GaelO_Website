@@ -1,6 +1,6 @@
 {
   "name": "gaelo",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "private": true,
   "homepage": "https://www.gaelo.fr",
   "dependencies": {
