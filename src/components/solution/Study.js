@@ -22,7 +22,7 @@ const Study = () => {
         </Col>
         <Col>
           <Row >
-          <div className='position-relative' onMouseLeave={() => setCurrentData(null)}>
+          <div className='position-relative mb-3' onMouseLeave={() => setCurrentData(null)}>
             <img className='w-100' src={t('study.img')} alt='Graph d etude' />
             <div
               onMouseEnter={() => setCurrentData(Study)}
