@@ -8,7 +8,7 @@ const Contact = () => {
   const { t } = useTranslation()
 
   return (
-    <Row id='contact' className='  p-5  text-center ' >
+    <Row id='contact' className='text-center ' >
       <h1 className='text-white'>{t('contact.title')}</h1>
       < Col className='d-flex flex-column align-items-center' >
           

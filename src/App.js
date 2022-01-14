@@ -124,22 +124,22 @@ function App() {
         <Row ref={(ref) => refs.current[1] = ref} >
           <OurViewRoot />
         </Row>
-        <Row className="bg-light p-5" ref={(ref) => refs.current[2] = ref} >
+        <Row className="bg-light" ref={(ref) => refs.current[2] = ref} >
           <SolutionRoot />
         </Row>
-        <Row className=" p-5" ref={(ref) => refs.current[3] = ref} >
+        <Row ref={(ref) => refs.current[3] = ref} >
           <ServiceRoot />
         </Row>
-        <Row className='expertiseStyle bg-light p-5' ref={(ref) => refs.current[4] = ref} >
+        <Row className='expertiseStyle bg-light' ref={(ref) => refs.current[4] = ref} >
           <ExpertiseRoot />
         </Row>
         <Row hidden={true} className="bg-light p-5" ref={(ref) => refs.current[5] = ref}>
           <Ourteam />
         </Row>
-        <Row className="p-5" >
+        <Row className="p-1" >
           <Partner />
         </Row>
-        <Row className="background " ref={(ref) => refs.current[6] = ref}>
+        <Row className="background" ref={(ref) => refs.current[6] = ref}>
           <Contact />
         </Row>
       </Container>

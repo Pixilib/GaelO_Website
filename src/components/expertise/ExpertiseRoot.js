@@ -12,9 +12,7 @@ const ExpertiseRoot = () => {
     return (
 
         <Container>
-            <Row className="text-center">
-                <h1>{t('expertise.title')}</h1>
-            </Row>
+                <h1 className='text-center'>{t('expertise.title')}</h1>
             <Row className="p-5" >
                 <ExpertiseStat />
             </Row>
