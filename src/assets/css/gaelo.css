@@ -233,8 +233,8 @@ h2 {
     width: 100px;
     height: 65px;
     top: -15px;
-    left: 60px;
-    z-index: 100;
+    left: 65px;
+    z-index: 1;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -268,7 +268,7 @@ h2 {
 }
 
 .carousel-indicators .active {
-    background-color: #FFBA4D
+    background-color: #0495A0
 }
 
 .carousel-control-next-icon,

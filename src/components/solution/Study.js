@@ -17,8 +17,8 @@ const Study = () => {
   return (
     <Container className='studySeparator' >
       <Row >
-        <Col md="3" className="d-flex align-items-center" >
-          <h2 className='text-center'> {t('study.subtitle')} </h2>
+        <Col md="3" className="d-flex justify-content-center align-items-center" >
+          <h2> {t('study.subtitle')} </h2>
         </Col>
         <Col>
           <Row >

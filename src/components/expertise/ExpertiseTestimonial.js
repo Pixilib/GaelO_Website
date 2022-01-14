@@ -28,7 +28,7 @@ const ExpertiseTestimonial = () => {
     return (
         <Fragment>
             <Carousel
-                interval={null}
+                interval={10000}
                 className="rounded d-flex bg-white text-dark shadow-lg  ">
                 {generateCarousel()}
             </Carousel>

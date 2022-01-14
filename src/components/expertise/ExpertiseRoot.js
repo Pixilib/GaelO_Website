@@ -13,7 +13,7 @@ const ExpertiseRoot = () => {
 
         <Container>
                 <h1 className='text-center'>{t('expertise.title')}</h1>
-            <Row className="p-5" >
+            <Row className="pb-5 pt-5" >
                 <ExpertiseStat />
             </Row>
             <Row className="mt-5">
