@@ -11,16 +11,16 @@ const ServiceRoot = () => {
         <Container >
             <h1 className="text-center">{t('service.title')} </h1>
             <Row className="d-flex justify-content-center align-items-center" >
-                <Col sm={3 }>
+                <Col xl={4 } className="fw-bold">
                     <p>{t('service.intro')}</p>
                     <p>{t('service.content')}</p>
                 </Col>
-                <Col sm={8}>
+                <Col xl={8}>
                     <ServiceCard />
                 </Col>
             </Row>
             <Row className="mt-5 serviceSeparator">
-                <Col sm={3} className="d-flex align-items-center">
+                <Col className="d-flex align-items-center">
                     <h2 className="text-center">Service Workflow </h2>
                 </Col>
                 <Col>
