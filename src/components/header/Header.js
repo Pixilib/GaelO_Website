@@ -50,7 +50,7 @@ const Header = (props) => {
         <Col xs={1}>
 
           <Link to="/" onClick={handleClick}>
-            <LogoPrincipal className='' />
+            <LogoPrincipal className='w-50' />
           </Link>
         </Col>
         <Col sm={10} className='fw-bold d-flex justify-content-center'>

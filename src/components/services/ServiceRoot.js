@@ -8,14 +8,14 @@ const ServiceRoot = () => {
 
     return (
 
-        <Container fluid>
+        <Container >
             <h1 className="text-center">{t('service.title')} </h1>
-            <Row>
-                <Col sm={3}>
+            <Row className="d-flex justify-content-center align-items-center" >
+                <Col sm={3 }>
                     <p>{t('service.intro')}</p>
                     <p>{t('service.content')}</p>
                 </Col>
-                <Col>
+                <Col sm={8}>
                     <ServiceCard />
                 </Col>
             </Row>

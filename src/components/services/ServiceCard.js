@@ -15,7 +15,7 @@ const ServiceCard = () => {
 
         for (const [key, value] of Object.entries(fr.service.card)) {
             createdCard.push((
-                <Col className="d-flex justify-content-center  ">
+                <Col className=" d-flex justify-content-center ">
                     <CardFade  >
                         {/* vue du front de la card */}
                         <Card className={"cardService center mt-3 border-" + value.color}>
