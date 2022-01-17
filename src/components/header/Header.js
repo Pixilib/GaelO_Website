@@ -1,9 +1,8 @@
 
 import { useTranslation } from 'react-i18next'
 import Lang from './Lang'
-import { Col, Container, Image, Nav, Navbar, } from 'react-bootstrap'
+import { Col, Container, Nav, Navbar, } from 'react-bootstrap'
 import { ReactComponent as LogoPrincipal } from '../../assets/images/gaelo-logo.svg'
-import { Fragment, } from 'react'
 import { ReactComponent as LogoGitHub } from '../../assets/images/github.svg'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 
@@ -47,13 +46,13 @@ const Header = (props) => {
 
     <Navbar sticky='top' expand="lg" className={customNav()}>
       <Container fluid className='d-flex justify-content-around'>
-        <Col xs={1}>
+        <Col sm={1} >
 
           <Link to="/" onClick={handleClick}>
             <LogoPrincipal className='w-50' />
           </Link>
         </Col>
-        <Col sm={10} className='fw-bold d-flex justify-content-center'>
+        <Col className='fw-bold d-flex justify-content-center'>
           <Nav >
             <Navbar.Toggle aria-controls="basic-navbar-nav " className="border-0 shadow-none " />
             <Navbar.Collapse id="basic-navbar-nav" className=''>
@@ -66,25 +65,15 @@ const Header = (props) => {
             </Navbar.Collapse>
           </Nav>
         </Col>
+        <Col sm={1} className="d-flex justify-content-around align-items-center">
+          <Lang />
 
-
-          <Col >
-    <Lang />
-    </Col>
-        
-        <Col  className='d-flex justify-content-around align-items-center'>
-          
           <a style={styleLogoGH()} target="_blank" rel="noopener noreferrer" href="https://github.com/Pixilib/">
-            <LogoGitHub />
+            <LogoGitHub className />
           </a>
         </Col>
-
-
       </Container>
-
     </Navbar>
-
-
   )
 }
 export default Header
