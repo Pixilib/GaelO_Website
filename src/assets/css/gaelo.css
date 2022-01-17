@@ -197,6 +197,9 @@ h2 {
     border-image-slice: 1;
     padding-top: 25px;
 }
+.cardRole{
+    width: 770px;
+}
 
 /* -- Service --*/
 .cardService {

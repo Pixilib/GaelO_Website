@@ -13,7 +13,7 @@ const VideoModal = (props) => {
       centered
     >
       <Modal.Body>
-        <ReactPlayer height='800px' url={t('header.linkVideo')} width='100%' />
+        <ReactPlayer volume={0.8} height='800px' url={t('header.linkVideo')} width='100%' />
       </Modal.Body>
     </Modal>
   )
