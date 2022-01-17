@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.f56e9694.chunk.css",
-    "main.js": "/static/js/main.7661f44a.chunk.js",
-    "main.js.map": "/static/js/main.7661f44a.chunk.js.map",
+    "main.css": "/static/css/main.8cedd2c8.chunk.css",
+    "main.js": "/static/js/main.00654105.chunk.js",
+    "main.js.map": "/static/js/main.00654105.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3d28fbd7.js",
     "runtime-main.js.map": "/static/js/runtime-main.3d28fbd7.js.map",
     "static/css/2.455652b6.chunk.css": "/static/css/2.455652b6.chunk.css",
-    "static/js/2.8ed2fffb.chunk.js": "/static/js/2.8ed2fffb.chunk.js",
-    "static/js/2.8ed2fffb.chunk.js.map": "/static/js/2.8ed2fffb.chunk.js.map",
+    "static/js/2.485d9edd.chunk.js": "/static/js/2.485d9edd.chunk.js",
+    "static/js/2.485d9edd.chunk.js.map": "/static/js/2.485d9edd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.455652b6.chunk.css.map": "/static/css/2.455652b6.chunk.css.map",
-    "static/css/main.f56e9694.chunk.css.map": "/static/css/main.f56e9694.chunk.css.map",
-    "static/js/2.8ed2fffb.chunk.js.LICENSE.txt": "/static/js/2.8ed2fffb.chunk.js.LICENSE.txt",
+    "static/css/main.8cedd2c8.chunk.css.map": "/static/css/main.8cedd2c8.chunk.css.map",
+    "static/js/2.485d9edd.chunk.js.LICENSE.txt": "/static/js/2.485d9edd.chunk.js.LICENSE.txt",
     "static/media/gaelo.css": "/static/media/backgroundISTOCK.7893418e.jpg",
-    "static/media/gaelo-logo-white.6f03459f.svg": "/static/media/gaelo-logo-white.6f03459f.svg",
-    "static/media/gaelo-logo.35a47931.svg": "/static/media/gaelo-logo.35a47931.svg",
-    "static/media/github.1dbcf7b2.svg": "/static/media/github.1dbcf7b2.svg",
-    "static/media/mail.ddc2ae64.svg": "/static/media/mail.ddc2ae64.svg",
-    "static/media/quote.807390d5.svg": "/static/media/quote.807390d5.svg"
+    "static/media/gaelo-logo-white.c403391a.svg": "/static/media/gaelo-logo-white.c403391a.svg",
+    "static/media/gaelo-logo.1761237c.svg": "/static/media/gaelo-logo.1761237c.svg",
+    "static/media/github.22e65707.svg": "/static/media/github.22e65707.svg",
+    "static/media/mail.2fd5b5d7.svg": "/static/media/mail.2fd5b5d7.svg",
+    "static/media/quote.866e8c1d.svg": "/static/media/quote.866e8c1d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3d28fbd7.js",
     "static/css/2.455652b6.chunk.css",
-    "static/js/2.8ed2fffb.chunk.js",
-    "static/css/main.f56e9694.chunk.css",
-    "static/js/main.7661f44a.chunk.js"
+    "static/js/2.485d9edd.chunk.js",
+    "static/css/main.8cedd2c8.chunk.css",
+    "static/js/main.00654105.chunk.js"
   ]
 }
