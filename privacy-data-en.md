@@ -1,93 +1,100 @@
-# Politique des données à caractère personnel
+# Personal data policy
 
-Mise à jour le 01/10/2021
+Updated on 01/10/2021
 
-## Préambule
-Le Règlement général sur la protection des données (RGPD) est entré en vigueur le 25 mai 2018 et vient compléter la législation en matière de protection des données à caractère personnel. Pour votre information, une donnée à caractère personnel correspond à toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification ou à un ou plusieurs éléments qui lui sont propres (nom, prénom, adresse, mail, téléphone…).
+## Preamble
 
-Un traitement de données à caractère personnel désigne toute opération sur ce type de données (collecte, stockage, transmission, suppression, …), que cela soit sur papier ou informatique. Le responsable de traitement est la personne qui détermine les finalités de chaque traitement et les moyens pour atteindre ces finalités.
+The General Data Protection Regulation (GDPR) came into force on May 25, 2018 and completes the legislation on personal data protection. For your information, a personal data corresponds to any information relating to a natural person identified or who can be identified, directly or indirectly, by reference to an identification number or to one or more elements that are specific to him (name, first name, address, email, telephone...).
 
-La société se réserve le droit de modifier à tout moment la présente Politique de Confidentialité. Toute modification prendra effet immédiatement.
+The processing of personal data refers to any operation on this type of data (collection, storage, transmission, deletion, etc.), whether on paper or by computer. The data controller is the person who determines the purposes of each processing and the means to achieve these purposes.
 
-Par conséquent, nous vous invitons à consulter régulièrement notre Politique afin de vous tenir informé de la dernière version en ligne applicable.
+The company reserves the right to modify this Privacy Policy at any time. Any changes will take effect immediately.
 
-## Objet du traitement de données
+Therefore, we invite you to regularly consult our Policy in order to keep informed of the latest applicable online version.
 
-Le traitement a pour objet la gestion des imageries des essais cliniques.
+## Purpose of the data processing
 
-De façon générale, la société Pixlib ne traite aucune de vos données à des fins incompatibles avec celles pour lesquelles elles ont été collectées, sauf accord préalable de votre part.
+The purpose of the data processing is to manage clinical trial images.
 
-### Données traitées
+In general, Pixlib does not process any of your data for purposes incompatible with those for which they were collected, unless you have given your prior consent.
 
-Les données collectées peuvent être classées dans les catégories suivantes :
+### Data processed
 
-* Identité
-* Coordonnées (adresse électronique, téléphone)
+The data collected can be classified in the following categories:
 
-Les destinataires des données sont :
+* Identity
+* Contact information (e-mail address, city, phone number)
+
+The recipients of the data are:
 
 * Pixilib
-* Service envoi email : SendGrid
-* Durée de conservation : Les données sont conservées le temps nécessaire à la réalisation des finalités et n’excède pas la durée maximale de 5 ans.
+* Service sending email: SendGrid
+* Duration of storage: The data is kept for the time necessary to achieve the purposes and does not exceed the maximum duration of 5 years.
 
-### Les cookies
-Pixlib stocke uniquement des Cookies / Traceurs relatif à la personnalisation de l'interface qui sont exemptés de consentement par la [CNIL](https://www.cnil.fr/fr/cookies-et-traceurs-comment-mettre-mon-site-web-en-conformite).
-Si besoin l’Utilisateur pourra désactiver ces Cookies / Traceurs par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.
+### Cookies
 
-### Base légale
-La société Pixilib collecte vos données personnelles pour les finalités décrites au point « Objet du traitement » de la présente Politique.
+Pixlib only stores Cookies / Tracers relating to the personalization of the interface which are exempt from consent by the [CNIL] (https://www.cnil.fr/fr/cookies-et-traceurs-comment-mettre-mon-site-web-en-conformite).
+If necessary, the user can deactivate these Cookies / Trackers through the parameters of his browser.
 
-Dans tous les cas, la société Pixlib collecte vos données, uniquement lorsque leur collecte et leur traitement reposent sur un fondement juridique. Sous réserve d’avoir obtenu votre consentement préalable, la société Pixilib peut traiter vos données pour vous transmettre des offres commerciales sur ses produits et services.
+### Legal basis
 
-### Sécurité
-La société Pixilib met en œuvre toutes les mesures techniques, physiques et organisationnelles pour assurer la sécurité et la confidentialité de vos données lors de la collecte, du traitement et du transfert de vos données.
+The company Pixilib collects your personal data for the purposes described in the point "Purpose of processing" of this Policy.
 
-Les infrastructures de la société Pixilib sont protégées contre les logiciels malveillants; la sécurité de votre terminal relève de votre responsabilité.
+In all cases, the company Pixlib collects your data, only when their collection and processing are based on a legal basis. Subject to having obtained your prior consent, the company Pixilib may process your data to send you commercial offers on its products and services.
 
-Dans le cas où nous serions susceptibles de faire appel à des prestataires pour traiter une partie de vos données, nous nous engageons à vérifier qu’ils présentent des garanties suffisantes pour assurer la protection des données personnelles qui leur sont confiées et à leur faire signer des clauses de confidentialité conformes à l’article 28 du RGPD. En cas de violation de données à caractère personnel, c’est-à-dire en cas d’incident de sécurité, d’origine malveillante ou non et se produisant de manière intentionnelle ou non, ayant comme conséquence de compromettre l’intégrité, la confidentialité ou la disponibilité de vos données personnelles, nous nous engageons à respecter les obligations suivantes :
+### Security
 
-La violation des données n'engendre aucun risque : Documentation interne, dans le « registre des violations ».
-La violation des données engendre un risque : Documentation interne, dans le « registre des violations », Notification à la CNIL, dans un délai maximal de 72h.
-La violation des données un risque élevé : Documentation interne, dans le « registre des violations », Notification à la CNIL, dans un délai maximal de 72h et nous vous en informons dans les meilleurs délais
-Le « registre des violations » contient les éléments suivants :
+The company Pixilib implements all technical, physical and organizational measures to ensure the security and confidentiality of your data during the collection, processing and transfer of your data.
 
-la nature de la violation ;
-les catégories et le nombre approximatif des personnes concernées ;
-les catégories et le nombre approximatif de fichiers concernés ;
-les conséquences probables de la violation ;
-les mesures prises pour remédier à la violation et, le cas échéant, pour limiter les conséquences négatives de la violation ;
+The infrastructure of the company Pixilib is protected against malicious software; the security of your terminal is your responsibility.
 
-le cas échéant, la justification de l’absence de notification auprès de la CNIL ou d’information aux personnes concernées.
-Pour autant, et conformément à la réglementation en vigueur, nous ne sommes pas tenus de vous informer d’une violation dans les cas suivants :
+In the event that we are likely to call upon service providers to process part of your data, we undertake to verify that they present sufficient guarantees to ensure the protection of personal data entrusted to them and to have them sign confidentiality clauses in accordance with Article 28 of the RGPD. In the event of a personal data breach, i.e. a security incident, whether malicious or not and whether intentional or unintentional, that results in the compromise of the integrity, confidentiality or availability of your personal data, we undertake to comply with the following obligations:
 
-vos données à caractère personnel sont protégées par des mesures les rendant incompréhensibles pour toute personne qui n’est pas autorisée à y avoir accès ;
-des mesures ont été prises afin que le risque ne soit plus susceptible de se matérialiser ;
-cette communication exige pour nous des efforts disproportionnés, ne disposant notamment d’aucun élément permettant de vous contacter pour vous en informer.
-Responsabilité
+The data breach does not create a risk: Internal documentation, in the "breach log".
+The data breach creates a risk: Internal documentation, in the "breach register", notification to the CNIL, within a maximum of 72 hours.
+The data breach creates a high risk: Internal documentation, in the "breach register", notification to the CNIL, within a maximum of 72 hours and we inform you as soon as possible.
 
-Afin de respecter nos responsabilités, notre société :
+The "register of violations" contains the following elements:
 
-adopte des procédures internes dans le but d’assurer le respect du règlement (charte informatique, charte de protection des données à caractère personnel) ;
-conserve une trace documentaire de tout traitement effectué sous sa responsabilité ou de celle du sous-traitant (tenue du registre des traitements, accords de confidentialité des salariés et des prestataires, politique de sécurité de l’entreprise, procédures de gestion des demandes d’accès, de rectification, d’opposition…) ;
-réalise des analyses d’impact (PIA) pour les traitements présentant des risques particuliers au regard des droits et libertés.
+* The nature of the violation ;
+* The categories and the approximate number of persons concerned;
+* The categories and approximate number of files involved;
+* The likely consequences of the breach;
+* The measures taken to remedy the breach and, where appropriate, to limit the negative consequences of the breach;
 
-## Vos droits sur les données vous concernant
+Otherwise, the justification for not notifying the CNIL or informing the persons concerned.
 
-Vous pouvez accéder et obtenir copie des données vous concernant, vous opposer au traitement de ces données, les faire rectifier ou les faire effacer. Vous disposez également d’un droit à la limitation du traitement de vos données.
+However, and in accordance with the regulations in force, we are not obliged to inform you of a breach in the following cases
 
-Le correspondant à la protection des données est votre interlocuteur pour toute demande d’exercice de vos droits.
+- Your personal data is protected by measures that make it incomprehensible to anyone who is not authorized to access it;
+- Measures have been taken so that the risk is no longer likely to occur; or
+- This communication requires disproportionate efforts on our part, especially since we have no means of contacting you to inform you about it.
 
-Toute demande doit préciser, en objet, le motif de la demande (exercice du droit d’accès, d’opposition, …). La demande doit également être accompagnée d’une copie recto verso d’une pièce d’identité en cours de validité et portant la signature du demandeur et préciser l’adresse à laquelle doit parvenir la réponse.
+## Responsibility
 
-La société Pixilib vous adressera sa réponse dans un délai maximum de un (1) mois, à compter de la date de réception de votre demande. Ce délai peut toutefois être prolongé de deux (2) mois en raison de la complexité et du nombre de demandes.
+In order to meet our responsibilities, our company :
 
-Contacter le correspondant à la protection des données par voie électronique : p.leguellec@yeched-mat.com
+* Adopts internal procedures in order to ensure compliance with the regulation (IT charter, personal data protection charter) ;
+* Keeps a documentary trace of any processing carried out under its responsibility or that of the subcontractor (keeping of the processing register, confidentiality agreements of employees and service providers, company security policy, procedures for managing requests for access, rectification, opposition...);
+* Carries out impact analyses (PIA) for processing operations presenting particular risks with regard to rights and freedoms.
 
-Contacter le correspondant à la protection des données par courrier postal :
+## Your rights regarding your data
+
+You can access and obtain a copy of the data concerning you, oppose the processing of this data, have it rectified or deleted. You also have the right to limit the processing of your data.
+
+The data protection correspondent is your contact for any request to exercise your rights.
+
+Any request must specify, in the subject line, the reason for the request (exercise of the right of access, opposition, etc.). The request must also be accompanied by a copy of both sides of a valid identity card bearing the signature of the applicant and specify the address to which the response should be sent.
+
+The company Pixilib will send you its answer within a maximum of one (1) month, from the date of receipt of your request. This period may however be extended by two (2) months due to the complexity and number of requests.
+
+Contact the Data Protection Officer electronically: p.leguellec@yeched-mat.com
+
+Contact the data protection correspondent by post:
 
 Pierre Le Guellec
 
-Yec’hed Mat Conseil
+Yec'hed Mat Conseil
 
 256 rue de Bègles
 

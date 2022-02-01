@@ -3,6 +3,7 @@
 Mise à jour le 01/10/2021
 
 ## Préambule
+
 Le Règlement général sur la protection des données (RGPD) est entré en vigueur le 25 mai 2018 et vient compléter la législation en matière de protection des données à caractère personnel. Pour votre information, une donnée à caractère personnel correspond à toute information relative à une personne physique identifiée ou qui peut être identifiée, directement ou indirectement, par référence à un numéro d’identification ou à un ou plusieurs éléments qui lui sont propres (nom, prénom, adresse, mail, téléphone…).
 
 Un traitement de données à caractère personnel désigne toute opération sur ce type de données (collecte, stockage, transmission, suppression, …), que cela soit sur papier ou informatique. Le responsable de traitement est la personne qui détermine les finalités de chaque traitement et les moyens pour atteindre ces finalités.
@@ -22,7 +23,7 @@ De façon générale, la société Pixlib ne traite aucune de vos données à de
 Les données collectées peuvent être classées dans les catégories suivantes :
 
 * Identité
-* Coordonnées (adresse électronique, téléphone)
+* Coordonnées (adresse électronique, ville, téléphone)
 
 Les destinataires des données sont :
 
@@ -31,15 +32,18 @@ Les destinataires des données sont :
 * Durée de conservation : Les données sont conservées le temps nécessaire à la réalisation des finalités et n’excède pas la durée maximale de 5 ans.
 
 ### Les cookies
+
 Pixlib stocke uniquement des Cookies / Traceurs relatif à la personnalisation de l'interface qui sont exemptés de consentement par la [CNIL](https://www.cnil.fr/fr/cookies-et-traceurs-comment-mettre-mon-site-web-en-conformite).
 Si besoin l’Utilisateur pourra désactiver ces Cookies / Traceurs par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.
 
 ### Base légale
+
 La société Pixilib collecte vos données personnelles pour les finalités décrites au point « Objet du traitement » de la présente Politique.
 
 Dans tous les cas, la société Pixlib collecte vos données, uniquement lorsque leur collecte et leur traitement reposent sur un fondement juridique. Sous réserve d’avoir obtenu votre consentement préalable, la société Pixilib peut traiter vos données pour vous transmettre des offres commerciales sur ses produits et services.
 
 ### Sécurité
+
 La société Pixilib met en œuvre toutes les mesures techniques, physiques et organisationnelles pour assurer la sécurité et la confidentialité de vos données lors de la collecte, du traitement et du transfert de vos données.
 
 Les infrastructures de la société Pixilib sont protégées contre les logiciels malveillants; la sécurité de votre terminal relève de votre responsabilité.
@@ -51,25 +55,27 @@ La violation des données engendre un risque : Documentation interne, dans le «
 La violation des données un risque élevé : Documentation interne, dans le « registre des violations », Notification à la CNIL, dans un délai maximal de 72h et nous vous en informons dans les meilleurs délais
 Le « registre des violations » contient les éléments suivants :
 
-la nature de la violation ;
-les catégories et le nombre approximatif des personnes concernées ;
-les catégories et le nombre approximatif de fichiers concernés ;
-les conséquences probables de la violation ;
-les mesures prises pour remédier à la violation et, le cas échéant, pour limiter les conséquences négatives de la violation ;
+* La nature de la violation ;
+* Les catégories et le nombre approximatif des personnes concernées ;
+* Les catégories et le nombre approximatif de fichiers concernés ;
+* Les conséquences probables de la violation ;
+* es mesures prises pour remédier à la violation et, le cas échéant, pour limiter les conséquences négatives de la violation ;
 
 le cas échéant, la justification de l’absence de notification auprès de la CNIL ou d’information aux personnes concernées.
+
 Pour autant, et conformément à la réglementation en vigueur, nous ne sommes pas tenus de vous informer d’une violation dans les cas suivants :
 
-vos données à caractère personnel sont protégées par des mesures les rendant incompréhensibles pour toute personne qui n’est pas autorisée à y avoir accès ;
-des mesures ont été prises afin que le risque ne soit plus susceptible de se matérialiser ;
-cette communication exige pour nous des efforts disproportionnés, ne disposant notamment d’aucun élément permettant de vous contacter pour vous en informer.
-Responsabilité
+* Vos données à caractère personnel sont protégées par des mesures les rendant incompréhensibles pour toute personne qui n’est pas autorisée à y avoir accès ;
+* Des mesures ont été prises afin que le risque ne soit plus susceptible de se matérialiser ;
+* Cette communication exige pour nous des efforts disproportionnés, ne disposant notamment d’aucun élément permettant de vous contacter pour vous en informer.
+
+## Responsabilité
 
 Afin de respecter nos responsabilités, notre société :
 
-adopte des procédures internes dans le but d’assurer le respect du règlement (charte informatique, charte de protection des données à caractère personnel) ;
-conserve une trace documentaire de tout traitement effectué sous sa responsabilité ou de celle du sous-traitant (tenue du registre des traitements, accords de confidentialité des salariés et des prestataires, politique de sécurité de l’entreprise, procédures de gestion des demandes d’accès, de rectification, d’opposition…) ;
-réalise des analyses d’impact (PIA) pour les traitements présentant des risques particuliers au regard des droits et libertés.
+* Adopte des procédures internes dans le but d’assurer le respect du règlement (charte informatique, charte de protection des données à caractère personnel) ;
+* Conserve une trace documentaire de tout traitement effectué sous sa responsabilité ou de celle du sous-traitant (tenue du registre des traitements, accords de confidentialité des salariés et des prestataires, politique de sécurité de l’entreprise, procédures de gestion des demandes d’accès, de rectification, d’opposition…) ;
+* Réalise des analyses d’impact (PIA) pour les traitements présentant des risques particuliers au regard des droits et libertés.
 
 ## Vos droits sur les données vous concernant
 
