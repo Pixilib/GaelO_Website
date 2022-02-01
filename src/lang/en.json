@@ -178,11 +178,11 @@
 		},
 		"trials": {
 			"text": "Trials",
-			"value": 7
+			"value": 9
 		},
 		"dicom": {
 			"text": "Dicom Studies",
-			"value": 915
+			"value": 1328
 		},
 		"center": {
 			"text": "Centers",
@@ -195,12 +195,10 @@
 		"testimonial": {
 			"title":"Testimonials",
 			"name":[
-				"lysarc",
-				"lysa"
+				"Jeremie T."
 			],
 			"text":[
-				"text1",
-				"text2"
+				"Gaelo is an easy to access platform and has complete tools for the analysis of PET exams, allowing to optimize the review process"
 			]
 		}
 	},

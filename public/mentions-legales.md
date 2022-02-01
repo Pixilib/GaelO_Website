@@ -8,7 +8,8 @@ Ces dernières sont accessibles sur le site à la rubrique « Mentions légales 
 
 ## Article 1 : L’éditeur
 
-L’édition et la direction de la publication du site gaelo.fr est assurée par Pixilib, domiciliée 2 rue leonce castelbou, dont le numéro de téléphone est 0688628118, et l'adresse e-mail salim.kanoun@gmail.com.
+L’édition du site gaelo.fr est assurée par Pixilib, domiciliée 2 rue leonce castelbou, et l'adresse e-mail contact@pixilib.fr.
+Le directeur de la publication est Salim Kanoun.
 
 ## Article 2 : L’hébergeur
 
@@ -25,9 +26,8 @@ Le site est exempté de déclaration à la Commission Nationale Informatique et 
 
 ## Article 5 : Cookies
 
-L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de navigation.
-En naviguant sur le site, il les accepte.
-Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.
+GaelO stocke uniquement des Cookies / Traceurs relatif à la personnalisation de l'interface qui sont exemptés de consentement par la [CNIL](https://www.cnil.fr/fr/cookies-et-traceurs-comment-mettre-mon-site-web-en-conformite).
+Si besoin l’Utilisateur pourra désactiver ces Cookies / Traceurs par l’intermédiaire des paramètres figurant au sein de son logiciel de navigation.
  
 ## Article 6 : Propriété intellectuelle
 

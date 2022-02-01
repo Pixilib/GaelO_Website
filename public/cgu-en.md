@@ -17,7 +17,7 @@ The terms of use must be accepted by any User, and access to the website implies
 
 ## Legal notice
 
-The gaelo.fr website is published by the company Pixilib, SAS with a capital of 15 000 €, whose headquarters is located at 2 rue léonce castelbou, 31000 Toulouse.
+The gaelo.fr website is published by the company Pixilib, SAS with a capital of 10 000 €, whose headquarters is located at 2 rue léonce castelbou, 31000 Toulouse.
 
 The company is represented by Salim Kanoun 
 
