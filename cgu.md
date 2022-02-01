@@ -2,7 +2,6 @@
 
 Conditions générales d'utilisation du site gaelo.fr
 
-
 ## Article 1 : Objet
 
 Les présentes « conditions générales d'utilisation » ont pour objet l'encadrement juridique de l’utilisation du site gaelo.fr et de ses services.
@@ -18,7 +17,7 @@ Les conditions générales d'utilisation doivent être acceptées par tout Utili
 
 ## Article 2 : Mentions légales
 
-Le site gaelo.fr est édité par la société Pixilib, SAS au capital de 15 000 €, dont le siège social est situé au 2 rue léonce castelbou, 31000 Toulouse.
+Le site gaelo.fr est édité par la société Pixilib, SAS au capital de 10 000 €, dont le siège social est situé au 2 rue léonce castelbou, 31000 Toulouse.
 
 La société est représentée par Salim Kanooun 
 
@@ -38,8 +37,6 @@ Le mot de passe de l’Utilisateur doit rester secret. En cas de divulgation de 
 
 L’Utilisateur assume l’entière responsabilité de l’utilisation qu’il fait des informations et contenus présents sur le site www.gaelo.fr.
 
-Tout usage du service par l'Utilisateur ayant directement ou indirectement pour conséquence des dommages doit faire l'objet d'une indemnisation au profit du site.
-
 
 ## Article 5 : Responsabilité de l’Éditeur
 
@@ -47,22 +44,13 @@ Tout dysfonctionnement du serveur ou du réseau ne peut engager la responsabilit
 
 De même, la responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers.
 
-Le site www.gaelo.fr s'engage à mettre en œuvre tous les moyens nécessaires pour garantir la sécurité et la confidentialité des données. Toutefois, il n’apporte pas une garantie de sécurité totale.
-
-L’Éditeur se réserve la faculté d’une non-garantie de la fiabilité des sources, bien que les informations diffusées sur le site soient réputées fiables.
+Le site www.gaelo.fr s'engage à mettre en œuvre tous les moyens nécessaires pour garantir la sécurité et la confidentialité des données.
 
 ## Article 6 : Propriété intellectuelle
 
-Les contenus du site gaelo.fr (logos, textes, éléments graphiques, vidéos, etc.) son protégés par le droit d’auteur, en vertu du Code de la propriété intellectuelle.
+Les contenus du site gaelo.fr (logos, textes, éléments graphiques, vidéos, etc.) sont protégés par le droit d’auteur, en vertu du Code de la propriété intellectuelle.
 
 L’Utilisateur devra obtenir l’autorisation de l’éditeur du site avant toute reproduction, copie ou publication de ces différents contenus.
-
-Ces derniers peuvent être utilisés par les utilisateurs à des fins privées ; tout usage commercial est interdit.
-
-L’Utilisateur est entièrement responsable de tout contenu qu’il met en ligne et il s’engage à ne pas porter atteinte à un tiers.
-
-L’Éditeur du site se réserve le droit de modérer ou de supprimer librement et à tout moment les contenus mis en ligne par les utilisateurs, et ce sans justification.
-
 
 ## Article 7 : Données personnelles
 
@@ -72,7 +60,9 @@ L’adresse électronique (e-mail) de l’utilisateur pourra notamment être uti
 
 gaelo.fr garantie le respect de la vie privée de l’utilisateur, conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés.
 
-En vertu des articles 39 et 40 de la loi en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données personnelles. L'Utilisateur exerce ce droit par mail à contact@gaelo.fr ;
+En vertu des articles 40, 49 et 50 de la loi en date du 6 janvier 1978, l'utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition de ses données personnelles.
+
+L'utilisateur exerce ce droit par mail au délégué à la protection des données, Pierre Le guellec, société Yec'Hed Mat p.leguellec@yeched-mat.com.
 
 
 ## Article 8 : Liens hypertextes
@@ -85,6 +75,7 @@ Il est possible pour un tiers de créer un lien vers une page du site gaelo.fr s
 ## Article 9 : Évolution des conditions générales d’utilisation
 
 Le site gaelo.fr se réserve le droit de modifier les clauses de ces conditions générales d’utilisation à tout moment et sans justification.
+Il appartient à l'utilisateur de se tenir au courant de l'évolution des conditions générales d’utilisation.
 
 
 ## Article 10 : Durée du contrat

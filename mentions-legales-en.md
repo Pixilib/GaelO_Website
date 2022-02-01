@@ -8,7 +8,7 @@ The latter are accessible on the website under the heading "Legal information".
 
 ## The Editor
 
-The edition of the gaelo.fr website is ensured by Pixilib, domiciled 2 Rue Leonce Castelbou, whose telephone number is 0688628118, and the e-mail address contact@pixilib.fr.
+The edition of the gaelo.fr website is ensured by Pixilib, domiciled 2 Rue Leonce Castelbou, and the e-mail address contact@pixilib.fr.
 The director of the publication is Salim Kanoun.
 
 ## The host
