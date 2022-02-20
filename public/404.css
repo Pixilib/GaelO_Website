@@ -1,16 +1,15 @@
 h1 {
     font-weight: bold;
-    color: #353275;
-    
+    color: white;
 }
 
-
-
+.background {
+    background: linear-gradient(90deg, #353275, #0495A0);
+}
 
 .text-primary {
     color: #353275;
 }
-
 
 .flexBox{
     
