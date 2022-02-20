@@ -23,7 +23,7 @@ const Study = () => {
         <Col>
           <Row >
           <div className='position-relative mb-3' onMouseLeave={() => setCurrentData(null)}>
-            <img className='w-100' src={t('study.img')} alt='Graph d etude' />
+            <img className='w-100' src={t('study.img')} alt='data model' />
             <div
               onMouseEnter={() => setCurrentData(Study)}
               style={{ position: 'absolute', left: '0%', top: '0%', width: '16%', height: '100%', borderRadius: '50%' }}

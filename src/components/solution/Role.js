@@ -42,7 +42,7 @@ const Role = (props) => {
       <Row>
         <Col>
           <div className='position-relative'>
-            <img className='ImgRole ' src={t('role.img')} alt='Design des roles' />
+            <img className='ImgRole' src={t('role.img')} alt='roles' />
 
             <div
               onMouseEnter={() => onClickCircle(Investigator)}

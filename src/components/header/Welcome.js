@@ -44,16 +44,13 @@ const Header = () => {
   const [modalShow, setModalShow] = React.useState(false)
 
   return (
-    <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className='  d-flex text-center justify-content-center flex-column align-items-center'>
-
-      
-       
-          <Figure.Image className='w-50' src={logoPrincipalWhite} />
+    <Container style={getStyleRow(useWindowDimensions().height, useWindowDimensions().width)} className='  d-flex text-center justify-content-center flex-column align-items-center'>      
+          <Figure.Image className='w-50' src={logoPrincipalWhite} alt="GaelO" />
           <p className='text-white fs-4 fw-bold'>{t('header.title')}</p>
         
     <Row className="pt-3" >
         <button className='btn-ytb' type='button' onClick={() => setModalShow(true)}>
-          <img alt="Presentation Video" src='logo-video.png' variant='primary' className='logoVideo' />
+          <img alt="video" src='logo-video.png' variant='primary' className='logoVideo' />
           <p className='m-0'>{t('header.button')}</p>
         </button>
         <VideoModal show={modalShow} onHide={() => setModalShow(false)} />

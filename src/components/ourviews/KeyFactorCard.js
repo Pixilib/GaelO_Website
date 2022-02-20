@@ -10,14 +10,14 @@ const KeyFactorCard = (props) => {
   }
 
   return (
-    <ReactCardFlip className='' role='button' isFlipped={isFlipped}>
+    <ReactCardFlip role='button' isFlipped={isFlipped}>
       {/* vue du front de la card */}
       <Card className='  fs-3 styleCard' role='button' onMouseEnter={handleClick}>
-        <img alt="key Icon" className='d-flex justify-content-center cardIcon ' src={props.imageUrl} />
+        <img alt={props.textFront} className='d-flex justify-content-center cardIcon ' src={props.imageUrl} />
         {props.textFront}
       </Card>
       {/* vue du back de la card */}
-      <Card className='text-center text-white  font-weight-bold styleCard' role='button' onMouseLeave={handleClick}>
+      <Card className='text-center text-white font-weight-bold styleCard' role='button' onMouseLeave={handleClick}>
         {props.textBack}
       </Card>
     </ReactCardFlip>

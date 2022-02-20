@@ -18,7 +18,7 @@ const ExpertiseRoot = () => {
             </Row>
             <Row className="mt-5">
                 <Col className="d-flex justify-content-center">
-                <img src={logoQuote} alt='LogoQuote' className="logoQuote"/>
+                <img src={logoQuote} alt='quote' className="logoQuote"/>
 
                     <ExpertiseTestimonial />
                 </Col>

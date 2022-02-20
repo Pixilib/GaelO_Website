@@ -20,7 +20,7 @@ const ServiceCard = () => {
                         {/* vue du front de la card */}
                         <Card className={"cardService center mt-3 border-" + value.color}>
                             <p className={"text-center fw-bold fs-4 text-" + value.color} >{t('service.card.' + key + '.title')}</p>
-                            <img alt="service icon" className="serviceIcon" src={t('service.card.' + key + '.logo')}></img>
+                            <img alt={key} className="serviceIcon" src={t('service.card.' + key + '.logo')}></img>
                             <p className="text-center fw-bold  text-dark">{t('service.card.' + key + '.front')}  </p>
                         </Card>
                         {/* vue du back de la card */}
