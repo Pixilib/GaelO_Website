@@ -133,6 +133,10 @@
 		}
 	},
 	"service": {
+		"pixilib" : {
+			"intro" : "Pixilib is the official editor of GaelO, discover our philosphy",
+			"video" : "https://youtu.be/U3EGwrtGne0"
+		},
 		"title": "Our Services",
 		"intro": "We have designed a service offer adapted to academics. Beyond the technological aspect, this is one of the greatest innovations brought to the clinical research ecosystem in imaging.",
 		"content": "The service offer is edited by Pixilib and proposes GaelO turnkey, installed and hosted on a server located in France, maintained by the creators of GaelO and ensures you a complete availability of the platform.",

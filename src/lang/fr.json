@@ -173,6 +173,10 @@
 		}
 	},
 	"service": {
+		"pixilib" : {
+			"intro" : "Pixilib est l'éditeur officiel de GaelO, découvrez notre philosophie",
+			"video" : "https://youtu.be/oELrI7mubzQ"
+		},
 		"title": "Nos Services",
 		"intro": "Nous avons designé une offre de service adaptée aux académiques. Au delà de l’aspect technologique c’est une des plus grandes innovations apporté à l’écosystème de recherche clinique en imagerie.",
 		"content": "L’offre de service est éditée par Pixilib et vous propose GaelO clé en main, installé et hébergé sur un serveur situé en France, maintenu par les créateurs de GaelO et vous assure une disponibilité complète de la plateforme.",
