@@ -1,16 +1,16 @@
+import React from "react";
+
 import { Fragment } from "react";
 import Role from "./Role";
 import Study from "./Study";
 
-
 const SolutionRoot = () => {
+  return (
+    <Fragment>
+      <Role />
+      <Study />
+    </Fragment>
+  );
+};
 
-    return (
-        <Fragment>
-            <Role />
-            <Study />
-        </Fragment>
-    )
-}
-
-export default SolutionRoot
+export default SolutionRoot;
