@@ -4,11 +4,12 @@ import Lang from "./Lang";
 import { Col, Container, Nav, Navbar } from "react-bootstrap";
 import LogoPrincipal from "../../assets/images/gaelo-logo.svg";
 import LogoGitHub from "../../assets/images/github.svg";
-import { useLocation, Link } from "react-router-dom";
+
+import { Link } from "gatsby";
+
+const isBrowser = typeof window !== "undefined";
 
 const Header = (props) => {
-  const location = useLocation();
-
   const customStyle = {
     marginLeft: "10px",
     textDecoration: "none",
@@ -16,10 +17,6 @@ const Header = (props) => {
 
   const customLink = (origin) => {
     let className = props.scrolled ? "text-dark" : "text-white";
-
-    if (origin === location.pathname) {
-      className = "text-secondary";
-    }
 
     return className;
   };
@@ -51,49 +48,49 @@ const Header = (props) => {
               className="border-0 shadow-none "
             />
             <Navbar.Collapse id="basic-navbar-nav" className="">
-              <Link
-                to="ourviews"
+              <a
+                href="#ourviews"
                 style={customStyle}
                 className={customLink("/ourviews")}
               >
                 {t("navbar.1")}
-              </Link>
-              <Link
-                to="solution"
+              </a>
+              <a
+                href="#solution"
                 style={customStyle}
                 className={customLink("/solution")}
               >
                 {t("navbar.2")}{" "}
-              </Link>
-              <Link
-                to="service"
+              </a>
+              <a
+                href="#service"
                 style={customStyle}
                 className={customLink("/service")}
               >
                 {t("navbar.3")}{" "}
-              </Link>
-              <Link
-                to="expertise"
+              </a>
+              <a
+                href="#expertise"
                 style={customStyle}
                 className={customLink("/expertise")}
               >
                 {t("navbar.4")}{" "}
-              </Link>
-              <Link
-                hidden="true"
-                to="team"
+              </a>
+              <a
+                href="#team"
                 style={customStyle}
                 className={customLink("/team")}
+                hidden="true"
               >
                 {t("navbar.5")}{" "}
-              </Link>
-              <Link
-                to="contact"
+              </a>
+              <a
+                href="#contact"
                 style={customStyle}
                 className={customLink("/contact")}
               >
                 {t("navbar.6")}{" "}
-              </Link>
+              </a>
             </Navbar.Collapse>
           </Nav>
         </Col>

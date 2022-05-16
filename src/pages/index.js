@@ -1,12 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import App from "../components/App";
 
-import { BrowserRouter } from "react-router-dom";
-const IndexPage = () => (
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+const IndexPage = () => <App />;
 
 export default IndexPage;

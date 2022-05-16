@@ -6,52 +6,12 @@ import logoPrincipalWhite from "../../assets/images/gaelo-logo-white.svg";
 import youtubePlay from "../../assets/images/youtube_play.svg";
 
 const Header = () => {
-  const getStyleRow = (h, w) => {
-    return {
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-      height: h + "px",
-      width: "100%",
-    };
-  };
-
-  const getWindowDimensions = () => {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height,
-    };
-  };
-
-  const useWindowDimensions = () => {
-    const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions()
-    );
-
-    useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
-
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    return windowDimensions;
-  };
-
   const { t } = useTranslation();
 
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <Container
-      style={getStyleRow(
-        useWindowDimensions().height,
-        useWindowDimensions().width
-      )}
-      className="  d-flex text-center justify-content-center flex-column align-items-center"
-    >
+    <Container className="  d-flex text-center justify-content-center flex-column align-items-center">
       <Figure.Image className="w-50" src={logoPrincipalWhite} alt="GaelO" />
       <p className="text-white fs-4 fw-bold">{t("header.title")}</p>
 

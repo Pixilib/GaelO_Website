@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 import { Container, Row } from "react-bootstrap";
 import i18next from "i18next";
@@ -21,7 +20,7 @@ import Ourteam from "./team/OurTeam";
 import Footer from "./footer/Footer";
 import Contact from "./contact/Contact";
 
-import "bootstrap";
+// import "bootstrap";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 import "../assets/css/gaelo.css";
@@ -57,50 +56,50 @@ function App() {
 
   let refs = useRef([]);
 
-  window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= 100) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  });
+  // window.addEventListener("scroll", () => {
+  //   if (window.pageYOffset >= 100) {
+  //     setScrolled(true);
+  //   } else {
+  //     setScrolled(false);
+  //   }
+  // });
 
-  const location = useLocation();
+  // const location = useLocation();
 
-  React.useEffect(() => {
-    // runs on location, i.e. route, change
-    switch (location.pathname) {
-      case "/":
-        refs.current[0].scrollIntoView();
-        break;
+  // React.useEffect(() => {
+  //   // runs on location, i.e. route, change
+  //   switch (location.pathname) {
+  //     case "/":
+  //       refs.current[0].scrollIntoView();
+  //       break;
 
-      case "/ourviews":
-        refs.current[1].scrollIntoView();
-        break;
+  //     case "/ourviews":
+  //       refs.current[1].scrollIntoView();
+  //       break;
 
-      case "/solution":
-        refs.current[2].scrollIntoView();
-        break;
+  //     case "/solution":
+  //       refs.current[2].scrollIntoView();
+  //       break;
 
-      case "/service":
-        refs.current[3].scrollIntoView();
-        break;
+  //     case "/service":
+  //       refs.current[3].scrollIntoView();
+  //       break;
 
-      case "/expertise":
-        refs.current[4].scrollIntoView();
-        break;
+  //     case "/expertise":
+  //       refs.current[4].scrollIntoView();
+  //       break;
 
-      case "/ourteam":
-        refs.current[5].scrollIntoView();
-        break;
+  //     case "/ourteam":
+  //       refs.current[5].scrollIntoView();
+  //       break;
 
-      case "/contact":
-        refs.current[6].scrollIntoView();
-        break;
-      default:
-        break;
-    }
-  }, [location]);
+  //     case "/contact":
+  //       refs.current[6].scrollIntoView();
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  // }, [location]);
 
   return (
     <>
