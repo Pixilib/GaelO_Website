@@ -6,10 +6,10 @@ import Study from "./Study";
 
 const SolutionRoot = () => {
   return (
-    <Fragment>
+    <div id="solution">
       <Role />
       <Study />
-    </Fragment>
+    </div>
   );
 };
 

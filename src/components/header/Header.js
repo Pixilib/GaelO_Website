@@ -2,12 +2,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Lang from "./Lang";
 import { Col, Container, Nav, Navbar } from "react-bootstrap";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 import LogoPrincipal from "../../assets/images/gaelo-logo.svg";
 import LogoGitHub from "../../assets/images/github.svg";
 
 import { Link } from "gatsby";
-
-const isBrowser = typeof window !== "undefined";
 
 const Header = (props) => {
   const customStyle = {
@@ -47,50 +47,55 @@ const Header = (props) => {
               aria-controls="basic-navbar-nav "
               className="border-0 shadow-none "
             />
-            <Navbar.Collapse id="basic-navbar-nav" className="">
-              <a
-                href="#ourviews"
+            <Navbar.Collapse id="basic-navbar-nav" className="navigationBar">
+              <AnchorLink
+                to="/#ourviews"
+                title="our views"
                 style={customStyle}
                 className={customLink("/ourviews")}
               >
                 {t("navbar.1")}
-              </a>
-              <a
-                href="#solution"
+              </AnchorLink>
+              <AnchorLink
+                to="/#solution"
+                title="solution"
                 style={customStyle}
                 className={customLink("/solution")}
               >
                 {t("navbar.2")}{" "}
-              </a>
-              <a
-                href="#service"
+              </AnchorLink>
+              <AnchorLink
+                to="/#service"
+                title="service"
                 style={customStyle}
                 className={customLink("/service")}
               >
                 {t("navbar.3")}{" "}
-              </a>
-              <a
-                href="#expertise"
+              </AnchorLink>
+              <AnchorLink
+                to="/#expertise"
+                title="expertise"
                 style={customStyle}
                 className={customLink("/expertise")}
               >
                 {t("navbar.4")}{" "}
-              </a>
-              <a
+              </AnchorLink>
+              {/* <a
                 href="#team"
                 style={customStyle}
                 className={customLink("/team")}
                 hidden="true"
               >
                 {t("navbar.5")}{" "}
-              </a>
-              <a
-                href="#contact"
+              </a> */}
+              <AnchorLink
+                to="/#contact"
+                title="contact"
                 style={customStyle}
                 className={customLink("/contact")}
               >
                 {t("navbar.6")}{" "}
-              </a>
+              </AnchorLink>
             </Navbar.Collapse>
           </Nav>
         </Col>

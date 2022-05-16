@@ -7,10 +7,10 @@ import OurViewsText from "./OurViewsText";
 
 const OurViewRoot = () => {
   return (
-    <Fragment>
+    <div id="ourviews">
       <OurViewsText />
       <KeyFactorSuccess />
-    </Fragment>
+    </div>
   );
 };
 

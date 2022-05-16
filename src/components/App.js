@@ -56,13 +56,17 @@ function App() {
 
   let refs = useRef([]);
 
-  // window.addEventListener("scroll", () => {
-  //   if (window.pageYOffset >= 100) {
-  //     setScrolled(true);
-  //   } else {
-  //     setScrolled(false);
-  //   }
-  // });
+  const isBrowser = typeof window !== "undefined";
+
+  if (isBrowser) {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset >= 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    });
+  }
 
   // const location = useLocation();
 

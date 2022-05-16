@@ -10,7 +10,7 @@ import logoQuote from "../../assets/images/quote.svg";
 const ExpertiseRoot = () => {
   const { t } = useTranslation();
   return (
-    <Container>
+    <Container id="expertise">
       <h1 className="text-center">{t("expertise.title")}</h1>
       <Row className="pb-5 pt-5">
         <ExpertiseStat />
