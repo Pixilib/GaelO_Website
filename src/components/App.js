@@ -9,6 +9,7 @@ import { Language } from "../enums/Language";
 import translationEN from "../lang/en.json";
 import translationFR from "../lang/fr.json";
 
+import Seo from "./seo/Seo";
 import Header from "./header/Header";
 import Welcome from "./header/Welcome";
 import OurViewRoot from "./ourviews/OurViewRoot";
@@ -67,46 +68,9 @@ function App() {
       }
     });
   }
-
-  // const location = useLocation();
-
-  // React.useEffect(() => {
-  //   // runs on location, i.e. route, change
-  //   switch (location.pathname) {
-  //     case "/":
-  //       refs.current[0].scrollIntoView();
-  //       break;
-
-  //     case "/ourviews":
-  //       refs.current[1].scrollIntoView();
-  //       break;
-
-  //     case "/solution":
-  //       refs.current[2].scrollIntoView();
-  //       break;
-
-  //     case "/service":
-  //       refs.current[3].scrollIntoView();
-  //       break;
-
-  //     case "/expertise":
-  //       refs.current[4].scrollIntoView();
-  //       break;
-
-  //     case "/ourteam":
-  //       refs.current[5].scrollIntoView();
-  //       break;
-
-  //     case "/contact":
-  //       refs.current[6].scrollIntoView();
-  //       break;
-  //     default:
-  //       break;
-  //   }
-  // }, [location]);
-
   return (
     <>
+      <Seo lang={defaultLanguage} />
       <Header scrolled={isScrolled} />
       <Container fluid className="background">
         <Row ref={(ref) => (refs.current[0] = ref)}>

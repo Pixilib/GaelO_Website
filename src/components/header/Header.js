@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Lang from "./Lang";
 import { Col, Container, Nav, Navbar } from "react-bootstrap";
@@ -11,11 +11,11 @@ import { Link } from "gatsby";
 
 const Header = (props) => {
   const customStyle = {
-    marginLeft: "10px",
     textDecoration: "none",
+    padding: "0px!important",
   };
 
-  const customLink = (origin) => {
+  const customLink = () => {
     let className = props.scrolled ? "text-dark" : "text-white";
 
     return className;
@@ -32,12 +32,14 @@ const Header = (props) => {
       textdecoration: "none",
     };
   };
+  const [headerActive, setHeaderActive] = useState(null);
+  console.log("headerActive", headerActive);
 
   return (
     <Navbar sticky="top" expand="lg" className={customNav()}>
       <Container fluid className="d-flex justify-content-around">
         <Col sm={1}>
-          <Link to="/">
+          <Link to="/" onClick={() => setHeaderActive(null)}>
             <img src={LogoPrincipal} alt="GaelO" className="w-50" />
           </Link>
         </Col>
@@ -48,54 +50,76 @@ const Header = (props) => {
               className="border-0 shadow-none "
             />
             <Navbar.Collapse id="basic-navbar-nav" className="navigationBar">
-              <AnchorLink
-                to="/#ourviews"
-                title="our views"
-                style={customStyle}
-                className={customLink("/ourviews")}
-              >
-                {t("navbar.1")}
-              </AnchorLink>
-              <AnchorLink
-                to="/#solution"
-                title="solution"
-                style={customStyle}
-                className={customLink("/solution")}
-              >
-                {t("navbar.2")}{" "}
-              </AnchorLink>
-              <AnchorLink
-                to="/#service"
-                title="service"
-                style={customStyle}
-                className={customLink("/service")}
-              >
-                {t("navbar.3")}{" "}
-              </AnchorLink>
-              <AnchorLink
-                to="/#expertise"
-                title="expertise"
-                style={customStyle}
-                className={customLink("/expertise")}
-              >
-                {t("navbar.4")}{" "}
-              </AnchorLink>
-              {/* <a
+              <ul>
+                <li onClick={() => setHeaderActive("ourviews")}>
+                  <AnchorLink
+                    to="/#ourviews"
+                    title="our views"
+                    style={customStyle}
+                    className={
+                      headerActive === "ourviews" ? "text-secondary" : ""
+                    }
+                  >
+                    {t("navbar.1")}
+                  </AnchorLink>
+                </li>
+                <li onClick={() => setHeaderActive("solution")}>
+                  <AnchorLink
+                    to="/#solution"
+                    title="solution"
+                    style={customStyle}
+                    className={
+                      headerActive === "solution" ? "text-secondary" : ""
+                    }
+                  >
+                    {t("navbar.2")}{" "}
+                  </AnchorLink>
+                </li>
+                <li onClick={() => setHeaderActive("service")}>
+                  <AnchorLink
+                    to="/#service"
+                    title="service"
+                    style={customStyle}
+                    className={
+                      headerActive === "service" ? "text-secondary" : ""
+                    }
+                  >
+                    {t("navbar.3")}{" "}
+                  </AnchorLink>
+                </li>
+                <li onClick={() => setHeaderActive("expertise")}>
+                  <AnchorLink
+                    to="/#expertise"
+                    title="expertise"
+                    style={customStyle}
+                    className={
+                      headerActive === "expertise" ? "text-secondary" : ""
+                    }
+                  >
+                    {t("navbar.4")}{" "}
+                  </AnchorLink>
+                </li>
+                {/*<li> <a
                 href="#team"
                 style={customStyle}
                 className={customLink("/team")}
                 hidden="true"
-              >
+                >
                 {t("navbar.5")}{" "}
-              </a> */}
-              <AnchorLink
-                to="/#contact"
-                title="contact"
-                style={customStyle}
-                className={customLink("/contact")}
-              >
-                {t("navbar.6")}{" "}
-              </AnchorLink>
+              </a></li> */}
+                <li onClick={() => setHeaderActive("contact")}>
+                  <AnchorLink
+                    to="/#contact"
+                    title="contact"
+                    style={customStyle}
+                    className={
+                      headerActive === "contact" ? "text-secondary" : ""
+                    }
+                  >
+                    {t("navbar.6")}{" "}
+                  </AnchorLink>
+                </li>
+              </ul>
             </Navbar.Collapse>
           </Nav>
         </Col>

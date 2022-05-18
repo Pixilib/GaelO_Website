@@ -81,6 +81,13 @@ h2 {
 }
 
 /* -- Navbar --*/
+nav.bg-transparent .navigationBar a {
+  color: white;
+}
+nav.bg-white .navigationBar a {
+  color: #314053;
+}
+
 .customNavbar {
   max-height: 150px;
 }
@@ -88,6 +95,12 @@ h2 {
 .navigationBar a {
   padding: 0 5px;
   text-decoration: none;
+}
+.navigationBar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .logoNavbar {
   padding-left: 10px;
