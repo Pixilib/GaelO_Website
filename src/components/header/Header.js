@@ -40,7 +40,7 @@ const Header = (props) => {
       <Container fluid className="d-flex justify-content-around">
         <Col sm={1}>
           <Link to="/" onClick={() => setHeaderActive(null)}>
-            <img src={LogoPrincipal} alt="GaelO" className="w-50" />
+            <img src={LogoPrincipal} alt="GaelO" style={{ width: "60px" }} />
           </Link>
         </Col>
         <Col className="fw-bold d-flex justify-content-center">
