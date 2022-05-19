@@ -21,6 +21,7 @@ import Ourteam from "./team/OurTeam";
 import Footer from "./footer/Footer";
 import Contact from "./contact/Contact";
 
+import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../assets/css/gaelo.css";
 
 const defaultLanguage = Language.FR;
