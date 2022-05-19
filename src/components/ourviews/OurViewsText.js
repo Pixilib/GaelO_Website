@@ -6,7 +6,11 @@ const OurViewsText = () => {
   const { t } = useTranslation();
 
   return (
-    <Container className="ourView">
+    <Container
+      id="ourviews"
+      className="ourView"
+      style={{ backgroundImage: `url("backgroundISTOCK_small.jpg")` }}
+    >
       <h1 className="d-flex justify-content-center">{t("ourviews.title")}</h1>
 
       <Row className="fw-bold h-75 d-flex align-items-center ">
