@@ -9,6 +9,18 @@ import { Language } from "../enums/Language";
 import translationEN from "../lang/en.json";
 import translationFR from "../lang/fr.json";
 
+import Seo from "./seo/Seo";
+import Header from "./header/Header";
+import Welcome from "./header/Welcome";
+import OurViewRoot from "./ourviews/OurViewRoot";
+import SolutionRoot from "./solution/SolutionRoot";
+import ServiceRoot from "./services/ServiceRoot";
+import ExpertiseRoot from "./expertise/ExpertiseRoot";
+import Partner from "./partner/Partner";
+import Ourteam from "./team/OurTeam";
+import Footer from "./footer/Footer";
+import Contact from "./contact/Contact";
+
 const defaultLanguage = Language.FR;
 
 // the translations
@@ -53,11 +65,44 @@ function App() {
   }
   return (
     <>
+      <Seo lang={defaultLanguage} />
+      <Header scrolled={isScrolled} />
       <Container fluid className="background">
         <Row ref={(ref) => (refs.current[0] = ref)}>
-          <h2>Gaelo</h2>
+          <Welcome />
         </Row>
       </Container>
+      <Container fluid>
+        <Row ref={(ref) => (refs.current[1] = ref)}>
+          <OurViewRoot />
+        </Row>
+        <Row className="bg-light" ref={(ref) => (refs.current[2] = ref)}>
+          <SolutionRoot />
+        </Row>
+        <Row ref={(ref) => (refs.current[3] = ref)}>
+          <ServiceRoot />
+        </Row>
+        <Row
+          className="expertiseStyle bg-light"
+          ref={(ref) => (refs.current[4] = ref)}
+        >
+          <ExpertiseRoot />
+        </Row>
+        <Row
+          hidden={true}
+          className="bg-light p-5"
+          ref={(ref) => (refs.current[5] = ref)}
+        >
+          <Ourteam />
+        </Row>
+        <Row className="p-1">
+          <Partner />
+        </Row>
+        <Row className="background" ref={(ref) => (refs.current[6] = ref)}>
+          <Contact />
+        </Row>
+      </Container>
+      <Footer fluid className="background" />
     </>
   );
 }
