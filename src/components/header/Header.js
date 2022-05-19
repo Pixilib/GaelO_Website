@@ -33,7 +33,6 @@ const Header = (props) => {
     };
   };
   const [headerActive, setHeaderActive] = useState(null);
-  console.log("headerActive", headerActive);
 
   return (
     <Navbar sticky="top" expand="lg" className={customNav()}>
