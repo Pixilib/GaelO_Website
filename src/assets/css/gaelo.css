@@ -176,7 +176,7 @@ nav.bg-white .navigationBar a {
 /* -- OurViews --*/
 .ourView {
   min-height: 550px;
-  background-image: url("../assets/images/backgroundISTOCK_small.jpg");
+  background-image: url("backgroundISTOCK_small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
