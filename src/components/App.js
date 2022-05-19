@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
 
-import "../assets/css/gaelo.css";
-
 function App() {
   return (
     <>
