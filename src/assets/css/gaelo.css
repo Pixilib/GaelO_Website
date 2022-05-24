@@ -93,15 +93,23 @@ nav.bg-white .navigationBar a {
 }
 
 .navigationBar a {
-  padding: 0 5px;
+  padding: 5px;
   text-decoration: none;
 }
-.navigationBar ul {
+@media (min-width: 768px) {
+  .navigationBar a {
+    padding: 0 15px;
+  }
+  .navbar-brand {
+    padding-top: 0;
+  }
+}
+/* .navigationBar ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-}
+} */
 .logoNavbar {
   padding-left: 10px;
   min-width: 20%;
@@ -125,7 +133,6 @@ nav.bg-white .navigationBar a {
   width: 225px;
   height: 95px;
   margin: 10px;
-  margin-bottom: 200px;
   padding: 5px;
   transition: 0.5s;
   background-size: 200% auto;

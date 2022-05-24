@@ -11,7 +11,7 @@ const Header = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <Container className="  d-flex text-center justify-content-center flex-column align-items-center mt-5 pt-3">
+    <Container className="  d-flex text-center justify-content-center flex-column align-items-center mt-5 pt-3 mb-5">
       <Figure.Image className="w-50" src={logoPrincipalWhite} alt="GaelO" />
       <p className="text-white fs-4 fw-bold">{t("header.title")}</p>
 

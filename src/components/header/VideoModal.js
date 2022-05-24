@@ -9,14 +9,14 @@ const VideoModal = (props) => {
     <Modal
       {...props}
       size="xl"
-      fullscreen="md-down"
+      // fullscreen="md-down"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
       <Modal.Body>
         <ReactPlayer
           volume={0.8}
-          height="800px"
+          // height="800px"
           url={t("header.linkVideo")}
           width="100%"
         />
