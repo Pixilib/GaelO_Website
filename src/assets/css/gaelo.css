@@ -74,6 +74,14 @@ h1 {
 h2 {
   color: #0495a0;
   font-weight: bold;
+  font-size: 2.3em;
+}
+h2.dark {
+  color: #353275;
+}
+h3 {
+  color: #0495a0;
+  font-weight: bold;
 }
 
 .background {
@@ -182,7 +190,7 @@ nav.bg-white .navigationBar a {
 
 /* -- OurViews --*/
 .ourView {
-  min-height: 550px;
+  /* min-height: 550px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -217,6 +225,8 @@ nav.bg-white .navigationBar a {
 }
 .cardRole {
   width: 770px;
+  max-width: 95%;
+  margin-left: 7px;
 }
 
 /* -- Service --*/
@@ -245,7 +255,7 @@ nav.bg-white .navigationBar a {
 
 /* -- Expertise -- */
 .expertiseStyle {
-  min-height: 800px;
+  /* min-height: 800px; */
 }
 
 .logoQuote {

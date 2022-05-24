@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import logo from "../../lang/logo.json";
 
@@ -19,12 +19,16 @@ const Partner = () => {
   };
 
   return (
-    <Row>
-      <h1 className="text-center">{t("partner.title")}</h1>
-      <Row className="d-flex mt-3 justify-content-center">
-        {generatePartner()}
+    <Container className="pt-5 mt-5 mb-5 pb-5">
+      <Row>
+        <h2 className="dark pb-3  text-center">{t("partner.title")}</h2>
+        <Container>
+          <Row className="d-flex mt-3 justify-content-center">
+            {generatePartner()}
+          </Row>
+        </Container>
       </Row>
-    </Row>
+    </Container>
   );
 };
 

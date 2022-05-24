@@ -72,7 +72,9 @@ function App() {
       <Header scrolled={isScrolled} />
       <Container fluid className="background">
         <Row ref={(ref) => (refs.current[0] = ref)}>
-          <Welcome />
+          <Container>
+            <Welcome />
+          </Container>
         </Row>
       </Container>
       <Container fluid>
@@ -91,13 +93,13 @@ function App() {
         >
           <ExpertiseRoot />
         </Row>
-        <Row
+        {/* <Row
           hidden={true}
           className="bg-light p-5"
           ref={(ref) => (refs.current[5] = ref)}
         >
           <Ourteam />
-        </Row>
+        </Row> */}
         <Row className="p-1">
           <Partner />
         </Row>

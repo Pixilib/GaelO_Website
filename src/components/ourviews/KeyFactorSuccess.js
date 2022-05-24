@@ -37,9 +37,11 @@ const KeyFactorSuccess = () => {
   };
 
   return (
-    <Container>
-      <h2 className="text-center">{t("ourviews.subtitle")}</h2>
-      <Row className=" pt-5 ">{generateCardOurViews()}</Row>
+    <Container className="pt-5 mt-5 mb-5 pb-5">
+      <h2 className="  dark  text-center pb-3">{t("ourviews.subtitle")}</h2>
+      <Container>
+        <Row className=" pt-2 ">{generateCardOurViews()}</Row>
+      </Container>
     </Container>
   );
 };
