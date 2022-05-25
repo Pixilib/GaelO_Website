@@ -276,6 +276,7 @@ nav.bg-white .navigationBar a {
   border: 3px solid;
   border-radius: 7%;
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .serviceIcon {
