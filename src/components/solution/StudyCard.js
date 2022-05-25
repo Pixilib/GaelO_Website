@@ -19,9 +19,9 @@ const StudyCard = (props) => {
     }
 
     return (
-      <Row>
-        <Card className="mt-4 border-2 bg-light">
-          <Card.Header className=" bg-light border-bottom-0 text-primary fw-bold fs-3 text-center">
+      <Row style={{ minHeight: "255px" }}>
+        <Card className="mt-4  studyCard">
+          <Card.Header className=" border-bottom-0 text-primary fw-bold fs-3 text-center">
             {" "}
             {t("study.graph." + props.level + ".title")}{" "}
           </Card.Header>

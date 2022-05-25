@@ -171,19 +171,23 @@ nav.bg-white .navigationBar a {
 /* -- Card --*/
 .styleCard {
   background: linear-gradient(90deg, #353275, #0495a0);
-  color: #ffba4d;
   font-size: large;
   font-weight: bold;
-  border: 3px solid #ffba4d;
+  border: 5px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 300px;
   width: 260px;
-  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
   border-radius: 7%;
   padding: 20px;
+}
+
+.styleCard p {
+  color: white;
+  padding-top: 25px;
 }
 
 .cardIcon {
@@ -251,6 +255,16 @@ nav.bg-white .navigationBar a {
   height: 100%;
   cursor: pointer;
 }
+.studyCard {
+  border-radius: 30px;
+  max-width: 800px;
+  margin: auto;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+}
+.studyCard .card-header {
+  background: none;
+}
+
 /* -- Service --*/
 .cardService {
   display: flex;
