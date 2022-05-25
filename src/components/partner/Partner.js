@@ -10,8 +10,8 @@ const Partner = () => {
   const generatePartner = () => {
     const componentArray = logo.partner.logo.map((url) => {
       return (
-        <Col className="d-flex justify-content-center" sm={2}>
-          <img alt="partner" className="w-75 h-75" src={url}></img>
+        <Col className="d-flex justify-content-center" xs={3} md={1}>
+          <img alt="partner" src={url} width="100%" height="auto"></img>
         </Col>
       );
     });

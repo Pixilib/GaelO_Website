@@ -21,15 +21,19 @@ const ServiceRoot = () => {
                 src={t("pixilib.jpg")}
               ></img>
             </Row>
-            <Row className="d-flex justify-content-center align-items-center fw-bold text-info fs-5 text-center">
+            <Row className="d-flex justify-content-center align-items-center fw-bold text-info fs-5 text-center pb-5">
               {t("service.pixilib.intro")}
             </Row>
           </Col>
           <Col
             xl={8}
-            className="d-flex justify-content-center align-items-right"
+            className=" servicePlayer d-flex justify-content-center align-items-right"
           >
-            <ReactPlayer controls="true" url={t("service.pixilib.video")} />
+            <ReactPlayer
+              height="100%"
+              controls="true"
+              url={t("service.pixilib.video")}
+            />
           </Col>
         </Row>
         <Row className="mt-5 d-flex justify-content-center align-items-center">

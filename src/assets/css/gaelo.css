@@ -209,7 +209,7 @@ nav.bg-white .navigationBar a {
 }
 @media (max-width: 768px) {
   .ourView {
-    background: linear-gradient(90deg, #cce4ee, #dff2fa) !important;
+    background: #f5f5f5 !important;
   }
   .ourView img {
     display: block;
@@ -287,6 +287,15 @@ nav.bg-white .navigationBar a {
   border-image: linear-gradient(to right, white, black, white);
   border-image-slice: 1;
   padding-top: 25px;
+}
+
+.servicePlayer {
+  height: 200px;
+}
+@media (min-width: 768px) {
+  .servicePlayer {
+    height: 360px;
+  }
 }
 
 /* -- Expertise -- */
