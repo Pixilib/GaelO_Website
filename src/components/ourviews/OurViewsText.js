@@ -16,6 +16,8 @@ const OurViewsText = () => {
           {t("ourviews.title")}
         </h2>
 
+        <img src="backgroundISTOCK_small.jpg" alt="Gaelo" />
+
         <Row className="fw-bold h-75 d-flex align-items-center ">
           <Col md="5" className="">
             {t("ourviews.body1")}

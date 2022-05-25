@@ -60,7 +60,6 @@ const Role = (props) => {
             <div
               onMouseEnter={() => onClickCircle(Investigator)}
               style={{
-                position: "absolute",
                 left: "23.25%",
                 top: "76.5%",
                 width: "3%",
@@ -69,6 +68,7 @@ const Role = (props) => {
                 opacity: "50%",
                 cursor: "pointer",
               }}
+              className="circleRole"
             />
 
             <div

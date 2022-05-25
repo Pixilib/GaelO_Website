@@ -33,53 +33,48 @@ const Study = () => {
               <div
                 onMouseEnter={() => setCurrentData(Study)}
                 style={{
-                  position: "absolute",
                   left: "0%",
                   top: "0%",
                   width: "16%",
-                  height: "100%",
                   borderRadius: "50%",
                 }}
+                className="studyOverflow"
               />
               <div
                 onMouseEnter={() => setCurrentData(NPatient)}
                 style={{
-                  position: "absolute",
                   left: "16%",
                   top: "0%",
                   width: "18.5%",
-                  height: "100%",
                 }}
+                className="studyOverflow"
               />
               <div
                 onMouseEnter={() => setCurrentData(NVisite)}
                 style={{
-                  position: "absolute",
                   left: "33.5%",
                   top: "0%",
                   width: "23%",
-                  height: "100%",
                 }}
+                className="studyOverflow"
               />
               <div
                 onMouseEnter={() => setCurrentData(NReviews)}
                 style={{
-                  position: "absolute",
                   left: "55%",
                   top: "0%",
                   width: "26%",
-                  height: "100%",
                 }}
+                className="studyOverflow"
               />
               <div
                 onMouseEnter={() => setCurrentData(Conclusion)}
                 style={{
-                  position: "absolute",
                   left: "77%",
                   top: "0%",
                   width: "23%",
-                  height: "100%",
                 }}
+                className="studyOverflow"
               />
             </div>
           </Row>

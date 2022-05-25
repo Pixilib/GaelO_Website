@@ -200,6 +200,19 @@ nav.bg-white .navigationBar a {
   background-size: cover;
   background-position: center;
 }
+.ourView img {
+  display: none;
+}
+@media (max-width: 768px) {
+  .ourView {
+    background: linear-gradient(90deg, #cce4ee, #dff2fa) !important;
+  }
+  .ourView img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 .coltext {
   min-height: 400px;
@@ -233,7 +246,11 @@ nav.bg-white .navigationBar a {
   max-width: 95%;
   margin-left: 7px;
 }
-
+.studyOverflow {
+  position: absolute;
+  height: 100%;
+  cursor: pointer;
+}
 /* -- Service --*/
 .cardService {
   display: flex;
