@@ -11,7 +11,7 @@ const Header = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <Container className="  d-flex text-center justify-content-center flex-column align-items-center mt-5 pt-3 mb-5">
+    <Container className="  d-flex text-center justify-content-center flex-column align-items-center mt-5 pt-3 pt-5 mb-5">
       <Figure.Image className="w-50" src={logoPrincipalWhite} alt="GaelO" />
       <h1 className="text-white fs-4 fw-bold" style={{ marginTop: "5px" }}>
         {t("header.title")}
@@ -19,7 +19,7 @@ const Header = () => {
 
       <Row className="pt-3">
         <button
-          className="btn-ytb"
+          className="btn-ytb mt-3 mb-5"
           type="button"
           onClick={() => setModalShow(true)}
         >
