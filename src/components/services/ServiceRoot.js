@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Col, Container, Row } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import ReactPlayer from "react-player";
 import ServiceCard from "./ServiceCard";
 

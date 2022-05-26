@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Row, Col, Container } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import logo from "../../lang/logo.json";
 
 const Partner = () => {

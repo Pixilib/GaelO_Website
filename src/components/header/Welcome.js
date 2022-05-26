@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Row, Figure, Container } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import VideoModal from "./VideoModal";
 import logoPrincipalWhite from "../../assets/images/gaelo-logo-white.svg";
 import youtubePlay from "../../assets/images/youtube_play.svg";
