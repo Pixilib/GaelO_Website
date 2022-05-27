@@ -82,27 +82,27 @@
   "card": {
     "efficacity": {
       "keyword": "Efficacité",
-      "icon": "efficacity.png",
+      "icon": "./icons/efficacity.svg",
       "definition": "Une plateforme pensée avec les chercheurs et qui répond à leurs besoins. L’expérience utilisateur est notre principal guide pour proposer une plateforme toujours plus innovante."
     },
     "intuitivity": {
       "keyword": "Intuitivité",
-      "icon": "intuitivity.png",
+      "icon": "./icons/intuitivity.svg",
       "definition": "Nous pensons qu’une plateforme d’imagerie doit pouvoir être utilisée de manière intuitive sans besoin de formation spécifique."
     },
     "reactivity": {
       "keyword": "Réactivité",
-      "icon": "reactivity.png",
+      "icon": "./icons/reactivity.svg",
       "definition": "Une plateforme rapide et également évolutive, nous voulons être au rendez-vous des nouveaux défis de l’imagerie "
     },
     "liberty": {
       "keyword": "Liberté",
-      "icon": "liberty.png",
+      "icon": "./icons/liberty.svg",
       "definition": "Votre imagerie doit pouvoir être disponible à tout moment sans restriction d’usage. Nous pensons que la recherche se porte mieux sans verrous."
     },
     "source": {
       "keyword": "Open Source",
-      "icon": "open-source.png",
+      "icon": "./icons/open-source.svg",
       "definition": "La grande majorité de nos solutions sont open source. Nous contribuons en permanence à des projets logiciels libres structurants en imagerie, nous pensons qu’une bonne recherche est une recherche ouverte."
     }
   },
@@ -186,35 +186,35 @@
     "card": {
       "Complete": {
         "title": "Complète",
-        "logo": "complet.png",
+        "logo": "./icons/complet.svg",
         "front": "100% des fonctionnalités de GaelO",
         "back": "Vous bénéficierez automatiquement des évolutions de GaelO, nous n’aimons pas la recherche à deux vitesses",
         "color": "primary"
       },
       "Unique": {
         "title": "Unique",
-        "logo": "unic.png",
+        "logo": "./icons/unic.svg",
         "front": "Une seule offre sans option",
         "back": "Nous préférons utiliser notre temps à innover plutôt qu’à éditer des offres",
         "color": "secondary"
       },
       "Simple": {
         "title": "Simple",
-        "logo": "target.png",
+        "logo": "./icons/target.svg",
         "front": "Une tarification simple et transparente",
         "back": "Pas de coût unitaire par patient, examen, utilisateur, centre.. Inclure quelques patients en plus, ouvrir un centre additionel n’est plus un problème !",
         "color": "dark"
       },
       "Predictable": {
         "title": "Prédictible",
-        "logo": "predictive.png",
+        "logo": "./icons/predictive.svg",
         "front": "Pas de frais cachés!",
         "back": "Votre budget est souvent fixe, nous pensons que le  prix doit être prévisible dès le début de votre étude",
         "color": "success"
       },
       "Affordable": {
         "title": "Abordable",
-        "logo": "abordable.png",
+        "logo": "./icons/affordable.svg",
         "front": "Sérieusement?",
         "back": "Sérieusement ! Nos clients négocient rarement notre prix, nous préférons nous concentrer sur notre valeur ajoutée : l’innovation",
         "color": "info"

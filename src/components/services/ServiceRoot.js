@@ -18,7 +18,7 @@ const ServiceRoot = () => {
               <img
                 alt={"Pixilib Logo"}
                 style={{ "max-width": "250px" }}
-                src={t("pixilib.jpg")}
+                src={t("pixilib.svg")}
               ></img>
             </Row>
             <Row className="d-flex justify-content-center align-items-center fw-bold text-info fs-5 text-center pb-5">

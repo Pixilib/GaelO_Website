@@ -1,10 +1,10 @@
 {
-    "partner": {
-        "logo": [
-            "Lysa.svg",
-            "Lysarc.svg",
-            "carnot.svg",
-            "ovh.svg"
-        ]
-    }
+  "partner": {
+    "logo": [
+      "partners/Lysa.svg",
+      "partners/Lysarc.svg",
+      "partners/carnot.svg",
+      "partners/ovh.svg"
+    ]
+  }
 }
