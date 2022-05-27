@@ -30,6 +30,25 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `lang`, // name given to `gatsby-source-filesystem` plugin.
+        languages: [`en`, `fr`],
+        defaultLanguage: `fr`,
+        // if you are using Helmet, you must include siteUrl, and make sure you add http:https
+        siteUrl: `https://gaelo.fr/`,
+        // you can pass any i18next options
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+          },
+          returnObjects: true,
+          keySeparator: ".",
+          nsSeparator: false,
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -30,

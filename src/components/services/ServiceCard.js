@@ -2,8 +2,8 @@ import React from "react";
 
 import { Col, Row } from "react-bootstrap";
 import { Card } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
-import fr from "../../lang/fr.json";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import fr from "../../lang/fr/index.json";
 import CardFade from "./CardFade";
 
 const ServiceCard = () => {

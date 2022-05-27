@@ -2,8 +2,8 @@ import React from "react";
 
 import { Fragment } from "react";
 import { Col } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
-import fr from "../../lang/fr.json";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import fr from "../../lang/fr/index.json";
 
 const Ourteam = () => {
   const { t } = useTranslation();

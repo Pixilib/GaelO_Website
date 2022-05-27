@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { graphql } from "gatsby";
 
 import { Container, Row } from "react-bootstrap";
 import i18next from "i18next";
@@ -6,8 +7,8 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 import { Language } from "../enums/Language";
-import translationEN from "../lang/en.json";
-import translationFR from "../lang/fr.json";
+import translationEN from "../lang/en/index.json";
+import translationFR from "../lang/fr/index.json";
 
 import Layout from "../components/layout/Layout";
 import Welcome from "../components/header/Welcome";
@@ -94,3 +95,19 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(
+      filter: { ns: { in: ["common", "index"] }, language: { eq: $language } }
+    ) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

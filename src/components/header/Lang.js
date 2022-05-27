@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import { Language } from "../../enums/Language";
 
 import i18next from "i18next";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import Select from "react-select";
 
 const Lang = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, Col, Row } from "react-bootstrap";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
 import ExpertiseStat from "./ExpertiseStat";
 import ExpertiseTestimonial from "./ExpertiseTestimonial";

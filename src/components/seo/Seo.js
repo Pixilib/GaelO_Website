@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
 const Seo = ({ lang }) => {
   const { t } = useTranslation();

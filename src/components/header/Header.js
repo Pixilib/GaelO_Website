@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import Lang from "./Lang";
 import { Col, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
