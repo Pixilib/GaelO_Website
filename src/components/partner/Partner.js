@@ -3,21 +3,44 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
-import logo from "../../lang/logo.json";
+import logoLysa from "../../../static/partners/Lysa.svg";
+import logoLysarc from "../../../static/partners/Lysarc.svg";
+import logoCarnot from "../../../static/partners/carnot.svg";
+import logoOvh from "../../../static/partners/ovh.svg";
+
+const partners = [
+  {
+    name: "Lysa",
+    logo: logoLysa,
+  },
+  {
+    name: "Lysarc",
+    logo: logoLysarc,
+  },
+  {
+    name: "Carnot",
+    logo: logoCarnot,
+  },
+  {
+    name: "Ovh",
+    logo: logoOvh,
+  },
+];
 
 const Partner = () => {
   const { t } = useTranslation();
 
   const generatePartner = () => {
-    const componentArray = logo.partner.logo.map((url) => {
+    const componentArray = partners.map((partner, i) => {
       return (
         <Col
+          key={i}
           className="d-flex justify-content-center align-items-center"
           xs={3}
           md={1}
         >
           <div>
-            <img alt="partner" src={url} width="100%" />
+            <img alt={partner.name} src={partner.logo} width="100%" />
           </div>
         </Col>
       );
