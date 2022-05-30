@@ -1,22 +1,46 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Col, Container, Row } from "react-bootstrap";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout/Layout";
 
 export default function Template({ data, pageContext }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
+  const image = getImage(frontmatter.coverImage);
   return (
     <Layout pageContext={pageContext}>
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
-      </div>
+      <Container>
+        <Row className="justify-content-md-center">
+          <div>
+            <GatsbyImage image={image} alt={frontmatter.title} />
+          </div>
+        </Row>
+        <Row>
+          <Col>
+            <h1>{frontmatter.title}</h1>
+            <div
+              className="blog-post-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </Col>
+        </Row>
+        {frontmatter.sections.items.map((item, i) => (
+          <Row className="pt-3 pb-3">
+            <Col
+              xs={12}
+              sm={7}
+              md={i % 2 === 0 ? { order: "last" } : ""}
+              className="mb-3"
+            >
+              {item.content}
+            </Col>
+            <Col xs={12} sm={5}>
+              <GatsbyImage image={getImage(item.image)} className="mb-3" />
+            </Col>
+          </Row>
+        ))}
+      </Container>
     </Layout>
   );
 }
@@ -31,6 +55,17 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+
+        sections {
+          items {
+            content
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 600)
+              }
+            }
+          }
+        }
       }
     }
   }
