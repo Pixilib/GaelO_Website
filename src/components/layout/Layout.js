@@ -7,7 +7,7 @@ import Footer from "../footer/Footer";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/gaelo.css";
 
-function Layout({ children }) {
+function Layout({ children, pageContext }) {
   const isBrowser = typeof window !== "undefined";
 
   const [isScrolled, setScrolled] = useState(false);
@@ -24,7 +24,7 @@ function Layout({ children }) {
   return (
     <>
       <Seo />
-      <Header scrolled={isScrolled} />
+      <Header scrolled={isScrolled} pageContext={pageContext} />
       {children}
       <Footer fluid className="background" />
     </>

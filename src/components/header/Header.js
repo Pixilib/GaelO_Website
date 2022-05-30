@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "react-i18next";
+
 import Lang from "./Lang";
 import { Col, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -9,20 +10,20 @@ import LogoGitHub from "../../assets/images/github.svg";
 
 import { Link } from "gatsby";
 
-const Header = (props) => {
+const Header = ({ scrolled, pageContext }) => {
   const customStyle = {
     textDecoration: "none",
     padding: "0px!important",
   };
 
   const customLink = () => {
-    let className = props.scrolled ? "text-dark" : "text-white";
+    let className = scrolled ? "text-dark" : "text-white";
 
     return className;
   };
 
   const customNav = () =>
-    props.scrolled ? "bg-white py-0 " : "bg-transparent background py-0 ";
+    scrolled ? "bg-white py-0 " : "bg-transparent background py-0 ";
 
   const { t } = useTranslation();
 
@@ -107,7 +108,10 @@ const Header = (props) => {
           </Nav>
           <Nav>
             <Nav className="align-items-center">
-              <Lang />
+              <Lang
+                locale={pageContext.locale}
+                allWebsiteLocales={pageContext.allWebsiteLocales}
+              />
             </Nav>
             <Nav className="align-items-center">
               <a

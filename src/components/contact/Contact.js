@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "react-i18next";
+
 import logoMail from "../../assets/images/mail.svg";
 
 const Contact = () => {

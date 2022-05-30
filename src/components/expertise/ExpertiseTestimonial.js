@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Carousel } from "react-bootstrap";
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "react-i18next";
+
 import fr from "../../lang/fr/index.json";
 
 const ExpertiseTestimonial = () => {

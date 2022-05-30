@@ -4,7 +4,7 @@ import { Modal } from "react-bootstrap";
 import Markdown from "react-markdown";
 import { useEffect, useState } from "react";
 
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "react-i18next";
 
 const MarkdownModal = (props) => {
   const { t } = useTranslation();

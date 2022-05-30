@@ -40,27 +40,27 @@
   "card": {
     "efficacity": {
       "keyword": "Efficiency",
-      "icon": "./icons/efficacity.svg",
+      "icon": "../icons/efficacity.svg",
       "definition": "A platform designed with researchers in mind and that meets their needs. The user experience is our main guide to provide an ever more innovative platform."
     },
     "intuitivity": {
       "keyword": "Intuitiveness",
-      "icon": "./icons/intuitivity.svg",
+      "icon": "../icons/intuitivity.svg",
       "definition": "We believe that an imaging platform should be intuitive to use without the need for specific training."
     },
     "reactivity": {
       "keyword": "Responsiveness",
-      "icon": "./icons/reactivity.svg",
+      "icon": "../icons/reactivity.svg",
       "definition": "A fast and also scalable platform, we want to be at the forefront of new imaging challenges. "
     },
     "liberty": {
       "keyword": "Freedom",
-      "icon": "./icons/liberty.svg",
+      "icon": "../icons/liberty.svg",
       "definition": "Your imaging should be available at any time without restriction on use. We believe that research is better off without locks."
     },
     "source": {
       "keyword": "Open Source",
-      "icon": "./icons/open-source.svg",
+      "icon": "../icons/open-source.svg",
       "definition": "The vast majority of our solutions are open source. We are constantly contributing to open source projects structuring imaging, we believe that good research is open research."
     }
   },
@@ -145,35 +145,35 @@
     "card": {
       "Complete": {
         "title": "Complete",
-        "logo": "./icons/complet.svg",
+        "logo": "../icons/complet.svg",
         "front": "100% of GaelO's features",
         "back": "You will automatically benefit from GaelO's evolutions, we don't like two tier search",
         "color": "primary"
       },
       "Unique": {
         "title": "Unique",
-        "logo": "./icons/unic.svg",
+        "logo": "../icons/unic.svg",
         "front": "One offer with no options",
         "back": "We prefer to use our time innovating rather than editing offers",
         "color": "secondary"
       },
       "Simple": {
         "title": "Simple",
-        "logo": "./icons/target.svg",
+        "logo": "../icons/target.svg",
         "front": "Simple and transparent pricing",
         "back": "No unit cost per patient, exam, user, centre. Include a few more patients, open an additional centre is no longer a problem!",
         "color": "dark"
       },
       "Predictable": {
         "title": "Predictable",
-        "logo": "./icons/predictive.svg",
+        "logo": "../icons/predictive.svg",
         "front": "No hidden costs!",
         "back": "Your budget is often fixed, we believe that the price should be predictable from the start of your study",
         "color": "success"
       },
       "Affordable": {
         "title": "Affordable",
-        "logo": "./icons/affordable.svg",
+        "logo": "../icons/affordable.svg",
         "front": "Seriously?",
         "back": "Seriously! Our customers rarely negotiate our price, we prefer to focus on our added value: innovation",
         "color": "info"

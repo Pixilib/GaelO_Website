@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "react-i18next";
+
 import { Row, Col, Container } from "react-bootstrap";
 import fr from "../../lang/fr/index.json";
 import KeyFactorCard from "./KeyFactorCard";
