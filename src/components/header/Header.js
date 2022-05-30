@@ -39,7 +39,7 @@ const Header = ({ scrolled, pageContext }) => {
     <Navbar sticky="top" expand="md" className={customNav()}>
       <Container
         // fluid
-        className="d-flex align-items-start pt-2 pb-2  "
+        className="d-flex  pt-2 pb-2  "
       >
         <Navbar.Brand>
           <Link to="/" onClick={() => setHeaderActive(null)}>

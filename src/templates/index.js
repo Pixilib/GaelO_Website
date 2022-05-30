@@ -2,13 +2,6 @@ import React, { useRef, useState } from "react";
 import { graphql } from "gatsby";
 
 import { Container, Row } from "react-bootstrap";
-import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-
-import { Language } from "../enums/Language";
-import translationEN from "../lang/en/index.json";
-import translationFR from "../lang/fr/index.json";
 
 import Layout from "../components/layout/Layout";
 import Welcome from "../components/header/Welcome";
@@ -20,34 +13,8 @@ import Partner from "../components/partner/Partner";
 // import Ourteam fr.o/componentsm "./team/OurTeam";
 import Contact from "../components/contact/Contact";
 
-const defaultLanguage = Language.FR;
-
-// the translations
-const resources = {
-  en: {
-    translation: translationEN,
-  },
-  fr: {
-    translation: translationFR,
-  },
-};
-
 const IndexPage = ({ pageContext }) => {
   let refs = useRef([]);
-
-  i18next
-    .use(LanguageDetector)
-    .use(initReactI18next) // passes i18n down to react-i18next
-    .init({
-      resources,
-      lng: pageContext.locale,
-
-      keySeparator: ".", // to support nested translations
-
-      interpolation: {
-        escapeValue: false, // react already safes from xss
-      },
-    });
 
   return (
     <>

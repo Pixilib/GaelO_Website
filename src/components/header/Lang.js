@@ -1,22 +1,24 @@
 import React from "react";
 
 import { Link } from "gatsby";
+import flagFRA from "../../../static/icons/fra.svg";
+import flagENG from "../../../static/icons/eng.svg";
 
 const Lang = ({ locale, allWebsiteLocales }) => {
   return (
     <>
-      <ul>
-        {allWebsiteLocales.map((oneLocale, i) => {
-          const hasPrefix = i !== 0 ? "/" + oneLocale + "/" : "/"; // (first locale is default (no prefix))
-          return oneLocale !== locale ? (
-            <li>
-              <Link to={hasPrefix}>{oneLocale}</Link>
-            </li>
-          ) : (
-            ""
-          );
-        })}
-      </ul>
+      {allWebsiteLocales.map((oneLocale, i) => {
+        const hasPrefix = i !== 0 ? "/" + oneLocale + "/" : "/"; // (first locale is default (no prefix))
+        const flag = oneLocale === "en" ? flagENG : flagFRA;
+        console.log(oneLocale);
+        return oneLocale !== locale ? (
+          <Link to={hasPrefix} title="switch to">
+            <img src={flag} width="20px" alt={"switch to " + oneLocale} />
+          </Link>
+        ) : (
+          ""
+        );
+      })}
     </>
   );
 };
