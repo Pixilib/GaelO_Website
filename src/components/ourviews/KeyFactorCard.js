@@ -20,7 +20,7 @@ const KeyFactorCard = (props) => {
       >
         <img
           alt={props.textFront}
-          className="d-flex justify-content-center cardIcon "
+          className="d-flex justify-content-center cardIcon p-1"
           src={props.imageUrl}
         />
         <p>{props.textFront}</p>
