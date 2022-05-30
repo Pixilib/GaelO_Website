@@ -11,11 +11,6 @@ export default function Template({ data, pageContext }) {
   return (
     <Layout pageContext={pageContext}>
       <Container>
-        <Row className="justify-content-md-center">
-          <div>
-            <GatsbyImage image={image} alt={frontmatter.title} />
-          </div>
-        </Row>
         <Row>
           <Col>
             <h1>{frontmatter.title}</h1>
@@ -25,27 +20,28 @@ export default function Template({ data, pageContext }) {
             />
           </Col>
         </Row>
-        {frontmatter.sections.items.map((item, i) => (
-          <Row className="pt-3 pb-3">
-            <Col
-              xs={12}
-              sm={7}
-              md={i % 2 === 0 ? { order: "last" } : ""}
-              className="mb-3"
-            >
-              {item.content}
-            </Col>
-            <Col xs={12} sm={5}>
-              <GatsbyImage image={getImage(item.image)} className="mb-3" />
-            </Col>
-          </Row>
-        ))}
+        {frontmatter.sections &&
+          frontmatter.sections.items?.map((item, i) => (
+            <Row className="pt-3 pb-3">
+              <Col
+                xs={12}
+                sm={7}
+                md={i % 2 === 0 ? { order: "last" } : ""}
+                className="mb-3"
+              >
+                {item.content}
+              </Col>
+              <Col xs={12} sm={5}>
+                <GatsbyImage image={getImage(item.image)} className="mb-3" />
+              </Col>
+            </Row>
+          ))}
       </Container>
     </Layout>
   );
 }
 
-export const pageQuery = graphql`
+export const landingQuery = graphql`
   query ($slug: String!, $locale: String!) {
     markdownRemark(
       frontmatter: { slug: { eq: $slug }, locale: { eq: $locale } }

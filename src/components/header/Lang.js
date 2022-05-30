@@ -10,9 +10,8 @@ const Lang = ({ locale, allWebsiteLocales }) => {
       {allWebsiteLocales.map((oneLocale, i) => {
         const hasPrefix = i !== 0 ? "/" + oneLocale + "/" : "/"; // (first locale is default (no prefix))
         const flag = oneLocale === "en" ? flagENG : flagFRA;
-        console.log(oneLocale);
         return oneLocale !== locale ? (
-          <Link to={hasPrefix} title="switch to">
+          <Link key={i} to={hasPrefix} title="switch to">
             <img src={flag} width="20px" alt={"switch to " + oneLocale} />
           </Link>
         ) : (

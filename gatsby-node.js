@@ -6,8 +6,9 @@ exports.onPostBuild = ({ reporter }) => {
 // Create landing pages dynamically
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const landingTemplate = path.resolve(`src/templates/landing.js`);
   const indexTemplate = path.resolve(`src/templates/index.js`);
+  const landingTemplate = path.resolve(`src/templates/landing.js`);
+  const blogTemplate = path.resolve(`src/templates/blog.js`);
   const result = await graphql(`
     query {
       site {
@@ -38,15 +39,21 @@ exports.createPages = async ({ graphql, actions }) => {
         ? ""
         : edge.node.frontmatter.slug;
 
+    const isBlog = edge.node.frontmatter.template === "blog" ? "blog/" : "";
+
     const path =
       edge.node.frontmatter.locale === mainLanguage
-        ? slug + "/"
-        : `${edge.node.frontmatter.locale}/${slug}`;
+        ? isBlog + slug + "/"
+        : `${edge.node.frontmatter.locale}/${isBlog}${slug}`;
 
-    const template =
-      edge.node.frontmatter.template === "homepage"
-        ? indexTemplate
-        : landingTemplate;
+    let template = "";
+    if (edge.node.frontmatter.template === "homepage") {
+      template = indexTemplate;
+    } else if (edge.node.frontmatter.template === "landing") {
+      template = landingTemplate;
+    } else if (edge.node.frontmatter.template === "blog") {
+      template = blogTemplate;
+    }
 
     createPage({
       path: path,

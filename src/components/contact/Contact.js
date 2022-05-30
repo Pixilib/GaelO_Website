@@ -8,8 +8,8 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <Container className="pt-5 mt-5 mb-5 pb-5">
-      <Row id="contact" className="text-center ">
+    <Container id="contact" className="pt-5 mt-5 mb-5 pb-5">
+      <Row className="text-center ">
         <h2 className="text-white">{t("contact.title")}</h2>
         <Col className="d-flex flex-column align-items-center">
           <img className="logoMail" alt="email" src={logoMail} />

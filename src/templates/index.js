@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import { graphql } from "gatsby";
+import React, { useRef } from "react";
 
 import { Container, Row } from "react-bootstrap";
 
@@ -62,19 +61,3 @@ const IndexPage = ({ pageContext }) => {
 };
 
 export default IndexPage;
-
-// export const query = graphql`
-//   query ($language: String!) {
-//     locales: allLocale(
-//       filter: { ns: { in: ["common", "index"] }, language: { eq: $language } }
-//     ) {
-//       edges {
-//         node {
-//           ns
-//           data
-//           language
-//         }
-//       }
-//     }
-//   }
-// `;
