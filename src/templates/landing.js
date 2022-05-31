@@ -7,9 +7,8 @@ import Layout from "../components/layout/Layout";
 export default function Template({ data, pageContext }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
-  const image = getImage(frontmatter.coverImage);
   return (
-    <Layout pageContext={pageContext}>
+    <Layout pageContext={pageContext} seo={frontmatter.seo}>
       <Container>
         <Row>
           <Col>
@@ -53,7 +52,10 @@ export const landingQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
-
+        seo {
+          title
+          description
+        }
         sections {
           items {
             content

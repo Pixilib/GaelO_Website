@@ -367,6 +367,10 @@ nav.bg-white .navigationBar a {
 /* BlogMain */
 .cardBlog .card {
   border-radius: 10px;
+  transition: transform 0.1s ease-out;
+}
+.cardBlog .card:hover {
+  transform: scale(1.05);
 }
 .cardBlog a {
   color: #353275;

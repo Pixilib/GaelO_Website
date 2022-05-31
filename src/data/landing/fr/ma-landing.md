@@ -3,6 +3,10 @@ slug: "ma-landing"
 template: "landing"
 locale: "fr"
 date: "2022-05-26"
+seo:
+  title: "Ma landing | GaelO.fr"
+  description: "Plateforme"
+
 title: "Ma premiere landing"
 sections:
   items:

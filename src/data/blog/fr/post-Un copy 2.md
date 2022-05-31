@@ -1,5 +1,5 @@
 ---
-slug: "post1"
+slug: "poswede1"
 template: "blog"
 locale: "fr"
 date: "2022-05-30"
