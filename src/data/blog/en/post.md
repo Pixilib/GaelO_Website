@@ -3,6 +3,8 @@ slug: "post1"
 template: "blog"
 locale: "en"
 date: "2022-05-30"
+title: "Quaeret Non enim "
+coverImage: "../../../assets/images/blog/cover.jpg"
 ---
 
 <p>

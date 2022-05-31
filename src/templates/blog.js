@@ -17,9 +17,14 @@ export default function Blog({ data, pageContext }) {
           </div>
         </Row>
         <Row>
-          <Col>
-            <h1>{frontmatter.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+          <Col className="px-2">
+            {frontmatter.title && <h1>{frontmatter.title}</h1>}
+            {html && (
+              <div
+                className="py-2"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            )}
           </Col>
         </Row>
       </Container>

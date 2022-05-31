@@ -13,11 +13,13 @@ export default function Template({ data, pageContext }) {
       <Container>
         <Row>
           <Col>
-            <h1>{frontmatter.title}</h1>
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+            {frontmatter.title && <h1>{frontmatter.title}</h1>}
+            {html && (
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            )}
           </Col>
         </Row>
         {frontmatter.sections &&

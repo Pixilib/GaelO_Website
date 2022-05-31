@@ -69,7 +69,7 @@
     "flag": "english.png"
   },
   "study": {
-    "img": "study-graph-en.svg",
+    "img": "../study-graph-en.svg",
     "title": "Our Solution",
     "subtitle": "Data Structure",
     "graph": {
@@ -109,7 +109,7 @@
     }
   },
   "role": {
-    "img": "role-graph-en.svg",
+    "img": "../role-graph-en.svg",
     "title": "Roles in the study",
     "graph": {
       "investigator": {

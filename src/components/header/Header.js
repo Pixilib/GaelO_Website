@@ -35,6 +35,11 @@ const Header = ({ scrolled, pageContext }) => {
   };
   const [headerActive, setHeaderActive] = useState(null);
 
+  const path =
+    pageContext.mainLanguage === pageContext.locale
+      ? ""
+      : `/${pageContext.locale}`;
+
   return (
     <Navbar sticky="top" expand="md" className={customNav()}>
       <Container
@@ -42,7 +47,7 @@ const Header = ({ scrolled, pageContext }) => {
         className="d-flex  pt-2 pb-2  "
       >
         <Navbar.Brand>
-          <Link to="/" onClick={() => setHeaderActive(null)}>
+          <Link to={path + "/"} onClick={() => setHeaderActive(null)}>
             <img src={LogoPrincipal} alt="GaelO" style={{ width: "60px" }} />
           </Link>
         </Navbar.Brand>
@@ -57,7 +62,7 @@ const Header = ({ scrolled, pageContext }) => {
           <Nav>
             <Nav onClick={() => setHeaderActive("ourviews")}>
               <AnchorLink
-                to="/#ourviews"
+                to={path + "/#ourviews"}
                 title="our views"
                 style={customStyle}
                 className={headerActive === "ourviews" ? "text-secondary" : ""}
@@ -67,7 +72,7 @@ const Header = ({ scrolled, pageContext }) => {
             </Nav>
             <Nav onClick={() => setHeaderActive("solution")}>
               <AnchorLink
-                to="/#solution"
+                to={path + "/#solution"}
                 title="solution"
                 style={customStyle}
                 className={headerActive === "solution" ? "text-secondary" : ""}
@@ -77,7 +82,7 @@ const Header = ({ scrolled, pageContext }) => {
             </Nav>
             <Nav onClick={() => setHeaderActive("service")}>
               <AnchorLink
-                to="/#service"
+                to={path + "/#service"}
                 title="service"
                 style={customStyle}
                 className={headerActive === "service" ? "text-secondary" : ""}
@@ -87,7 +92,7 @@ const Header = ({ scrolled, pageContext }) => {
             </Nav>
             <Nav onClick={() => setHeaderActive("expertise")}>
               <AnchorLink
-                to="/#expertise"
+                to={path + "/#expertise"}
                 title="expertise"
                 style={customStyle}
                 className={headerActive === "expertise" ? "text-secondary" : ""}
@@ -97,7 +102,7 @@ const Header = ({ scrolled, pageContext }) => {
             </Nav>
             <Nav onClick={() => setHeaderActive("contact")}>
               <AnchorLink
-                to="/#contact"
+                to={path + "/#contact"}
                 title="contact"
                 style={customStyle}
                 className={headerActive === "contact" ? "text-secondary" : ""}
