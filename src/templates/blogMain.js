@@ -9,16 +9,17 @@ export default function BlogMain({ data, pageContext }) {
   return (
     <Layout pageContext={pageContext} seo={data.pageBlogMain.frontmatter.seo}>
       <Container>
-        {data.allMarkdownRemark.edges.map((edge, i) => {
-          const { slug, locale, title, subtitle } = edge.node.frontmatter;
-          const path =
-            edge.node.frontmatter.locale === pageContext.mainLanguage
-              ? "/blog/" + slug
-              : `/${locale}/blog/${slug}`;
+        <h1>{data.pageBlogMain.frontmatter.title}</h1>
+        <Row className="my-3  cardBlog">
+          {data.allMarkdownRemark.edges.map((edge, i) => {
+            const { slug, locale, title, subtitle } = edge.node.frontmatter;
+            const path =
+              edge.node.frontmatter.locale === pageContext.mainLanguage
+                ? "/blog/" + slug
+                : `/${locale}/blog/${slug}`;
 
-          return (
-            <Row className=" my-5">
-              <Col xs={12} md={4}>
+            return (
+              <Col xs={12} md={4} className="my-2">
                 <Card>
                   {edge.node.frontmatter.coverImage && (
                     <Link to={path}>
@@ -41,9 +42,9 @@ export default function BlogMain({ data, pageContext }) {
                   </Card.Body>
                 </Card>
               </Col>
-            </Row>
-          );
-        })}
+            );
+          })}
+        </Row>
       </Container>
     </Layout>
   );
@@ -82,6 +83,7 @@ export const blogQuery = graphql`
       frontmatter: { locale: { eq: $locale }, template: { eq: "blogMain" } }
     ) {
       frontmatter {
+        title
         seo {
           title
           description

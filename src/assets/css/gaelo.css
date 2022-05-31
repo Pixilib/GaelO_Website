@@ -363,3 +363,12 @@ nav.bg-white .navigationBar a {
   max-width: 150px;
   max-height: 150px;
 }
+
+/* BlogMain */
+.cardBlog .card {
+  border-radius: 10px;
+}
+.cardBlog a {
+  color: #353275;
+  text-decoration: none;
+}
