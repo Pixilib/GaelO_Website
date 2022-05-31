@@ -46,7 +46,7 @@ const ServiceCard = () => {
 
     for (let i = 0; i < createdCard.length; i += 3) {
       finalComponent.push([
-        <Row sm={3} className="d-flex justify-content-center">
+        <Row sm={3} key={i} className="d-flex justify-content-center">
           {" "}
           {[createdCard[i], createdCard[i + 1], createdCard[i + 2]]}{" "}
         </Row>,

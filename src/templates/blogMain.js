@@ -6,7 +6,6 @@ import Layout from "../components/layout/Layout";
 import Card from "react-bootstrap/Card";
 
 export default function BlogMain({ data, pageContext }) {
-  console.log(data);
   return (
     <Layout pageContext={pageContext} seo={data.pageBlogMain.frontmatter.seo}>
       <Container>

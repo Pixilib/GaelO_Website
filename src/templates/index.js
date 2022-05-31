@@ -15,7 +15,6 @@ import Contact from "../components/contact/Contact";
 
 const IndexPage = ({ data, pageContext }) => {
   let refs = useRef([]);
-  console.log(data);
   return (
     <>
       <Layout

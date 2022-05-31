@@ -15,7 +15,7 @@ const StudyCard = (props) => {
     let bodyArray = [];
     for (let i = 0; i < lignesNumber; i++) {
       bodyArray.push(
-        <p>{t("study.graph." + props.level + ".content." + i)}</p>
+        <p key={i}>{t("study.graph." + props.level + ".content." + i)}</p>
       );
     }
 

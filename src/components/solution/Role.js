@@ -41,7 +41,7 @@ const Role = (props) => {
         <p className="text-center">Coming Soon</p>
       ) : (
         <ReactPlayer
-          controls="true"
+          controls={true}
           height={"400px"}
           width={"100%"}
           url={t("role.graph." + currentRole + ".video")}

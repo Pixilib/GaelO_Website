@@ -12,9 +12,9 @@ const ExpertiseTestimonial = () => {
       ...Array(fr.expertise.testimonial.name.length).keys(),
     ];
 
-    const componentArray = expertiseNumero.map((item) => {
+    const componentArray = expertiseNumero.map((item, i) => {
       return (
-        <Carousel.Item>
+        <Carousel.Item key={i}>
           <div className="p-5">
             <p className="fst-italic fw-bold">
               "{t("expertise.testimonial.text." + item)}"

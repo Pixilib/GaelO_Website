@@ -18,7 +18,7 @@ const ServiceRoot = () => {
             <Row className="d-flex justify-content-center align-items-center">
               <img
                 alt={"Pixilib Logo"}
-                style={{ "max-width": "250px" }}
+                style={{ maxWidth: "250px" }}
                 src={t("pixilib.svg")}
               ></img>
             </Row>
@@ -32,7 +32,7 @@ const ServiceRoot = () => {
           >
             <ReactPlayer
               height="100%"
-              controls="true"
+              controls={true}
               url={t("service.pixilib.video")}
             />
           </Col>
