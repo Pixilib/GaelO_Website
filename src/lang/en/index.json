@@ -14,7 +14,8 @@
     "3": "Service",
     "4": "Expertise",
     "5": "Team",
-    "6": "Contact Us"
+    "6": "Contact Us",
+    "7": "Blog"
   },
 
   "contact": {
@@ -179,7 +180,7 @@
         "color": "info"
       }
     },
-    "img": "offre-service-en.svg"
+    "img": "../offre-service-en.svg"
   },
   "expertise": {
     "title": "Expertise",

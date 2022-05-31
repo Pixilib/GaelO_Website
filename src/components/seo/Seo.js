@@ -2,26 +2,28 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
-const Seo = ({ lang }) => {
-  const { t } = useTranslation();
+const Seo = ({ pageContext, seo }) => {
+  const htmlattr = pageContext.locale;
+  const titleDefault =
+    "GaelO, plateforme de gestion de l'imagerie des essais cliniques";
+  const descriptionDefault =
+    "Plateforme de collection et interpretation centralisée en temps réel de l'imagerie des essais cliniques";
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={t("seo.title")}
+      htmlAttributes={{ htmlattr }}
+      title={seo?.title || titleDefault}
       meta={[
         {
           name: `description`,
-          content: t("seo.description"),
+          content: seo?.description || descriptionDefault,
         },
         {
           property: `og:title`,
-          content: t("seo.title"),
+          content: seo?.title || titleDefault,
         },
         {
           property: `og:description`,
-          content: t("seo.description"),
+          content: seo?.description || descriptionDefault,
         },
         {
           property: `og:type`,
@@ -37,11 +39,11 @@ const Seo = ({ lang }) => {
         },
         {
           name: `twitter:title`,
-          content: t("seo.title"),
+          content: seo?.title || titleDefault,
         },
         {
           name: `twitter:description`,
-          content: t("seo.description"),
+          content: seo?.description || descriptionDefault,
         },
       ]}
     >

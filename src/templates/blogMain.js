@@ -7,12 +7,11 @@ import Card from "react-bootstrap/Card";
 
 export default function BlogMain({ data, pageContext }) {
   console.log(data);
-  // const image = getImage(frontmatter.coverImage);
   return (
-    <Layout pageContext={pageContext}>
+    <Layout pageContext={pageContext} seo={data.pageBlogMain.frontmatter.seo}>
       <Container>
         {data.allMarkdownRemark.edges.map((edge, i) => {
-          const { slug, locale } = edge.node.frontmatter;
+          const { slug, locale, title, subtitle } = edge.node.frontmatter;
           const path =
             edge.node.frontmatter.locale === pageContext.mainLanguage
               ? "/blog/" + slug
@@ -20,28 +19,29 @@ export default function BlogMain({ data, pageContext }) {
 
           return (
             <Row className=" my-5">
-              <Card style={{ width: "18rem" }}>
-                {edge.node.frontmatter.coverImage && (
-                  <Card.Img
-                    variant="top"
-                    src={
-                      edge.node.frontmatter.coverImage.childImageSharp
-                        .gatsbyImageData.images.fallback.src
-                    }
-                  />
-                )}
-                <Card.Body>
-                  {edge.node.frontmatter.title && (
-                    <Card.Title>
-                      <Link to={path}>{edge.node.frontmatter.title}</Link>
-                    </Card.Title>
+              <Col xs={12} md={4}>
+                <Card>
+                  {edge.node.frontmatter.coverImage && (
+                    <Link to={path}>
+                      <Card.Img
+                        variant="top"
+                        src={
+                          edge.node.frontmatter.coverImage.childImageSharp
+                            .gatsbyImageData.images.fallback.src
+                        }
+                      />
+                    </Link>
                   )}
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+                  <Card.Body>
+                    {edge.node.frontmatter.title && (
+                      <Card.Title>
+                        <Link to={path}>{title}</Link>
+                      </Card.Title>
+                    )}
+                    <Card.Text>{subtitle}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
             </Row>
           );
         })}
@@ -64,7 +64,9 @@ export const blogQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
+            subtitle
             locale
+
             coverImage {
               childImageSharp {
                 gatsbyImageData(width: 400)
@@ -74,6 +76,16 @@ export const blogQuery = graphql`
               }
             }
           }
+        }
+      }
+    }
+    pageBlogMain: markdownRemark(
+      frontmatter: { locale: { eq: $locale }, template: { eq: "blogMain" } }
+    ) {
+      frontmatter {
+        seo {
+          title
+          description
         }
       }
     }

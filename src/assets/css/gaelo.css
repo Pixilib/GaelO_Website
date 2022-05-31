@@ -74,7 +74,7 @@ h1 {
 h2 {
   color: #0495a0;
   font-weight: bold;
-  font-size: 2.3em;
+  /* font-size: 2.3em; */
 }
 h2.dark {
   color: #353275;

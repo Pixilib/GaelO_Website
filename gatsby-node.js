@@ -56,6 +56,9 @@ exports.createPages = async ({ graphql, actions }) => {
       template = landingTemplate;
     } else if (edge.node.frontmatter.template === "blog") {
       template = blogTemplate;
+    } else if (edge.node.frontmatter.template === "blogMain") {
+      return false;
+      // Main blog page are generated later
     }
 
     createPage({
@@ -70,6 +73,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // Main Blog Pages
   createPage({
     path: "/blog",
     component: blogMainTemplate,

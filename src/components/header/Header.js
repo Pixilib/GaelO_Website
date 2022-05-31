@@ -110,6 +110,9 @@ const Header = ({ scrolled, pageContext }) => {
                 {t("navbar.6")}{" "}
               </AnchorLink>
             </Nav>
+            <Nav onClick={() => setHeaderActive(null)}>
+              <Link to={path + "/blog"}>{t("navbar.7")}</Link>
+            </Nav>
           </Nav>
           <Nav>
             <Nav className="align-items-center">

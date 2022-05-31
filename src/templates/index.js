@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { graphql } from "gatsby";
 
 import { Container, Row } from "react-bootstrap";
 
@@ -12,12 +13,15 @@ import Partner from "../components/partner/Partner";
 // import Ourteam fr.o/componentsm "./team/OurTeam";
 import Contact from "../components/contact/Contact";
 
-const IndexPage = ({ pageContext }) => {
+const IndexPage = ({ data, pageContext }) => {
   let refs = useRef([]);
-
+  console.log(data);
   return (
     <>
-      <Layout pageContext={pageContext}>
+      <Layout
+        pageContext={pageContext}
+        seo={data.markdownRemark.frontmatter.seo}
+      >
         <Container fluid className="background">
           <Row ref={(ref) => (refs.current[0] = ref)}>
             <Container>
@@ -61,3 +65,21 @@ const IndexPage = ({ pageContext }) => {
 };
 
 export default IndexPage;
+
+export const IndexQuery = graphql`
+  query ($slug: String!, $locale: String!) {
+    markdownRemark(
+      frontmatter: { slug: { eq: $slug }, locale: { eq: $locale } }
+    ) {
+      html
+      frontmatter {
+        slug
+        title
+        seo {
+          title
+          description
+        }
+      }
+    }
+  }
+`;

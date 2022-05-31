@@ -4,7 +4,11 @@ template: "blog"
 locale: "fr"
 date: "2022-05-30"
 title: "Non enim iam stirpis bonum quaeret"
+subtitle: " nisi retexueris illa. Cur post Tarentum ad Archytam"
 coverImage: "../../../assets/images/blog/cover.jpg"
+seo:
+  title: "seo FR Quaeret"
+  description: "Seo FR descr Imaging real time"
 ---
 
 <p>

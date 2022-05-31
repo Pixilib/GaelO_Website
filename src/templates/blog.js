@@ -8,23 +8,28 @@ export default function Blog({ data, pageContext }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   const image = getImage(frontmatter.coverImage);
+  const seoData = {
+    title: frontmatter.seo.title || frontmatter.title,
+    description: frontmatter.seo.description || frontmatter.subtitle,
+  };
   return (
-    <Layout pageContext={pageContext}>
+    <Layout pageContext={pageContext} seo={seoData}>
       <Container>
         <Row className="justify-content-md-center">
-          <div>
-            <GatsbyImage image={image} alt={frontmatter.title} />
-          </div>
+          <GatsbyImage image={image} alt={frontmatter.title} />
         </Row>
-        <Row>
+        <Row className="mx-3">
           <Col className="px-2">
-            {frontmatter.title && <h1>{frontmatter.title}</h1>}
-            {html && (
-              <div
-                className="py-2"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
-            )}
+            <article>
+              {frontmatter.title && <h1>{frontmatter.title}</h1>}
+              {frontmatter.subtitle && <h2>{frontmatter.subtitle}</h2>}
+              {html && (
+                <div
+                  className="py-2"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              )}
+            </article>
           </Col>
         </Row>
       </Container>
@@ -42,6 +47,11 @@ export const blogQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        subtitle
+        seo {
+          title
+          description
+        }
         coverImage {
           childImageSharp {
             gatsbyImageData(width: 1000)

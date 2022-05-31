@@ -4,7 +4,11 @@ template: "blog"
 locale: "en"
 date: "2022-05-30"
 title: "Quaeret Non enim "
+subtitle: "nisi retexueris illa. Cur post Tarentum ad Archytam"
 coverImage: "../../../assets/images/blog/cover.jpg"
+seo:
+  title: "seo EN Quaeret"
+  description: "Seo EN descr Imaging real time"
 ---
 
 <p>

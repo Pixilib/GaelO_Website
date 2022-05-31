@@ -12,7 +12,7 @@ import translationFR from "../../lang/fr/index.json";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/gaelo.css";
 
-function Layout({ children, pageContext }) {
+function Layout({ children, seo, pageContext }) {
   const isBrowser = typeof window !== "undefined";
 
   const [isScrolled, setScrolled] = useState(false);
@@ -50,7 +50,7 @@ function Layout({ children, pageContext }) {
 
   return (
     <>
-      <Seo />
+      <Seo seo={seo} pageContext={pageContext} />
       <Header scrolled={isScrolled} pageContext={pageContext} />
       {children}
       <Footer fluid className="background" />
