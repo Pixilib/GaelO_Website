@@ -30,7 +30,7 @@ const Footer = () => {
             {t('footer.data')}
           </Button>
 
-          <MarkdownModal url={url} show={url !=null}  onHide={() => setUrl(null)} />
+          {url ? <MarkdownModal url={url} show={true} onHide={() => setUrl(null)} /> : null}
           <br />
           {t('footer.author')}
         

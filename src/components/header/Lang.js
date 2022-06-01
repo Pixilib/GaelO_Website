@@ -1,74 +1,25 @@
-import { Fragment, useState } from "react";
-import { Language } from '../../enums/Language';
+import React from "react";
 
+import { Link } from "gatsby";
+import flagFRA from "../../../static/icons/fra.svg";
+import flagENG from "../../../static/icons/eng.svg";
 
-import i18next from "i18next"
-import { useTranslation } from "react-i18next"
-import Select from 'react-select'
-
-
-const Lang = () => {
-
-    const { t } = useTranslation();
-    const options = [
-        { value: Language.FR, label: <>Francais</> },
-        { value: Language.EN, label: <>English</> },
-
-    ]
-    const [lang, setLang] = useState(options[0]);
-
-    let changeLanguage = (language) => {
-        setLang(language);
-        i18next.changeLanguage(language.value)
-    }
-
-    const customStyles = {
-        dropdownIndicator: () => ({
-            color: 'black'
-        }),
-
-        valueContainer: (provided) => ({
-            ...provided,
-            paddingLeft: 15,
-        }),
-
-        control: (provided) => ({
-            ...provided,
-            backgroundColor: 'none',
-            border: 'none',
-            boxShadow: 'none',
-        }),
-
-        indicatorSeparator: () => ({
-            background: "none"
-        }),
-
-        menu: (provided) => ({
-            ...provided,
-            backgroundColor: "#314053",
-            width: "auto",
-            color: "#78E08F",
-            borderRadius: 15,
-        }),
-
-        option: (provided, state) => ({
-            ...provided,
-            backgroundColor: " none",
-            fontWeight: state.isSelected ? "bold" : "normal",
-            color: state.isSelected ? "#78E08F" : "#FFBA4D",
-        })
-    }
-
-    return (
-
-        <Fragment>
-            <Select type="button" className="bg-transparent" styles={customStyles} isSearchable={false} options={options} value={{
-                value: lang.value,
-                label: <img alt="language" src={t('lang.flag')} style={{ width: "20px", height: "20px" }} />
-            }} onChange={changeLanguage} />
-        </Fragment>
-    )
-}
-
+const Lang = ({ locale, allWebsiteLocales }) => {
+  return (
+    <>
+      {allWebsiteLocales.map((oneLocale, i) => {
+        const hasPrefix = i !== 0 ? "/" + oneLocale + "/" : "/"; // (first locale is default (no prefix))
+        const flag = oneLocale === "en" ? flagENG : flagFRA;
+        return oneLocale !== locale ? (
+          <Link key={i} to={hasPrefix} title="switch to">
+            <img src={flag} width="20px" alt={"switch to " + oneLocale} />
+          </Link>
+        ) : (
+          ""
+        );
+      })}
+    </>
+  );
+};
 
 export default Lang;

@@ -1,79 +1,140 @@
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
-import { useTranslation } from 'react-i18next'
-import Lang from './Lang'
-import { Col, Container, Nav, Navbar, } from 'react-bootstrap'
-import { ReactComponent as LogoPrincipal } from '../../assets/images/gaelo-logo.svg'
-import { ReactComponent as LogoGitHub } from '../../assets/images/github.svg'
-import { useNavigate, useLocation, Link } from 'react-router-dom'
+import Lang from "./Lang";
+import { Col, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-const Header = (props) => {
+import LogoPrincipal from "../../assets/images/gaelo-logo.svg";
+import LogoGitHub from "../../assets/images/github.svg";
 
-  const location = useLocation()
+import { Link } from "gatsby";
 
-  const history = useNavigate();
-
-  const handleClick = () => {
-    history("/");
-  }
-
+const Header = ({ scrolled, pageContext }) => {
   const customStyle = {
-    marginLeft: "10px",
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+    padding: "0px!important",
+  };
 
-  const customLink = (origin) => {
-    let className = props.scrolled ? 'text-dark' : 'text-white'
-
-    if (origin === location.pathname) {
-      className = "text-secondary"
-    }
+  const customLink = () => {
+    let className = scrolled ? "text-dark" : "text-white";
 
     return className;
-  }
+  };
 
-  const customNav = () => props.scrolled ? 'bg-white py-0 ' : 'bg-transparent background py-0 '
+  const customNav = () =>
+    scrolled ? "bg-white py-0 " : "bg-transparent background py-0 ";
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const styleLogoGH = () => {
     return {
-      color: 'inherit',
-      textdecoration: 'none',
-    }
-  }
+      color: "inherit",
+      textdecoration: "none",
+    };
+  };
+  const [headerActive, setHeaderActive] = useState(null);
+
+  const path =
+    pageContext.mainLanguage === pageContext.locale
+      ? ""
+      : `/${pageContext.locale}`;
 
   return (
-
-    <Navbar sticky='top' expand="lg" className={customNav()}>
-      <Container fluid className='d-flex justify-content-around'>
-        <Col sm={1} >
-
-          <Link to="/" onClick={handleClick}>
-            <LogoPrincipal className='w-50' />
+    <Navbar sticky="top" expand="md" className={customNav()}>
+      <Container
+        // fluid
+        className="d-flex  pt-2 pb-2  "
+      >
+        <Navbar.Brand>
+          <Link to={path + "/"} onClick={() => setHeaderActive(null)}>
+            <img src={LogoPrincipal} alt="GaelO" style={{ width: "60px" }} />
           </Link>
-        </Col>
-        <Col className='fw-bold d-flex justify-content-center'>
-          <Nav >
-            <Navbar.Toggle aria-controls="basic-navbar-nav " className="border-0 shadow-none " />
-            <Navbar.Collapse id="basic-navbar-nav" className=''>
-              <Link to="ourviews" style={customStyle} className={customLink("/ourviews")} onClick={handleClick} >{t('navbar.1')}</Link>
-              <Link to="solution" style={customStyle} className={customLink("/solution")} onClick={handleClick}>{t('navbar.2')} </Link>
-              <Link to="service" style={customStyle} className={customLink("/service")} onClick={handleClick}>{t('navbar.3')} </Link>
-              <Link to="expertise" style={customStyle} className={customLink("/expertise")} onClick={handleClick}>{t('navbar.4')} </Link>
-              <Link hidden='true' to="team" style={customStyle} className={customLink("/team")} onClick={handleClick}>{t('navbar.5')} </Link>
-              <Link to="contact" style={customStyle} className={customLink("/contact")} onClick={handleClick}>{t('navbar.6')} </Link>
-            </Navbar.Collapse>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav "
+          className="border-0 shadow-none "
+        />
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className="navigationBar justify-content-between"
+        >
+          <Nav>
+            <Nav onClick={() => setHeaderActive("ourviews")}>
+              <AnchorLink
+                to={path + "/#ourviews"}
+                title="our views"
+                style={customStyle}
+                className={headerActive === "ourviews" ? "text-secondary" : ""}
+              >
+                {t("navbar.1")}
+              </AnchorLink>
+            </Nav>
+            <Nav onClick={() => setHeaderActive("solution")}>
+              <AnchorLink
+                to={path + "/#solution"}
+                title="solution"
+                style={customStyle}
+                className={headerActive === "solution" ? "text-secondary" : ""}
+              >
+                {t("navbar.2")}{" "}
+              </AnchorLink>
+            </Nav>
+            <Nav onClick={() => setHeaderActive("service")}>
+              <AnchorLink
+                to={path + "/#service"}
+                title="service"
+                style={customStyle}
+                className={headerActive === "service" ? "text-secondary" : ""}
+              >
+                {t("navbar.3")}{" "}
+              </AnchorLink>
+            </Nav>
+            <Nav onClick={() => setHeaderActive("expertise")}>
+              <AnchorLink
+                to={path + "/#expertise"}
+                title="expertise"
+                style={customStyle}
+                className={headerActive === "expertise" ? "text-secondary" : ""}
+              >
+                {t("navbar.4")}{" "}
+              </AnchorLink>
+            </Nav>
+            <Nav onClick={() => setHeaderActive("contact")}>
+              <AnchorLink
+                to={path + "/#contact"}
+                title="contact"
+                style={customStyle}
+                className={headerActive === "contact" ? "text-secondary" : ""}
+              >
+                {t("navbar.6")}{" "}
+              </AnchorLink>
+            </Nav>
+            <Nav onClick={() => setHeaderActive(null)}>
+              <Link to={path + "/blog"}>{t("navbar.7")}</Link>
+            </Nav>
           </Nav>
-        </Col>
-        <Col sm={1} className="d-flex justify-content-around align-items-center">
-          <Lang />
-
-          <a style={styleLogoGH()} target="_blank" rel="noopener noreferrer" href="https://github.com/Pixilib/">
-            <LogoGitHub className />
-          </a>
-        </Col>
+          <Nav>
+            <Nav className="align-items-center">
+              <Lang
+                locale={pageContext.locale}
+                allWebsiteLocales={pageContext.allWebsiteLocales}
+              />
+            </Nav>
+            <Nav className="align-items-center">
+              <a
+                style={styleLogoGH()}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/Pixilib/"
+              >
+                <img src={LogoGitHub} alt="GitHub" />
+              </a>
+            </Nav>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
-  )
-}
-export default Header
+  );
+};
+export default Header;
