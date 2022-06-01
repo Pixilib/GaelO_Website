@@ -14,7 +14,7 @@ const KeyFactorSuccess = () => {
 
     for (const [key] of Object.entries(fr.card)) {
       createdCard.push(
-        <Col className="d-flex justify-content-center mt-2  ">
+        <Col key={key} className="d-flex justify-content-center mt-2  ">
           <KeyFactorCard
             imageUrl={t("card." + key + ".icon")}
             textBack={t("card." + key + ".definition")}
