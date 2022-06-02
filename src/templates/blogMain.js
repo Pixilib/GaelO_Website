@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 export default function BlogMain({ data, pageContext }) {
   return (
     <Layout pageContext={pageContext} seo={data.pageBlogMain.frontmatter.seo}>
-      <Container>
+      <Container className="viewportHeight100">
         <h1>{data.pageBlogMain.frontmatter.title}</h1>
         <Row className="my-3  cardBlog">
           {data.allMarkdownRemark.edges.map((edge, i) => {
@@ -84,6 +84,7 @@ export const blogQuery = graphql`
     ) {
       frontmatter {
         title
+        langSwitchTo
         seo {
           title
           description

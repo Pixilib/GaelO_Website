@@ -14,7 +14,7 @@ export default function Blog({ data, pageContext }) {
   };
   return (
     <Layout pageContext={pageContext} seo={seoData}>
-      <Container>
+      <Container className="viewportHeight100">
         <Row className="justify-content-md-center">
           <GatsbyImage image={image} alt={frontmatter.title} />
         </Row>

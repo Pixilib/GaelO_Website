@@ -12,7 +12,7 @@ import translationFR from "../../lang/fr/index.json";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/gaelo.css";
 
-function Layout({ children, seo, pageContext }) {
+function Layout({ children, seo, pageContext, langSwitchTo }) {
   const isBrowser = typeof window !== "undefined";
 
   const [isScrolled, setScrolled] = useState(false);

@@ -52,7 +52,8 @@ const Header = ({ scrolled, pageContext }) => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle
-          aria-controls="basic-navbar-nav "
+          aria-
+          s="basic-navbar-nav "
           className="border-0 shadow-none "
         />
         <Navbar.Collapse
@@ -119,6 +120,7 @@ const Header = ({ scrolled, pageContext }) => {
               <Lang
                 locale={pageContext.locale}
                 allWebsiteLocales={pageContext.allWebsiteLocales}
+                langSwitchTo={pageContext.langSwitchTo}
               />
             </Nav>
             <Nav className="align-items-center">

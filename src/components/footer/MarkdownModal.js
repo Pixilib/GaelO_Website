@@ -11,7 +11,7 @@ const MarkdownModal = (props) => {
   const [content, setContent] = useState(null);
 
   useEffect(() => {
-    console.log(props.url)
+    console.log(props.url);
     fetch(t("footer." + props.url))
       .then((response) => response.text())
       .then((text) => setContent(text));
