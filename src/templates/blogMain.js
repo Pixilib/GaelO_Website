@@ -19,7 +19,7 @@ export default function BlogMain({ data, pageContext }) {
                 : `/${locale}/blog/${slug}`;
 
             return (
-              <Col xs={12} md={4} className="my-2">
+              <Col key={i} xs={12} md={4} className="my-2">
                 <Card>
                   {edge.node.frontmatter.coverImage && (
                     <Link to={path}>

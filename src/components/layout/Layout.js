@@ -13,19 +13,6 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/css/gaelo.css";
 
 function Layout({ children, seo, pageContext, langSwitchTo }) {
-  const isBrowser = typeof window !== "undefined";
-
-  const [isScrolled, setScrolled] = useState(false);
-  if (isBrowser) {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset >= 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    });
-  }
-
   const resources = {
     en: {
       translation: translationEN,
@@ -51,7 +38,7 @@ function Layout({ children, seo, pageContext, langSwitchTo }) {
   return (
     <>
       <Seo seo={seo} pageContext={pageContext} />
-      <Header scrolled={isScrolled} pageContext={pageContext} />
+      <Header pageContext={pageContext} />
       {children}
       <Footer fluid className="background" />
     </>

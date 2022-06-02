@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import Lang from "./Lang";
@@ -10,20 +10,39 @@ import LogoGitHub from "../../assets/images/github.svg";
 
 import { Link } from "gatsby";
 
-const Header = ({ scrolled, pageContext }) => {
+const Header = ({ pageContext }) => {
+  const isBrowser = typeof window !== "undefined";
+
   const customStyle = {
     textDecoration: "none",
     padding: "0px!important",
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    if (isBrowser) {
+      const onScroll = () => {
+        if (window.pageYOffset >= 100) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+      // clean up code
+      window.removeEventListener("scroll", onScroll);
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => window.removeEventListener("scroll", onScroll);
+    }
+  }, []);
+
   const customLink = () => {
-    let className = scrolled ? "text-dark" : "text-white";
+    let className = isScrolled ? "text-dark" : "text-white";
 
     return className;
   };
 
   const customNav = () =>
-    scrolled ? "bg-white py-0 " : "bg-transparent background py-0 ";
+    isScrolled ? "bg-white py-0 " : "bg-transparent background py-0 ";
 
   const { t } = useTranslation();
 
@@ -52,8 +71,7 @@ const Header = ({ scrolled, pageContext }) => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle
-          aria-
-          s="basic-navbar-nav "
+          aria-controls="basic-navbar-nav "
           className="border-0 shadow-none "
         />
         <Navbar.Collapse
