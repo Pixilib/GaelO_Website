@@ -28,9 +28,9 @@
     "CGU": "Terms of Use",
     "author": "Pixilib All Rights Reserved",
     "data": "Personal Data Policy",
-    "mkCGU": "cgu-en.md",
-    "mkdata": "privacy-data-en.md",
-    "mkmention": "mentions-legales-en.md"
+    "mkCGU": "../cgu-en.md",
+    "mkdata": "../privacy-data-en.md",
+    "mkmention": "../mentions-legales-en.md"
   },
   "ourviews": {
     "title": "Our Vision",
@@ -121,7 +121,7 @@
       "controller": {
         "title": "Controller",
         "content": "Centralized quality control of uploads before medical interpretation",
-        "video": "https://www.youtube.com/watch?v=CDYvZbewPPU"
+        "video": "https://www.youtube.com/watch?v=27jYH5bRjRM"
       },
       "reviewer": {
         "title": "Reviewer",

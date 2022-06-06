@@ -2,6 +2,8 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 
+import favicon from "../../../static/logo.ico";
+
 const Seo = ({ pageContext, seo }) => {
   const htmlattr = pageContext.locale;
   const titleDefault =
@@ -47,7 +49,7 @@ const Seo = ({ pageContext, seo }) => {
         },
       ]}
     >
-      <link rel="icon" type="image/png" href="logo.ico" sizes="16x16" />
+      <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
     </Helmet>
   );
 };

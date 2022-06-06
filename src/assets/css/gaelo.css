@@ -84,6 +84,10 @@ h3 {
   font-weight: bold;
 }
 
+.viewportHeight100 {
+  min-height: 100vh;
+}
+
 .background {
   background: linear-gradient(90deg, #353275, #0495a0);
 }
@@ -365,6 +369,7 @@ nav.bg-white .navigationBar a {
 }
 
 /* BlogMain */
+
 .cardBlog .card {
   border-radius: 10px;
   transition: transform 0.1s ease-out;
